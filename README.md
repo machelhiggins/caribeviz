@@ -1,5 +1,5 @@
 # CaribEViz
-![CaribEViz Splash](spalsh.bmp)
+![CaribEViz Splash](caribevizsplash.jpg)
 
 This is a fork of Ergo (https://opensource.ncsa.illinois.edu/bitbucket/scm/ergo/ergo.git) developed by the National Center for Supercomputing Applications, University of Illinois at Urbana Champagne. 
 Most of the developement occurred at the University of the West Indies, Seismic Research Center (UWI, SRC) under the the UWI, Institute for Sustainable Development executed Enhancing Knowledge and Application of Comprehensive Disaster Manager Initiative (EKACDM). The software has been used to estimate, in a medium to high-resolution scale, the seismic risk of the Kingston Metropolitan Area and Portmore, Jamaica, Barbados, and Dominica.
