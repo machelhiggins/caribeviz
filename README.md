@@ -1,4 +1,3 @@
-# CaribEViz
 ![CaribEViz Splash](caribevizsplash.jpg)
 
 This is a fork of Ergo (https://opensource.ncsa.illinois.edu/bitbucket/scm/ergo/ergo.git) developed by the National Center for Supercomputing Applications, University of Illinois at Urbana Champagne. 
