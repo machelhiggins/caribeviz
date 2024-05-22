@@ -37,20 +37,18 @@
           <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
           <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
           <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hQ5yEe-FJ-Www2dihw" selectedElement="_paV3hg5yEe-FJ-Www2dihw" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hg5yEe-FJ-Www2dihw" containerData="2323" selectedElement="_paV3hw5yEe-FJ-Www2dihw">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hQ5yEe-FJ-Www2dihw" selectedElement="_paV3iw5yEe-FJ-Www2dihw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hg5yEe-FJ-Www2dihw" containerData="2323" selectedElement="_paV3iQ5yEe-FJ-Www2dihw">
               <children xsi:type="basic:PartStack" xmi:id="_paV3hw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosViewMStack" containerData="5912" selectedElement="_paV3iA5yEe-FJ-Www2dihw">
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_paV3iA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView" ref="_paWexA5yEe-FJ-Www2dihw"/>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_paV3iQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryViewMStack" containerData="4088" selectedElement="_paV3ig5yEe-FJ-Www2dihw">
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_paV3ig5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView" ref="_paWe7A5yEe-FJ-Www2dihw"/>
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_paV3iw5yEe-FJ-Www2dihw" containerData="7677" selectedElement="_paV3jQ5yEe-FJ-Www2dihw" horizontal="true">
               <children xsi:type="advanced:Placeholder" xmi:id="_paV3jA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editorss" toBeRendered="false" containerData="3300" ref="_paWewg5yEe-FJ-Www2dihw"/>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_paV3jQ5yEe-FJ-Www2dihw" containerData="6700">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_paV3jQ5yEe-FJ-Www2dihw" containerData="6700" selectedElement="_paWekw5yEe-FJ-Www2dihw">
                 <children xsi:type="basic:PartStack" xmi:id="_paV3jg5yEe-FJ-Www2dihw" elementId="scenarioFolder" toBeRendered="false" containerData="8094">
                   <children xsi:type="advanced:Placeholder" xmi:id="_paV3jw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:0" toBeRendered="false" ref="_paWfGA5yEe-FJ-Www2dihw"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_paV3kA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:1" toBeRendered="false" ref="_paXFrA5yEe-FJ-Www2dihw"/>
@@ -90,6 +88,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_paWekg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica-Mappable Data" toBeRendered="false" ref="_paXF5w5yEe-FJ-Www2dihw"/>
                 </children>
                 <children xsi:type="basic:PartStack" xmi:id="_paWekw5yEe-FJ-Www2dihw" elementId="PartStack@3b399f5a" containerData="1906" selectedElement="_paWelA5yEe-FJ-Www2dihw">
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_paWelA5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView" ref="_paXF0g5yEe-FJ-Www2dihw"/>
                 </children>
               </children>
@@ -137,8 +136,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Ergo EQ</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_paWexQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -538,6 +535,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Debug</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_paXF0w5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>

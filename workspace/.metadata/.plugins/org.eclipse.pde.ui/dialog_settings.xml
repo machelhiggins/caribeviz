@@ -76,12 +76,13 @@
 	<section name="ProductExportWizard">
 		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_20240513" key="destination0"/>
 		<item value="true" key="syncProduct"/>
-		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220606\caribeviz" key="destination1"/>
-		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ" key="destination4"/>
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_20240513" key="destination1"/>
+		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ\caribeviz" key="destination4"/>
+		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ" key="destination5"/>
 		<item value="Generate source bundles" key="exportSourceFormat"/>
-		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220426\caribeviz" key="destination2"/>
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220606\caribeviz" key="destination2"/>
 		<item value="caribeviz" key="productRoot"/>
-		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ\caribeviz" key="destination3"/>
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220426\caribeviz" key="destination3"/>
 		<item value="/edu.illinois.ncsa.ergo.eq.rcp/caribeviz.product" key="productConfig0"/>
 		<item value="false" key="exportSource"/>
 		<item value="true" key="exportDirectory"/>
