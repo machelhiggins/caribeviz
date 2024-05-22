@@ -4264,3 +4264,6 @@ java.lang.Exception: Stack Trace
 
 !ENTRY org.eclipse.ui.monitoring 2 0 2024-05-21 23:31:23.316
 !MESSAGE UI freeze of 0.90s at 23:31:22.416
+
+!ENTRY org.eclipse.ui.monitoring 2 0 2024-05-21 23:40:30.641
+!MESSAGE UI freeze of 0.58s at 23:40:30.064
