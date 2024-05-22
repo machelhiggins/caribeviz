@@ -9,7 +9,13 @@ Ergo is an open source implementation of HAZUS. CaribEViz was developed to work 
 5. UWI Casualities (using the EKACDM methodology)
 6. Shelter Post-Earthquake Capacity
 7. Healthcare Facility Post-Earthquake Capacity
-A manuscript is being prepared for Natural Hazards that will describe the methodologies implemented in CaribEViz.
-Ergo will soon be moved
 
-The software and any resulting analyses is offered as is. CaribEViz is licensed under the GNU General Public License.
+A manuscript is being prepared for Natural Hazards that will detail the methodologies implemented in CaribEViz.
+
+Developement of CaribEViz is on needs basis or bug fixing. 
+
+Ergo currently requires Eclipse RCP Mars and the ancient geotools v14. Efforts will be made in the near future to upgrade Ergo (FYI Ergo will soon be moved to [github](https://github.com/ncsa)). Bug fixes and improvements made to Ergo source will then be merged and CaribEViz will be updated to the latest geotools. In the meantime the development environment (including packages from Maven repositories) and workspace are included here. This is anethema to Eclipse RCP development. After cloning this project run the executable com.machelhiggins.SetupCaribEvizWorkspace that will fix workspace classpaths and move the relevant sundry.
+
+If you want to get running, download any of the install binaries under installs. 
+
+CaribEViz code and any resulting analyses is offered as is. CaribEViz is licensed under the GNU General Public License.  Ergo is provided under the terms and conditions of the Mozilla Public License, Version 2.0.
