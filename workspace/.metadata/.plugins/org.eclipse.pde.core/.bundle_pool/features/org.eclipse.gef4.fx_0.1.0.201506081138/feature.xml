@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.fx"
+      label="GEF4 FX"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF"
+      plugin="org.eclipse.gef4.fx">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gef4.geometry" version="0.1.0" match="equivalent"/>
+      <import feature="org.eclipse.gef4.geometry.convert.fx" version="0.1.0" match="equivalent"/>
+      <import feature="org.eclipse.gef4.common" version="0.1.0" match="equivalent"/>
+      <import feature="org.eclipse.fx.runtime.min.feature" version="2.0.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava" version="12.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.gef4.fx"
+         download-size="112"
+         install-size="219"
+         version="0.1.0.201506081138"
+         unpack="false"/>
+
+</feature>

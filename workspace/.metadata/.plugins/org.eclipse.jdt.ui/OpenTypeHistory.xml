@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=com.uwiseismic.ergo.buildingclassificaton/src&lt;com.uwiseismic.ergo.analysis.efacility{ShelterFacilityOccupancyTask.java[ShelterFacilityOccupancyTask" modifiers="1" timestamp="1715311135789"/>
+<typeInfo handle="=com.uwiseismic.modifiedmappane.mapaware/src&lt;com.uwiseismic.modifiedmappane.mapaware{Activator.java[Activator" modifiers="1" timestamp="1461797039815"/>
+<typeInfo handle="=com.uwiseismic.gis.location.tobago/src&lt;com.uwiseismic.gis.location.tobago.osgi{Activator.java[Activator" modifiers="1" timestamp="1464044776864"/>
+<typeInfo handle="=com.uwiseismic.gis.location.tobago/src&lt;com.uwiseismic.gis.location.tobago{Tobago.java[Tobago" modifiers="1" timestamp="1464144666256"/>
+<typeInfo handle="=com.uwiseismic.gis.location.tobago/src&lt;com.uwiseismic.gis.location.tobago{TobagoLocationFactory.java[TobagoLocationFactory" modifiers="1" timestamp="1464122580926"/>
+<typeInfo handle="=com.uwiseismic.gis.location.trinidad/src&lt;com.uwiseismic.gis.location.trinidad{Trinidad.java[Trinidad" modifiers="1" timestamp="1464144681156"/>
+<typeInfo handle="=com.uwiseismic.gis.location.trinidad/src&lt;com.uwiseismic.gis.location.trinidad{TrinidadLocationFactory.java[TrinidadLocationFactory" modifiers="1" timestamp="1464126241439"/>
+<typeInfo handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{Jamaica.java[Jamaica" modifiers="1" timestamp="1464044455486"/>
+<typeInfo handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{JamaicaLocationFactory.java[JamaicaLocationFactory" modifiers="1" timestamp="1464044490228"/>
+<typeInfo handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{Dominica.java[Dominica" modifiers="1" timestamp="1611874996602"/>
+<typeInfo handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{DominicaLocationFactory.java[DominicaLocationFactory" modifiers="1" timestamp="1714097976342"/>
+</typeInfoHistroy>

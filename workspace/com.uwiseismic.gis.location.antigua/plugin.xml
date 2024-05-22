@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.antigua.Antigua"
+            id="ncsa.gis.location.antigua.Antigua"
+            name="Antigua"
+            tag="Antigua">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.antigua.AntiguaLocationFactory"
+            id="ncsa.gis.location.antigua.Antigua"
+            name="Antigua Location Factory"
+            tag="Antigua">
+      </locationFactory>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationCountries">
+      <locationCountry
+            class="com.uwiseismic.gis.location.antigua.Country1"
+            id="ncsa.gis.location.antigua.Antigua"
+            name="ncsa.gis.location.antigua.Antigua"
+            tag="Antigua">
+      </locationCountry>
+   </extension>
+
+</plugin>

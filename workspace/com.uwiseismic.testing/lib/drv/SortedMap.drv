@@ -1,0 +1,244 @@
+/*
+ * Copyright (C) 2002-2024 Sebastiano Vigna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+package PACKAGE;
+
+#if KEY_INDEX != VALUE_INDEX && !(KEYS_REFERENCE && VALUES_REFERENCE)
+import VALUE_PACKAGE.VALUE_COLLECTION;
+#endif
+
+import java.util.Map;
+import java.util.SortedMap;
+
+#if KEYS_REFERENCE
+import java.util.Comparator;
+#else
+import it.unimi.dsi.fastutil.objects.ObjectSortedSet;
+import it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator;
+#endif
+
+/** A type-specific {@link SortedMap}; provides some additional methods that use polymorphism to avoid (un)boxing.
+ *
+ * <p>Additionally, this interface strengthens {@link #entrySet()},
+ * {@link #keySet()}, {@link #values()},
+ * {@link #comparator()}, {@link SortedMap#subMap(Object,Object)}, {@link SortedMap#headMap(Object)} and {@link SortedMap#tailMap(Object)}.
+ *
+ * @see SortedMap
+ */
+
+public interface SORTED_MAP KEY_VALUE_GENERIC extends MAP KEY_VALUE_GENERIC, SortedMap<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS> {
+
+	/** Returns a view of the portion of this sorted map whose keys range from {@code fromKey}, inclusive, to {@code toKey}, exclusive.
+	 *
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#subMap(Object,Object)}.
+	 *
+	 * @see SortedMap#subMap(Object,Object)
+	 */
+#if KEYS_REFERENCE
+	@Override
+#endif
+	SORTED_MAP KEY_VALUE_GENERIC subMap(KEY_GENERIC_TYPE fromKey, KEY_GENERIC_TYPE toKey);
+
+	/** Returns a view of the portion of this sorted map whose keys are strictly less than {@code toKey}.
+	 *
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#headMap(Object)}.
+	 *
+	 * @see SortedMap#headMap(Object)
+	 */
+#if KEYS_REFERENCE
+	@Override
+#endif
+	SORTED_MAP KEY_VALUE_GENERIC headMap(KEY_GENERIC_TYPE toKey);
+
+	/** Returns a view of the portion of this sorted map whose keys are greater than or equal to {@code fromKey}.
+	 *
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#tailMap(Object)}.
+	 *
+	 * @see SortedMap#tailMap(Object)
+	 */
+#if KEYS_REFERENCE
+	@Override
+#endif
+	SORTED_MAP KEY_VALUE_GENERIC tailMap(KEY_GENERIC_TYPE fromKey);
+
+#if KEYS_PRIMITIVE
+
+	/** Returns the first (lowest) key currently in this map.
+	 * @see SortedMap#firstKey()
+	 */
+	KEY_GENERIC_TYPE FIRST_KEY();
+
+	/** Returns the last (highest) key currently in this map.
+	 * @see SortedMap#lastKey()
+	 */
+	KEY_GENERIC_TYPE LAST_KEY();
+
+	/** {@inheritDoc}
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#subMap(Object,Object)}.
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	default SORTED_MAP KEY_VALUE_GENERIC subMap(final KEY_GENERIC_CLASS from, final KEY_GENERIC_CLASS to) {
+		return subMap(KEY_CLASS2TYPE(from), KEY_CLASS2TYPE(to));
+	}
+
+	/** {@inheritDoc}
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#headMap(Object)}.
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	default SORTED_MAP KEY_VALUE_GENERIC headMap(final KEY_GENERIC_CLASS to) {
+		return headMap(KEY_CLASS2TYPE(to));
+	}
+
+	/** {@inheritDoc}
+	 * @apiNote Note that this specification strengthens the one given in {@link SortedMap#tailMap(Object)}.
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	default SORTED_MAP KEY_VALUE_GENERIC tailMap(final KEY_GENERIC_CLASS from) {
+		return tailMap(KEY_CLASS2TYPE(from));
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	default KEY_GENERIC_CLASS firstKey() {
+		return KEY2OBJ(FIRST_KEY());
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	default KEY_GENERIC_CLASS lastKey() {
+		return KEY2OBJ(LAST_KEY());
+	}
+#endif
+
+
+	/** A sorted entry set providing fast iteration.
+	 *
+	 * <p>In some cases (e.g., hash-based classes) iteration over an entry set requires the creation
+	 * of a large number of entry objects. Some {@code fastutil}
+	 * maps might return {@linkplain #entrySet() entry set} objects of type {@code FastSortedEntrySet}: in this case, {@link #fastIterator() fastIterator()}
+	 * will return an iterator that is guaranteed not to create a large number of objects, <em>possibly
+	 * by returning always the same entry</em> (of course, mutated).
+	 */
+	interface FastSortedEntrySet KEY_VALUE_GENERIC extends ObjectSortedSet<MAP.Entry KEY_VALUE_GENERIC>, FastEntrySet KEY_VALUE_GENERIC {
+		/** {@inheritDoc}
+		 */
+		@Override
+		ObjectBidirectionalIterator<MAP.Entry KEY_VALUE_GENERIC> fastIterator();
+
+
+		/** Returns a fast iterator over this entry set, starting from a given element of the domain (optional operation);
+		 * the iterator might return always the same entry instance, suitably mutated.
+		 *
+		 * @param from an element to start from.
+		 * @return a fast iterator over this sorted entry set starting at {@code from}; the iterator might return always the same entry object, suitably mutated.
+		 */
+		ObjectBidirectionalIterator<MAP.Entry KEY_VALUE_GENERIC> fastIterator(MAP.Entry KEY_VALUE_GENERIC from);
+	}
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+	/** Returns a sorted-set view of the mappings contained in this map.
+	 * 
+	 * @apiNote Note that this specification strengthens the one given in the
+	 *  corresponding type-specific unsorted map.
+	 *
+	 * @return a sorted-set view of the mappings contained in this map.
+	 * @see SortedMap#entrySet()
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Deprecated
+	@Override
+	default ObjectSortedSet<Map.Entry<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS>> entrySet() {
+		return (ObjectSortedSet)ENTRYSET();
+	}
+#else
+	/** Returns a sorted-set view of the mappings contained in this map.
+	 *
+	 * @apiNote Note that this specification strengthens the one given in the
+	 *  corresponding type-specific unsorted map.
+	 *
+	 * @return a sorted-set view of the mappings contained in this map.
+	 * @see Map#entrySet()
+	 */
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
+	default ObjectSortedSet<Map.Entry<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS>> entrySet() {
+		return (ObjectSortedSet)ENTRYSET();
+	}
+#endif
+
+	/** Returns a type-specific sorted-set view of the mappings contained in this map.
+	 * 
+	 * @apiNote Note that this specification strengthens the one given in the
+	 * corresponding type-specific unsorted map.
+	 *
+	 * @return a type-specific sorted-set view of the mappings contained in this map.
+	 * @see #entrySet()
+	 */
+
+	@Override
+	ObjectSortedSet<MAP.Entry KEY_VALUE_GENERIC> ENTRYSET();
+
+	/** Returns a type-specific sorted-set view of the keys contained in this map.
+	 * 
+	 * @apiNote Note that this specification strengthens the one given in the
+	 *  corresponding type-specific unsorted map.
+	 *
+	 * @return a sorted-set view of the keys contained in this map.
+	 * @see SortedMap#keySet()
+	 */
+
+	@Override
+	SORTED_SET KEY_GENERIC keySet();
+
+	/** Returns a type-specific set view of the values contained in this map.
+	 * 
+	 * @apiNote Note that this specification strengthens the one given in {@link Map#values()},
+	 * which was already strengthened in the corresponding type-specific class,
+	 * but was weakened by the fact that this interface extends {@link SortedMap}.
+	 *
+	 * @return a set view of the values contained in this map.
+	 * @see SortedMap#values()
+	 */
+
+	@Override
+	VALUE_COLLECTION VALUE_GENERIC values();
+
+	/** Returns the comparator associated with this sorted set, or null if it uses its keys' natural ordering.
+	 *
+	 *  @apiNote Note that this specification strengthens the one given in {@link SortedMap#comparator()}.
+	 *
+	 * @see SortedMap#comparator()
+	 */
+
+	@Override
+	KEY_COMPARATOR KEY_SUPER_GENERIC comparator();
+}

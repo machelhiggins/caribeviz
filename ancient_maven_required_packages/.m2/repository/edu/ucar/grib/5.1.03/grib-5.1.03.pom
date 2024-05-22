@@ -1,0 +1,17 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.ucar</groupId>
+  <artifactId>grib</artifactId>
+  <version>5.1.03</version>
+  <packaging>jar</packaging>
+  <name>GRIB format</name>
+  <url>http://www.unidata.ucar.edu/software/netcdf-java/</url>
+  <description>GRIB format.</description>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License (LGPL)</name>
+      <url>http://www.gnu.org/copyleft/lesser.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+</project>

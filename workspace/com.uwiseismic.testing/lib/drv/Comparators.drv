@@ -1,0 +1,140 @@
+/*
+ * Copyright (C) 2003-2024 Paolo Boldi and Sebastiano Vigna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+package PACKAGE;
+
+import java.util.Comparator;
+
+/** A class providing static methods and objects that do useful things with comparators.
+ */
+
+public final class COMPARATORS {
+
+	private COMPARATORS() {}
+
+	/** A type-specific comparator mimicking the natural order. */
+#if KEYS_REFERENCE
+	SUPPRESS_WARNINGS_KEY_UNCHECKED_RAWTYPES
+	protected static class NaturalImplicitComparator implements Comparator, java.io.Serializable {
+#else
+	protected static class NaturalImplicitComparator implements KEY_COMPARATOR KEY_GENERIC, java.io.Serializable {
+#endif
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public final int compare(final KEY_TYPE a, final KEY_TYPE b) {
+#if KEYS_PRIMITIVE
+			return KEY_CMP(a, b);
+#else
+			return ((Comparable)a).compareTo(b);
+#endif
+		}
+
+		@Override
+		public KEY_COMPARATOR reversed() { return OPPOSITE_COMPARATOR; }
+		
+		private Object readResolve() { return NATURAL_COMPARATOR; }
+	};
+
+	SUPPRESS_WARNINGS_KEY_RAWTYPES
+	public static final KEY_COMPARATOR NATURAL_COMPARATOR = new NaturalImplicitComparator();
+
+	/** A type-specific comparator mimicking the opposite of the natural order. */
+#if KEYS_REFERENCE
+	SUPPRESS_WARNINGS_KEY_UNCHECKED_RAWTYPES
+	protected static class OppositeImplicitComparator implements Comparator, java.io.Serializable {
+#else
+	protected static class OppositeImplicitComparator implements KEY_COMPARATOR KEY_GENERIC, java.io.Serializable {
+#endif
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public final int compare(final KEY_TYPE a, final KEY_TYPE b) {
+#if KEYS_PRIMITIVE
+			return - KEY_CMP(a, b);
+#else
+			return ((Comparable)b).compareTo(a);
+#endif
+		}
+		@Override
+		public KEY_COMPARATOR reversed() { return NATURAL_COMPARATOR; }
+
+		private Object readResolve() { return OPPOSITE_COMPARATOR; }
+	};
+
+	SUPPRESS_WARNINGS_KEY_RAWTYPES
+	public static final KEY_COMPARATOR OPPOSITE_COMPARATOR = new OppositeImplicitComparator();
+
+#if KEYS_REFERENCE
+	protected static class OppositeComparator KEY_GENERIC implements Comparator KEY_GENERIC, java.io.Serializable {
+#else
+	protected static class OppositeComparator KEY_GENERIC implements KEY_COMPARATOR KEY_GENERIC, java.io.Serializable {
+#endif
+		private static final long serialVersionUID = 1L;
+
+		final KEY_COMPARATOR KEY_GENERIC comparator;
+
+		protected OppositeComparator(final KEY_COMPARATOR KEY_GENERIC c) { comparator = c; }
+
+		@Override
+		public final int compare(final KEY_GENERIC_TYPE a, final KEY_GENERIC_TYPE b) { return comparator.compare(b, a); }
+
+		@Override
+		public final KEY_COMPARATOR KEY_GENERIC reversed() { return comparator; }
+	};
+
+	/** Returns a comparator representing the opposite order of the given comparator.
+	 *
+	 * @param c a comparator.
+	 * @return a comparator representing the opposite order of {@code c}.
+	 */
+	public static KEY_GENERIC KEY_COMPARATOR KEY_GENERIC oppositeComparator(final KEY_COMPARATOR KEY_GENERIC c) {
+		if (c instanceof OppositeComparator) return ((OppositeComparator KEY_GENERIC)c).comparator;
+		return new OppositeComparator KEY_GENERIC_DIAMOND(c);
+	}
+
+#if KEYS_PRIMITIVE
+	/** Returns a type-specific comparator that is equivalent to the given comparator.
+	 *
+	 * @param c a comparator, or {@code null}.
+	 * @return a type-specific comparator representing the order of {@code c}.
+	 */
+	public static KEY_COMPARATOR AS_KEY_COMPARATOR(final Comparator<? super KEY_GENERIC_CLASS> c) {
+		if (c == null || c instanceof KEY_COMPARATOR) return (KEY_COMPARATOR) c;
+
+		return new KEY_COMPARATOR() {
+				@Override
+				public int compare(KEY_GENERIC_TYPE x, KEY_GENERIC_TYPE y) { return c.compare(KEY2OBJ(x), KEY2OBJ(y)); }
+				@SuppressWarnings("deprecation")
+				@Override
+				public int compare(KEY_GENERIC_CLASS x, KEY_GENERIC_CLASS y) { return c.compare(x, y); }
+			};
+	}
+#else
+	/** Returns a the comparator given unmodified.
+	 *
+	 * This method merely serves as a way to be compatible with primtive type-specific Comparators
+	 * implementations, as they do have type-specific Comparators, but Object ones do not.
+	 *
+	 * @param c a comparator, or {@code null}.
+	 * @return {@code c}, unmodified.
+	 */
+	public static KEY_GENERIC KEY_COMPARATOR KEY_GENERIC AS_KEY_COMPARATOR(final Comparator KEY_GENERIC c) {
+		return c;
+	}
+#endif
+}

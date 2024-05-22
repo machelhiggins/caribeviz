@@ -1,0 +1,45 @@
+<analysis-description id="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancy" help-context="">
+
+	<analysis-type type="healthcareFacilitiesOccupancy">
+		<property name="iteratingDatasetKey" value="null"/>
+	</analysis-type>
+	
+	<!-- GROUPS -->
+	<groups>
+		<group-name>Required</group-name>
+		<group-name>Advanced</group-name>
+	</groups>
+	
+	<!-- INPUTS -->
+	<parameter format="resultName" phylum="string" cardinality="single" key="healthcareFacilitiesOccupancy.resultName" friendly-name="Result Name"/>
+	
+	<parameter phylum="dataset" cardinality="single" key="casualties" friendly-name="Casualties in UWI Building Inventory">
+		<types>
+			<type>buildingIndoorCasualtiesEKACDM</type>
+		</types>
+	</parameter>	
+	
+	<parameter phylum="dataset" cardinality="single" key="osmRoadNetwork" friendly-name="OSM Road Network">
+		<types>
+			<type>osmRoadNetwork</type>
+		</types>
+	</parameter>
+	
+	<parameter phylum="double" key="smallFacilityWeight" friendly-name="Small Healthcare Facility Weight (0 - 1)" default="0.50"/>
+
+	
+	<!-- OUTPUTS -->
+<!-- 	<output friendly-name="Healthcare Facility Occupancy" key="healthcareFacilitiesOccupancy" phylum="dataset" format="shapefile" geom="uwiHealthcareFacilitiesOccupancy" guids="uwiHealthcareFacilitiesOccupancy"> -->
+<!-- 		<property name="uwiHealthcareFacilitiesOccupancy" type="base-dataset-key" value="uwiHealthcareFacilitiesOccupancy"/> -->
+<!-- 		<property name="schema" type="schema" value="com.uwiseismic.ergo.analysis.efacility.healthFacilityOccupancy.v1.0"/> -->
+<!-- 	</output> -->
+	<output friendly-name="Healthcare Facility Occupancy" key="healthcareFacilitiesOccupancy" phylum="dataset" format="shapefile" geom="casualties" guids="casualties">
+        <property name="casualties" type="base-dataset-key" value="casualties"/>
+        <property name="schema" type="schema" value="com.uwiseismic.ergo.analysis.efacility.healthFacilityOccupancy.v1.0"/>
+    </output>
+	
+	<produced-types>
+		<type>healthcareFacilitiesOccupancy</type>
+	</produced-types>
+
+</analysis-description>

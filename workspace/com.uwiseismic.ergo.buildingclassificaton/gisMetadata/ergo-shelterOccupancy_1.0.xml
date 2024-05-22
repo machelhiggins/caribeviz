@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+	<column-metadata column-id="lat" friendly-name="Injuries Requiring Basic Medical Aid" is-result="true" is-numeric="true" agg-type="sum" importance="user" field-length="10" />
+	<column-metadata column-id="lon" friendly-name="Injuries Requiring Greater Medical Care" is-result="true" is-numeric="true" importance="mainValue" agg-type="sum" field-length="10" />	
+	<column-metadata column-id="efacil_nam" friendly-name="Emergency Facility Name" is-numeric="false" importance="summary" field-length="10" />
+	<column-metadata column-id="max_occ" friendly-name="Maximum Occupancy of Facility" is-result="false" is-numeric="true" importance="user" agg-type="sum" field-length="10" />	
+	<column-metadata column-id="occ" friendly-name="Occupancy of Facility After Earthquake Hazard" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />	
+	<column-metadata column-id="over_cap" friendly-name="Over-Capacity of Facility After Earthquake Hazard" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />	
+</table-metadata>

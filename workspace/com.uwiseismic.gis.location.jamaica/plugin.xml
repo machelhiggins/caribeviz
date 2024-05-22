@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationFactories">
+      <locationFactory
+            class="com.uwiseismic.gis.location.jamaica.JamaicaLocationFactory"
+            id="com.uwiseismic.gis.location.jamaica.Jamaica"
+            name="Jamaica Location Factory"
+            tag="com.uwiseismic.gis.location.jamaica.Jamaica">
+      </locationFactory>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationCountries">
+      <locationCountry
+            class="com.uwiseismic.gis.location.jamaica.Jamaica"
+            id="com.uwiseismic.gis.location.jamaica.Jamaica"
+            name="Jamaica"
+            tag="com.uwiseismic.gis.location.jamaica.Jamaica">
+      </locationCountry>
+   </extension>
+
+</plugin>

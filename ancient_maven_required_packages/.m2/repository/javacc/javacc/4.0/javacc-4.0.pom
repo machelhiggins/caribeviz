@@ -1,0 +1,13 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javacc</groupId>
+  <artifactId>javacc</artifactId>
+  <version>4.0</version>
+
+  <distributionManagement>
+    <relocation>
+      <groupId>net.java.dev.javacc</groupId>
+    </relocation>
+  </distributionManagement>
+
+</project>

@@ -1,0 +1,993 @@
+!SESSION 2016-09-08 21:50:37.364 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_TT
+Framework arguments:  -application org.eclipse.ui.ide.workbench
+Command-line arguments:  -application org.eclipse.ui.ide.workbench -data C:\Projects\ERGO\workspace/../runtime-com.uwiseismic.modifiedmappane.v3.application -dev file:C:/Projects/ERGO/workspace/.metadata/.plugins/org.eclipse.pde.core/com.uwiseismic.modifiedmappane.v3.application/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY com.uwiseismic.modifiedmappane.mapaware 4 0 2016-09-08 21:50:39.036
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.modifiedmappane.mapaware [4]
+  Unresolved requirement: Require-Bundle: org.geotools14; bundle-version="14.1.0"
+    -> Bundle-SymbolicName: org.geotools14; bundle-version="14.1.0.qualifier"; singleton:="true"
+       org.geotools14 [110]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+              org.eclipse.ui [106]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+                     org.eclipse.ui.workbench [109]
+                       Unresolved requirement: Import-Package: com.ibm.icu.text
+                         -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                       Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                         -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                            org.eclipse.e4.ui.workbench [67]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                                   org.eclipse.e4.ui.model.workbench [64]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                       -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                          org.eclipse.e4.emf.xpath [58]
+                                            Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                       Unresolved requirement: Import-Package: com.ibm.icu.util
+                         -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.modifiedmappane.v4 4 0 2016-09-08 21:50:39.076
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.modifiedmappane.v4 [5]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis 4 0 2016-09-08 21:50:39.077
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis [6]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [14]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.geotools.ui 4 0 2016-09-08 21:50:39.078
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.geotools.ui [7]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.ui 4 0 2016-09-08 21:50:39.079
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.ui [8]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.eclipse.core 4 0 2016-09-08 21:50:39.080
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.eclipse.core [13]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common 4 0 2016-09-08 21:50:39.081
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common [14]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common.eclipse 4 0 2016-09-08 21:50:39.082
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common.eclipse [15]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [14]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.model.workbench 4 0 2016-09-08 21:50:39.107
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.model.workbench [64]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+    -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+       org.eclipse.e4.emf.xpath [58]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2016-09-08 21:50:39.109
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench [67]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [64]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+           -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+              org.eclipse.e4.emf.xpath [58]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 4 0 2016-09-08 21:50:39.110
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [68]
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.swt
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench.swt; bundle-symbolic-name="org.eclipse.e4.ui.workbench.swt"; bundle-version="0.13.0.v20150504-0621"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.addons.swt,org.eclipse.e4.ui.workbench.renderers.swt,org.eclipse.ui.workbench"
+       org.eclipse.e4.ui.workbench.swt [70]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+              org.eclipse.e4.ui.workbench [67]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [64]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                         -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                            org.eclipse.e4.emf.xpath [58]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 4 0 2016-09-08 21:50:39.112
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [69]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 0 2016-09-08 21:50:39.113
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.swt [70]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.p2.ui 4 0 2016-09-08 21:50:39.123
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.ui [90]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="3.107.0"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.security.ui 4 0 2016-09-08 21:50:39.125
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.security.ui [94]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 4 0 2016-09-08 21:50:39.127
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui [106]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+       org.eclipse.ui.workbench [109]
+         Unresolved requirement: Import-Package: com.ibm.icu.text
+           -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+              org.geotools14 [110]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                Unresolved requirement: Require-Bundle: org.eclipse.ui
+                  -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+         Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+           -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+              org.eclipse.e4.ui.workbench [67]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [64]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                         -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                            org.eclipse.e4.emf.xpath [58]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+         Unresolved requirement: Import-Package: com.ibm.icu.util
+           -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui.trace 4 0 2016-09-08 21:50:39.128
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.trace [108]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.6.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2016-09-08 21:50:39.130
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.workbench [109]
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [110]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+              org.eclipse.ui [106]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+  Unresolved requirement: Import-Package: com.ibm.icu.util
+    -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.geotools14 4 0 2016-09-08 21:50:39.131
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.geotools14 [110]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.emf.xpath 2 0 2016-09-08 21:50:39.363
+!MESSAGE Could not resolve module: org.eclipse.e4.emf.xpath [58]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY ncsa.tools.common.eclipse 2 0 2016-09-08 21:50:39.364
+!MESSAGE Could not resolve module: ncsa.tools.common.eclipse [15]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [14]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 2 0 2016-09-08 21:50:39.365
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.swt [70]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY org.geotools14 2 0 2016-09-08 21:50:39.365
+!MESSAGE Could not resolve module: org.geotools14 [110]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY org.eclipse.ui.trace 2 0 2016-09-08 21:50:39.366
+!MESSAGE Could not resolve module: org.eclipse.ui.trace [108]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.6.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY ncsa.tools.common 2 0 2016-09-08 21:50:39.367
+!MESSAGE Could not resolve module: ncsa.tools.common [14]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY org.eclipse.ui 2 0 2016-09-08 21:50:39.368
+!MESSAGE Could not resolve module: org.eclipse.ui [106]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+       org.eclipse.ui.workbench [109]
+         Unresolved requirement: Import-Package: com.ibm.icu.text
+           -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+              org.geotools14 [110]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                Unresolved requirement: Require-Bundle: org.eclipse.ui
+                  -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+         Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+           -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+              org.eclipse.e4.ui.workbench [67]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [64]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                         -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                            org.eclipse.e4.emf.xpath [58]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+         Unresolved requirement: Import-Package: com.ibm.icu.util
+           -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY ncsa.eclipse.core 2 0 2016-09-08 21:50:39.369
+!MESSAGE Could not resolve module: ncsa.eclipse.core [13]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis 2 0 2016-09-08 21:50:39.370
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis [6]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [14]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY org.eclipse.ui.workbench 2 0 2016-09-08 21:50:39.370
+!MESSAGE Could not resolve module: org.eclipse.ui.workbench [109]
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [110]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+              org.eclipse.ui [106]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+  Unresolved requirement: Import-Package: com.ibm.icu.util
+    -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.geotools.ui 2 0 2016-09-08 21:50:39.371
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.geotools.ui [7]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 2 0 2016-09-08 21:50:39.372
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [68]
+  Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench.swt
+    -> Export-Package: org.eclipse.e4.ui.internal.workbench.swt; bundle-symbolic-name="org.eclipse.e4.ui.workbench.swt"; bundle-version="0.13.0.v20150504-0621"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.addons.swt,org.eclipse.e4.ui.workbench.renderers.swt,org.eclipse.ui.workbench"
+       org.eclipse.e4.ui.workbench.swt [70]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.10.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+              org.eclipse.e4.ui.workbench [67]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                     org.eclipse.e4.ui.model.workbench [64]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                         -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                            org.eclipse.e4.emf.xpath [58]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY com.uwiseismic.modifiedmappane.mapaware 2 0 2016-09-08 21:50:39.373
+!MESSAGE Could not resolve module: com.uwiseismic.modifiedmappane.mapaware [4]
+  Unresolved requirement: Require-Bundle: org.geotools14; bundle-version="14.1.0"
+    -> Bundle-SymbolicName: org.geotools14; bundle-version="14.1.0.qualifier"; singleton:="true"
+       org.geotools14 [110]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+              org.eclipse.ui [106]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+                     org.eclipse.ui.workbench [109]
+                       Unresolved requirement: Import-Package: com.ibm.icu.text
+                         -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                       Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                         -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                            org.eclipse.e4.ui.workbench [67]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                                   org.eclipse.e4.ui.model.workbench [64]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                       -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                          org.eclipse.e4.emf.xpath [58]
+                                            Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                       Unresolved requirement: Import-Package: com.ibm.icu.util
+                         -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.ui 2 0 2016-09-08 21:50:39.374
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.ui [8]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 2 0 2016-09-08 21:50:39.375
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [69]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.workbench; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.workbench; bundle-version="1.3.1.v20160203-0951"; singleton:="true"
+       org.eclipse.e4.ui.workbench [67]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+              org.eclipse.e4.ui.model.workbench [64]
+                Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                  -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                     org.eclipse.e4.emf.xpath [58]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2016-09-08 21:50:39.376
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench [67]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+       org.eclipse.e4.ui.model.workbench [64]
+         Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+           -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+              org.eclipse.e4.emf.xpath [58]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY org.eclipse.e4.ui.model.workbench 2 0 2016-09-08 21:50:39.376
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.model.workbench [64]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+    -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+       org.eclipse.e4.emf.xpath [58]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+
+
+!ENTRY org.eclipse.equinox.p2.ui 2 0 2016-09-08 21:50:39.377
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.ui [90]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="3.107.0"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY com.uwiseismic.modifiedmappane.v4 2 0 2016-09-08 21:50:39.378
+!MESSAGE Could not resolve module: com.uwiseismic.modifiedmappane.v4 [5]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY org.eclipse.equinox.security.ui 2 0 2016-09-08 21:50:39.379
+!MESSAGE Could not resolve module: org.eclipse.equinox.security.ui [94]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+       org.eclipse.ui [106]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench; bundle-version="[3.105.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.ui.workbench; bundle-version="3.107.1.v20160120-2131"; singleton:="true"
+              org.eclipse.ui.workbench [109]
+                Unresolved requirement: Import-Package: com.ibm.icu.text
+                  -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+                     org.geotools14 [110]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+                       Unresolved requirement: Require-Bundle: org.eclipse.ui
+                         -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.107.0.v20150507-1945"; singleton:="true"
+                Unresolved requirement: Import-Package: org.eclipse.e4.ui.internal.workbench
+                  -> Export-Package: org.eclipse.e4.ui.internal.workbench; bundle-symbolic-name="org.eclipse.e4.ui.workbench"; bundle-version="1.3.1.v20160203-0951"; version="0.0.0"; x-friends:="org.eclipse.e4.ui.workbench.fragment,  org.eclipse.e4.ui.workbench.renderers.swt,  org.eclipse.e4.ui.workbench.swt,  org.eclipse.ui.workbench,  org.eclipse.ui.ide.application,  org.eclipse.ui.ide"
+                     org.eclipse.e4.ui.workbench [67]
+                       Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.model.workbench; bundle-version="1.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.e4.ui.model.workbench; bundle-version="1.1.100.v20150407-1430"; singleton:="true"
+                            org.eclipse.e4.ui.model.workbench [64]
+                              Unresolved requirement: Require-Bundle: org.eclipse.e4.emf.xpath; bundle-version="0.1.100"
+                                -> Bundle-SymbolicName: org.eclipse.e4.emf.xpath; bundle-version="0.1.100.v20150513-0856"
+                                   org.eclipse.e4.emf.xpath [58]
+                                     Unresolved requirement: Require-Bundle: org.apache.commons.jxpath; bundle-version="1.2.0"
+                Unresolved requirement: Import-Package: com.ibm.icu.util
+                  -> Export-Package: com.ibm.icu.util; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY org.eclipse.osgi 4 0 2016-09-08 21:50:39.379
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: Application "org.eclipse.ui.ide.workbench" could not be found in the registry. The applications available are: org.eclipse.ant.core.antRunner, org.eclipse.equinox.app.error.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:248)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)

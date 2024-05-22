@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.apache.commons" modificationStamp="755193" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.beanutils"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.comparators"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.jdk"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.list"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.cli"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.bag"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.math"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.resource"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.builder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.time"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.logging"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.bidimap"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.tools"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.beanutils.locale"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.beanutils.converters"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.logging.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.resource.names"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.mutable"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.ant"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.beanutils.locale.converters"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.buffer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.enums"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.functors"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.resource.classes"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.exception"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.lang.text"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.keyvalue"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.set"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.discovery.log"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.collection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.map"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons/&lt;org.apache.commons.collections.iterators"/>
+    </package>
+</component>

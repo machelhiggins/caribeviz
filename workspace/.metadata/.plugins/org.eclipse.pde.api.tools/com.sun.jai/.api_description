@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="com.sun.jai" modificationStamp="5490" version="1.2">
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.wbmp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/mlibwrapper_jai.jar&lt;com.sun.medialib.mlib"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.remote"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.jpeg2000"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.codestream.reader"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.jp2k"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.roi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.registry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.quantization"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.image.input"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.g4fax"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.roi.encoder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.image.invcomptransf"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageio.plugins.jpeg2000"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.png"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.jai.operator"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/src&lt;com.sun.jai"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.codestream"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.wavelet.analysis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.gif"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.mlib"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.fileformat"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.jiio"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.common"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.clib"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.g3fax"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageio.stream"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.decoder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.widget"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageio.plugins.bmp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_codec.jar&lt;com.sun.media.jai.codecimpl.fpx"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_codec.jar&lt;com.sun.media.jai.codecimpl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.iterator"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.codestream.writer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.fileformat.reader"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.raw"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.png"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.wavelet"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.entropy.decoder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.jpeg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.tilecodec"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.widget"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.quantization.dequantizer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.tiff"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.wavelet.synthesis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.pnm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.tilecodec"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.opimage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.entropy"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.operator"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageio.plugins.pnm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.image.forwcomptransf"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/clibwrapper_jiio.jar&lt;com.sun.medialib.codec.jpeg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.plugins.bmp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageioimpl.stream"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.entropy.encoder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.jai.imageioimpl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.quantization.quantizer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;com.sun.media.imageio.plugins.tiff"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;javax.media.jai.remote"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.fileformat.writer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_codec.jar&lt;com.sun.media.jai.codec"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_codec.jar&lt;com.sun.media.jai.codecimpl.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.rmi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_core.jar&lt;com.sun.media.jai.iterator"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.sun.jai/jai_imageio.jar&lt;jj2000.j2k.io"/>
+    </package>
+</component>

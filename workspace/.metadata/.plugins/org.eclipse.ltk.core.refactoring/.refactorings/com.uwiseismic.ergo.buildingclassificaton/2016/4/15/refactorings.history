@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;fc&apos; in &apos;com.uwiseismic.ergo.roadnetwork.RoadNetworkConnectivity.DEBUGREMOVE_ME(...)&apos; to &apos;featureCollection&apos;&#x0D;&#x0A;- Original project: &apos;com.uwiseismic.ergo.buildingclassificaton&apos;&#x0D;&#x0A;- Original element: &apos;com.uwiseismic.ergo.roadnetwork.RoadNetworkConnectivity.DEBUGREMOVE_ME(MultiPolygon[]).fc&apos;&#x0D;&#x0A;- Renamed element: &apos;fc&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;fc&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.uwiseismic.ergo.roadnetwork{RoadNetworkConnectivity.java[RoadNetworkConnectivity~DEBUGREMOVE_ME~\[QMultiPolygon;@fc!13325!13386!13350!13351!QDefaultFeatureCollection;!0!false" name="featureCollection" references="true" stamp="1460065685448" version="1.0"/>
+</session>

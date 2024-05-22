@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="ncsa.tools.common" modificationStamp="63364" version="1.2">
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.exceptions"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.concurrent"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.util.bean"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.types"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.data.nio.queue"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.types.filters"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.data.resource"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.data"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.types.uri"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common/src&lt;ncsa.tools.common.comparators"/>
+    </package>
+</component>

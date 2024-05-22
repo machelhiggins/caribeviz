@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="com.uwiseismic.gis.location.jamaica" modificationStamp="1642104" version="1.2">
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica"/>
+        <type handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{Jamaica.java[Jamaica" modificationStamp="1642513" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{EnumerationDistrict.java[EnumerationDistrict" modificationStamp="1642558" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{JamaicaLocationFactory.java[JamaicaLocationFactory" modificationStamp="1642514" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica{City.java[City" modificationStamp="1642511" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.jamaica/src&lt;com.uwiseismic.gis.location.jamaica.utils"/>
+    </package>
+</component>

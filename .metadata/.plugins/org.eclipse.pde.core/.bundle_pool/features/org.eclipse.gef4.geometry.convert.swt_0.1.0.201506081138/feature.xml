@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.geometry.convert.swt"
+      label="GEF4 Geometry.Convert.SWT"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF"
+      plugin="org.eclipse.gef4.geometry.convert.swt">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gef4.geometry" version="0.1.0" match="equivalent"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.gef4.geometry.convert.swt"
+         download-size="16"
+         install-size="23"
+         version="0.1.0.201506081138"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ergo-buildingIndoorCasualties_1.0.xml&apos; to &apos;gisMetadata&apos;&#x0D;&#x0A;- Original project: &apos;edu.illinois.ncsa.ergo.eq.socialscience&apos;&#x0D;&#x0A;- Destination element: &apos;gisMetadata&apos;&#x0D;&#x0A;- Original element: &apos;ergo-buildingIndoorCasualties_1.0.xml&apos;" description="Copy file" element1="gisMetadata/ergo-buildingIndoorCasualties_1.0.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1458578935185" target="/com.uwiseismic.ergo.buildingclassificaton/gisMetadata" units="0" version="1.0"/>
+</session>

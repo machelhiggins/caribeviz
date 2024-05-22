@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="">
+	</section>
+	<section name="">
+	</section>
+	<section name="KEY_MAIN_PAGE">
+		<list key="KEY_SCENARIO_NAME">
+			<item value="Dominica 95"/>
+			<item value="Dominica 475"/>
+			<item value="Dominica 975"/>
+			<item value="Dominica 2475"/>
+			<item value="Dominica Clean"/>
+			<item value="Dominica"/>
+			<item value="CLEAN_DOM_SHELTER_TEST"/>
+			<item value="Dominica-Roseau"/>
+			<item value="TEST7"/>
+			<item value="TEST6"/>
+			<item value="TEST5"/>
+			<item value="TEST4"/>
+			<item value="TEST3"/>
+			<item value="TEST2"/>
+			<item value="TEST"/>
+		</list>
+		<list key="KEY_OPEN_RENDERER">
+			<item value="true"/>
+		</list>
+		<list key="KEY_DESCRIPTION">
+			<item value=""/>
+		</list>
+	</section>
+</section>

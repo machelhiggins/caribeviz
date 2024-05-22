@@ -1,0 +1,80 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>gsbase</groupId>
+  <artifactId>gsbase</artifactId>
+  <name>gsbase</name>
+  <version>2.0.1</version>
+  <description>A collection of java utility classes</description>
+  <url>http://gsbase.sourceforge.net</url>
+  <issueManagement>
+    <url>http://sourceforge.net/tracker/?group_id=13111</url>
+  </issueManagement>
+  <ciManagement>
+    <notifiers>
+      <notifier>
+        <address>gsbase@GargoyleSoftware.com</address>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  <inceptionYear>1998</inceptionYear>
+  <developers>
+    <developer>
+      <id>mbowler</id>
+      <name>Mike Bowler</name>
+      <email>mbowler@GargoyleSoftware.com</email>
+      <organization>Gargoyle Software Inc.</organization>
+      <roles>
+        <role>Release Manager</role>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The GSBase Software License</name>
+      <url>http://gsbase.sourceforge.net/license.html</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:cvs:ext:mbowler@cvs.gsbase.sourceforge.net:/cvsroot/gsbase:gsbase2</connection>
+    <developerConnection></developerConnection>
+    <url>http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gsbase</url>
+  </scm>
+  <organization>
+    <name>Gargoyle Software Inc.</name>
+    <url>http://www.GargoyleSoftware.com/</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>junitperf</groupId>
+      <artifactId>junitperf</artifactId>
+      <version>1.8</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://gsbase.sourceforge.net//home/groups/g/gs/gsbase/htdocs</url>
+    </site>
+  </distributionManagement>
+</project>

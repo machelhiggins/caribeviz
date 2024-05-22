@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Analyses" >
+		<topic label="Overview">
+			<topic label="Analysis Dependency Graph" href="help/analysisGraph/Analysis_Dependency.html"/>
+			<topic label="Analysis Development guide" href="help/analyses/developingNewAnalyses.html"/>
+		</topic>
+		<topic label="Workflow Overview Diagrams">
+			<topic label="Bridge-related Workflow Overview Diagram" href="help/workflowDiagrams/Bridge_Workflow_Diagram.html"/>
+			<topic label="Building-related Workflow Overview Diagram" href="help/workflowDiagrams/Building_Workflow_Diagram.html"/>
+		</topic>
+		<topic label="Bridges">
+			<topic label="Bridge Workflow Overview Diagram" href="help/workflowDiagrams/Bridge_Workflow_Diagram.html"/>
+			<topic label="Cost-Benefit Analysis" href="help/analyses/bridgeCostBenefit.html"/>
+			<topic label="Damage" href="help/analyses/bridge_damage.html"/>
+			<topic label="Functionality" href="help/analyses/BridgeFunctionality/BridgeFunctionalityReference.html"/>
+			<topic label="Repair Costs" href="help/analyses/BridgeRepairCost/reference.html"/>
+			<topic label="Retrofit Cost Estimation" href="help/analyses/bridgeCostEstimation.html"/>
+		</topic>
+		<topic label="Buildings">
+			<topic label="Building Workflow Overview Diagram" href="help/workflowDiagrams/Building_Workflow_Diagram.html"/>
+			<!-- <topic label="Building Damage by Field" href="help/analyses/building_damage_field.html"/> -->
+			<topic label="Cost-Benefit Analysis" href="help/analyses/building_cost_benefit.html"/>
+			<topic label="Direct Economic Damage (or Economic Loss)" href="help/analyses/buildingEconLoss.html"/>
+			<topic label="Liquefaction Analysis (HAZUS)" href="help/analyses/hazus_building_liquefaction.html"/>
+			<topic label="Liquefaction Anlaysis (Memphis, TN only)" href="help/analyses/rix_building_liquefaction.html"/>
+			<topic label="Non-structural and Content Damage (generalized)" href="help/analyses/nonstructuralContentDmg.html"/>
+			<topic label="Repair Cost" href="help/analyses/building_repair_cost.html"/>
+			<topic label="Retrofit Cost Estimation" href="help/analyses/building_retrofit_cost.html"/>
+			<topic label="Structural Damage" href="help/analyses/building_damage.html"/>
+   			<topic label="UWI Building Classification" href="help/analyses/building_classification.html" />
+
+		</topic>
+		<!-- <topic label="Lifelines">
+			<topic label="Buried Pipe Damage" href="help/analyses/buriedPipe.html"/>
+			<topic label="Gas Network Damage" href="help/analyses/gasNetwork.html"/>
+			<topic label="Water Tank Damage" href="help/analyses/waterTankDmg.html"/>
+		</topic>-->
+	<anchor id="allAnalyses"/>
+		<topic label="Other">
+			<anchor id="analyses"/>
+			<topic label="Memphis Testbed version 3 Data" href="help/analyses/MTBv3.html"/>
+			<topic label="Memphis Testbed version 4 Data" href="help/analyses/MTBv4.html"/>
+			<topic label="Fragility Database" href="help/analyses/fragilityDatabase.html"/>
+		</topic>
+</toc>
+

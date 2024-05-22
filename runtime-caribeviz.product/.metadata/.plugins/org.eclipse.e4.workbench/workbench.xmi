@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_paV3gA5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_paV3gQ5yEe-FJ-Www2dihw" bindingContexts="_paYUXg5yEe-FJ-Www2dihw">
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
+  <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+  <tags>ModelMigrationProcessor.001</tags>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_paV3gQ5yEe-FJ-Www2dihw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_paV3gg5yEe-FJ-Www2dihw" x="0" y="0" width="1334" height="849">
+    <persistedState key="coolBarVisible" value="true"/>
+    <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="isRestored" value="true"/>
+    <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
+    <persistedState key="aggregateWorkingSetId"/>
+    <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
+    <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_paV3gg5yEe-FJ-Www2dihw" selectedElement="_paV3gw5yEe-FJ-Www2dihw" horizontal="true">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_paV3gw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_paV3hA5yEe-FJ-Www2dihw">
+        <children xsi:type="advanced:Perspective" xmi:id="_paV3hA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.ErgoEQPerspective" selectedElement="_paV3hQ5yEe-FJ-Www2dihw" label="Ergo EQ" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/default_persp.png">
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.core.analysis.ui.actionSet.analysis</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.reports.ui.actionSet.reporting</tags>
+          <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.eq.ui.actionSet1</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.analysis</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.chart.dataset</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.reporting.ui.actionSet.reporting</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.style.ui.actionSet.dataset.xyz</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.tableview.ui.actionSet</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.ui.actionSet.scenario</tags>
+          <tags>persp.actionSet:edu.illinois.ncsa.ergo.gis.vtk.actionSet.dataset</tags>
+          <tags>persp.actionSet:ncsa.eclipse.core.logging</tags>
+          <tags>persp.viewSC:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+          <tags>persp.viewSC:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+          <tags>persp.viewSC:edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView</tags>
+          <tags>persp.viewSC:ncsa.eclipse.core.views.LogView</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+          <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+          <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hQ5yEe-FJ-Www2dihw" selectedElement="_paV3hg5yEe-FJ-Www2dihw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_paV3hg5yEe-FJ-Www2dihw" containerData="2323" selectedElement="_paV3hw5yEe-FJ-Www2dihw">
+              <children xsi:type="basic:PartStack" xmi:id="_paV3hw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosViewMStack" containerData="5912" selectedElement="_paV3iA5yEe-FJ-Www2dihw">
+                <tags>active</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_paV3iA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView" ref="_paWexA5yEe-FJ-Www2dihw"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_paV3iQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryViewMStack" containerData="4088" selectedElement="_paV3ig5yEe-FJ-Www2dihw">
+                <tags>noFocus</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_paV3ig5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView" ref="_paWe7A5yEe-FJ-Www2dihw"/>
+              </children>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_paV3iw5yEe-FJ-Www2dihw" containerData="7677" selectedElement="_paV3jQ5yEe-FJ-Www2dihw" horizontal="true">
+              <children xsi:type="advanced:Placeholder" xmi:id="_paV3jA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editorss" toBeRendered="false" containerData="3300" ref="_paWewg5yEe-FJ-Www2dihw"/>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_paV3jQ5yEe-FJ-Www2dihw" containerData="6700">
+                <children xsi:type="basic:PartStack" xmi:id="_paV3jg5yEe-FJ-Www2dihw" elementId="scenarioFolder" toBeRendered="false" containerData="8094">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3jw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:0" toBeRendered="false" ref="_paWfGA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3kA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:1" toBeRendered="false" ref="_paXFrA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3kQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-Portmore-Mappable Data" toBeRendered="false" ref="_paXFrw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3kg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Portmore-Mappable Data" toBeRendered="false" ref="_paXFsg5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3kw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Kingston-Mappable Data" toBeRendered="false" ref="_paXFtQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3lA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-Kingston-Mappable Data" toBeRendered="false" ref="_paXFuA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3lQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2" toBeRendered="false" ref="_paXFuw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3lg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:3" toBeRendered="false" ref="_paXFvg5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3lw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:4" toBeRendered="false" ref="_paXFwQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3mA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-TEST4-Mappable Data" toBeRendered="false" ref="_paXFzw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3mQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-CLEAN_DOM_SHELTER_TEST-Mappable Data" toBeRendered="false" ref="_paXF6g5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3mg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica Shelter Healthcare Testing-Mappable Data" toBeRendered="false" ref="_paXF8A5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3mw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:5" toBeRendered="false" ref="_paXF8w5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3nA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:6" toBeRendered="false" ref="_paXssQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3nQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:7" toBeRendered="false" ref="_paXstA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3ng5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:8" toBeRendered="false" ref="_paXstw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3nw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:9" toBeRendered="false" ref="_paXsug5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3oA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:10" toBeRendered="false" ref="_paXsvQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3oQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:11" toBeRendered="false" ref="_paXswA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3og5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica Intraslab-Mappable Data" toBeRendered="false" ref="_paXsww5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3ow5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica 2475-Mappable Data" toBeRendered="false" ref="_paXsxg5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3pA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica 975-Mappable Data" toBeRendered="false" ref="_paXsyQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3pQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:*" toBeRendered="false" ref="_paWfEQ5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3pg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.PrototypeAnalysisView:*" toBeRendered="false" ref="_paWfEg5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3pw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.DefaultSetEditorView" toBeRendered="false" ref="_paWfEw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3qA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-TEST7-Mappable Data" toBeRendered="false" ref="_paXF2w5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3qQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-CLEAN_DOM_SHELTER_TEST-Mappable Data" toBeRendered="false" ref="_paXF5A5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3qg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView" toBeRendered="false" ref="_paWfFA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3qw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView:0" toBeRendered="false" ref="_paXF7Q5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3rA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView:*" toBeRendered="false" ref="_paWfFw5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3rQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView" toBeRendered="false" ref="_paXFxA5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3rg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_paXFyg5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paV3rw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.DatasetInfoView:1973372401" toBeRendered="false" ref="_paXF2A5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paWekA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView" toBeRendered="false" ref="_paXF3g5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paWekQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.ReportElementPropertyView" toBeRendered="false" ref="_paXF4Q5yEe-FJ-Www2dihw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paWekg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica-Mappable Data" toBeRendered="false" ref="_paXF5w5yEe-FJ-Www2dihw"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_paWekw5yEe-FJ-Www2dihw" elementId="PartStack@3b399f5a" containerData="1906" selectedElement="_paWelA5yEe-FJ-Www2dihw">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_paWelA5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView" ref="_paXF0g5yEe-FJ-Www2dihw"/>
+                </children>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_paWelQ5yEe-FJ-Www2dihw" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
+        <children xsi:type="advanced:Placeholder" xmi:id="_paWelg5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.HelpView" toBeRendered="false" ref="_paWeuw5yEe-FJ-Www2dihw"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_paWelw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_paWevg5yEe-FJ-Www2dihw"/>
+        <children xsi:type="advanced:Placeholder" xmi:id="_paWemA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" toBeRendered="false" ref="_paWewQ5yEe-FJ-Www2dihw"/>
+      </children>
+    </children>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWeuw5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.HelpView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Help" iconURI="platform:/plugin/org.eclipse.help.ui/icons/view16/help_view.gif" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view BrowserPart.url=&quot;/edu.illinois.ncsa.ergo.eq.ui/help/analyses/building_classification.html&quot; pageId=&quot;browser-page&quot;/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Help</tags>
+      <tags>activeOnClose</tags>
+      <menus xmi:id="_paWevA5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.HelpView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paWevQ5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.HelpView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWevg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_paWevw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.internal.introview">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paWewA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.internal.introview" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWewQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Cheat Sheets" iconURI="platform:/plugin/org.eclipse.ui.cheatsheets/icons/view16/cheatsheet_view.gif" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:Help</tags>
+    </sharedElements>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_paWewg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editorss">
+      <children xsi:type="basic:PartStack" xmi:id="_paWeww5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
+      </children>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWexA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="CaribEViz" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/project.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Ergo EQ</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
+      <menus xmi:id="_paWexQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWexg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWexw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWeyA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWeyQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWeyg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWeyw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWezA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWezQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWezg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWezw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe0A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe0Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe0g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe0w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe1A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe1Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe1g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe1w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe2A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe2Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe2g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe2w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe3A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe3Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe3g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe3w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe4A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView</tags>
+      </menus>
+      <toolbar xmi:id="_paWe4Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWe7A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Catalog" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/repositories.gif" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paWe7Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe7g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe7w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe8A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe8Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe8g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe8w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe9A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe9Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe9g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe9w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe-A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe-Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe-g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe-w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe_A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe_Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe_g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWe_w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfAA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfAQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfAg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfAw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfBA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfBQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfBg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfBw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paWfCA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView</tags>
+      </menus>
+      <toolbar xmi:id="_paWfCQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfEQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:*" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfEg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.PrototypeAnalysisView:*" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="New Analysis View" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.analysis.ui/icons/graph.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:Ergo Internal</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfEw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.DefaultSetEditorView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Default Set Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.analysis.ui/icons/application_edit.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:Ergo Configuration</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfFA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Style Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.style.ui/icons/Palette.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paWfFQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paWfFg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfFw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView:*" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dataset Table" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.tableview.ui/icons/table.gif" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paWfGA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:0" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 2475 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paWfGQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paWfGg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFrA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:1" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 475 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFrQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFrg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFrw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-Portmore-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFsA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFsQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFsg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Portmore-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFsw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFtA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFtQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Kingston-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFtg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFtw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFuA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-Kingston-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFuQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFug5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFuw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 2475 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFvA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFvQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFvg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:3" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFvw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFwA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFwQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:4" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXFwg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXFww5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFxA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Select Report View" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.ui/icons/report.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Reporting</tags>
+      <menus xmi:id="_paXFxQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paXFxg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paXFxw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paXFyA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView</tags>
+      </menus>
+      <toolbar xmi:id="_paXFyQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFyg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_paXFyw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paXFzA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:org.eclipse.ui.views.ProgressView</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_paXFzQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:org.eclipse.ui.views.ProgressView</tags>
+      </menus>
+      <toolbar xmi:id="_paXFzg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXFzw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-TEST4-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF0A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF0Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF0g5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Log View" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Debug</tags>
+      <menus xmi:id="_paXF0w5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF1A5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF2A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.DatasetInfoView:1973372401" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dataset Properties" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/cheatsheet_item_obj.gif" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF2Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.DatasetInfoView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF2g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.DatasetInfoView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF2w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-TEST7-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF3A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF3Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF3g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Custom Report Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.editor.ui/icons/report.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Reporting</tags>
+      <menus xmi:id="_paXF3w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF4A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF4Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.ReportElementPropertyView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Report Element Properties" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.editor.ui/icons/report.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Reporting</tags>
+      <menus xmi:id="_paXF4g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.ReportElementPropertyView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF4w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.ReportElementPropertyView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF5A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-CLEAN_DOM_SHELTER_TEST-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF5Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF5g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF5w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF6A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF6Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF6g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:VTK-CLEAN_DOM_SHELTER_TEST-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF6w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF7A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF7Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView:0" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Table: Dominica Pop Disloc 2475 year" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.tableview.ui/icons/table.gif" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF7g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF7w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF8A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica Shelter Healthcare Testing-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF8Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXF8g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXF8w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:5" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 95 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXF9A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXssA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXssQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:6" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="TEST5 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXssg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXssw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXstA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:7" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="TEST3 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXstQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXstg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXstw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:8" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="TEST2 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsuA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsuQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXsug5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:9" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 975 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsuw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsvA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXsvQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:10" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 475 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsvg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsvw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXswA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:11" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 95 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXswQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXswg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXsww5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica Intraslab-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsxA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsxQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXsxg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica 2475-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Dominica 2475 (2D-Swing)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsxw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsyA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_paXsyQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView:2D-Swing-Dominica 975-Mappable Data" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:GIS</tags>
+      <menus xmi:id="_paXsyg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_paXsyw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" visible="false"/>
+    </sharedElements>
+    <trimBars xmi:id="_paXszA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_paXszQ5yEe-FJ-Www2dihw" elementId="main">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_paXszg5yEe-FJ-Www2dihw" elementId="additions" toBeRendered="false">
+        <tags>toolbarSeparator</tags>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_paXszw5yEe-FJ-Www2dihw" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_paXs0A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.annotationNavigation">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_paYTwg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.navigation">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTxQ5yEe-FJ-Www2dihw" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+        <tags>stretch</tags>
+        <tags>SHOW_RESTORE_MENU</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_paYTxg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.trim.status" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTxw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.StatusLine" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTyA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.HeapStatus" toBeRendered="false" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTyQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ProgressBar" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_paYTyg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTyw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.perspectivestack(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTzA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosViewMStack(edu.illinois.ncsa.ergo.eq.ui.ErgoEQPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTzQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryViewMStack(edu.illinois.ncsa.ergo.eq.ui.ErgoEQPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_paYTzg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Right">
+      <children xsi:type="menu:ToolControl" xmi:id="_paYTzw5yEe-FJ-Www2dihw" elementId="PartStack@3b399f5a(edu.illinois.ncsa.ergo.eq.ui.ErgoEQPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+    </trimBars>
+  </children>
+  <bindingTables xmi:id="_paYT0A5yEe-FJ-Www2dihw" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_paYUXg5yEe-FJ-Www2dihw">
+    <bindings xmi:id="_paYT0Q5yEe-FJ-Www2dihw" keySequence="CTRL+X" command="_paZh_w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT0g5yEe-FJ-Www2dihw" keySequence="CTRL+C" command="_paY7Xg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT0w5yEe-FJ-Www2dihw" keySequence="CTRL+Y" command="_paZiEw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT1A5yEe-FJ-Www2dihw" keySequence="CTRL+Z" command="_paZh9w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT1Q5yEe-FJ-Www2dihw" keySequence="CTRL+V" command="_paZiAA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT1g5yEe-FJ-Www2dihw" keySequence="CTRL+F10" command="_paaI8Q5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT1w5yEe-FJ-Www2dihw" keySequence="CTRL+INSERT" command="_paY7Xg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT2A5yEe-FJ-Www2dihw" keySequence="SHIFT+INSERT" command="_paZiAA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT2Q5yEe-FJ-Www2dihw" keySequence="ALT+PAGE_DOWN" command="_paZh9Q5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT2g5yEe-FJ-Www2dihw" keySequence="CTRL+A" command="_paZh6A5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT2w5yEe-FJ-Www2dihw" keySequence="ALT+PAGE_UP" command="_paZiIQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT3A5yEe-FJ-Www2dihw" keySequence="SHIFT+DEL" command="_paZh_w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT3Q5yEe-FJ-Www2dihw" keySequence="CTRL+SPACE" command="_paY7dQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT3g5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+SPACE" command="_paY7YQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT3w5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+F3" command="_paZiGg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT4A5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+L" command="_paY7VA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT4Q5yEe-FJ-Www2dihw" keySequence="CTRL+1" command="_paawHA5yEe-FJ-Www2dihw"/>
+  </bindingTables>
+  <bindingTables xmi:id="_paYT4g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.window" bindingContext="_paYUXw5yEe-FJ-Www2dihw">
+    <bindings xmi:id="_paYT4w5yEe-FJ-Www2dihw" keySequence="CTRL+-" command="_paY7Wg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT5A5yEe-FJ-Www2dihw" keySequence="CTRL+," command="_paZiBg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT5Q5yEe-FJ-Www2dihw" keySequence="CTRL+F7" command="_paY7Xw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT5g5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+F7" command="_paZiAg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT5w5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+F4" command="_paZh_Q5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT6A5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+S" command="_paY7Uw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT6Q5yEe-FJ-Www2dihw" keySequence="ALT+-" command="_paZh4Q5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT6g5yEe-FJ-Www2dihw" keySequence="ALT+F7" command="_paZiAQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT6w5yEe-FJ-Www2dihw" keySequence="F2" command="_paZiCw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT7A5yEe-FJ-Www2dihw" keySequence="CTRL+P" command="_paZiFA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT7Q5yEe-FJ-Www2dihw" keySequence="F12" command="_paZh4A5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT7g5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+F6" command="_paY7Ww5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT7w5yEe-FJ-Www2dihw" keySequence="CTRL+S" command="_paY7Vw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT8A5yEe-FJ-Www2dihw" keySequence="F5" command="_paaI_w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT8Q5yEe-FJ-Www2dihw" keySequence="CTRL+M" command="_paY7bQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT8g5yEe-FJ-Www2dihw" keySequence="DEL" command="_paY7ag5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT8w5yEe-FJ-Www2dihw" keySequence="CTRL+." command="_paZiAw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT9A5yEe-FJ-Www2dihw" keySequence="CTRL+F4" command="_paZiHA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT9Q5yEe-FJ-Www2dihw" keySequence="CTRL+F8" command="_paaJAQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT9g5yEe-FJ-Www2dihw" keySequence="CTRL+N" command="_paZiFg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT9w5yEe-FJ-Www2dihw" keySequence="ALT+CR" command="_paY7VQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT-A5yEe-FJ-Www2dihw" keySequence="CTRL+F6" command="_paY7ZQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT-Q5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+F7" command="_paZh4g5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT-g5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_paY7Ug5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT-w5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_paY7aw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT_A5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+W" command="_paZh_Q5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT_Q5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+F8" command="_paY7Zg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYT_g5yEe-FJ-Www2dihw" keySequence="CTRL+{" command="_paY7Zw5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYT_w5yEe-FJ-Www2dihw" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="false"/>
+    </bindings>
+    <bindings xmi:id="_paYUAA5yEe-FJ-Www2dihw" keySequence="CTRL+W" command="_paZiHA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUAQ5yEe-FJ-Www2dihw" keySequence="CTRL+F" command="_paY7XQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUAg5yEe-FJ-Www2dihw" keySequence="CTRL+E" command="_paZh8g5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUAw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+E" command="_paZh8w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUBA5yEe-FJ-Www2dihw" keySequence="ALT+ARROW_LEFT" command="_paaI8w5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUBQ5yEe-FJ-Www2dihw" keySequence="ALT+ARROW_RIGHT" command="_paZiGQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUBg5yEe-FJ-Www2dihw" keySequence="CTRL+_" command="_paY7Zw5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYUBw5yEe-FJ-Www2dihw" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="true"/>
+    </bindings>
+    <bindings xmi:id="_paYUCA5yEe-FJ-Www2dihw" keySequence="CTRL+=" command="_paZiIg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUCQ5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+Q H" command="_paZh5A5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYUCg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.ui.cheatsheets.views.CheatSheetView"/>
+    </bindings>
+    <bindings xmi:id="_paYUCw5yEe-FJ-Www2dihw" keySequence="CTRL+B" command="_paaJeA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUDA5yEe-FJ-Www2dihw" keySequence="ALT+F5" command="_paaJnQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUDQ5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+W" command="_paawDQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUDg5yEe-FJ-Www2dihw" keySequence="CTRL+Q" command="_paaJgg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUDw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+R" command="_paawHw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUEA5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+N" command="_paaJcg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUEQ5yEe-FJ-Www2dihw" keySequence="CTRL+3" command="_paY7UQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUEg5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+Q C" command="_paZh5A5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYUEw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.ui.console.ConsoleView"/>
+    </bindings>
+    <bindings xmi:id="_paYUFA5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+Q Q" command="_paZh5A5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUFQ5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+Q X" command="_paZh5A5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYUFg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.ui.views.ProblemView"/>
+    </bindings>
+    <bindings xmi:id="_paYUFw5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+Q O" command="_paZh5A5yEe-FJ-Www2dihw">
+      <parameters xmi:id="_paYUGA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.ui.views.ContentOutline"/>
+    </bindings>
+  </bindingTables>
+  <bindingTables xmi:id="_paYUGQ5yEe-FJ-Www2dihw" bindingContext="_paYUZw5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUGg5yEe-FJ-Www2dihw" bindingContext="_paYUaA5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUGw5yEe-FJ-Www2dihw" bindingContext="_paYUaQ5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUHA5yEe-FJ-Www2dihw" bindingContext="_paYUag5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUHQ5yEe-FJ-Www2dihw" bindingContext="_paYUaw5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUHg5yEe-FJ-Www2dihw" bindingContext="_paYUbA5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUHw5yEe-FJ-Www2dihw" bindingContext="_paYUbQ5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUIA5yEe-FJ-Www2dihw" bindingContext="_paYUbg5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUIQ5yEe-FJ-Www2dihw" bindingContext="_paYUbw5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUIg5yEe-FJ-Www2dihw" bindingContext="_paYUcA5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUIw5yEe-FJ-Www2dihw" bindingContext="_paYUcQ5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUJA5yEe-FJ-Www2dihw" bindingContext="_paYUcg5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUJQ5yEe-FJ-Www2dihw" bindingContext="_paYUcw5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUJg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.textEditorScope" bindingContext="_paYUYQ5yEe-FJ-Www2dihw">
+    <bindings xmi:id="_paYUJw5yEe-FJ-Www2dihw" keySequence="CTRL+F10" command="_paaJfA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUKA5yEe-FJ-Www2dihw" keySequence="F2" command="_paaJWA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUKQ5yEe-FJ-Www2dihw" keySequence="CTRL+D" command="_paaJjg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUKg5yEe-FJ-Www2dihw" keySequence="CTRL+K" command="_paawAA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUKw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+CR" command="_paaJfg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYULA5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+X" command="_paaJYw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYULQ5yEe-FJ-Www2dihw" keySequence="CTRL+ARROW_DOWN" command="_paawHg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYULg5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+K" command="_paaJmw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYULw5yEe-FJ-Www2dihw" keySequence="CTRL+L" command="_paaJag5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUMA5yEe-FJ-Www2dihw" keySequence="SHIFT+CR" command="_paaJlQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUMQ5yEe-FJ-Www2dihw" keySequence="END" command="_paaJiA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUMg5yEe-FJ-Www2dihw" keySequence="HOME" command="_paaJlg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUMw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+Y" command="_paaJkQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUNA5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+INSERT" command="_paawBQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUNQ5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+J" command="_paawEA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUNg5yEe-FJ-Www2dihw" keySequence="ALT+/" command="_paaJmA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUNw5yEe-FJ-Www2dihw" keySequence="INSERT" command="_paaJfw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUOA5yEe-FJ-Www2dihw" keySequence="CTRL+J" command="_paaJhw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUOQ5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+ARROW_RIGHT" command="_paawCg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUOg5yEe-FJ-Www2dihw" keySequence="SHIFT+HOME" command="_paaJjA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUOw5yEe-FJ-Www2dihw" keySequence="ALT+CTRL+J" command="_paawGQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUPA5yEe-FJ-Www2dihw" keySequence="SHIFT+END" command="_paaJkw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUPQ5yEe-FJ-Www2dihw" keySequence="CTRL+END" command="_paawDA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUPg5yEe-FJ-Www2dihw" keySequence="CTRL+BS" command="_paaJXg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUPw5yEe-FJ-Www2dihw" keySequence="CTRL+HOME" command="_paaJdQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUQA5yEe-FJ-Www2dihw" keySequence="CTRL+ARROW_RIGHT" command="_paawEw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUQQ5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+ARROW_LEFT" command="_paaJlw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUQg5yEe-FJ-Www2dihw" keySequence="CTRL+ARROW_LEFT" command="_paaJXw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUQw5yEe-FJ-Www2dihw" keySequence="ALT+ARROW_UP" command="_paawFw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYURA5yEe-FJ-Www2dihw" keySequence="CTRL+DEL" command="_paaJaw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYURQ5yEe-FJ-Www2dihw" keySequence="CTRL+ARROW_UP" command="_paaJng5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYURg5yEe-FJ-Www2dihw" keySequence="ALT+CTRL+ARROW_UP" command="_paawDg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYURw5yEe-FJ-Www2dihw" keySequence="ALT+ARROW_DOWN" command="_paawBw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUSA5yEe-FJ-Www2dihw" keySequence="ALT+CTRL+ARROW_DOWN" command="_paawBA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUSQ5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+DEL" command="_paaJZw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUSg5yEe-FJ-Www2dihw" keySequence="ALT+SHIFT+A" command="_paaJbA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUSw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+Q" command="_paawNw5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUTA5yEe-FJ-Www2dihw" keySequence="CTRL+NUMPAD_DIVIDE" command="_paawMg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUTQ5yEe-FJ-Www2dihw" keySequence="CTRL+NUMPAD_ADD" command="_paawNA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUTg5yEe-FJ-Www2dihw" keySequence="CTRL+NUMPAD_MULTIPLY" command="_paawNg5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUTw5yEe-FJ-Www2dihw" keySequence="CTRL+NUMPAD_SUBTRACT" command="_paawLA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUUA5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_paawOA5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUUQ5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_paawLQ5yEe-FJ-Www2dihw"/>
+  </bindingTables>
+  <bindingTables xmi:id="_paYUUg5yEe-FJ-Www2dihw" elementId="org.eclipse.core.runtime.xml" bindingContext="_paYUdA5yEe-FJ-Www2dihw">
+    <bindings xmi:id="_paYUUw5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+P" command="_paaJZQ5yEe-FJ-Www2dihw"/>
+    <bindings xmi:id="_paYUVA5yEe-FJ-Www2dihw" keySequence="CTRL+SHIFT+D" command="_paawEQ5yEe-FJ-Www2dihw"/>
+  </bindingTables>
+  <bindingTables xmi:id="_paYUVQ5yEe-FJ-Www2dihw" bindingContext="_paYUdQ5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUVg5yEe-FJ-Www2dihw" bindingContext="_paYUdg5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUVw5yEe-FJ-Www2dihw" bindingContext="_paYUdw5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUWA5yEe-FJ-Www2dihw" bindingContext="_paYUeA5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUWQ5yEe-FJ-Www2dihw" bindingContext="_paYUeQ5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUWg5yEe-FJ-Www2dihw" bindingContext="_paYUeg5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUWw5yEe-FJ-Www2dihw" bindingContext="_paYUew5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUXA5yEe-FJ-Www2dihw" bindingContext="_paYUfA5yEe-FJ-Www2dihw"/>
+  <bindingTables xmi:id="_paYUXQ5yEe-FJ-Www2dihw" bindingContext="_paYUfQ5yEe-FJ-Www2dihw"/>
+  <rootContext xmi:id="_paYUXg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs and Windows" description="Either a dialog or a window is open">
+    <children xmi:id="_paYUXw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Windows" description="A window is open">
+      <children xmi:id="_paYUYA5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="%bindingcontext.name.bindingView"/>
+      <children xmi:id="_paYUYQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.textEditorScope" name="Editing Text" description="Editing Text Context"/>
+      <children xmi:id="_paYUYg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.console.ConsoleView" name="In Console View" description="In Console View"/>
+      <children xmi:id="_paYUYw5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.compareEditorScope" name="Comparing in an Editor" description="Comparing in an Editor"/>
+    </children>
+    <children xmi:id="_paYUZA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs" description="A dialog is open"/>
+  </rootContext>
+  <rootContext xmi:id="_paYUZQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
+  <rootContext xmi:id="_paYUZg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.contexts.actionSet" name="Action Set" description="Parent context for action sets"/>
+  <rootContext xmi:id="_paYUZw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.actionSet.analysis" name="Auto::edu.illinois.ncsa.ergo.core.analysis.ui.actionSet.analysis"/>
+  <rootContext xmi:id="_paYUaA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.reports.ui.actionSet.reporting" name="Auto::edu.illinois.ncsa.ergo.gis.reports.ui.actionSet.reporting"/>
+  <rootContext xmi:id="_paYUaQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.actionSet" name="Auto::org.eclipse.ui.cheatsheets.actionSet"/>
+  <rootContext xmi:id="_paYUag5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.actionSet1" name="Auto::edu.illinois.ncsa.ergo.eq.ui.actionSet1"/>
+  <rootContext xmi:id="_paYUaw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.analysis" name="Auto::edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.analysis"/>
+  <rootContext xmi:id="_paYUbA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.chart.dataset" name="Auto::edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.chart.dataset"/>
+  <rootContext xmi:id="_paYUbQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.reporting.ui.actionSet.reporting" name="Auto::edu.illinois.ncsa.ergo.gis.reporting.ui.actionSet.reporting"/>
+  <rootContext xmi:id="_paYUbg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.actionSet.dataset.xyz" name="Auto::edu.illinois.ncsa.ergo.gis.style.ui.actionSet.dataset.xyz"/>
+  <rootContext xmi:id="_paYUbw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.actionSet" name="Auto::edu.illinois.ncsa.ergo.gis.tableview.ui.actionSet"/>
+  <rootContext xmi:id="_paYUcA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset" name="Auto::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset"/>
+  <rootContext xmi:id="_paYUcQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.actionSet.scenario" name="Auto::edu.illinois.ncsa.ergo.gis.ui.actionSet.scenario"/>
+  <rootContext xmi:id="_paYUcg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.vtk.actionSet.dataset" name="Auto::edu.illinois.ncsa.ergo.gis.vtk.actionSet.dataset"/>
+  <rootContext xmi:id="_paYUcw5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.logging" name="Auto::ncsa.eclipse.core.logging"/>
+  <rootContext xmi:id="_paYUdA5yEe-FJ-Www2dihw" elementId="org.eclipse.core.runtime.xml" name="Auto::org.eclipse.core.runtime.xml"/>
+  <rootContext xmi:id="_paYUdQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.NavigateActionSet" name="Auto::org.eclipse.ui.NavigateActionSet"/>
+  <rootContext xmi:id="_paYUdg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.actionSet.keyBindings" name="Auto::org.eclipse.ui.actionSet.keyBindings"/>
+  <rootContext xmi:id="_paYUdw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.WorkingSetModificationActionSet" name="Auto::org.eclipse.ui.WorkingSetModificationActionSet"/>
+  <rootContext xmi:id="_paYUeA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.WorkingSetActionSet" name="Auto::org.eclipse.ui.WorkingSetActionSet"/>
+  <rootContext xmi:id="_paYUeQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.actionSet.openFiles" name="Auto::org.eclipse.ui.actionSet.openFiles"/>
+  <rootContext xmi:id="_paYUeg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
+  <rootContext xmi:id="_paYUew5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.annotationNavigation" name="Auto::org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+  <rootContext xmi:id="_paYUfA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.navigation" name="Auto::org.eclipse.ui.edit.text.actionSet.navigation"/>
+  <rootContext xmi:id="_paYUfQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo" name="Auto::org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+  <descriptors xmi:id="_paYUfg5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
+    <tags>Editor</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUfw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.PrototypeAnalysisView" label="New Analysis View" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.analysis.ui/icons/graph.png" tooltip="" allowMultiple="true" category="Ergo Internal" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo Internal</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUgA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.DefaultSetEditorView" label="Default Set Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.analysis.ui/icons/application_edit.png" tooltip="" category="Ergo Configuration" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo Configuration</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUgQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.ui.views.AnalysisMessagesView" label="Analysis Messages" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Debug</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUgg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.analysis.validation.ui.views.ValidationView" label="Analysis Validation" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Debug</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUgw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.ReportElementPropertyView" label="Report Element Properties" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.editor.ui/icons/report.png" tooltip="" category="Reporting" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Reporting</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUhA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView" label="Custom Report Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.editor.ui/icons/report.png" tooltip="" allowMultiple="true" category="Reporting" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Reporting</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUhQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView" label="Select Report View" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.core.reports.ui/icons/report.png" tooltip="" category="Reporting" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Reporting</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUhg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.fragilities.mapping.views.MappingEditorView" label="Fragility Mapping Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.fragilities.mapping/icons/mapping.gif" tooltip="" category="Ergo Configuration" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo Configuration</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUhw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.FragilityView" label="Fragility Graph" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/x-office-spreadsheet.png" tooltip="" category="Ergo EQ" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo EQ</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUiA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.FragilitySetView" label="Fragility Sets" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/document.png" tooltip="" category="Ergo EQ" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo EQ</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUiQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.TableView" label="Attribute Table" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/table.gif" tooltip="" category="Ergo EQ" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo EQ</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUig5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView" label="CaribEViz" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/project.png" tooltip="" category="Ergo EQ" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo EQ</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUiw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.eq.ui.views.ScenarioBrowser" label="Scenario Browser" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.eq.ui/icons/document.png" tooltip="" category="Ergo EQ" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo EQ</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUjA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.chart.ui.views.DatasetChartView" label="Dataset Chart" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.chart.ui/icons/chart.png" tooltip="" allowMultiple="true" category="Visualization" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Visualization</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUjQ5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.collectiondataset.ui.views.CollectionDatasetDetailsView" label="Collection Dataset Details" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.collectiondataset.ui/icons/collection.gif" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUjg5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.reporting.ui.views.SelectReportView" label="Available Reports" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.reporting.ui/icons/report.gif" tooltip="" category="Reporting" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Reporting</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUjw5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.reporting.ui.views.ReportView" label="Report Viewer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.reporting.ui/icons/report.gif" tooltip="" allowMultiple="true" category="Reporting" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Reporting</tags>
+  </descriptors>
+  <descriptors xmi:id="_paYUkA5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView" label="Style Editor" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.style.ui/icons/Palette.png" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY60A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView" label="Dataset Table" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.tableview.ui/icons/table.gif" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY60Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.tableview.ui.views.DatasetStatsView" label="Dataset Stats " iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.tableview.ui/icons/sigma.gif" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY60g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView" label="Scenarios" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/project.png" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY60w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView" label="Catalog" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/repositories.gif" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY61A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.RendererView" label="Map Renderer" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/mappable.png" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY61Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.SchemaView" label="Schemas" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/document.png" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY61g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.TableView" label="Table" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/table.gif" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY61w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.CatalogTreeView" label="Combined Catalog (Tree View)" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/repositories.gif" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY62A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.GraphView" label="Graph" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/x-office-spreadsheet.png" tooltip="" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY62Q5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.DatasetInfoView" label="Dataset Properties" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/cheatsheet_item_obj.gif" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY62g5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.ContextPropertiesView" label="Context Properties" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/properties.gif" tooltip="" category="Ergo Internal" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo Internal</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY62w5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.UnitsView" label="Units View" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Ergo Internal" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Ergo Internal</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY63A5yEe-FJ-Www2dihw" elementId="edu.illinois.ncsa.ergo.gis.ui.views.TextFilesDatasetView" label="TextFiles Dataset View" iconURI="platform:/plugin/edu.illinois.ncsa.ergo.gis.ui/icons/textdoc.gif" tooltip="" allowMultiple="true" category="GIS" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:GIS</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY63Q5yEe-FJ-Www2dihw" elementId="ncsa.eclipse.core.views.LogView" label="Log View" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Debug</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY63g5yEe-FJ-Www2dihw" elementId="org.eclipse.gef.ui.palette_view" label="Palette" iconURI="platform:/plugin/org.eclipse.gef/icons/palette_view.gif" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY63w5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.HelpView" label="Help" iconURI="platform:/plugin/org.eclipse.help.ui/icons/view16/help_view.gif" tooltip="" category="Help" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Help</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY64A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.internal.introview" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY64Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="Cheat Sheets" iconURI="platform:/plugin/org.eclipse.ui.cheatsheets/icons/view16/cheatsheet_view.gif" tooltip="" category="Help" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Help</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY64g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.PropertySheet" label="Properties" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/prop_ps.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY64w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ContentOutline" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY65A5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.views.MavenRepositoryView" label="Maven Repositories" iconURI="platform:/plugin/org.eclipse.m2e.core.ui/icons/maven_indexes.gif" tooltip="" category="Maven" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Maven</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY65Q5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.views.MavenBuild" label="Maven Workspace Build" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Maven" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:Maven</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY65g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.console.ConsoleView" label="Console" iconURI="platform:/plugin/org.eclipse.ui.console/icons/full/cview16/console_view.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY65w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProgressView" label="Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY66A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ResourceNavigator" label="Navigator" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/filenav_nav.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY66Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.BookmarkView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY66g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.TaskList" label="Tasks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/tasks_tsk.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY66w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.ProblemView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_paY67A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.AllMarkersView" label="Markers" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <commands xmi:id="_paY7Tw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.pinEditor" commandName="Pin Editor" description="Pin the current editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7UA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7UQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.quickAccess" commandName="Quick Access" description="Quickly access UI elements" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Ug5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.expandAll" commandName="Expand All" description="Expand the current tree" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Uw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.saveAll" commandName="Save All" description="Save all current contents" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7VA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.showKeyAssist" commandName="Show Key Assist" description="Show the key assist dialog" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7VQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.properties" commandName="Properties" description="Display the properties of the selected item" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Vg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.closeOthers" commandName="Close Others" description="Close all editors except the one that is active" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Vw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.save" commandName="Save" description="Save the current contents" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7WA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.preferences" commandName="Preferences" description="Open the preferences dialog" category="_paawTg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paY7WQ5yEe-FJ-Www2dihw" elementId="preferencePageId" name="Preference Page"/>
+  </commands>
+  <commands xmi:id="_paY7Wg5yEe-FJ-Www2dihw" elementId="org.eclipse.gef.zoom_out" commandName="Zoom Out" description="Zoom Out" category="_paawSw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Ww5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.previousEditor" commandName="Previous Editor" description="Switch to the previous editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7XA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.activeContextInfo" commandName="Show activeContext Info" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7XQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.findReplace" commandName="Find and Replace" description="Find and replace text" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Xg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.copy" commandName="Copy" description="Copy the selection to the clipboard" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Xw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.nextView" commandName="Next View" description="Switch to the next view" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7YA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.tipsAndTricksAction" commandName="Tips and Tricks" description="Open the tips and tricks help page" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7YQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.contentAssist.contextInformation" commandName="Context Information" description="Show Context Information" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Yg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.properties.NewPropertySheetCommand" commandName="Properties" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Yw5yEe-FJ-Www2dihw" elementId="org.eclipse.equinox.p2.ui.sdk.installationDetails" commandName="Installation Details" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7ZA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.saveAs" commandName="Save As" description="Save the current contents to another location" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7ZQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.nextEditor" commandName="Next Editor" description="Switch to the next editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Zg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.previousPerspective" commandName="Previous Perspective" description="Switch to the previous perspective" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7Zw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.splitEditor" commandName="Toggle Split Editor" description="Split or join the currently active editor." category="_paawTg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paY7aA5yEe-FJ-Www2dihw" elementId="Splitter.isHorizontal" name="Orientation" optional="false"/>
+  </commands>
+  <commands xmi:id="_paY7aQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.helpContents" commandName="Help Contents" description="Open the help contents" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7ag5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.delete" commandName="Delete" description="Delete the selection" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7aw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.collapseAll" commandName="Collapse All" description="Collapse the current tree" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7bA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.goInto" commandName="Go Into" description="Navigate into the selected item" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7bQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.maximizePart" commandName="Maximize Active View or Editor" description="Toggles maximize/restore state of active view or editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7bg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.lockToolBar" commandName="Lock the Toolbars" description="Lock the Toolbars" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7bw5yEe-FJ-Www2dihw" elementId="org.eclipse.gef.ui.palette_view" commandName="Palette" category="_paawSA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7cA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.exit" commandName="Exit" description="Exit the application" category="_paawTQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paY7cQ5yEe-FJ-Www2dihw" elementId="mayPrompt" name="may prompt"/>
+  </commands>
+  <commands xmi:id="_paY7cg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.newEditor" commandName="New Editor" description="Open another editor on the active editor's input" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7cw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.minimizePart" commandName="Minimize Active View or Editor" description="Minimizes the active view or editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7dA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.addBookmark" commandName="Add Bookmark" description="Add a bookmark" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7dQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.contentAssist.proposals" commandName="Content Assist" description="Content Assist" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paY7dg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.up" commandName="Up" description="Navigate up one level" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh4A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.activateEditor" commandName="Activate Editor" description="Activate the editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh4Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.showSystemMenu" commandName="Show System Menu" description="Show the system menu" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh4g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.previousView" commandName="Previous View" description="Switch to the previous view" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh4w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.revert" commandName="Revert" description="Revert to the last saved state" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh5A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView" commandName="Show View" description="Shows a particular view" category="_paawSA5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZh5Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.viewId" name="View"/>
+    <parameters xmi:id="_paZh5g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.secondaryId" name="Secondary Id"/>
+    <parameters xmi:id="_paZh5w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.views.showView.makeFast" name="As FastView"/>
+  </commands>
+  <commands xmi:id="_paZh6A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh6Q5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.ignoreMissingPlaceholders" commandName="Do not warn of missing documentation" description="Sets the help preferences to no longer report a warning about the current set of missing documents." category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh6g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.savePerspective" commandName="Save Perspective As" description="Save the current perspective" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh6w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.move" commandName="Move..." description="Move the selected item" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh7A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.import" commandName="Import" description="Import" category="_paawTQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZh7Q5yEe-FJ-Www2dihw" elementId="importWizardId" name="Import Wizard"/>
+  </commands>
+  <commands xmi:id="_paZh7g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.perspectives.showPerspective" commandName="Show Perspective" description="Show a particular perspective" category="_paawSQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZh7w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.perspectives.showPerspective.perspectiveId" name="Parameter"/>
+    <parameters xmi:id="_paZh8A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.perspectives.showPerspective.newWindow" name="In New Window"/>
+  </commands>
+  <commands xmi:id="_paZh8Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.linkWithEditor" commandName="Toggle Link with Editor " description="Toggles linking of a view's selection with the active editor's selection" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh8g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.openEditorDropDown" commandName="Quick Switch Editor" description="Open the editor drop down list" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh8w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.switchToEditor" commandName="Switch to Editor" description="Switch to an editor" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh9A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.dynamicHelp" commandName="Dynamic Help" description="Open the dynamic help" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh9Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.nextSubTab" commandName="Next Sub-Tab" description="Switch to the next sub-tab" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh9g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.resetPerspective" commandName="Reset Perspective" description="Reset the current perspective to its default state" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh9w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.undo" commandName="Undo" description="Undo the last operation" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh-A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.openCheatSheet" commandName="Open Cheat Sheet" description="Open a Cheat Sheet." category="_paawUQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZh-Q5yEe-FJ-Www2dihw" elementId="cheatSheetId" name="Identifier"/>
+  </commands>
+  <commands xmi:id="_paZh-g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.closePart" commandName="Close Part" description="Close the active workbench part" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh-w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.installationDialog" commandName="Installation Information" description="Open the installation dialog" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh_A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.back" commandName="Back" description="Navigate back" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh_Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.closeAll" commandName="Close All" description="Close all editors" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh_g5yEe-FJ-Www2dihw" elementId="org.eclipse.equinox.p2.ui.sdk.update" commandName="Check for Updates" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZh_w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.cut" commandName="Cut" description="Cut the selection to the clipboard" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiAA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.paste" commandName="Paste" description="Paste from the clipboard" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiAQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.part.nextPage" commandName="Next Page" description="Switch to the next page" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiAg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.part.previousPage" commandName="Previous Page" description="Switch to the previous page" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiAw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.next" commandName="Next" description="Navigate to the next item" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiBA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.closePerspective" commandName="Close Perspective" description="Close the current perspective" category="_paawTg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiBQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.closePerspective.perspectiveId" name="Perspective Id"/>
+  </commands>
+  <commands xmi:id="_paZiBg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.previous" commandName="Previous" description="Navigate to the previous item" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiBw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.cheatsheets.openCheatSheetURL" commandName="Open Cheat Sheet from URL" description="Open a Cheat Sheet from file at a specified URL." category="_paawUQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiCA5yEe-FJ-Www2dihw" elementId="cheatSheetId" name="Identifier" optional="false"/>
+    <parameters xmi:id="_paZiCQ5yEe-FJ-Www2dihw" elementId="name" name="Name" optional="false"/>
+    <parameters xmi:id="_paZiCg5yEe-FJ-Www2dihw" elementId="url" name="URL" optional="false"/>
+  </commands>
+  <commands xmi:id="_paZiCw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.rename" commandName="Rename" description="Rename the selected item" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiDA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.browser.openBundleResource" commandName="Open Resource in Browser" description="Opens a bundle resource in the default web browser." category="_paawTg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiDQ5yEe-FJ-Www2dihw" elementId="plugin" name="Plugin"/>
+    <parameters xmi:id="_paZiDg5yEe-FJ-Www2dihw" elementId="path" name="Path"/>
+  </commands>
+  <commands xmi:id="_paZiDw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.export" commandName="Export" description="Export" category="_paawTQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiEA5yEe-FJ-Www2dihw" elementId="exportWizardId" name="Export Wizard"/>
+  </commands>
+  <commands xmi:id="_paZiEQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.aboutAction" commandName="About" description="Open the about dialog" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiEg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.closeAllSaved" commandName="Close All Saved" description="Close all saved editors" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiEw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.redo" commandName="Redo" description="Redo the last operation" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiFA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.print" commandName="Print" description="Print" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiFQ5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.closeTray" commandName="Close User Assistance Tray" description="Close the user assistance tray containing context help information and cheat sheets." category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiFg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.newWizard" commandName="New" description="Open the New item wizard" category="_paawTQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiFw5yEe-FJ-Www2dihw" elementId="newWizardId" name="New Wizard"/>
+  </commands>
+  <commands xmi:id="_paZiGA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.newWindow" commandName="New Window" description="Open another window" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiGQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation history" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiGg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.spy" commandName="Show Contributing Plug-in" description="Shows contribution information for the currently selected element" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiGw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.helpSearch" commandName="Help Search" description="Open the help search" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiHA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.close" commandName="Close" description="Close the active editor" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiHQ5yEe-FJ-Www2dihw" elementId="org.eclipse.equinox.p2.ui.sdk.install" commandName="Install New Software..." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiHg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.restartWorkbench" commandName="Restart" description="Restart the workbench" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiHw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiIA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.quickStartAction" commandName="Welcome" description="Show help for beginning users" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiIQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.previousSubTab" commandName="Previous Sub-Tab" description="Switch to the previous sub-tab" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiIg5yEe-FJ-Www2dihw" elementId="org.eclipse.gef.zoom_in" commandName="Zoom In" description="Zoom In" category="_paawSw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiIw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.hideShowEditors" commandName="Toggle Shared Area Visibility" description="Toggles the visibility of the shared area" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paZiJA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.showIn" commandName="Show In" category="_paawSg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiJQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.showIn.targetId" name="Show In Target Id" optional="false"/>
+  </commands>
+  <commands xmi:id="_paZiJg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.help.displayHelp" commandName="Display Help" description="Display a Help topic" category="_paawUQ5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiJw5yEe-FJ-Www2dihw" elementId="href" name="Help topic href"/>
+  </commands>
+  <commands xmi:id="_paZiKA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.dialogs.openInputDialog" commandName="Open Input Dialog" description="Open an Input Dialog" category="_paawUA5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paZiKQ5yEe-FJ-Www2dihw" elementId="title" name="Title"/>
+    <parameters xmi:id="_paZiKg5yEe-FJ-Www2dihw" elementId="message" name="Message"/>
+    <parameters xmi:id="_paZiKw5yEe-FJ-Www2dihw" elementId="initialValue" name="Initial Value"/>
+    <parameters xmi:id="_paZiLA5yEe-FJ-Www2dihw" elementId="cancelReturns" name="Return Value on Cancel"/>
+  </commands>
+  <commands xmi:id="_paaI8A5yEe-FJ-Www2dihw" elementId="org.eclipse.help.ui.indexcommand" commandName="Index" description="Show Keyword Index" category="_paawUQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaI8Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.showViewMenu" commandName="Show View Menu" description="Show the view menu" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaI8g5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.showContextMenu" commandName="Show Context Menu" description="Show the context menu" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaI8w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation history" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaI9A5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.previousTab" commandName="Previous Tab" description="Switch to the previous tab" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaI9Q5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.dialogs.openMessageDialog" commandName="Open Message Dialog" description="Open a Message Dialog" category="_paawUA5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paaI9g5yEe-FJ-Www2dihw" elementId="title" name="Title"/>
+    <parameters xmi:id="_paaI9w5yEe-FJ-Www2dihw" elementId="message" name="Message"/>
+    <parameters xmi:id="_paaI-A5yEe-FJ-Www2dihw" elementId="imageType" name="Image Type Constant" typeId="org.eclipse.ui.dialogs.Integer"/>
+    <parameters xmi:id="_paaI-Q5yEe-FJ-Www2dihw" elementId="defaultIndex" name="Default Button Index" typeId="org.eclipse.ui.dialogs.Integer"/>
+    <parameters xmi:id="_paaI-g5yEe-FJ-Www2dihw" elementId="buttonLabel0" name="First Button Label"/>
+    <parameters xmi:id="_paaI-w5yEe-FJ-Www2dihw" elementId="buttonLabel1" name="Second Button Label"/>
+    <parameters xmi:id="_paaI_A5yEe-FJ-Www2dihw" elementId="buttonLabel2" name="Third Button Label"/>
+    <parameters xmi:id="_paaI_Q5yEe-FJ-Www2dihw" elementId="buttonLabel3" name="Fourth Button Label"/>
+    <parameters xmi:id="_paaI_g5yEe-FJ-Www2dihw" elementId="cancelReturns" name="Return Value on Cancel"/>
+  </commands>
+  <commands xmi:id="_paaI_w5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.refresh" commandName="Refresh" description="Refresh the selected items" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJAA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.forward" commandName="Forward" description="Navigate forward" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJAQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.nextPerspective" commandName="Next Perspective" description="Switch to the next perspective" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJAg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.window.closeAllPerspectives" commandName="Close All Perspectives" description="Close all open perspectives" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJAw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJBA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.actionSet.analysis/edu.illinois.ncsa.ergo.core.analysis.ui.action.executeAnalysis" commandName="Execute New Analysis" description="Executes a new analysis" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJBQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.reports.ui.actionSet.reporting/edu.illinois.ncsa.ergo.core.reports.ui.actions.ShowReportView" commandName="Run Report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJBg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction" commandName="Cheat Sheets..." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJBw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.actionSet1/edu.illinois.ncsa.ergo.eq.ui.actions.CreateErgoEQScenario" commandName="New Scenario..." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJCA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.analysis.ui.actionSet.chart.dataset/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.ShowChart" commandName="Show Chart" description="Shows data table" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJCQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.reporting.ui.actionSet.reporting/edu.illinois.ncsa.ergo.gis.reporting.ui.menu.actions.ShowReportView" commandName="Run Legacy Report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJCg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.style.ui.actionSet.dataset.xyz/edu.illinois.ncsa.ergo.gis.style.ui.actions.menu.EditStyle.xyz" commandName="Edit Style" description="Edits the renderer style" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJCw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.actionSet/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.ShowTable" commandName="Show Attribute Table" description="Shows data table" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJDA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.ShowDatasetInfo" commandName="Properties" description="Shows Dataset Properties" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJDQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.ExportDataset" commandName="Export Dataset" description="Export the selected dataset to your hard drive." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJDg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.PublishDataset" commandName="Publish Dataset" description="Publishes the selected dataset to a repository" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJDw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.LoadDataset" commandName="Load from repository" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJEA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.ToggleLayerVisibility" commandName="Toggle Visibility" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJEQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.dataset/edu.illinois.ncsa.ergo.gis.ui.actions.FilterDataset" commandName="Filter..." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJEg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.scenario/edu.illinois.ncsa.ergo.gis.ui.menu.scenario.additions.publishscenario" commandName="Publish" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJEw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.actionSet.scenario/edu.illinois.ncsa.ergo.gis.ui.menu.actions.AddMapContext" commandName="Add New Map" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJFA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.vtk.actionSet.dataset/edu.illinois.ncsa.ergo.gis.vtk.actions.menu.Set3d" commandName="Ranged 3D Visualization" description="Shows in 3d" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJFQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::ncsa.eclipse.core.logging/ncsa.eclipse.core.actions.ViewSessionLog" commandName="View Session Log" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJFg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ToggleAdvancedAction" commandName="Toggle Advanced" description="Toggle Advanced Parameters" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJFw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ToggleViewParametersAction" commandName="Toggle Parameters" description="Toggle whether parameters should be shown in graph" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJGA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.SetAllInputsAction" commandName="Set All Inputs" description="Sets all the inputs if available in the scenario" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJGQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.RefreshGraphAction" commandName="Refresh Graph" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJGg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ResetUseCase" commandName="Reset" description="Resets the Analysis Workflow" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJGw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.contribution.PrototypeAnalysisView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ExportUseCase" commandName="Export Analysis Workflow" description="Export the Current Analysis Workflow to a File" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJHA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.viewContribution.DefaultSetEditorView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.NewDefaultSetAction" commandName="Create new Default Set" description="Create New Default Set" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJHQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.ui.views.AnalysisMessagesView/ncsa.eclipse.core.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJHg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ExecuteNewAnalysisButton" commandName="Execute Analysis" description="Exectue Analysis" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJHw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.MAEVizScenariosView/edu.illinois.ncsa.ergo.core.analysis.ui.actions.ExecuteNewAnalysisButton" commandName="Execute Analysis" description="Execute New Analysis" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJIA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.validation.ui.views.ValidationView/edu.illinois.ncsa.ergo.core.analysis.validation.ui.actions.ValidateAll" commandName="Validate All" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJIQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.analysis.validation.ui.views.ValidationView/edu.illinois.ncsa.ergo.core.analysis.validation.ui.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJIg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView/edu.illinois.ncsa.ergo.core.reports.editor.ui.actions.EditCustomReport" commandName="New Report" description="Create a new custom report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJIw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.reports.editor.ui.views.CustomReportEditorView/edu.illinois.ncsa.ergo.core.reports.editor.ui.actions.SaveReport" commandName="Save" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJJA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView/edu.illinois.ncsa.ergo.core.reports.editor.ui.actions.LoadTemplate" commandName="Edit  Report" description="Edit this report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJJQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView/edu.illinois.ncsa.ergo.core.reports.ui.RunSelectedReportAction" commandName="Run Selected Report" description="Runs selected report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJJg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.core.reports.ui.views.SelectReportView/edu.illinois.ncsa.ergo.core.reports.ui.actions.ImportReportTemplate" commandName="Import Report Template" description="Imports a report template from a file" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJJw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/edu.illinois.ncsa.ergo.eq.ui.actions.CreateErgoEQScenario" commandName="New Scenario" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJKA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/ncsa.eclipse.core.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJKQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.LayerUp" commandName="Move Layer Up" description="Move Layer Up" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJKg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.LayerDown" commandName="Move Layer Down" description="Move Layer Down" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJKw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.eq.ui.views.ErgoEQScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.ScenarioManagerDelete" commandName="Remove Selected Item" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJLA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.chart.ui.views.DatasetChartView/edu.illinois.ncsa.ergo.gis.chart.ui.actions.ChangeChartProperties" commandName="Change Chart Properties" description="Change Chart Properties" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJLQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.chart.ui.views.DatasetChartView/edu.illinois.ncsa.ergo.gis.chart.ui.actions.ChartDefaultZoom" commandName="Restore default zoom" description="Default View (Restores zoom to default)" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJLg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.collectiondataset.ui.views.CollectionDatasetDetailsView/edu.illinois.ncsa.ergo.gis.collectiondataset.ui.actions.ShowCollectionTable" commandName="Show Table" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJLw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.reporting.ui.views.SelectReportView/edu.illinois.ncsa.ergo.gis.reporting.ui.actions.RunReport" commandName="Run Report" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJMA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView/edu.illinois.ncsa.ergo.gis.style.ui.actions.ApplyStyle" commandName="Apply Style" description="Apply Style" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJMQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView/ncsa.eclipse.core.actions.ListenForSelection" commandName="Auto-sync with Scenario View (on/off)" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJMg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.style.ui.views.StyleEditorView/edu.illinois.ncsa.ergo.gis.style.ui.actions.SaveStyleXml" commandName="Save Style XML" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJMw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.CopyFromTable" commandName="Copy" description="Copies selected cells" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJNA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.TableStatistics" commandName="Statistics" description="Statistics" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJNQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.ConfigTable" commandName="Configure Table" description="Configure Table View  (Add, remove, and reorder columns.)" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJNg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.SelectByFilter" commandName="Select Rows by Filter" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJNw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.TableView/edu.illinois.ncsa.ergo.gis.tableview.ui.actions.SaveSelection" commandName="Export or Publish Selected Rows" description="Export or Publish Selected Rows" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJOA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.tableview.ui.views.DatasetStatsView/ncsa.eclipse.core.actions.ListenForSelection" commandName="Listen For Selection" description="Auto-Sync to Scenario View (on/off)" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJOQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.CreateMap" commandName="New Scenario" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJOg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView/ncsa.eclipse.core.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJOw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.LayerUp" commandName="Move Layer Up" description="Move Layer Up" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJPA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.LayerDown" commandName="Move Layer Down" description="Move Layer Down" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJPQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.ScenariosView/edu.illinois.ncsa.ergo.gis.ui.actions.ScenarioManagerDelete" commandName="Delete" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJPg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView/edu.illinois.ncsa.ergo.gis.ui.actions.ClearCache" commandName="Clear Cache" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJPw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView/edu.illinois.ncsa.ergo.gis.ui.actions.NewRepository" commandName="New Repository" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJQA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView/csa.eclipse.core.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJQQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView/edu.illinois.ncsa.ergo.gis.ui.actions.RepositoryManagerDelete" commandName="Remove Repository" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJQg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RepositoryView/edu.illinois.ncsa.ergo.gis.ui.actions.SyncRepositoriesAction" commandName="Synchronize Repositories with recommeded" description="Synchronizes your repositories with the published list of recommended repositories" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJQw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererSaveImage" commandName="Save Image..." description="Save Image..." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJRA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererTiltDown" commandName="Tilt Down" description="Tilt Down" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJRQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererTiltUp" commandName="Tilt Up" description="Tilt Up" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJRg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererPanDown" commandName="Pan Down" description="Pan Down" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJRw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererPanUp" commandName="Pan Up" description="Pan Up" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJSA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererPanRight" commandName="Pan Right" description="Pan Right" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJSQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererPanLeft" commandName="Pan Left" description="Pan Left" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJSg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererFreePan" commandName="Free Pan" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJSw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererZoomOut" commandName="Zoom Out" description="Zoom Out" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJTA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererZoomIn" commandName="Zoom In" description="Zoom In" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJTQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererZoomFullExtent" commandName="Default View" description="Default View (restore zoom to default)" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJTg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.AutoRefreshMap" commandName="Auto Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJTw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RefreshRenderer" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJUA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.ShowRenderControlHelp" commandName="Show render control help" description="Shows the renderer control help dialog" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJUQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.RendererQuerySatellite" commandName="Aerial Imagery" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJUg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererClearSelection" commandName="Clear Selection" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJUw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererEditFeature" commandName="Edit Selected Features" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJVA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.RendererView/edu.illinois.ncsa.ergo.gis.ui.actions.RendererSelectFeature" commandName="Select Features" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJVQ5yEe-FJ-Www2dihw" elementId="AUTOGEN:::edu.illinois.ncsa.ergo.gis.ui.views.CatalogView/ncsa.eclipse.core.actions.Refresh" commandName="Refresh" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJVg5yEe-FJ-Www2dihw" elementId="AUTOGEN:::ncsa.eclipse.core.views.LogView/ncsa.eclipse.core.actions.ClearLog" commandName="Clear Log" description="Remove all of the log entries." category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJVw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::ncsa.eclipse.core.views.LogView/ncsa.eclipse.core.actions.ExportLog" commandName="Export Log" description="Export the current contents to a file" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJWA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.showInformation" commandName="Show Tooltip Description" description="Displays information for the current caret location in a focused hover" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJWQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJWg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.pageUp" commandName="Page Up" description="Go up one page" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJWw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.columnPrevious" commandName="Previous Column" description="Go to the previous column" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJXA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.copyBuildIdCommand" commandName="Copy Build Id To Clipboard" description="Copies the build id to the clipboard." category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJXQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.textEnd" commandName="Select Text End" description="Select to the end of the text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJXg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.deletePreviousWord" commandName="Delete Previous Word" description="Delete the previous word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJXw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.wordPrevious" commandName="Previous Word" description="Go to the previous word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJYA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.textStart" commandName="Select Text Start" description="Select to the beginning of the text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJYQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.revertToSaved" commandName="Revert to Saved" description="Revert to the last saved state" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJYg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.addToWorkingSet" commandName="Add to Working Set" description="Adds the selected object to a working set." category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJYw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.upperCase" commandName="To Upper Case" description="Changes the selection to upper case" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJZA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.windowEnd" commandName="Select Window End" description="Select to the end of the window" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJZQ5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.ui.command.addPlugin" commandName="Add Maven Plugin" description="Add Maven Plugin" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJZg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.removeFromWorkingSet" commandName="Remove From Working Set" description="Removes the selected object from a working set." category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJZw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.delete.line.to.end" commandName="Delete to End of Line" description="Delete to the end of a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJaA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.deleteCompleted" commandName="Delete Completed Tasks" description="Delete the tasks marked as completed" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJaQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.windowEnd" commandName="Window End" description="Go to the end of the window" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJag5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.line" commandName="Go to Line" description="Go to a specified line of text" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJaw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.deleteNextWord" commandName="Delete Next Word" description="Delete the next word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJbA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode" commandName="Toggle Block Selection" description="Toggle block / column selection in the current text editor" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJbQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.goToResource" commandName="Go to" description="Go to a particular resource in the active view" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJbg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.lineUp" commandName="Select Line Up" description="Extend the selection to the previous line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJbw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.buildLast" commandName="Repeat Working Set Build" description="Repeat the last working set build" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJcA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.buildProject" commandName="Build Project" description="Build the selected project" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJcQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.cut.line.to.end" commandName="Cut to End of Line" description="Cut to the end of a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJcg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.newQuickMenu" commandName="New menu" description="Open the New menu" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJcw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.openProject" commandName="Open Project" description="Open a project" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJdA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.file.openWorkspace" commandName="Switch Workspace" description="Open the workspace selection dialog" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJdQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.textStart" commandName="Text Start" description="Go to the beginning of the text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJdg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.properties" commandName="Properties" description="Display the properties of the selected item's project " category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJdw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.clear.mark" commandName="Clear Mark" description="Clear the mark" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJeA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.buildAll" commandName="Build All" description="Build all projects" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJeQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.columnPrevious" commandName="Select Previous Column" description="Select the previous column" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJeg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" commandName="Show Selected Element Only" description="Show Selected Element Only" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJew5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.cut.line.to.beginning" commandName="Cut to Beginning of Line" description="Cut to the beginning of a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJfA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.showRulerContextMenu" commandName="Show Ruler Context Menu" description="Show the context menu for the ruler" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJfQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.copyConfigCommand" commandName="Copy Configuration Data To Clipboard" description="Copies the configuration data (system properties, installed bundles, etc) to the clipboard." category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJfg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.smartEnterInverse" commandName="Insert Line Above Current Line" description="Adds a new line above the current line" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJfw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.toggleOverwrite" commandName="Toggle Overwrite" description="Toggle overwrite mode" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJgA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.lineDown" commandName="Line Down" description="Go down one line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJgQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.rebuildAll" commandName="Rebuild All" description="Rebuild all projects" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJgg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition" commandName="Last Edit Location" description="Last edit location" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJgw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.open.hyperlink" commandName="Open Hyperlink" description="Opens the hyperlink at the caret location or opens a chooser if more than one hyperlink is available" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJhA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.openLocalFile" commandName="Open File..." description="Open a file" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJhQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.configureFilters" commandName="Configure Contents..." description="Configure the filters to apply to the markers view" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJhg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.shiftRight" commandName="Shift Right" description="Shift a block of text to the right" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJhw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.findIncremental" commandName="Incremental Find" description="Incremental find" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJiA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.lineEnd" commandName="Line End" description="Go to the end of the line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJiQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.swap.mark" commandName="Swap Mark" description="Swap the mark with the cursor position" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJig5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.deletePrevious" commandName="Delete Previous" description="Delete the previous character" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJiw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.shiftLeft" commandName="Shift Left" description="Shift a block of text to the left" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJjA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.lineStart" commandName="Select Line Start" description="Select to the beginning of the line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJjQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.columnNext" commandName="Select Next Column" description="Select the next column" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJjg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.delete.line" commandName="Delete Line" description="Delete a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJjw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.showInSystemExplorer" commandName="Show In (System Explorer)" description="Show in system's explorer (file manager)" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJkA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.lineDown" commandName="Select Line Down" description="Extend the selection to the next line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJkQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.lowerCase" commandName="To Lower Case" description="Changes the selection to lower case" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJkg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.OpenMarkersView" commandName="Open Another" description="Open another view" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJkw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.lineEnd" commandName="Select Line End" description="Select to the end of the line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJlA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.closeUnrelatedProjects" commandName="Close Unrelated Projects" description="Close unrelated projects" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJlQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.smartEnter" commandName="Insert Line Below Current Line" description="Adds a new line below the current line" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJlg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.lineStart" commandName="Line Start" description="Go to the start of the line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJlw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.wordPrevious" commandName="Select Previous Word" description="Select the previous word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJmA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.hippieCompletion" commandName="Word Completion" description="Context insensitive completion" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJmQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.delete.line.to.beginning" commandName="Delete to Beginning of Line" description="Delete to the beginning of a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJmg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.configureColumns" commandName="Configure Columns..." description="Configure the columns in the markers view" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJmw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.findPrevious" commandName="Find Previous" description="Find previous item" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJnA5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.ui.command.openPom" commandName="Open Maven POM" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJnQ5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.ui.command.updateProject" commandName="Update Project" description="Update Maven Project configuration and dependencies" category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJng5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.scroll.lineUp" commandName="Scroll Line Up" description="Scroll up one line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJnw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.set.mark" commandName="Set Mark" description="Set the mark" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJoA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters" commandName="Show Whitespace Characters" description="Shows whitespace characters in current text editor" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paaJoQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.showResourceByPath" commandName="Show Resource in Navigator" description="Show a resource in the Navigator given its path" category="_paawSg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paaJog5yEe-FJ-Www2dihw" elementId="resourcePath" name="Resource Path" typeId="org.eclipse.ui.ide.resourcePath" optional="false"/>
+  </commands>
+  <commands xmi:id="_paawAA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.findNext" commandName="Find Next" description="Find next item" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawAQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.rebuildProject" commandName="Rebuild Project" description="Rebuild the selected projects" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawAg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.buildAutomatically" commandName="Build Automatically" description="Toggle the workspace build automatically function" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawAw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.addTask" commandName="Add Task..." description="Add a task" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawBA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.copyLineDown" commandName="Copy Lines" description="Duplicates the selected lines and moves the selection to the copy" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawBQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.toggleInsertMode" commandName="Toggle Insert Mode" description="Toggle insert mode" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawBg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.cleanAction" commandName="Build Clean" description="Discard old built state" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawBw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.moveLineDown" commandName="Move Lines Down" description="Moves the selected lines down" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawCA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.lineUp" commandName="Line Up" description="Go up one line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawCQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.windowStart" commandName="Window Start" description="Go to the start of the window" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawCg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.wordNext" commandName="Select Next Word" description="Select the next word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawCw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.pageDown" commandName="Page Down" description="Go down one page" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawDA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.textEnd" commandName="Text End" description="Go to the end of the text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawDQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.showInQuickMenu" commandName="Show In..." description="Open the Show In menu" category="_paawSg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawDg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.copyLineUp" commandName="Duplicate Lines" description="Duplicates the selected lines and leaves the selection unchanged" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawDw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.project.closeProject" commandName="Close Project" description="Close the selected project" category="_paawUg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawEA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.findIncrementalReverse" commandName="Incremental Find Reverse" description="Incremental find reverse" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawEQ5yEe-FJ-Www2dihw" elementId="org.eclipse.m2e.core.ui.command.addDependency" commandName="Add Maven Dependency" description="Add Maven Dependency" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawEg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.columnNext" commandName="Next Column" description="Go to the next column" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawEw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.goto.wordNext" commandName="Next Word" description="Go to the next word" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawFA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.cut.line" commandName="Cut Line" description="Cut a line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawFQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.selectWorkingSets" commandName="Select Working Sets" description="Select the working sets that are applicable for this window." category="_paawTg5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawFg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.deleteNext" commandName="Delete Next" description="Delete the next character" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawFw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.moveLineUp" commandName="Move Lines Up" description="Moves the selected lines up" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawGA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.pageDown" commandName="Select Page Down" description="Select to the bottom of the page" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawGQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.join.lines" commandName="Join Lines" description="Join lines of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawGg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.markCompleted" commandName="Mark Completed" description="Mark the selected tasks as completed" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawGw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.recenter" commandName="Recenter" description="Scroll cursor line to center, top and bottom" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawHA5yEe-FJ-Www2dihw" elementId="org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals" commandName="Quick Fix" description="Suggest possible fixes for a problem" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawHQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.select.windowStart" commandName="Select Window Start" description="Select to the start of the window" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawHg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.scroll.lineDown" commandName="Scroll Line Down" description="Scroll down one line of text" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawHw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.navigate.openResource" commandName="Open Resource" description="Open an editor on a particular resource" category="_paawSg5yEe-FJ-Www2dihw">
+    <parameters xmi:id="_paawIA5yEe-FJ-Www2dihw" elementId="filePath" name="File Path" typeId="org.eclipse.ui.ide.resourcePath"/>
+  </commands>
+  <commands xmi:id="_paawIQ5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.selectNextChange" commandName="Select Next Change" description="Select Next Change" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawIg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.showRulerAnnotationInformation" commandName="Show Ruler Annotation Tooltip" description="Displays annotation information for the caret line in a focused hover" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawIw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.delimiter.unix" commandName="Convert Line Delimiters to Unix (LF, \n, 0A, &#xb6;)" description="Converts the line delimiters to Unix (LF, \n, 0A, &#xb6;)" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawJA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.showChangeRulerInformation" commandName="Show Quick Diff Ruler Tooltip" description="Displays quick diff or revision information for the caret line in a focused hover" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawJQ5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.copyAllRightToLeft" commandName="Copy All from Right to Left" description="Copy All Changes from Right to Left" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawJg5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.compareWithOther" commandName="Compare With Other Resource" description="Compare resources, clipboard contents or editors" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawJw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.revisions.author.toggle" commandName="Toggle Revision Author Display" description="Toggles the display of the revision author" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawKA5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.ignoreWhiteSpace" commandName="Ignore White Space" description="Ignore white space where applicable" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawKQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.quickdiff.revert" commandName="Revert Lines" description="Revert the current selection, block or deleted lines" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawKg5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.copyLeftToRight" commandName="Copy from Left to Right" description="Copy Current Change from Left to Right" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawKw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.revisions.rendering.cycle" commandName="Cycle Revision Coloring Mode" description="Cycles through the available coloring modes for revisions" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawLA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.collapse" commandName="Collapse" description="Collapses the folded region at the current selection" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawLQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.collapse_all" commandName="Collapse All" description="Collapses all folded regions" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawLg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.removeTrailingWhitespace" commandName="Remove Trailing Whitespace" description="Removes the trailing whitespace of each line" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawLw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.lineNumberToggle" commandName="Show Line Numbers" description="Toggle display of line numbers" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawMA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.quickdiff.revertLine" commandName="Revert Line" description="Revert the current line" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawMQ5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.selectPreviousChange" commandName="Select Previous Change" description="Select Previous Change" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawMg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.toggle" commandName="Toggle Folding" description="Toggles folding in the current editor" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawMw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.delimiter.windows" commandName="Convert Line Delimiters to Windows (CRLF, \r\n, 0D0A, &#xa4;&#xb6;)" description="Converts the line delimiters to Windows (CRLF, \r\n, 0D0A, &#xa4;&#xb6;)" category="_paawTQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawNA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.expand" commandName="Expand" description="Expands the folded region at the current selection" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawNQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.editors.revisions.id.toggle" commandName="Toggle Revision Id Display" description="Toggles the display of the revision id" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawNg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.expand_all" commandName="Expand All" description="Expands all folded regions" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawNw5yEe-FJ-Www2dihw" elementId="org.eclipse.quickdiff.toggle" commandName="Quick Diff Toggle" description="Toggles quick diff information display on the line number ruler" category="_paawTA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawOA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.edit.text.folding.restore" commandName="Reset Structure" description="Resets the folding structure" category="_paawVA5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawOQ5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.copyRightToLeft" commandName="Copy from Right to Left" description="Copy Current Change from Right to Left" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawOg5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.copyAllLeftToRight" commandName="Copy All from Left to Right" description="Copy All Changes from Left to Right" category="_paawVQ5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawOw5yEe-FJ-Www2dihw" elementId="AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.ui.texteditor.BookmarkRulerAction" commandName="Text Editor Bookmark Ruler Action" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <commands xmi:id="_paawPA5yEe-FJ-Www2dihw" elementId="AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.ui.texteditor.SelectRulerAction" commandName="Text Editor Ruler Single-Click" category="_paawTw5yEe-FJ-Www2dihw"/>
+  <addons xmi:id="_paawPQ5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_paawPg5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_paawPw5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_paawQA5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_paawQQ5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_paawQg5yEe-FJ-Www2dihw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_paawQw5yEe-FJ-Www2dihw" elementId="Cleanup Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon"/>
+  <addons xmi:id="_paawRA5yEe-FJ-Www2dihw" elementId="DnD Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
+  <addons xmi:id="_paawRQ5yEe-FJ-Www2dihw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
+  <addons xmi:id="_paawRg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_paawRw5yEe-FJ-Www2dihw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
+  <categories xmi:id="_paawSA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
+  <categories xmi:id="_paawSQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.perspectives" name="Perspectives" description="Commands for opening perspectives"/>
+  <categories xmi:id="_paawSg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.navigate" name="Navigate"/>
+  <categories xmi:id="_paawSw5yEe-FJ-Www2dihw" elementId="org.eclipse.gef.category.view" name="View" description="View"/>
+  <categories xmi:id="_paawTA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.edit" name="Edit"/>
+  <categories xmi:id="_paawTQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.file" name="File"/>
+  <categories xmi:id="_paawTg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.window" name="Window"/>
+  <categories xmi:id="_paawTw5yEe-FJ-Www2dihw" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
+  <categories xmi:id="_paawUA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.dialogs" name="Dialogs" description="Commands for opening dialogs"/>
+  <categories xmi:id="_paawUQ5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.help" name="Help"/>
+  <categories xmi:id="_paawUg5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.project" name="Project"/>
+  <categories xmi:id="_paawUw5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.ide.markerContents" name="Contents" description="The category for menu contents"/>
+  <categories xmi:id="_paawVA5yEe-FJ-Www2dihw" elementId="org.eclipse.ui.category.textEditor" name="Text Editing" description="Text Editing Commands"/>
+  <categories xmi:id="_paawVQ5yEe-FJ-Www2dihw" elementId="org.eclipse.compare.ui.category.compare" name="Compare" description="Compare command category"/>
+</application:Application>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.geometry.sdk"
+      label="GEF4 Geometry SDK"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/tools/gef/gef4/updates/releases/"/>
+      <discovery label="%updateSiteName" url="http://download.eclipse.org/tools/gef/gef4/updates/releases/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.gef4.geometry.source"
+         version="0.1.0.201506081138"/>
+
+   <includes
+         id="org.eclipse.gef4.geometry.doc"
+         version="0.1.0.201506081138"/>
+
+   <includes
+         id="org.eclipse.gef4.geometry.convert.fx.source"
+         version="0.1.0.201506081138"/>
+
+   <includes
+         id="org.eclipse.gef4.geometry.convert.swt.source"
+         version="0.1.0.201506081138"/>
+
+</feature>

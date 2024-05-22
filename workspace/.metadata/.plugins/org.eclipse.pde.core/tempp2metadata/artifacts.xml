@@ -1,0 +1,2280 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/C:/Projects/ERGO/workspace/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1715783659151'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='341'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.httpclient4' version='1.1.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='74720'/>
+        <property name='download.size' value='74720'/>
+        <property name='download.md5' value='84e7b20e546ac46d081ddacf13e9aead'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.hamcrest.core' version='1.3.0.v201303031735'>
+      <properties size='3'>
+        <property name='artifact.size' value='55198'/>
+        <property name='download.size' value='55198'/>
+        <property name='download.md5' value='f492832e50ea102335f883d5c8c9b0f7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.java7' version='1.0.100.v20150423-0754'>
+      <properties size='3'>
+        <property name='artifact.size' value='17111'/>
+        <property name='download.size' value='17111'/>
+        <property name='download.md5' value='e6a7275161aaa562e9fcd08c4cc678b1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.repository' version='2.3.100.v20150428-1613'>
+      <properties size='3'>
+        <property name='artifact.size' value='131666'/>
+        <property name='download.size' value='131666'/>
+        <property name='download.md5' value='f94bc40639f1a3d94a95f94c5d63ccd2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.tableview.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='106559'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wb.core.lib' version='1.8.0.r45x201506110820'>
+      <properties size='1'>
+        <property name='download.size' value='4046703'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.socialscience' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='240431'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net.win32.x86_64' version='1.0.100.v20140124-2013'>
+      <properties size='3'>
+        <property name='artifact.size' value='29259'/>
+        <property name='download.size' value='29259'/>
+        <property name='download.md5' value='1a960020d3713b6a1ed1631f3b3030c6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='269381'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.ide' version='3.11.0.v20150825-2158'>
+      <properties size='3'>
+        <property name='artifact.size' value='2352960'/>
+        <property name='download.size' value='2352960'/>
+        <property name='download.md5' value='38e39e11f2e24bbac43021ef70f67889'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface.text' version='3.10.0.v20150603-1752'>
+      <properties size='3'>
+        <property name='artifact.size' value='1016704'/>
+        <property name='download.size' value='1016704'/>
+        <property name='download.md5' value='3d9433117f6d60136d07d80f881389aa'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.jarprocessor' version='1.0.400.v20150430-1836'>
+      <properties size='3'>
+        <property name='artifact.size' value='68216'/>
+        <property name='download.size' value='68216'/>
+        <property name='download.md5' value='cec72ca5b2c753de2c2b119d4ea195b3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.slf4j.impl.log4j12' version='1.7.2.v20131105-2200'>
+      <properties size='3'>
+        <property name='artifact.size' value='16473'/>
+        <property name='download.size' value='16473'/>
+        <property name='download.md5' value='0b388043e70e8a3efa2898aee4833949'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding' version='1.5.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='200337'/>
+        <property name='download.size' value='200337'/>
+        <property name='download.md5' value='e4137d3f263cfdfe664d085d4c6e14fe'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.core' version='0.11.0.v20150511-1937'>
+      <properties size='3'>
+        <property name='artifact.size' value='212740'/>
+        <property name='download.size' value='212740'/>
+        <property name='download.md5' value='ffab61a2c831741b21947334d1182237'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.fragilities.mapping' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='75782'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='jgraph' version='1.0.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='24836171'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.validation' version='1.2.700.v201508251749'>
+      <properties size='3'>
+        <property name='artifact.size' value='421336'/>
+        <property name='download.size' value='421336'/>
+        <property name='download.md5' value='bcbb3f342bc5ae394c9a051abbbdc7f8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.layouts' version='1.1.200.201508170204'>
+      <properties size='3'>
+        <property name='artifact.size' value='133161'/>
+        <property name='download.size' value='133161'/>
+        <property name='download.md5' value='ce50a4faf9cc98c90c773fe249c48740'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.sat4j.core' version='2.3.5.v201308161310'>
+      <properties size='3'>
+        <property name='artifact.size' value='362968'/>
+        <property name='download.size' value='362968'/>
+        <property name='download.md5' value='797ce277f3dd2acb14f066fc1da203b9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.nebula.widgets.compositetable' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='249051'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.analysis.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='118849'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.ssl' version='1.0.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='9959'/>
+        <property name='download.size' value='9959'/>
+        <property name='download.md5' value='9b90c82e5ab083eb4d1978ab7f5a5da3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.variables' version='3.2.800.v20130819-1716'>
+      <properties size='3'>
+        <property name='artifact.size' value='34860'/>
+        <property name='download.size' value='34860'/>
+        <property name='download.md5' value='73c5e0a92688c5b839639d6a93b3cef8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.common.eclipse.descriptors' version='0.0.1.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='11183'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.win32' version='3.2.500.v20150423-0822'>
+      <properties size='3'>
+        <property name='artifact.size' value='25489'/>
+        <property name='download.size' value='25489'/>
+        <property name='download.md5' value='e4ad5f4428f4b0bc214dde61aea63bb0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.analysis' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='65475'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.httpcomponents.httpclient' version='4.3.6.v201411290715'>
+      <properties size='3'>
+        <property name='artifact.size' value='850736'/>
+        <property name='download.size' value='850736'/>
+        <property name='download.md5' value='d342d129a624a6ba7bd0677fcdc8faf8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director.app' version='1.0.400.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='51443'/>
+        <property name='download.size' value='51443'/>
+        <property name='download.md5' value='7092609e34a13ab3db680a8345c5c6e8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.artifact.repository' version='1.1.400.v20150513-2116'>
+      <properties size='3'>
+        <property name='artifact.size' value='140039'/>
+        <property name='download.size' value='140039'/>
+        <property name='download.md5' value='a2987350510ba4f2dcf48b1b375aa5a8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.tukaani.xz' version='1.3.0.v201308270617'>
+      <properties size='3'>
+        <property name='artifact.size' value='109753'/>
+        <property name='download.size' value='109753'/>
+        <property name='download.md5' value='40157c5a0e3cb095bd2953d1afa8ea26'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.barbados' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='307009'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='2412668'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.css' version='1.7.0.v201011041433'>
+      <properties size='3'>
+        <property name='artifact.size' value='356012'/>
+        <property name='download.size' value='356012'/>
+        <property name='download.md5' value='59805d01c5b30652b766971c2b8770aa'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.services' version='1.2.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='26519'/>
+        <property name='download.size' value='26519'/>
+        <property name='download.md5' value='6f6eb3cd1d519c9629428dfe9fed9af2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.modifiedmappane.mapaware' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4137'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis.validation' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='9227'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.console' version='1.1.100.v20141023-1406'>
+      <properties size='3'>
+        <property name='artifact.size' value='118822'/>
+        <property name='download.size' value='118822'/>
+        <property name='download.md5' value='9e0a486fadda567ea576710629b8521a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.event' version='1.3.100.v20140115-1647'>
+      <properties size='3'>
+        <property name='artifact.size' value='32352'/>
+        <property name='download.size' value='32352'/>
+        <property name='download.md5' value='65097356e488512b10e6588eaa02141d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.jms' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='17369'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net' version='1.2.300.v20141118-1725'>
+      <properties size='3'>
+        <property name='artifact.size' value='71284'/>
+        <property name='download.size' value='71284'/>
+        <property name='download.md5' value='619bfb545cce58f6bbea48d625a5c07c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.11.2.v20160128-0629'>
+      <properties size='3'>
+        <property name='artifact.size' value='5727021'/>
+        <property name='download.size' value='5727021'/>
+        <property name='download.md5' value='9e0daa13b802fcc7bb754289785e5fbb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.servlet' version='1.2.2.v20160202-2102'>
+      <properties size='3'>
+        <property name='artifact.size' value='172216'/>
+        <property name='download.size' value='172216'/>
+        <property name='download.md5' value='a6580717e0ba2501e81379ed07e9b273'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.preferences' version='3.5.300.v20150408-1437'>
+      <properties size='3'>
+        <property name='artifact.size' value='128643'/>
+        <property name='download.size' value='128643'/>
+        <property name='download.md5' value='265136004143dcc8f2d30cd1c54d0af5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.identity' version='3.6.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='62379'/>
+        <property name='download.size' value='62379'/>
+        <property name='download.md5' value='274481f5260421e6624f6a708c39c3c1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.ssl' version='1.2.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='14782'/>
+        <property name='download.size' value='14782'/>
+        <property name='download.md5' value='06da278cedcfb3bd24e7bfab6dbaac24'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.environment' version='1.0.400.v200912181831'>
+      <properties size='3'>
+        <property name='artifact.size' value='47126'/>
+        <property name='download.size' value='47126'/>
+        <property name='download.md5' value='5a1d17644e5cef6fe37f52330a5f6008'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.reports.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5352'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.repositories.sam.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4687'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.edit' version='2.11.1.v20160208-0841'>
+      <properties size='3'>
+        <property name='artifact.size' value='278988'/>
+        <property name='download.size' value='278988'/>
+        <property name='download.md5' value='9f1f09756de8c6cf289cae2ad20e09c7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.jetty' version='3.1.2.v20160115-1350'>
+      <properties size='3'>
+        <property name='artifact.size' value='27102'/>
+        <property name='download.size' value='27102'/>
+        <property name='download.md5' value='08188d9b99483d8c60b3168890f02f64'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.runtime' version='0.10.0.v201209301036'>
+      <properties size='3'>
+        <property name='artifact.size' value='79641'/>
+        <property name='download.size' value='79641'/>
+        <property name='download.md5' value='942fc321488d77e40fa23cf19613aea2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.postgis.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5886'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.xsd.core' version='1.1.900.v201401141857'>
+      <properties size='3'>
+        <property name='artifact.size' value='75520'/>
+        <property name='download.size' value='75520'/>
+        <property name='download.md5' value='451c3605579dc85ddfab6f61502eeb44'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.repositories.sam' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='158839'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.reports' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='11364'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.common' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='242050'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.util' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='380636'/>
+        <property name='download.size' value='380636'/>
+        <property name='download.md5' value='6147f5043e3864650118963cf9e8709a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.socialscience.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='3383605'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.dialogs' version='1.0.0.v20150513-0856'>
+      <properties size='3'>
+        <property name='artifact.size' value='46190'/>
+        <property name='download.size' value='46190'/>
+        <property name='download.md5' value='543eaa6146fe151260a3eccd18471ac1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.trebuchet.core' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='207563'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher' version='1.3.100.v20150511-1540'>
+      <properties size='3'>
+        <property name='artifact.size' value='50527'/>
+        <property name='download.size' value='50527'/>
+        <property name='download.md5' value='a81726d7f722fb9fa2391885cdba0c05'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.model.workbench' version='1.1.100.v20150407-1430'>
+      <properties size='3'>
+        <property name='artifact.size' value='376758'/>
+        <property name='download.size' value='376758'/>
+        <property name='download.md5' value='84fc4085b9780e65679d5bc8bda6ad60'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.runtime.slf4j.simple' version='1.6.2.20150902-0001'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='19981'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.resources' version='3.10.1.v20150725-1910'>
+      <properties size='3'>
+        <property name='artifact.size' value='884203'/>
+        <property name='download.size' value='884203'/>
+        <property name='download.md5' value='b936e0dfb59dab59726845a0fb7518cf'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.junit' version='4.12.0.v201504281640'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='291017'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.bidi' version='0.10.0.v20130327-1442'>
+      <properties size='3'>
+        <property name='artifact.size' value='48549'/>
+        <property name='download.size' value='48549'/>
+        <property name='download.md5' value='5743593c7e2838926048a9323ecf68e3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.repository.tools' version='2.1.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='237689'/>
+        <property name='download.size' value='237689'/>
+        <property name='download.md5' value='4016d25f6f684be919f99fa00832d410'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.widgets' version='1.1.0.v20150427-1751'>
+      <properties size='3'>
+        <property name='artifact.size' value='14311'/>
+        <property name='download.size' value='14311'/>
+        <property name='download.md5' value='2aae70efe55dc6545e3b39884b92d5c7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.common' version='3.7.0.v20150402-1709'>
+      <properties size='3'>
+        <property name='artifact.size' value='111675'/>
+        <property name='download.size' value='111675'/>
+        <property name='download.md5' value='7457b71bbc27d63792d297918b11ece0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.http.registry' version='1.1.300.v20130402-1529'>
+      <properties size='3'>
+        <property name='artifact.size' value='45207'/>
+        <property name='download.size' value='45207'/>
+        <property name='download.md5' value='e0d110978b705096d2930b79e067a357'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.operations' version='2.4.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='75972'/>
+        <property name='download.size' value='75972'/>
+        <property name='download.md5' value='eb442323193c89e785fce07aed442495'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.intro.universal' version='3.2.800.v20150325-0952'>
+      <properties size='3'>
+        <property name='artifact.size' value='1641275'/>
+        <property name='download.size' value='1641275'/>
+        <property name='download.md5' value='10604b8b269c2ecdbcb423c66b22809b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.io' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='120600'/>
+        <property name='download.size' value='120600'/>
+        <property name='download.md5' value='f7e7417b7539ceba846276d57ea233a8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.analysis.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='38804'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common' version='2.11.1.v20160208-0816'>
+      <properties size='3'>
+        <property name='artifact.size' value='357662'/>
+        <property name='download.size' value='357662'/>
+        <property name='download.md5' value='82279a12be0686c99a6bc75ae11fd534'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.dom4j' version='1.6.1.v201312101416'>
+      <properties size='3'>
+        <property name='artifact.size' value='329205'/>
+        <property name='download.size' value='329205'/>
+        <property name='download.md5' value='bd971fc70bf4c1f7f84a945896e414e2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.util' version='1.0.500.v20130404-1337'>
+      <properties size='3'>
+        <property name='artifact.size' value='77932'/>
+        <property name='download.size' value='77932'/>
+        <property name='download.md5' value='5a685f382ef5360cc7273ee9c01d063a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.update.configurator' version='3.3.300.v20140518-1928'>
+      <properties size='3'>
+        <property name='artifact.size' value='101014'/>
+        <property name='download.size' value='101014'/>
+        <property name='download.md5' value='a9b6eab4afadd8fcb5eca2a8b0dfab49'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.lifeline' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='96945'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86_64' version='1.0.100.v20130327-1442'>
+      <properties size='3'>
+        <property name='artifact.size' value='35334'/>
+        <property name='download.size' value='35334'/>
+        <property name='download.md5' value='38e41854340d297823a28882a6cca0d7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.indexer' version='1.6.2.20150902-0001'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1132275'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.hazard' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='2726508'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.networkloss.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5537'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.ui' version='1.1.201.v20150803-1228'>
+      <properties size='3'>
+        <property name='artifact.size' value='186027'/>
+        <property name='download.size' value='186027'/>
+        <property name='download.md5' value='632603e33e1ad5cb4137ea9c59050b3f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core' version='1.6.2.20150902-0002'>
+      <properties size='3'>
+        <property name='artifact.size' value='605728'/>
+        <property name='download.size' value='605728'/>
+        <property name='download.md5' value='ec3ea7a0dcce15a75ce9b2aa472d949d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis.gis' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='66295'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.core' version='1.0.7.v20121108-1250'>
+      <properties size='3'>
+        <property name='artifact.size' value='389365'/>
+        <property name='download.size' value='389365'/>
+        <property name='download.md5' value='9f9d86ba84910e70c3b2e9ebebf648c2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di' version='1.5.0.v20150421-2214'>
+      <properties size='3'>
+        <property name='artifact.size' value='51686'/>
+        <property name='download.size' value='51686'/>
+        <property name='download.md5' value='fd4b0ca733d7877fa2da4ff09291cfdc'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.workbench.texteditor' version='3.9.100.v20141023-1946'>
+      <properties size='3'>
+        <property name='artifact.size' value='587218'/>
+        <property name='download.size' value='587218'/>
+        <property name='download.md5' value='cc40717aa9c070d6914a42ebbeee32eb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer' version='3.2.200.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='127786'/>
+        <property name='download.size' value='127786'/>
+        <property name='download.md5' value='7e0541c538d676379d519f3c9697f521'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi' version='3.10.102.v20160118-1700'>
+      <properties size='3'>
+        <property name='artifact.size' value='1307562'/>
+        <property name='download.size' value='1307562'/>
+        <property name='download.md5' value='f9b562e8f11ee3f18d5727706c0c24c7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.servlet' version='3.0.0.v201112011016'>
+      <properties size='3'>
+        <property name='artifact.size' value='202051'/>
+        <property name='download.size' value='202051'/>
+        <property name='download.md5' value='21a91769e8a19aa28994ac6a86bab1e9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.maven.runtime' version='1.6.2.20150902-0001'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='6000499'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.events' version='3.0.0.draft20060413_v201105210656'>
+      <properties size='3'>
+        <property name='artifact.size' value='18205'/>
+        <property name='download.size' value='18205'/>
+        <property name='download.md5' value='f78c10bd77b8c842cae88e8988378e23'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.cli' version='1.2.0.v201404270220'>
+      <properties size='3'>
+        <property name='artifact.size' value='48957'/>
+        <property name='download.size' value='48957'/>
+        <property name='download.md5' value='4db7aa7b685fe849dfc110cb280a704e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.runtime' version='3.11.1.v20150903-1804'>
+      <properties size='3'>
+        <property name='artifact.size' value='78923'/>
+        <property name='download.size' value='78923'/>
+        <property name='download.md5' value='a0ef3c108d0a6f5e71a800c63f8c2f65'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.metadata' version='2.3.0.v20150511-1532'>
+      <properties size='3'>
+        <property name='artifact.size' value='342666'/>
+        <property name='download.size' value='342666'/>
+        <property name='download.md5' value='652448094db7eeffa828db6861bb641d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.lang' version='2.6.0.v201404270220'>
+      <properties size='3'>
+        <property name='artifact.size' value='298623'/>
+        <property name='download.size' value='298623'/>
+        <property name='download.md5' value='b829a6c694dcbd23eac502a7d8aad072'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.buildings.fireignition' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='15588'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.events' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='68155'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.jsp.jasper' version='1.0.500.v20150119-1358'>
+      <properties size='3'>
+        <property name='artifact.size' value='28120'/>
+        <property name='download.size' value='28120'/>
+        <property name='download.md5' value='f5c9838d3e3364fa782ce3141daf6fd3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.reports.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='84414'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.discovery' version='0.2.0.v201004190315'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='68617'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.bindings' version='0.11.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='49705'/>
+        <property name='download.size' value='49705'/>
+        <property name='download.md5' value='52ae7ebe5dde956085fcad30b8ce1a88'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis.validation.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='21082'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.reports.editor.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='121442'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.repositoryconverter' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='17154'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.expressions' version='3.5.0.v20150421-2214'>
+      <properties size='3'>
+        <property name='artifact.size' value='90250'/>
+        <property name='download.size' value='90250'/>
+        <property name='download.md5' value='e59517b1c3c255b7c369a0e76bb07799'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.util' version='1.7.0.v201011041433'>
+      <properties size='3'>
+        <property name='artifact.size' value='158140'/>
+        <property name='download.size' value='158140'/>
+        <property name='download.md5' value='9976ce301b38bf12d83e682f42816159'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.matheclipse' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='971543'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.swt' version='0.12.0.v20150511-1003'>
+      <properties size='3'>
+        <property name='artifact.size' value='220646'/>
+        <property name='download.size' value='220646'/>
+        <property name='download.md5' value='2ae86f65cff7d7bb00331615c35d2f8d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.extensions' version='0.13.0.v20150421-2214'>
+      <properties size='3'>
+        <property name='artifact.size' value='28475'/>
+        <property name='download.size' value='28475'/>
+        <property name='download.md5' value='a66ac7c0ab3058cf1236b92dcb86a68c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.compress' version='1.6.0.v201310281400'>
+      <properties size='3'>
+        <property name='artifact.size' value='331411'/>
+        <property name='download.size' value='331411'/>
+        <property name='download.md5' value='4f609789e70f24e7a0f33ad0035d5cc2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.guava' version='15.0.0.v201403281430'>
+      <properties size='3'>
+        <property name='artifact.size' value='2263565'/>
+        <property name='download.size' value='2263565'/>
+        <property name='download.md5' value='c4250a49579035858acbc27c28dd87f8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.model.edit' version='1.6.2.20150902-0002'>
+      <properties size='3'>
+        <property name='artifact.size' value='399536'/>
+        <property name='download.size' value='399536'/>
+        <property name='download.md5' value='e2ea7ae5d63e07ae9072934132710e26'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.httpcomponents.httpcore' version='4.3.3.v201411290715'>
+      <properties size='3'>
+        <property name='artifact.size' value='319078'/>
+        <property name='download.size' value='319078'/>
+        <property name='download.md5' value='d3f9339b4d6a0e0ceaf18accf8de31e0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.emfworkbench.integration' version='1.2.101.v201107081800'>
+      <properties size='3'>
+        <property name='artifact.size' value='143346'/>
+        <property name='download.size' value='143346'/>
+        <property name='download.md5' value='a2fee4ad8da16b056d6b9e542f6047fa'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.pool' version='1.6.0.v201204271246'>
+      <properties size='3'>
+        <property name='artifact.size' value='122011'/>
+        <property name='download.size' value='122011'/>
+        <property name='download.md5' value='933c41a1b046f232274d496077956ba3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.grenada' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='905071'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface' version='3.11.1.v20160128-1644'>
+      <properties size='3'>
+        <property name='artifact.size' value='1189869'/>
+        <property name='download.size' value='1189869'/>
+        <property name='download.md5' value='458666b84345af7e04da8b106b235c22'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.compare.core' version='3.5.500.v20150505-1058'>
+      <properties size='3'>
+        <property name='artifact.size' value='63692'/>
+        <property name='download.size' value='63692'/>
+        <property name='download.md5' value='3a795a1da103e114564e529a5358707b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.annotations' version='1.4.0.v20150528-1451'>
+      <properties size='3'>
+        <property name='artifact.size' value='10680'/>
+        <property name='download.size' value='10680'/>
+        <property name='download.md5' value='2da93b5e9c3cd05df1f44583f5b49a22'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.compatibility.state' version='1.0.100.v20150402-1551'>
+      <properties size='3'>
+        <property name='artifact.size' value='241527'/>
+        <property name='download.size' value='241527'/>
+        <property name='download.md5' value='f4394a4e7bd7bad6f5b78fd9c49dfe9b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.nbsr' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='386972'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.inject' version='1.0.0.v20091030'>
+      <properties size='3'>
+        <property name='artifact.size' value='16996'/>
+        <property name='download.size' value='16996'/>
+        <property name='download.md5' value='508774113f4ecc361d7a7ec5dc93c737'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.beans' version='1.3.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='79096'/>
+        <property name='download.size' value='79096'/>
+        <property name='download.md5' value='223e31795ad591dbe2dfb65b21d98b00'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.http' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='116143'/>
+        <property name='download.size' value='116143'/>
+        <property name='download.md5' value='028e1dd41ed7e33acccbc26e7f3c8870'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.jamaica' version='1.1.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='618965'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.ogrescript' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='214376'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security' version='1.2.100.v20150423-1356'>
+      <properties size='3'>
+        <property name='artifact.size' value='108521'/>
+        <property name='download.size' value='108521'/>
+        <property name='download.md5' value='c3e16962375c4e16172e3cd6aa73aa97'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench3' version='0.13.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='9889'/>
+        <property name='download.size' value='9889'/>
+        <property name='download.md5' value='b5bad99ba52da3013437a3f1d136e12a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.style.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='150103'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.chart.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='49369'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.log4j' version='1.2.15.v201012070815'>
+      <properties size='3'>
+        <property name='artifact.size' value='428394'/>
+        <property name='download.size' value='428394'/>
+        <property name='download.md5' value='595993c2e704327df100abb4d28d600e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.resources.win32.x86_64' version='3.5.0.v20140124-1940'>
+      <properties size='3'>
+        <property name='artifact.size' value='27687'/>
+        <property name='download.size' value='27687'/>
+        <property name='download.md5' value='57b8775d78ef880233103f7031c35495'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.netinterdep' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='356187'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.services' version='3.5.0.v20150519-2006'>
+      <properties size='3'>
+        <property name='artifact.size' value='110093'/>
+        <property name='download.size' value='110093'/>
+        <property name='download.md5' value='42240f275d90a98876c9e787f1fa1a0e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.sdk.scheduler' version='1.2.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='116612'/>
+        <property name='download.size' value='116612'/>
+        <property name='download.md5' value='9afd9fe9ff01f8d42da2721ce6514c11'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.archetype.common' version='1.6.2.20150902-0001'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1971948'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.addons.swt' version='1.2.0.v20150512-1414'>
+      <properties size='3'>
+        <property name='artifact.size' value='146328'/>
+        <property name='download.size' value='146328'/>
+        <property name='download.md5' value='5152645608b29202082f5688516f3a0e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.servlet' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='125573'/>
+        <property name='download.size' value='125573'/>
+        <property name='download.md5' value='19bf7f27cf9536332ade05cf73e9f05c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.project.facet.core' version='1.4.300.v201111030423'>
+      <properties size='3'>
+        <property name='artifact.size' value='363922'/>
+        <property name='download.size' value='363922'/>
+        <property name='download.md5' value='78346ddf3b6cd07e5839efb7f484dac3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.jasper.glassfish' version='2.2.2.v201501141630'>
+      <properties size='3'>
+        <property name='artifact.size' value='2435771'/>
+        <property name='download.size' value='2435771'/>
+        <property name='download.md5' value='b3269c3e492f032b026de4ca3571c358'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.swt' version='0.13.0.v20150504-0621'>
+      <properties size='3'>
+        <property name='artifact.size' value='181935'/>
+        <property name='download.size' value='181935'/>
+        <property name='download.md5' value='8231d464c8eb16377ad6a21fbe910d74'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.metadata.repository' version='1.2.200.v20150428-1613'>
+      <properties size='3'>
+        <property name='artifact.size' value='118253'/>
+        <property name='download.size' value='118253'/>
+        <property name='download.md5' value='15d95ed9f710398dc75f13e8ab3fff16'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.104.2.v20160212-1350'>
+      <properties size='3'>
+        <property name='artifact.size' value='2748959'/>
+        <property name='download.size' value='2748959'/>
+        <property name='download.md5' value='9d764a16908044172bd5dafcf6debb75'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem' version='1.5.0.v20150725-1910'>
+      <properties size='3'>
+        <property name='artifact.size' value='61505'/>
+        <property name='download.size' value='61505'/>
+        <property name='download.md5' value='1e190ce402b35c308fe77bf14c195456'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.dtavista' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='534867'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.commons-codec' version='1.16.0'>
+      <properties size='3'>
+        <property name='artifact.size' value='360738'/>
+        <property name='download.size' value='360738'/>
+        <property name='download.md5' value='6e26920fa7228891980890cce06b718c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.elf.runtime' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='10403'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.duejava' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='26440'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director' version='2.3.200.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='103538'/>
+        <property name='download.size' value='103538'/>
+        <property name='download.md5' value='faa627f5023d5cabed4a7ef0fdadd980'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.location.us' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='2950362'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.text' version='3.5.400.v20150505-1044'>
+      <properties size='3'>
+        <property name='artifact.size' value='253256'/>
+        <property name='download.size' value='253256'/>
+        <property name='download.md5' value='848ec4fefcee818328aaabdde6f37669'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.edit' version='2.9.0.v20160208-0841'>
+      <properties size='3'>
+        <property name='artifact.size' value='127939'/>
+        <property name='download.size' value='127939'/>
+        <property name='download.md5' value='f8bf2d9f16eee02e459abf6b1faf1250'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.elf.core' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='59087'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.services' version='2.0.0.v20150403-1912'>
+      <properties size='3'>
+        <property name='artifact.size' value='53863'/>
+        <property name='download.size' value='53863'/>
+        <property name='download.md5' value='4a8b181c9a29a827d2096db675795827'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.rcp' version='4.5.2.v20160212-1500'>
+      <properties size='3'>
+        <property name='artifact.size' value='11354'/>
+        <property name='download.size' value='11354'/>
+        <property name='download.md5' value='4a2087c7590ee93a3cf9ee2998de7f6b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.geotools.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='35561'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xerces' version='2.9.0.v201101211617'>
+      <properties size='3'>
+        <property name='artifact.size' value='1338029'/>
+        <property name='download.size' value='1338029'/>
+        <property name='download.md5' value='961554fbcc83ea650148e29bea723e6b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.core' version='2.4.0.v20150527-1706'>
+      <properties size='3'>
+        <property name='artifact.size' value='72151'/>
+        <property name='download.size' value='72151'/>
+        <property name='download.md5' value='b6405a47116c4fc772a3235e9c207638'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.modifiedmappane.v4' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='137421'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.commands' version='0.11.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='25679'/>
+        <property name='download.size' value='25679'/>
+        <property name='download.md5' value='f7c0896c5936e588a2da541c5e57f147'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.engine' version='2.4.0.v20150511-1532'>
+      <properties size='3'>
+        <property name='artifact.size' value='206643'/>
+        <property name='download.size' value='206643'/>
+        <property name='download.md5' value='bddb798ba99ba931f866f8319da205e6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.dbpool' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='148416'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.lifeline.hazus' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='59434'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.reconciler.dropins' version='1.1.300.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='48352'/>
+        <property name='download.size' value='48352'/>
+        <property name='download.md5' value='7d588366a17aaf7543087197a6b63535'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.server' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='440966'/>
+        <property name='download.size' value='440966'/>
+        <property name='download.md5' value='4078e31dc2d47064db04192447d2229b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.console' version='3.6.100.v20150822-1912'>
+      <properties size='3'>
+        <property name='artifact.size' value='191378'/>
+        <property name='download.size' value='191378'/>
+        <property name='download.md5' value='d0ca6c0239fbf0fbaeba7a428ca64def'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.ergo.buildingclassificaton' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='20480'/>
+        <property name='download.size' value='338670'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.geotools14' version='14.1.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='131072'/>
+        <property name='download.size' value='49172415'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.draw2d' version='3.10.1.201508170204'>
+      <properties size='3'>
+        <property name='artifact.size' value='581077'/>
+        <property name='download.size' value='581077'/>
+        <property name='download.md5' value='d74ae351dbcb6ae8b66293173358c65d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.logback.appender' version='1.6.2.20150902-0002'>
+      <properties size='3'>
+        <property name='artifact.size' value='13922'/>
+        <property name='download.size' value='13922'/>
+        <property name='download.md5' value='1aa8024416a3b4900cbf9eb46c50fb7d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.logging.log4j' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5305'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='66092'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.itext' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1859977'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.di' version='1.1.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='15670'/>
+        <property name='download.size' value='15670'/>
+        <property name='download.md5' value='80516c7957b92ec2e7afa905991d98ae'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.pdfview' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1531375'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.jsp.jasper.registry' version='1.0.300.v20130327-1442'>
+      <properties size='3'>
+        <property name='artifact.size' value='12190'/>
+        <property name='download.size' value='12190'/>
+        <property name='download.md5' value='65dfdc71ee77fc7eabd78f82754927bd'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='edu.illinois.ncsa.ergo.eq.rcp.product_root.win32.win32.x86_64' version='1.7.0.202405151018'>
+      <properties size='1'>
+        <property name='download.size' value='33842'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.lifeline.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='111357'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.webapp' version='3.7.0.v20150425-0643'>
+      <properties size='3'>
+        <property name='artifact.size' value='634264'/>
+        <property name='download.size' value='634264'/>
+        <property name='download.md5' value='6c3e4090fa0440ccb8e5c9eef914d012'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.annotation' version='1.2.0.v201401042248'>
+      <properties size='3'>
+        <property name='artifact.size' value='27550'/>
+        <property name='download.size' value='27550'/>
+        <property name='download.md5' value='2f01581eb15db8f2507035c8b455bf97'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.app' version='1.3.300.v20150423-1356'>
+      <properties size='3'>
+        <property name='artifact.size' value='86680'/>
+        <property name='download.size' value='86680'/>
+        <property name='download.md5' value='cd60f1ec500d6161b7b79ddd2843eb08'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.classic' version='1.0.7.v20121108-1250'>
+      <properties size='3'>
+        <property name='artifact.size' value='261508'/>
+        <property name='download.size' value='261508'/>
+        <property name='download.md5' value='01ddeb3bd0721bd19b3a0a6a6ad28bb0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.dtavista.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='6752'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.servlet.jsp' version='2.2.0.v201112011158'>
+      <properties size='3'>
+        <property name='artifact.size' value='106639'/>
+        <property name='download.size' value='106639'/>
+        <property name='download.md5' value='cdaf37764ecda0ae846a16465ce34ffa'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.jobs' version='3.7.0.v20150330-2103'>
+      <properties size='3'>
+        <property name='artifact.size' value='107123'/>
+        <property name='download.size' value='107123'/>
+        <property name='download.md5' value='99f7217ca390993f0258fd801d7a2c0a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.svg' version='1.1.0.v201011041433'>
+      <properties size='3'>
+        <property name='artifact.size' value='97382'/>
+        <property name='download.size' value='97382'/>
+        <property name='download.md5' value='82e4a20bab6cb9ca8324defc887bc8a6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.fx.osgi' version='2.1.0.201508240501'>
+      <properties size='3'>
+        <property name='artifact.size' value='23377'/>
+        <property name='download.size' value='23377'/>
+        <property name='download.md5' value='1e0eb3cbf480bb3147d6d5c57c94fbe0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.io' version='2.2.0.v201405211200'>
+      <properties size='3'>
+        <property name='artifact.size' value='194073'/>
+        <property name='download.size' value='194073'/>
+        <property name='download.md5' value='29fed2885124bff0e59708d90cb889ab'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui' version='2.4.0.v20150425-0422'>
+      <properties size='3'>
+        <property name='artifact.size' value='581193'/>
+        <property name='download.size' value='581193'/>
+        <property name='download.md5' value='8e2c0d060dac140dfa9b277872b98a59'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.osgi.util' version='3.3.100.v20150423-1351'>
+      <properties size='3'>
+        <property name='artifact.size' value='26242'/>
+        <property name='download.size' value='26242'/>
+        <property name='download.md5' value='8f8d309c61658cfc6dea8161be32467b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt' version='3.104.2.v20160212-1350'>
+      <properties size='3'>
+        <property name='artifact.size' value='19590'/>
+        <property name='download.size' value='19590'/>
+        <property name='download.md5' value='24bf2092b5cc4880b7d5f90b29b31850'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.network' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='72088'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.apt' version='1.2.0.v20150514-0146'>
+      <properties size='3'>
+        <property name='artifact.size' value='167828'/>
+        <property name='download.size' value='167828'/>
+        <property name='download.md5' value='c0bf4d4e8d94b13d04b85088e8c23ff2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.location.discovery' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='20919'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.core' version='1.2.0.v200908251833'>
+      <properties size='3'>
+        <property name='artifact.size' value='56243'/>
+        <property name='download.size' value='56243'/>
+        <property name='download.md5' value='b13a17bb40b8cfc8b7e2206f04d9c3d5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.dominica' version='1.1.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='199359'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.xml' version='1.3.4.v201005080400'>
+      <properties size='3'>
+        <property name='artifact.size' value='252201'/>
+        <property name='download.size' value='252201'/>
+        <property name='download.md5' value='7f7c93e568d12d93268300aa85060dd1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.ds' version='1.4.300.v20150423-1356'>
+      <properties size='3'>
+        <property name='artifact.size' value='195728'/>
+        <property name='download.size' value='195728'/>
+        <property name='download.md5' value='422c918604998e40ad3b11c7f314c4d4'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.postgis' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='21221'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.common.resolvable' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='20489'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.jxpath' version='1.3.0.v200911051830'>
+      <properties size='3'>
+        <property name='artifact.size' value='315491'/>
+        <property name='download.size' value='315491'/>
+        <property name='download.md5' value='d24c67043830efac0f7d4180310a279c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.commands' version='3.7.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='113716'/>
+        <property name='download.size' value='113716'/>
+        <property name='download.md5' value='00334d67006e6230abc5a94794f3784f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='activeMQ.client' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1684855'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.util.gui' version='1.7.0.v200903091627'>
+      <properties size='3'>
+        <property name='artifact.size' value='212351'/>
+        <property name='download.size' value='212351'/>
+        <property name='download.md5' value='705e2e76b2d50953dfb0872d46cbd163'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.garbagecollector' version='1.0.200.v20131115-1210'>
+      <properties size='3'>
+        <property name='artifact.size' value='25061'/>
+        <property name='download.size' value='25061'/>
+        <property name='download.md5' value='815bd433a17e39632344e628780dbf5d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.base' version='4.0.301.v20160212-1500'>
+      <properties size='3'>
+        <property name='artifact.size' value='414999'/>
+        <property name='download.size' value='414999'/>
+        <property name='download.md5' value='893770792bb7687d6653be6c9731b1b5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.slf4j.api' version='1.7.2.v20121108-1250'>
+      <properties size='3'>
+        <property name='artifact.size' value='34566'/>
+        <property name='download.size' value='34566'/>
+        <property name='download.md5' value='115c2c033c81c50892ba3515f72146d1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.concurrent' version='1.1.0.v20130327-1442'>
+      <properties size='3'>
+        <property name='artifact.size' value='25493'/>
+        <property name='download.size' value='25493'/>
+        <property name='download.md5' value='b4f18eac43008648e2f222867d1587b1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jdom' version='1.1.1.v201101151400'>
+      <properties size='3'>
+        <property name='artifact.size' value='184013'/>
+        <property name='download.size' value='184013'/>
+        <property name='download.md5' value='66601b36aa7c9e731e8bca1454569f04'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.ibm.icu' version='54.1.1.v201501272100'>
+      <properties size='3'>
+        <property name='artifact.size' value='11411288'/>
+        <property name='download.size' value='11411288'/>
+        <property name='download.md5' value='7abfae7575d39a48537e3840c0cd250b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.touchpoint.eclipse' version='2.1.300.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='127923'/>
+        <property name='download.size' value='127923'/>
+        <property name='download.md5' value='fd5393fb943f7e8356e67687d57d1ec3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.buildings' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='65683'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.workspace.cli' version='0.3.1'>
+      <properties size='3'>
+        <property name='artifact.size' value='15936'/>
+        <property name='download.size' value='15936'/>
+        <property name='download.md5' value='cc4b45db02495e027801832705adc063'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.jfreechart' version='1.0.10.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='3224249'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.lang3.source' version='3.1.0.v201403281430'>
+      <properties size='3'>
+        <property name='artifact.size' value='408017'/>
+        <property name='download.size' value='408017'/>
+        <property name='download.md5' value='50e13c5fd4a183eb87c77011452e2ffd'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.lang3' version='3.1.0.v201403281430'>
+      <properties size='3'>
+        <property name='artifact.size' value='331301'/>
+        <property name='download.size' value='331301'/>
+        <property name='download.md5' value='1a9e9d96952c4cbbaf2e87ad05d351fd'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.gef' version='3.10.1.201508170204'>
+      <properties size='3'>
+        <property name='artifact.size' value='867576'/>
+        <property name='download.size' value='867576'/>
+        <property name='download.md5' value='f5ef109c53977e0063b40a16780839d1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help.ui' version='4.0.100.v20140401-0608'>
+      <properties size='3'>
+        <property name='artifact.size' value='498666'/>
+        <property name='download.size' value='498666'/>
+        <property name='download.md5' value='1b40c93c140cc02630ddb07e6de628d8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.uriresolver' version='1.2.200.v201505132009'>
+      <properties size='3'>
+        <property name='artifact.size' value='45589'/>
+        <property name='download.size' value='45589'/>
+        <property name='download.md5' value='13d4a71d4f1d2a8f07822a95a9b8c0ae'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.extensionlocation' version='1.2.201.v20160129-0947'>
+      <properties size='3'>
+        <property name='artifact.size' value='36195'/>
+        <property name='download.size' value='36195'/>
+        <property name='download.md5' value='2dc587cfd9c5da3bb0e6fe2f4f1e0225'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.location.turkey' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='10161876'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='359823'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf' version='3.7.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='106749'/>
+        <property name='download.size' value='106749'/>
+        <property name='download.md5' value='e53d143d2b3d09908a6982e30b6eacc1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.intro' version='3.4.300.v20141007-1449'>
+      <properties size='3'>
+        <property name='artifact.size' value='309325'/>
+        <property name='download.size' value='309325'/>
+        <property name='download.md5' value='0cb0f1f63dff24d61015cde6ef975d6c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore' version='2.11.2.v20160208-0816'>
+      <properties size='3'>
+        <property name='artifact.size' value='1190187'/>
+        <property name='download.size' value='1190187'/>
+        <property name='download.md5' value='bfb0ae809cc25c8c84d489105173e6d5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.repository.demo.x86.win32' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5716'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.filetransfer' version='5.0.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='51603'/>
+        <property name='download.size' value='51603'/>
+        <property name='download.md5' value='1be3d13022b6a91b12de06f0ac55d90f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.observable' version='1.5.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='311734'/>
+        <property name='download.size' value='311734'/>
+        <property name='download.md5' value='a99114619738d62ccfb2f890affdbd93'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.fragilities.validation' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='8399'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.collections' version='3.2.0.v2013030210310'>
+      <properties size='3'>
+        <property name='artifact.size' value='611900'/>
+        <property name='download.size' value='611900'/>
+        <property name='download.md5' value='9a0e3ae94cca5a626b618f990b3c2e89'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ltk.core.refactoring' version='3.6.201.v20150819-1034'>
+      <properties size='3'>
+        <property name='artifact.size' value='331895'/>
+        <property name='download.size' value='331895'/>
+        <property name='download.md5' value='29acf93742eaa46e5d497e799af04d1b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench' version='1.3.1.v20160203-0951'>
+      <properties size='3'>
+        <property name='artifact.size' value='289690'/>
+        <property name='download.size' value='289690'/>
+        <property name='download.md5' value='588efbca5c34ffa5813511fac07df471'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.buildings.decisionsupport' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='147257'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.shell' version='0.10.0.v201212101605'>
+      <properties size='3'>
+        <property name='artifact.size' value='60225'/>
+        <property name='download.size' value='60225'/>
+        <property name='download.md5' value='4c503db81a1663e852251670c117ee77'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin' version='2.0.200.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='36365'/>
+        <property name='download.size' value='36365'/>
+        <property name='download.md5' value='820a7a3915c9c3e1da0b46dd12df52f3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.core' version='1.5.201.201508170204'>
+      <properties size='3'>
+        <property name='artifact.size' value='149477'/>
+        <property name='download.size' value='149477'/>
+        <property name='download.md5' value='494c62a4f3a985c30384a8fdd38fe41c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.xmi' version='2.11.1.v20160208-0816'>
+      <properties size='3'>
+        <property name='artifact.size' value='230415'/>
+        <property name='download.size' value='230415'/>
+        <property name='download.md5' value='b5bd688b6643595d285cf1558ea43e40'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.scidac.cmcs' version='0.0.1.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='623588'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.emory.mathcs.backport' version='3.1.0.v201505121915'>
+      <properties size='3'>
+        <property name='artifact.size' value='374316'/>
+        <property name='download.size' value='374316'/>
+        <property name='download.md5' value='544b705403c99e4ac63688610fb9a802'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.console' version='1.0.400.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='27371'/>
+        <property name='download.size' value='27371'/>
+        <property name='download.md5' value='d0170e9ea50a0fbb46c77151be556b04'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.reports' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='66480'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.ant' version='1.9.6.v201510161327'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='2442154'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.datastorage' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='6426'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jem.util' version='2.1.200.v201404021757'>
+      <properties size='3'>
+        <property name='artifact.size' value='112783'/>
+        <property name='download.size' value='112783'/>
+        <property name='download.md5' value='d42e7085378a04e44d1f634830b41547'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.sdk' version='1.0.400.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='48561'/>
+        <property name='download.size' value='48561'/>
+        <property name='download.md5' value='94331488d569a09cd17cebb83c4fe44f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator' version='1.1.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='43279'/>
+        <property name='download.size' value='43279'/>
+        <property name='download.md5' value='09c031e42735713b001e301632c23339'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui' version='3.107.0.v20150507-1945'>
+      <properties size='3'>
+        <property name='artifact.size' value='276456'/>
+        <property name='download.size' value='276456'/>
+        <property name='download.md5' value='fc78991735e07c814ceec8e0df2717f9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.httpclient4.ssl' version='1.1.0.v20151130-0157'>
+      <properties size='3'>
+        <property name='artifact.size' value='14243'/>
+        <property name='download.size' value='14243'/>
+        <property name='download.md5' value='6f16f5d78a25dc94a12015825e426777'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.forms' version='3.6.200.v20150506-2029'>
+      <properties size='3'>
+        <property name='artifact.size' value='317993'/>
+        <property name='download.size' value='317993'/>
+        <property name='download.md5' value='0c162ed1131c761848c99a882e999652'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.common.eclipse' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='19731'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.xml.core' version='1.1.902.v201501211904'>
+      <properties size='3'>
+        <property name='artifact.size' value='775194'/>
+        <property name='download.size' value='775194'/>
+        <property name='download.md5' value='3b5b0d726f47d0633c6f4d565ea1993e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.network.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='9783'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xml.resolver' version='1.2.0.v201005080400'>
+      <properties size='3'>
+        <property name='artifact.size' value='102713'/>
+        <property name='download.size' value='102713'/>
+        <property name='download.md5' value='b8ec3d34b82ae36d094e4ad3c3bd6231'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.vtk' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='134039'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.sf.jasperreports' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1601680'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='780932'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.publisher.eclipse' version='1.2.0.v20150601-1708'>
+      <properties size='3'>
+        <property name='artifact.size' value='227749'/>
+        <property name='download.size' value='227749'/>
+        <property name='download.md5' value='5f65b4ffbb767e04ac80189eebd5bda8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.sat4j.pb' version='2.3.5.v201404071733'>
+      <properties size='3'>
+        <property name='artifact.size' value='241956'/>
+        <property name='download.size' value='241956'/>
+        <property name='download.md5' value='76494edaecd18849bb6044f6bda5fc9e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.socialscience.temphousing.x86.win32' version='3.1.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1126736'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.renderers.swt' version='0.13.0.v20150901-1347'>
+      <properties size='3'>
+        <property name='artifact.size' value='351320'/>
+        <property name='download.size' value='351320'/>
+        <property name='download.md5' value='aa3efb2508cec8ed2be4e14627112f75'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.cheatsheets' version='3.4.200.v20131227-1524'>
+      <properties size='3'>
+        <property name='artifact.size' value='330373'/>
+        <property name='download.size' value='330373'/>
+        <property name='download.md5' value='17a1d8663c683893491c4f5541988cac'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filebuffers' version='3.5.500.v20140723-1040'>
+      <properties size='3'>
+        <property name='artifact.size' value='114861'/>
+        <property name='download.size' value='114861'/>
+        <property name='download.md5' value='e22b226553ba97008f16d2479d071ccb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.security' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='106815'/>
+        <property name='download.size' value='106815'/>
+        <property name='download.md5' value='2f0c5e191489f7f7d4c5725bf2f5bdcd'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.bridges' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='29037'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.hazard.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1247305'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jetty.continuation' version='9.2.13.v20150730'>
+      <properties size='3'>
+        <property name='artifact.size' value='22882'/>
+        <property name='download.size' value='22882'/>
+        <property name='download.md5' value='b60c562b748d594511566d6bc100279f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.views' version='3.8.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='100147'/>
+        <property name='download.size' value='100147'/>
+        <property name='download.md5' value='c880400a6364c20570ec8308b68a30f1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.bouncycastle' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1971808'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.lucene.analysis' version='3.5.0.v20120725-1805'>
+      <properties size='3'>
+        <property name='artifact.size' value='908681'/>
+        <property name='download.size' value='908681'/>
+        <property name='download.md5' value='a6cc7984b1b9ee9da27e989e41499c96'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.swt.theme' version='0.10.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='26436'/>
+        <property name='download.size' value='26436'/>
+        <property name='download.md5' value='3507c56ad4684f671cafb9d82e7ed31e'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.emf.xpath' version='0.1.100.v20150513-0856'>
+      <properties size='3'>
+        <property name='artifact.size' value='49032'/>
+        <property name='download.size' value='49032'/>
+        <property name='download.md5' value='83a7457a0bc9e54de59f02492e251637'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.repository.demo' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5689'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.logging' version='1.1.1.v201101211721'>
+      <properties size='3'>
+        <property name='artifact.size' value='74692'/>
+        <property name='download.size' value='74692'/>
+        <property name='download.md5' value='2547631b90664bc6e12cf261d74e823d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core.ui' version='1.6.2.20150902-0002'>
+      <properties size='3'>
+        <property name='artifact.size' value='773735'/>
+        <property name='download.size' value='773735'/>
+        <property name='download.md5' value='4d1a82fa5ca76cc9a296e300d3cde615'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.contenttype' version='3.5.0.v20150421-2214'>
+      <properties size='3'>
+        <property name='artifact.size' value='99189'/>
+        <property name='download.size' value='99189'/>
+        <property name='download.md5' value='4e6c097f2e4459f6215107490e13e81d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.felix.gogo.command' version='0.10.0.v201209301215'>
+      <properties size='3'>
+        <property name='artifact.size' value='57040'/>
+        <property name='download.size' value='57040'/>
+        <property name='download.md5' value='548c493fd429ee5dbba2db3a842744f2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.frameworks' version='1.2.200.v201304241450'>
+      <properties size='3'>
+        <property name='artifact.size' value='117940'/>
+        <property name='download.size' value='117940'/>
+        <property name='download.md5' value='c0e4720e1321c9df5eff8782b9ebc364'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.jai' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='3207604'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.elf.scripts' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='7529'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.collectiondataset.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='20238'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.lucene.core' version='3.5.0.v20120725-1805'>
+      <properties size='3'>
+        <property name='artifact.size' value='1550172'/>
+        <property name='download.size' value='1550172'/>
+        <property name='download.md5' value='e243459011e2ab415d9604b90c2b5180'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.el' version='2.2.0.v201303151357'>
+      <properties size='3'>
+        <property name='artifact.size' value='55399'/>
+        <property name='download.size' value='55399'/>
+        <property name='download.md5' value='dbc79afd49407c5598a411cfb3543cf2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.ui.importexport' version='1.1.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='120748'/>
+        <property name='download.size' value='120748'/>
+        <property name='download.md5' value='252a2c7bd6c8638a3d411eb4d80cc69a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.tobago' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='842032'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.math' version='2.1.0.v201105210652'>
+      <properties size='3'>
+        <property name='artifact.size' value='881149'/>
+        <property name='download.size' value='881149'/>
+        <property name='download.md5' value='c9a84b5beaec8bd0dfcfc42bba08a491'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.directorywatcher' version='1.1.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='33007'/>
+        <property name='download.size' value='33007'/>
+        <property name='download.md5' value='41fdf0808821b3632ddd87290e8c5554'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='javax.servlet' version='3.1.0.v201410161800'>
+      <properties size='1'>
+        <property name='download.size' value='105237'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.updatesite' version='1.0.500.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='95080'/>
+        <property name='download.size' value='95080'/>
+        <property name='download.md5' value='48953008c837ef6222b462e3806a8df0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.help' version='3.6.0.v20130326-1254'>
+      <properties size='3'>
+        <property name='artifact.size' value='258927'/>
+        <property name='download.size' value='258927'/>
+        <property name='download.md5' value='b885ee452a8380904f0fe575dbe8e6f5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.databinding.property' version='1.5.0.v20150422-0725'>
+      <properties size='3'>
+        <property name='artifact.size' value='176143'/>
+        <property name='download.size' value='176143'/>
+        <property name='download.md5' value='0625860f0f747053472a9f9082c183db'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jface.databinding' version='1.7.0.v20150406-2148'>
+      <properties size='3'>
+        <property name='artifact.size' value='281453'/>
+        <property name='download.size' value='281453'/>
+        <property name='download.md5' value='6bca8afc60995ceaf0da0981855bcab7'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='de.kupzog.KTable' version='2.1.3.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='108462'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.rcp' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='8192'/>
+        <property name='download.size' value='323444'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ant.core' version='3.4.0.v20150428-1928'>
+      <properties size='3'>
+        <property name='artifact.size' value='107600'/>
+        <property name='download.size' value='107600'/>
+        <property name='download.md5' value='7fa9358fc46e101808cee21670784fcd'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='visualization.vtk5' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='1604586'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.beanutils' version='1.8.0.v201205091237'>
+      <properties size='3'>
+        <property name='artifact.size' value='246660'/>
+        <property name='download.size' value='246660'/>
+        <property name='download.md5' value='9f3c560c76aaa0eb88e26b097a30a282'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.uwiseismic.gis.location.trinidad' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='156314'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.registry' version='3.6.0.v20150318-1503'>
+      <properties size='3'>
+        <property name='artifact.size' value='182901'/>
+        <property name='download.size' value='182901'/>
+        <property name='download.md5' value='2c007f83965354f9d4afa98fd15e2be0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis.ga' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='47035'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.elf.embedded' version='0.0.1.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='9292'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.eclipse.pde.container.feature_root.win32.win32.x86_64' version='1.0.0'>
+      <properties size='1'>
+        <property name='download.size' value='32342'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin.equinox' version='1.0.600.v20150522-2234'>
+      <properties size='3'>
+        <property name='artifact.size' value='63562'/>
+        <property name='download.size' value='63562'/>
+        <property name='download.md5' value='11ecf556b28a752a851873eaf25b943d'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.emf' version='1.2.400.v201505132009'>
+      <properties size='3'>
+        <property name='artifact.size' value='221084'/>
+        <property name='download.size' value='221084'/>
+        <property name='download.md5' value='0df40fffaa86a17fa8fd2a5db04f0e4b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.touchpoint.natives' version='1.2.0.v20150519-1136'>
+      <properties size='3'>
+        <property name='artifact.size' value='74196'/>
+        <property name='download.size' value='74196'/>
+        <property name='download.md5' value='9303ee1ccc4d2e9972ab6f46fb4637b6'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.nbsr.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='329582'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.dom.smil' version='1.0.1.v200903091627'>
+      <properties size='3'>
+        <property name='artifact.size' value='20106'/>
+        <property name='download.size' value='20106'/>
+        <property name='download.md5' value='3bc1ea6fc7920fbdb728dfcc58612479'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.reporting.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='239970'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.team.core' version='3.7.100.v20150203-1452'>
+      <properties size='3'>
+        <property name='artifact.size' value='404817'/>
+        <property name='download.size' value='404817'/>
+        <property name='download.md5' value='7e27aeac07b26cc31ca3989822c523e4'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.ca.certs' version='0.0.1.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='109330'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.runtime.compatibility.registry' version='3.6.0.v20150318-1505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='17789'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.networkloss' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='36291'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.tool' version='1.1.0.v20150513-2007'>
+      <properties size='3'>
+        <property name='artifact.size' value='67918'/>
+        <property name='download.size' value='67918'/>
+        <property name='download.md5' value='8c363476433de47b1ecf3cc62f2a30d5'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.security' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='23028'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.codec' version='1.6.0.v201305230611'>
+      <properties size='3'>
+        <property name='artifact.size' value='258466'/>
+        <property name='download.size' value='258466'/>
+        <property name='download.md5' value='1d450a0f47ddc3a9aadd5bb7fffc3884'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wst.sse.core' version='1.1.901.v201510130005'>
+      <properties size='3'>
+        <property name='artifact.size' value='459966'/>
+        <property name='download.size' value='459966'/>
+        <property name='download.md5' value='d3422141ad79380c88eff48388d509cb'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.core.analysis.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='352868'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.publisher' version='1.4.0.v20141117-0929'>
+      <properties size='3'>
+        <property name='artifact.size' value='95337'/>
+        <property name='download.size' value='95337'/>
+        <property name='download.md5' value='528dd6b8342a34e39a17c0e9c1720584'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.300.v20150602-1417'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='29260'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.updatechecker' version='1.1.200.v20131119-0908'>
+      <properties size='3'>
+        <property name='artifact.size' value='17665'/>
+        <property name='download.size' value='17665'/>
+        <property name='download.md5' value='fe49a132beda7a844bdee330314afd22'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.httpclient' version='3.1.0.v201012070820'>
+      <properties size='3'>
+        <property name='artifact.size' value='322298'/>
+        <property name='download.size' value='322298'/>
+        <property name='download.md5' value='d9c9746628bba2007835b27f791b5614'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='957868'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.eclipse.core' version='0.0.9.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='254163'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore.change' version='2.11.0.v20160208-0816'>
+      <properties size='3'>
+        <property name='artifact.size' value='87095'/>
+        <property name='download.size' value='87095'/>
+        <property name='download.md5' value='6aefe06494ef1b6ea4f1d987ddf4041b'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.w3c.css.sac' version='1.3.1.v200903091627'>
+      <properties size='3'>
+        <property name='artifact.size' value='38584'/>
+        <property name='download.size' value='38584'/>
+        <property name='download.md5' value='72902273245b11d21039de8c10398844'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator.manipulator' version='2.0.100.v20150423-1455'>
+      <properties size='3'>
+        <property name='artifact.size' value='25362'/>
+        <property name='download.size' value='25362'/>
+        <property name='download.md5' value='3fd63a058a5102c4a2ae34565ef72b16'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.workbench' version='3.107.1.v20160120-2131'>
+      <properties size='3'>
+        <property name='artifact.size' value='4083867'/>
+        <property name='download.size' value='4083867'/>
+        <property name='download.md5' value='14d7d048a4477d45be694ad6f68f3a93'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ncsa.tools.elf.logging' version='1.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='5246'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.eq.help.tgic.ui' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='2006697'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.transport.ecf' version='1.1.100.v20150521-1342'>
+      <properties size='3'>
+        <property name='artifact.size' value='42539'/>
+        <property name='download.size' value='42539'/>
+        <property name='download.md5' value='0f119b66c3793aa88c69c387fcfee78c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.slf4j' version='1.0.7.v201505121915'>
+      <properties size='3'>
+        <property name='artifact.size' value='10642'/>
+        <property name='download.size' value='10642'/>
+        <property name='download.md5' value='744ac16f0c70b0b98231c01ad812eac8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.editors' version='3.9.0.v20150213-1939'>
+      <properties size='3'>
+        <property name='artifact.size' value='578283'/>
+        <property name='download.size' value='578283'/>
+        <property name='download.md5' value='f4cea39385b88ceafb2ad6cd2b590090'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xsd' version='2.11.0.v20160208-0841'>
+      <properties size='3'>
+        <property name='artifact.size' value='996555'/>
+        <property name='download.size' value='996555'/>
+        <property name='download.md5' value='596506c682ea083a399288f8cc567242'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='edu.illinois.ncsa.ergo.gis.chart' version='4.0.0.202405151018'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='32261'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.compare' version='3.5.600.v20150420-1449'>
+      <properties size='3'>
+        <property name='artifact.size' value='769552'/>
+        <property name='download.size' value='769552'/>
+        <property name='download.md5' value='37fe4ba363b3e79fda91cb47aa69724a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.win32.x86_64' version='1.4.0.v20140124-1940'>
+      <properties size='3'>
+        <property name='artifact.size' value='32009'/>
+        <property name='download.size' value='32009'/>
+        <property name='download.md5' value='0214773355f5dd87b65e5b453e3a159a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xml.serializer' version='2.7.1.v201005080400'>
+      <properties size='3'>
+        <property name='artifact.size' value='302018'/>
+        <property name='download.size' value='302018'/>
+        <property name='download.md5' value='07932f4bcc1fc8e0e24a6d101ac50fd3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.contexts' version='1.4.0.v20150828-0818'>
+      <properties size='3'>
+        <property name='artifact.size' value='50351'/>
+        <property name='download.size' value='50351'/>
+        <property name='download.md5' value='5c14108fc6e32ab3c2be51f400ed9799'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

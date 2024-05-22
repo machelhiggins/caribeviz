@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.barbuda.Barbuda"
+            id="ncsa.gis.location.barbuda.Barbuda"
+            name="Barbuda"
+            tag="Barbuda">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.barbuda.BarbudaLocationFactory"
+            id="ncsa.gis.location.barbuda.Barbuda"
+            name="Barbuda Location Factory"
+            tag="Barbuda">
+      </locationFactory>
+   </extension>
+
+</plugin>

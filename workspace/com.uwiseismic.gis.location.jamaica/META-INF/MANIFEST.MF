@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Jamaica Plugin
+Bundle-SymbolicName: com.uwiseismic.gis.location.jamaica;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Activator: com.uwiseismic.gis.location.jamaica.osgi.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.dom4j;bundle-version="1.0.0",
+ ncsa.tools.common;bundle-version="1.0.0",
+ org.apache.log4j;bundle-version="1.2.12",
+ edu.illinois.ncsa.ergo.gis;bundle-version="4.0.0",
+ org.geotools14;bundle-version="14.1.0",
+ com.uwiseismic.gis.location.datastorage;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.geotools.feature
+Export-Package: com.uwiseismic.gis.location.jamaica,
+ com.uwiseismic.gis.location.jamaica.osgi,
+ com.uwiseismic.gis.location.jamaica.utils

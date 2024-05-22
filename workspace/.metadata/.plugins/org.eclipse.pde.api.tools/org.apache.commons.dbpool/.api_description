@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.apache.commons.dbpool" modificationStamp="13545" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.dbcp.cpdsadapter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.dbcp.datasources"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.pool.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.dbcp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.jocl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.dbpool/&lt;org.apache.commons.pool"/>
+    </package>
+</component>

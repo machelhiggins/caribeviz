@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationCountries">
+      <locationCountry
+            class="com.uwiseismic.gis.location.grenada.Grenada"
+            id="com.uwiseismic.gis.location.grenada.Grenada"
+            name="Grenada"
+            tag="com.uwiseismic.gis.location.grenada.Grenada">
+      </locationCountry>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationFactories">
+      <locationFactory
+            class="com.uwiseismic.gis.location.grenada.GrenadaLocationFactory"
+            id="com.uwiseismic.gis.location.grenada.Grenada"
+            name="Grenada Location Factory"
+            tag="com.uwiseismic.gis.location.grenada.Grenada">
+      </locationFactory>
+   </extension>
+
+</plugin>

@@ -1,0 +1,3 @@
+# Specifies data storage type used for ncsa.gis.location.* packes
+# can be either shapefile or postgis
+shapefile

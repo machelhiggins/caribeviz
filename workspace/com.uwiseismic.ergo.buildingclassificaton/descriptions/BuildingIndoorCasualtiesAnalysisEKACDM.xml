@@ -1,0 +1,44 @@
+<analysis-description id="com.uwiseismic.ergo.buildingclassificaton.BuildingIndoorCasualtiesAnalysisEKACDM" help-context="edu.illinois.ncsa.ergo.eq.socialscience.ui.building_indoor_casualties_analysis">
+
+	<analysis-type type="simpleIteration">
+		<property name="iteratingDatasetKey" value="buildingDamagev4"/>
+	</analysis-type>
+	
+	<parameter format="resultName" phylum="string" cardinality="single" key="buildingIndoorCasualtiesEKACDM.resultName" friendly-name="Result Name"/>
+	
+	<parameter phylum="dataset" cardinality="single" key="buildingDamagev4" friendly-name="Building Structural Damage">
+		<types>
+			<type>buildingDamagev4</type>
+		</types>
+	</parameter>
+	
+	<parameter phylum="dataset" cardinality="single" key="indoorCasualtyTable" friendly-name="Indoor Casualty Fraction Table">
+		<types>
+			<type>buildingIndoorCasualtiesTable</type>
+		</types>
+	</parameter>
+	
+	<parameter phylum="dataset" cardinality="single" key="collapseRateTable" friendly-name="Building Collapse Rate Table">
+		<types>
+			<type>buildingCollapseRateTable</type>
+		</types>
+	</parameter>
+	
+	<parameter phylum="string" format="select" cardinality="single" key="timeOfEvent" friendly-name="Time of Earthquake">
+		<values>
+			<value default="true">Average</value>
+			<value>Day</value>
+			<value>Night</value>
+		</values>
+	</parameter>
+	
+	<output friendly-name="Building Casualties" key="buildingIndoorCasualtiesEKACDM" phylum="dataset" format="shapefile" geom="buildingDamagev4" guids="buildingDamagev4">
+		<property name="buildingDamagev4" type="base-dataset-key" value="buildingDamagev4"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.buildingclassification.gisSchemas.buildingIndoorCasualtiesEKACDM.v1.0"/>
+	</output>
+	
+	<produced-types>
+		<type>buildingIndoorCasualtiesEKACDM</type>
+	</produced-types>
+
+</analysis-description>

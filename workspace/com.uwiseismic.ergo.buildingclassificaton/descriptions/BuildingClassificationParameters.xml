@@ -1,0 +1,35 @@
+<analysis-description id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParameters" help-context="edu.illinois.ncsa.ergo.eq.ui.building_classification">
+
+	<analysis-type type="buildingClassificationParameters">
+		<property name="iteratingDatasetKey" value="null"/>
+	</analysis-type>
+	
+	<!-- GROUPS -->
+	<groups>
+		<group-name>Required</group-name>
+		<group-name>Advanced</group-name>
+	</groups>
+	
+	<!-- INPUTS -->
+	<parameter format="resultName" phylum="string" cardinality="single" key="uwiBuildingClassificationParams.resultName" friendly-name="Building Classification Parameters Name"/>
+	
+	<parameter  phylum="string" format="select" cardinality="single" key="dominantStruct" friendly-name="Dominant Structure Type">
+	    <values>
+        	<value default="true">Reinforced Masonry</value>
+        	<value>Precast</value>
+    	</values>
+    </parameter>	
+	<parameter phylum="double" key="ratioWtoRM" friendly-name="Ratio (%) of Wood Structures for Residential Areas" default="30.0"/>
+	<parameter phylum="double" key="avgGSQM" friendly-name="Average Ground Floor Area (meter-squared) of Residential Structures" default="400.0"/>
+	
+	<!-- OUTPUTS -->
+	<output friendly-name="Building Classification Parameters" key="uwiBuildingClassificationParams" phylum="dataset" format="xml">
+		<property name="uwiBuildingClassificationParams" type="base-dataset-key" value="uwiBuildingClassificationParams"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.buildingclassification.gisSchemas.anonymousXML.v1.0"/>
+	</output>
+	
+	<produced-types>
+		<type>anonymousXML</type>
+	</produced-types>
+
+</analysis-description>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+			<item value="https://ci.canoo.com/teamcity/viewLog.html?buildTypeId=Htmlunit_CheckInBuild&amp;buildId=lastSuccessful&amp;tab=artifacts"/>
+		</list>
+		<list key="ciManagementSystem">
+			<item value="TeamCity"/>
+		</list>
+		<list key="issueManagementSystem">
+			<item value="SourceForge2"/>
+		</list>
+		<list key="issueManagementUrl">
+			<item value="http://sourceforge.net/p/htmlunit/bugs/"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Projects\ERGO\workspace"/>
+			<item value="C:\Projects\ERGO\workspace\graphhopper-master"/>
+			<item value="C:\Projects\ERGO\htmlunit\htmlunit-2.21"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Projects\ERGO\workspace\com.uwiseismic.modifiedmappane.mapaware\src\com\uwiseismic\modifiedmappane\map\event\FeatuerAttributeChangeListener.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

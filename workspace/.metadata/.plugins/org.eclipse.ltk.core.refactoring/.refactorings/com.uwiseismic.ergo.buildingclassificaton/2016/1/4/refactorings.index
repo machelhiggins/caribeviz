@@ -1,0 +1,12 @@
+1453395434745	Rename package 'com.uwiseismic.maeviz.buildingclassifier'
+1453395446428	Rename package 'com.uwiseismic.maeviz.buildingclassifier.logictree'
+1453395458786	Rename package 'com.uwiseismic.maeviz.buildingclassifier.logistic'
+1453395470843	Rename package 'com.uwiseismic.meaviz.gis'
+1453395485068	Rename package 'com.uwiseismic.meaviz.roadnetwork'
+1453395509563	Rename package 'com.uwiseismic.analysis.efacility.gis'
+1453395541483	Rename package 'com.uwiseismic.analysis.efacility'
+1453401446922	Delete element
+1453411359058	Delete element
+1453413084494	Rename field 'eds'
+1453417988915	Rename resource 'ergo-buildingver5_1.0.sld'
+1453419004627	Rename resource 'ergo-uwiBuildingClassification_1.0.sld'

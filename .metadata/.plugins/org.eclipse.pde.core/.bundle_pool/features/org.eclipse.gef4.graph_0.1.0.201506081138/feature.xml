@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.graph"
+      label="GEF4 Graph"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF"
+      plugin="org.eclipse.gef4.graph">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gef4.common" version="0.1.0" match="equivalent"/>
+      <import plugin="com.google.guava" version="12.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.gef4.graph"
+         download-size="26"
+         install-size="50"
+         version="0.1.0.201506081138"
+         unpack="false"/>
+
+</feature>

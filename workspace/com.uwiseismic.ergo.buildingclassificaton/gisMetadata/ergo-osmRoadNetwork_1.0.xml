@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+	<column-metadata column-id="highway" friendly-name="Roadway type" is-result="false" is-numeric="false" field-length="10" />		
+</table-metadata>

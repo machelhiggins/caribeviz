@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+	<column-metadata column-id="Parid" friendly-name="Parcel Id" is-numeric="false" />
+	<column-metadata column-id="Struct_Typ" friendly-name="Structure Type" is-numeric="false" importance="summary"/>
+	<column-metadata column-id="Year_Built" friendly-name="Year the Building was Built" is-numeric="false" />
+	<column-metadata column-id="No_Stories" friendly-name="Number of Stories" is-numeric="true" />
+	<column-metadata column-id="Occ_Type" friendly-name="Occupancy Type" is-numeric="false" />
+	<column-metadata column-id="Appr_Bldg" friendly-name="Appraised Building Value" is-numeric="true" unit="dollar"/>
+	<column-metadata column-id="Cont_Val" friendly-name="Estimated Values of Building Contents" is-numeric="true" unit="dollar" />
+	<column-metadata column-id="EFacility" friendly-name="Whether or not this building is an essential facility" is-numeric="false" />
+	<column-metadata column-id="Dwell_Unit" friendly-name="Dwelling Units" is-numeric="true" />
+	<column-metadata column-id="Sq_Foot" friendly-name="Total Building Area in Square Feet" is-numeric="true" unit="sqft"/>
+	<column-metadata column-id="immocc" friendly-name="Probability of exceeding Immediate Occupancy limit state" is-numeric="true" unit="decimal" importance="user" agg-type="mean"/>
+	<column-metadata column-id="lifesfty" friendly-name="Probability of exceeding Life Safety limit state" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="collprev" friendly-name="Probability of exceeding Collapse Prevention limit state" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Insignific" friendly-name="Probability of Insignificant Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Moderate" friendly-name="Probability of Moderate Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Heavy" friendly-name="Probability of Heavy Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Complete" friendly-name="Probability of Complete Damage" is-numeric="true" unit="decimal" importance="user" agg-type="mean" />
+	<column-metadata column-id="meandamage" friendly-name="Mean Damage" is-numeric="true" unit="decimal" agg-type="mean"/>
+	<column-metadata column-id="mdamagedev" friendly-name="Mean Damage Standard Deviation" is-numeric="true" unit="decimal" importance="user" agg-type="mean"/>
+	<column-metadata column-id="severity1" friendly-name="Injuries Requiring Basic Medical Aid" is-result="true" is-numeric="true" agg-type="sum" importance="user" field-length="10" />
+	<column-metadata column-id="severity2" friendly-name="Injuries Requiring Greater Medical Care" is-result="true" is-numeric="true" importance="mainValue" agg-type="sum" field-length="10" />
+	<column-metadata column-id="severity3" friendly-name="Life Threatening Injuries" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="severity4" friendly-name="Instantaneously Killed or Mortally Injured" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="m_sever1" friendly-name="Male Injuries Requiring Basic Medical Aid" is-result="true" is-numeric="true" agg-type="sum" importance="user" field-length="10" />
+	<column-metadata column-id="m_sever2" friendly-name="Male Injuries Requiring Greater Medical Care" is-result="true" is-numeric="true" importance="mainValue" agg-type="sum" field-length="10" />
+	<column-metadata column-id="m_sever3" friendly-name="Male Life Threatening Injuries" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="m_sever4" friendly-name="Male Instantaneously Killed or Mortally Injured" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="f_sever1" friendly-name="Female Injuries Requiring Basic Medical Aid" is-result="true" is-numeric="true" agg-type="sum" importance="user" field-length="10" />
+	<column-metadata column-id="f_sever2" friendly-name="Female Injuries Requiring Greater Medical Care" is-result="true" is-numeric="true" importance="mainValue" agg-type="sum" field-length="10" />
+	<column-metadata column-id="f_sever3" friendly-name="Female Life Threatening Injuries" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="f_sever4" friendly-name="Female Instantaneously Killed or Mortally Injured" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="c_sever1" friendly-name="Child Injuries Requiring Basic Medical Aid" is-result="true" is-numeric="true" agg-type="sum" importance="user" field-length="10" />
+	<column-metadata column-id="c_sever2" friendly-name="Child Injuries Requiring Greater Medical Care" is-result="true" is-numeric="true" importance="mainValue" agg-type="sum" field-length="10" />
+	<column-metadata column-id="c_sever3" friendly-name="Child Life Threatening Injuries" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="c_sever4" friendly-name="Child Instantaneously Killed or Mortally Injured" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />	
+</table-metadata>

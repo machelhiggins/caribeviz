@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="edu.psu.ems.gis2defnode.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Map View Perspective"
+            class="edu.psu.ems.gis2defnode.Perspective"
+            id="edu.psu.ems.gis2defnode.Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="edu.psu.ems.gis2defnode.MapView"
+            id="edu.psu.ems.gis2defnode.MapView"
+            name="MapView"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               standalone="true"
+               minimized="false"
+               relative="org.eclipse.ui.editorss"
+               relationship="left"
+               id="edu.psu.ems.gis2defnode.view">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="File 2">
+            <command
+                  commandId="edu.psu.ems.gis2defnode.ui.handlers.OpenShapefile"
+                  id="edu.psu.ems.gis2defnode.ui.handlers.OpenShapefile"
+                  label="Import GIS"
+                  style="push">
+            </command>
+            <command
+                  commandId="edu.psu.ems.gis2defnode.command2"
+                  label="Export Nodes"
+                  style="push">
+            </command>
+            <separator
+                  name="edu.psu.ems.gis2defnode.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="edu.psu.ems.gis2defnode.ui.handlers.OpenShapefile"
+            commandId="edu.psu.ems.gis2defnode.ui.handlers.OpenShapefile">
+      </handler>
+   </extension>
+
+</plugin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;com.uwiseismic.ergo.buildingclassifier.BuildingClassification.doneRun()&apos; to &apos;isRunning&apos;&#x0D;&#x0A;- Original project: &apos;com.uwiseismic.ergo.buildingclassificaton&apos;&#x0D;&#x0A;- Original element: &apos;com.uwiseismic.ergo.buildingclassifier.BuildingClassification.doneRun()&apos;&#x0D;&#x0A;- Renamed element: &apos;com.uwiseismic.ergo.buildingclassifier.BuildingClassification.isRunning()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;doneRun&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;com.uwiseismic.ergo.buildingclassifier{BuildingClassification.java[BuildingClassification~doneRun" name="isRunning" references="true" stamp="1650854077974" version="1.0"/>
+</session>

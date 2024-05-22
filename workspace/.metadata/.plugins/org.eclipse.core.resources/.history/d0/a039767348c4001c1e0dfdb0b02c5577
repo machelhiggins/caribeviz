@@ -1,0 +1,24 @@
+package com.uwiseismic.ergo.buildingclassifier;
+
+public class BuildingClassificationThread extends Thread {
+	
+	private BuildingClassification bc;
+	private boolean isRunning = false;
+	
+	public BuildingClassificationThread(BuildingClassification bc){
+		this.bc = bc;
+	}
+	
+	public void run() {
+		try {
+			isRunning = true;			
+			this.determineStructure(true, true);
+			isRunning = false;
+		} catch (StructureNotInEdException e){
+			sntedExcept = e;
+		}catch (NoProbabilityFunctionException e) {
+			// TODO Auto-generated catch block
+			noProbExcept = e;
+		}
+	}
+}

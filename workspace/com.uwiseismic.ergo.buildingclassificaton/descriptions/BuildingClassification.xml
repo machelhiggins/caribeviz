@@ -1,0 +1,49 @@
+<analysis-description id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationTask" help-context="edu.illinois.ncsa.ergo.eq.ui.building_classification">
+
+	<analysis-type type="buildingClassification">
+		<property name="iteratingDatasetKey" value="null"/>
+	</analysis-type>
+	
+	<!-- GROUPS -->
+	<groups>
+		<group-name>Required</group-name>
+		<group-name>Advanced</group-name>
+	</groups>
+	
+	<!-- INPUTS -->
+	<parameter format="resultName" phylum="string" cardinality="single" key="buildingClassification.resultName" friendly-name="Result Name"/>	
+
+	
+<!-- 	<parameter phylum="dataset" cardinality="single" key="uwiBuildingInventory" friendly-name="UWI Building Inventory"> -->
+		<parameter phylum="dataset" cardinality="single" key="uwiBuildingClassification" friendly-name="UWI Building Inventory">
+		<types>
+			<type>uwiBuildingClassification</type>
+		</types>
+	</parameter>	
+	<parameter  phylum="dataset" cardinality="single" key="uwiEnumerationDistrict" friendly-name="Enumertion Districts">
+	<types>
+			<type>uwiEnumerationDistrict</type>
+		</types>
+	</parameter>
+	<parameter phylum="dataset" cardinality="single" key="osmRoadNetwork" friendly-name="OSM Road Network">
+		<types>
+			<type>osmRoadNetwork</type>
+		</types>
+	</parameter>
+	<parameter phylum="dataset" cardinality="single" key="uwiBuildingClassificationParams" friendly-name="Building Classification Parameters">
+		<types>
+			<type>anonymousXML</type>
+		</types>
+	</parameter>
+	
+	<!-- OUTPUTS -->
+	<output friendly-name="Building Classification" key="buildingClassification" phylum="dataset" format="shapefile" geom="uwiBuildingClassification" guids="uwiBuildingClassification">
+		<property name="uwiBuildingClassification" type="base-dataset-key" value="uwiBuildingClassification"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.buildingclassificaton.uwiBuildingClassification.v1.0"/>
+	</output>
+	
+	<produced-types>
+		<type>uwiBuildingClassification</type>
+	</produced-types>
+
+</analysis-description>

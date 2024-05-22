@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:gml="http://www.opengis.net/gml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ionicsoft.com/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:iwfs="http://www.ionicsoft.com/wfs" xmlns="http://www.ionicsoft.com/wfs" elementFormDefault="qualified">
+    <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/2.1.2/feature.xsd"/>
+    <xsd:element name="UWIBUILDINGCLASS" substitutionGroup="gml:_Feature" type="iwfs:UWIBUILDINGCLASS"/>
+    <xsd:complexType name="UWIBUILDINGCLASS">
+      <xsd:complexContent>
+        <xsd:extension base="gml:AbstractFeatureType">
+          <xsd:sequence>
+          <!-- Building version 4 -->
+            <xsd:element name="ergo.the_geom" minOccurs="0" nillable="false" type="gml:PointPropertyType"/>
+	        <xsd:element name="ergo.parid" minOccurs="0" nillable="true" type="xsd:string"/>
+	        <xsd:element name="ergo.struct_typ" minOccurs="0" nillable="true" type="xsd:string"/>
+	        <xsd:element name="ergo.year_built" minOccurs="0" nillable="true" type="xsd:integer"/>
+	        <xsd:element name="ergo.no_stories" minOccurs="0" nillable="true" type="xsd:integer"/>
+	        <xsd:element name="ergo.occ_type" minOccurs="0" nillable="true" type="xsd:string"/>
+	        <xsd:element name="ergo.appr_bldg" minOccurs="0" nillable="true" type="xsd:double"/>
+	        <xsd:element name="ergo.cost_sqft" minOccurs="0" nillable="true" type="xsd:double"/>
+	        <xsd:element name="ergo.cont_val" minOccurs="0" nillable="true" type="xsd:double"/>
+	        <xsd:element name="ergo.efacility" minOccurs="0" nillable="true" type="xsd:string"/>
+	        <xsd:element name="ergo.dwell_unit" minOccurs="0" nillable="true" type="xsd:integer"/>
+	        <xsd:element name="ergo.sq_foot" minOccurs="0" nillable="true" type="xsd:integer"/>
+	        <xsd:element name="ergo.str_typ2" minOccurs="0" nillable="true" type="xsd:string"/>	        
+	        <!-- Building Classification needed attribs -->
+	        <xsd:element name="ergo.bldg_id" minOccurs="0" nillable="true" type="xsd:string"/>
+            <xsd:element name="ergo.str_prob" minOccurs="0" nillable="true" type="xsd:double"/>
+            <xsd:element name="ergo.efacil_nam" minOccurs="0" nillable="true" type="xsd:string"/>
+            <xsd:element name="ergo.ef_occ_rat" minOccurs="0" nillable="true" type="xsd:double"/>
+            <xsd:element name="ergo.max_occ" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.gsq_feet" minOccurs="0" nillable="true" type="xsd:double"/>
+            <xsd:element name="ergo.area_sqm" minOccurs="0" nillable="true" type="xsd:double"/>	   
+            <!-- the following attributes are not necessary for ingestion -->                 
+<!--             <xsd:element name="ergo.n_vertices" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.isop_q" minOccurs="0" nillable="true" type="xsd:double"/>
+            <xsd:element name="ergo.road_index" minOccurs="0" nillable="true" type="xsd:double"/> -->            
+            <!-- EKACDM Occupancy -->
+            <xsd:element name="ergo.u_set_occt" minOccurs="0" nillable="true" type="xsd:string"/>
+            <xsd:element name="ergo.occ_nite_m" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_nite_f" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_nite_c" minOccurs="0" nillable="true" type="xsd:integer"/>            
+            <xsd:element name="ergo.occ_day_m" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_day_f" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_day_c" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_avg_m" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_avg_f" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.occ_avg_c" minOccurs="0" nillable="true" type="xsd:integer"/>
+            <xsd:element name="ergo.u_set_occr" minOccurs="0" nillable="true" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:schema>

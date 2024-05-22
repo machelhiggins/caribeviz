@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationCountries">
+      <locationCountry
+            class="com.uwiseismic.gis.location.barbados.Barbados"
+            id="com.uwiseismic.gis.location.barbados.Barbados"
+            name="Barbados"
+            tag="com.uwiseismic.gis.location.barbados.Barbados">
+      </locationCountry>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.locationFactories">
+      <locationFactory
+            class="com.uwiseismic.gis.location.barbados.BarbadosLocationFactory"
+            id="com.uwiseismic.gis.location.barbados.Barbados"
+            name="Barbados"
+            tag="com.uwiseismic.gis.location.barbados.Barbados">
+      </locationFactory>
+   </extension>
+
+</plugin>

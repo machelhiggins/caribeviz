@@ -1,0 +1,21 @@
+1457928278379	Delete element
+1457929989078	Rename resource 'uwiBuildingClassificationParams'
+1457993169987	Delete element
+1458078183782	Rename resource 'BuildingClassificationParameters'
+1458090659441	Rename type 'HealthFacilityAnalysis'
+1458090730217	Rename type 'EmergencySchoolFacility'
+1458090740286	Rename type 'EmergencySchoolFacilityRanker'
+1458091043088	Rename resource 'ergo-buildingIndoorCasualties_1.0.xsd'
+1458091245291	Rename resource 'BuildingIndoorCasualtiesAnalysis.xml'
+1458091840489	Rename type 'IndoorCasualties'
+1458099913924	Copy file
+1458143377125	Move file
+1458266333719	Delete element
+1458270429503	Delete element
+1458271493041	Rename resource 'uwiBuildingClassificationParams.xsd'
+1458271641900	Copy file
+1458271936340	Rename type 'UWIModifiedHASUZPopulationDislocation'
+1458329278844	Rename resource 'DislocationAnalysis.xml'
+1458329862029	Delete element
+1458332281431	Copy file
+1458332478974	Copy file

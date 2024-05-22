@@ -1,0 +1,2405 @@
+!SESSION 2017-12-03 22:44:56.035 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product edu.illinois.ncsa.ergo.eq.rcp.product
+Command-line arguments:  -product edu.illinois.ncsa.ergo.eq.rcp.product -data C:\Projects\ERGO\workspace/../runtime-caribeviz.product -dev file:C:/Projects/ERGO/workspace/.metadata/.plugins/org.eclipse.pde.core/caribeviz.product/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY ncsa.tools.trebuchet.core 4 0 2017-12-03 22:45:01.210
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.trebuchet.core [284]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.nbsr.ui 4 0 2017-12-03 22:45:01.251
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.nbsr.ui [286]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.style.ui 4 0 2017-12-03 22:45:01.253
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.style.ui [289]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.events 4 0 2017-12-03 22:45:01.254
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.events [290]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+    -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common.eclipse [380]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline.ui 4 0 2017-12-03 22:45:01.256
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline.ui [291]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.ergo.buildingclassificaton 4 0 2017-12-03 22:45:01.257
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.ergo.buildingclassificaton [292]
+  Unresolved requirement: Import-Package: edu.illinois.ncsa.ergo.eq.buildings
+    -> Export-Package: edu.illinois.ncsa.ergo.eq.buildings; bundle-symbolic-name="edu.illinois.ncsa.ergo.eq.buildings"; bundle-version="4.0.0.qualifier"; version="0.0.0"
+       edu.illinois.ncsa.ergo.eq.buildings [328]
+         Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+           -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.ogrescript [371]
+                Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+                  -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.elf.scripts [421]
+                       Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.repository.demo 4 0 2017-12-03 22:45:01.259
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.repository.demo [293]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.elf.runtime 4 0 2017-12-03 22:45:01.261
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.elf.runtime [294]
+  Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.ui 4 0 2017-12-03 22:45:01.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.ui [296]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.sun.jai 4 0 2017-12-03 22:45:01.263
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.sun.jai [300]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.fragilities.validation 4 0 2017-12-03 22:45:01.264
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.fragilities.validation [304]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui 4 0 2017-12-03 22:45:01.266
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui [305]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis 4 0 2017-12-03 22:45:01.267
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis [306]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.dtavista 4 0 2017-12-03 22:45:01.268
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.dtavista [310]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis.network
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis.network; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis.network [384]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.help.tgic.ui 4 0 2017-12-03 22:45:01.270
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.help.tgic.ui [311]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.vtk 4 0 2017-12-03 22:45:01.271
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.vtk [312]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositories.sam 4 0 2017-12-03 22:45:01.273
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.repositories.sam [313]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis 4 0 2017-12-03 22:45:01.274
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis [314]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.analysis 4 0 2017-12-03 22:45:01.277
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.analysis [315]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.network.ui 4 0 2017-12-03 22:45:01.279
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.network.ui [316]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.collectiondataset.ui 4 0 2017-12-03 22:45:01.280
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.collectiondataset.ui [318]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.netinterdep 4 0 2017-12-03 22:45:01.281
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.netinterdep [319]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.ga 4 0 2017-12-03 22:45:01.282
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.ga [321]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.hazard 4 0 2017-12-03 22:45:01.284
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.hazard [322]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.geotools14 4 0 2017-12-03 22:45:01.286
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.geotools14 [326]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.analysis.ui 4 0 2017-12-03 22:45:01.287
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.analysis.ui [327]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings 4 0 2017-12-03 22:45:01.288
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings [328]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.dtavista.ui 4 0 2017-12-03 22:45:01.289
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.dtavista.ui [331]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common 4 0 2017-12-03 22:45:01.290
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common [332]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.ui 4 0 2017-12-03 22:45:01.291
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.ui [333]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.decisionsupport 4 0 2017-12-03 22:45:01.292
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.decisionsupport [334]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.fragilities.mapping 4 0 2017-12-03 22:45:01.296
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.fragilities.mapping [337]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.tobago 4 0 2017-12-03 22:45:01.297
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.tobago [338]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.eclipse.core 4 0 2017-12-03 22:45:01.298
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.eclipse.core [339]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.location.turkey 4 0 2017-12-03 22:45:01.299
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.location.turkey [340]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.chart.ui 4 0 2017-12-03 22:45:01.300
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.chart.ui [341]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports.editor.ui 4 0 2017-12-03 22:45:01.300
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.reports.editor.ui [343]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.logging.log4j 4 0 2017-12-03 22:45:01.301
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.logging.log4j [344]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+    -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common.eclipse [380]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports 4 0 2017-12-03 22:45:01.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.reports [346]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.barbados 4 0 2017-12-03 22:45:01.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.barbados [348]
+  Unresolved requirement: Import-Package: com.uwiseismic.gis.location.datastorage
+    -> Export-Package: com.uwiseismic.gis.location.datastorage; bundle-symbolic-name="com.uwiseismic.gis.location.datastorage"; bundle-version="1.0.0.qualifier"; version="0.0.0"
+       com.uwiseismic.gis.location.datastorage [398]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.reporting.ui 4 0 2017-12-03 22:45:01.303
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.reporting.ui [350]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.gis 4 0 2017-12-03 22:45:01.304
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.gis [351]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.rcp 4 0 2017-12-03 22:45:01.305
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.rcp [352]
+  Unresolved requirement: Import-Package: edu.illinois.ncsa.ergo.core.analysis
+    -> Export-Package: edu.illinois.ncsa.ergo.core.analysis; bundle-symbolic-name="edu.illinois.ncsa.ergo.core.analysis"; bundle-version="4.0.0.qualifier"; version="0.0.0"
+       edu.illinois.ncsa.ergo.core.analysis [306]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.modifiedmappane.mapaware 4 0 2017-12-03 22:45:01.306
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.modifiedmappane.mapaware [353]
+  Unresolved requirement: Require-Bundle: org.geotools14; bundle-version="14.1.0"
+    -> Bundle-SymbolicName: org.geotools14; bundle-version="14.1.0.qualifier"; singleton:="true"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.jms 4 0 2017-12-03 22:45:01.306
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.jms [354]
+  Unresolved requirement: Require-Bundle: ncsa.tools.events
+    -> Bundle-SymbolicName: ncsa.tools.events; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.events [290]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+           -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common.eclipse [380]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.bridges 4 0 2017-12-03 22:45:01.307
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.bridges [355]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.fragilities.validation
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.fragilities.validation; bundle-version="1.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq.fragilities.validation [304]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq [419]
+                Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+                  -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+                     edu.illinois.ncsa.ergo.eq.hazard [322]
+                       Unresolved requirement: Require-Bundle: ncsa.tools.common
+                         -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                            ncsa.tools.common [332]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY visualization.vtk5 4 0 2017-12-03 22:45:01.309
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: visualization.vtk5 [356]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.grenada 4 0 2017-12-03 22:45:01.309
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.grenada [357]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.nbsr 4 0 2017-12-03 22:45:01.311
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.nbsr [358]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositoryconverter 4 0 2017-12-03 22:45:01.312
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.repositoryconverter [360]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.networkloss.ui 4 0 2017-12-03 22:45:01.312
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.networkloss.ui [361]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.ca.certs 4 0 2017-12-03 22:45:01.314
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.ca.certs [362]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.hazard.ui 4 0 2017-12-03 22:45:01.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.hazard.ui [365]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.swt.nebula.widgets.compositetable 4 0 2017-12-03 22:45:01.317
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.swt.nebula.widgets.compositetable [367]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.duejava 4 0 2017-12-03 22:45:01.318
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.duejava [368]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.validation 4 0 2017-12-03 22:45:01.319
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.validation [369]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common.eclipse.descriptors 4 0 2017-12-03 22:45:01.319
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common.eclipse.descriptors [370]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.ogrescript 4 0 2017-12-03 22:45:01.320
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.ogrescript [371]
+  Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+    -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.elf.scripts [421]
+         Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.socialscience 4 0 2017-12-03 22:45:01.321
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.socialscience [372]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.geotools.ui 4 0 2017-12-03 22:45:01.322
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.geotools.ui [373]
+  Unresolved requirement: Import-Package: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline 4 0 2017-12-03 22:45:01.323
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline [376]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.security 4 0 2017-12-03 22:45:01.324
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.security [377]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.ui 4 0 2017-12-03 22:45:01.325
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.ui [379]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common.eclipse 4 0 2017-12-03 22:45:01.326
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common.eclipse [380]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.elf.core 4 0 2017-12-03 22:45:01.327
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.elf.core [381]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.postgis 4 0 2017-12-03 22:45:01.328
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.postgis [382]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.network 4 0 2017-12-03 22:45:01.329
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.network [384]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.tableview.ui 4 0 2017-12-03 22:45:01.330
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.tableview.ui [385]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline.hazus 4 0 2017-12-03 22:45:01.331
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline.hazus [386]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.analysis.ui 4 0 2017-12-03 22:45:01.332
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.analysis.ui [388]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.socialscience.ui 4 0 2017-12-03 22:45:01.333
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.socialscience.ui [389]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.trinidad 4 0 2017-12-03 22:45:01.334
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.trinidad [391]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports.ui 4 0 2017-12-03 22:45:01.335
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.reports.ui [392]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.chart 4 0 2017-12-03 22:45:01.336
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.chart [394]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.datastorage 4 0 2017-12-03 22:45:01.338
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.datastorage [398]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.gis.location.jamaica 4 0 2017-12-03 22:45:01.339
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.gis.location.jamaica [399]
+  Unresolved requirement: Import-Package: org.geotools.feature
+    -> Export-Package: org.geotools.feature; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.help 4 0 2017-12-03 22:45:01.340
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help [401]
+  Unresolved requirement: Import-Package: com.ibm.icu.text; version="3.8.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.common.resolvable 4 0 2017-12-03 22:45:01.340
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.common.resolvable [402]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.validation.ui 4 0 2017-12-03 22:45:01.341
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.validation.ui [403]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.postgis.ui 4 0 2017-12-03 22:45:01.342
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.postgis.ui [405]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.reports.ui 4 0 2017-12-03 22:45:01.342
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.reports.ui [407]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.databinding 4 0 2017-12-03 22:45:01.344
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.core.databinding [408]
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+  Unresolved requirement: Import-Package: com.ibm.icu.math; resolution:="optional"
+    -> Export-Package: com.ibm.icu.math; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.location.us 4 0 2017-12-03 22:45:01.346
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.location.us [409]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.reports 4 0 2017-12-03 22:45:01.347
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.reports [411]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.elf.embedded 4 0 2017-12-03 22:45:01.348
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.elf.embedded [412]
+  Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+    -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.elf.scripts [421]
+         Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.modifiedmappane.v4 4 0 2017-12-03 22:45:01.349
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.modifiedmappane.v4 [413]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.fireignition 4 0 2017-12-03 22:45:01.350
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.fireignition [414]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.networkloss 4 0 2017-12-03 22:45:01.351
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.networkloss [415]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.core.analysis; bundle-version="0.0.1"
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.core.analysis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.core.analysis [306]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.elf.logging 4 0 2017-12-03 22:45:01.352
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.elf.logging [418]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq 4 0 2017-12-03 22:45:01.353
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq [419]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq.hazard [322]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositories.sam.ui 4 0 2017-12-03 22:45:01.354
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.repositories.sam.ui [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY ncsa.tools.elf.scripts 4 0 2017-12-03 22:45:01.354
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ncsa.tools.elf.scripts [421]
+  Unresolved requirement: Require-Bundle: org.dom4j
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.app 0 0 2017-12-03 22:45:01.610
+!MESSAGE Product edu.illinois.ncsa.ergo.eq.rcp.product could not be found.
+
+!ENTRY edu.illinois.ncsa.ergo.gis.chart.ui 2 0 2017-12-03 22:45:02.034
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.chart.ui [341]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.elf.runtime 2 0 2017-12-03 22:45:02.034
+!MESSAGE Could not resolve module: ncsa.tools.elf.runtime [294]
+  Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports.editor.ui 2 0 2017-12-03 22:45:02.035
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.reports.editor.ui [343]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.eclipse.core.databinding 2 0 2017-12-03 22:45:02.036
+!MESSAGE Could not resolve module: org.eclipse.core.databinding [408]
+  Unresolved requirement: Import-Package: com.ibm.icu.text
+    -> Export-Package: com.ibm.icu.text; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+  Unresolved requirement: Import-Package: com.ibm.icu.math; resolution:="optional"
+    -> Export-Package: com.ibm.icu.math; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.gis 2 0 2017-12-03 22:45:02.037
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.gis [351]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.decisionsupport 2 0 2017-12-03 22:45:02.037
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.decisionsupport [334]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY ncsa.ca.certs 2 0 2017-12-03 22:45:02.038
+!MESSAGE Could not resolve module: ncsa.ca.certs [362]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY org.scidac.cmcs 2 0 2017-12-03 22:45:02.038
+!MESSAGE Could not resolve module: org.scidac.cmcs [375]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.validation.ui 2 0 2017-12-03 22:45:02.039
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.validation.ui [403]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.security 2 0 2017-12-03 22:45:02.039
+!MESSAGE Could not resolve module: ncsa.tools.security [377]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.duejava 2 0 2017-12-03 22:45:02.040
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.duejava [368]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY ncsa.tools.elf.core 2 0 2017-12-03 22:45:02.040
+!MESSAGE Could not resolve module: ncsa.tools.elf.core [381]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.fragilities.validation 2 0 2017-12-03 22:45:02.041
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.fragilities.validation [304]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY ncsa.eclipse.core 2 0 2017-12-03 22:45:02.041
+!MESSAGE Could not resolve module: ncsa.eclipse.core [339]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.chart 2 0 2017-12-03 22:45:02.042
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.chart [394]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.nbsr.ui 2 0 2017-12-03 22:45:02.042
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.nbsr.ui [286]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.geotools14 2 0 2017-12-03 22:45:02.042
+!MESSAGE Could not resolve module: org.geotools14 [326]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY de.kupzog.KTable 2 0 2017-12-03 22:45:02.043
+!MESSAGE Could not resolve module: de.kupzog.KTable [309]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.socialscience.ui 2 0 2017-12-03 22:45:02.043
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.socialscience.ui [389]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.logging.log4j 2 0 2017-12-03 22:45:02.043
+!MESSAGE Could not resolve module: ncsa.logging.log4j [344]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+    -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common.eclipse [380]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq 2 0 2017-12-03 22:45:02.044
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq [419]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq.hazard [322]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY com.uwiseismic.gis.location.grenada 2 0 2017-12-03 22:45:02.044
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.grenada [357]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.ui 2 0 2017-12-03 22:45:02.045
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.ui [379]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.dtavista 2 0 2017-12-03 22:45:02.045
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.dtavista [310]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis.network
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis.network; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis.network [384]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.analysis.ui 2 0 2017-12-03 22:45:02.045
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.analysis.ui [388]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.common.eclipse.descriptors 2 0 2017-12-03 22:45:02.046
+!MESSAGE Could not resolve module: ncsa.tools.common.eclipse.descriptors [370]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+
+!ENTRY ncsa.tools.jms 2 0 2017-12-03 22:45:02.046
+!MESSAGE Could not resolve module: ncsa.tools.jms [354]
+  Unresolved requirement: Require-Bundle: ncsa.tools.events
+    -> Bundle-SymbolicName: ncsa.tools.events; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.events [290]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+           -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common.eclipse [380]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY ncsa.tools.common.resolvable 2 0 2017-12-03 22:45:02.047
+!MESSAGE Could not resolve module: ncsa.tools.common.resolvable [402]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.style.ui 2 0 2017-12-03 22:45:02.047
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.style.ui [289]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.geotools.ui 2 0 2017-12-03 22:45:02.047
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.geotools.ui [373]
+  Unresolved requirement: Import-Package: org.apache.log4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.networkloss.ui 2 0 2017-12-03 22:45:02.048
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.networkloss.ui [361]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY net.sf.jasperreports 2 0 2017-12-03 22:45:02.048
+!MESSAGE Could not resolve module: net.sf.jasperreports [349]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY activeMQ.client 2 0 2017-12-03 22:45:02.049
+!MESSAGE Could not resolve module: activeMQ.client [308]
+  Unresolved requirement: Require-Bundle: edu.emory.mathcs.backport
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis 2 0 2017-12-03 22:45:02.049
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis [314]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline.ui 2 0 2017-12-03 22:45:02.050
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline.ui [291]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.repository.demo 2 0 2017-12-03 22:45:02.050
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.repository.demo [293]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.elf.scripts 2 0 2017-12-03 22:45:02.051
+!MESSAGE Could not resolve module: ncsa.tools.elf.scripts [421]
+  Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.ui 2 0 2017-12-03 22:45:02.051
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.ui [296]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.trebuchet.core 2 0 2017-12-03 22:45:02.051
+!MESSAGE Could not resolve module: ncsa.tools.trebuchet.core [284]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.dtavista.ui 2 0 2017-12-03 22:45:02.052
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.dtavista.ui [331]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.validation 2 0 2017-12-03 22:45:02.052
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.validation [369]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline.hazus 2 0 2017-12-03 22:45:02.052
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline.hazus [386]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.socialscience 2 0 2017-12-03 22:45:02.053
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.socialscience [372]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.socialscience.temphousing.x86.win32 2 0 2017-12-03 22:45:02.053
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.socialscience.temphousing.x86.win32 [299]
+  Unresolved requirement: Fragment-Host: edu.illinois.ncsa.ergo.eq.socialscience; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.socialscience; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq.socialscience [372]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq [419]
+                Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+                  -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+                     edu.illinois.ncsa.ergo.eq.hazard [322]
+                       Unresolved requirement: Require-Bundle: ncsa.tools.common
+                         -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                            ncsa.tools.common [332]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.ui 2 0 2017-12-03 22:45:02.054
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.ui [333]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY com.sun.jai 2 0 2017-12-03 22:45:02.054
+!MESSAGE Could not resolve module: com.sun.jai [300]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+
+!ENTRY com.uwiseismic.gis.location.tobago 2 0 2017-12-03 22:45:02.055
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.tobago [338]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.network.ui 2 0 2017-12-03 22:45:02.055
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.network.ui [316]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.tableview.ui 2 0 2017-12-03 22:45:02.055
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.tableview.ui [385]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.collectiondataset.ui 2 0 2017-12-03 22:45:02.056
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.collectiondataset.ui [318]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.elf.embedded 2 0 2017-12-03 22:45:02.056
+!MESSAGE Could not resolve module: ncsa.tools.elf.embedded [412]
+  Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+    -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.elf.scripts [421]
+         Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.networkloss 2 0 2017-12-03 22:45:02.057
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.networkloss [415]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.core.analysis; bundle-version="0.0.1"
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.core.analysis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.core.analysis [306]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.vtk 2 0 2017-12-03 22:45:02.057
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.vtk [312]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.postgis.ui 2 0 2017-12-03 22:45:02.058
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.postgis.ui [405]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.fragilities.mapping 2 0 2017-12-03 22:45:02.058
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.fragilities.mapping [337]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.events 2 0 2017-12-03 22:45:02.059
+!MESSAGE Could not resolve module: ncsa.tools.events [290]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common.eclipse
+    -> Bundle-SymbolicName: ncsa.tools.common.eclipse; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common.eclipse [380]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.nbsr 2 0 2017-12-03 22:45:02.059
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.nbsr [358]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY ncsa.tools.elf.logging 2 0 2017-12-03 22:45:02.060
+!MESSAGE Could not resolve module: ncsa.tools.elf.logging [418]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.location.discovery 2 0 2017-12-03 22:45:02.060
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.location.discovery [374]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.analysis 2 0 2017-12-03 22:45:02.060
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.analysis [315]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports 2 0 2017-12-03 22:45:02.061
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.reports [346]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.jfreechart 2 0 2017-12-03 22:45:02.061
+!MESSAGE Could not resolve module: org.jfreechart [297]
+  Unresolved requirement: Require-Bundle: org.eclipse.swt
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositories.sam.ui 2 0 2017-12-03 22:45:02.061
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.repositories.sam.ui [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY com.uwiseismic.modifiedmappane.v4 2 0 2017-12-03 22:45:02.062
+!MESSAGE Could not resolve module: com.uwiseismic.modifiedmappane.v4 [413]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.netinterdep 2 0 2017-12-03 22:45:02.062
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.netinterdep [319]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.network 2 0 2017-12-03 22:45:02.063
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.network [384]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.location.us 2 0 2017-12-03 22:45:02.063
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.location.us [409]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.bridges 2 0 2017-12-03 22:45:02.064
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.bridges [355]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.fragilities.validation
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.fragilities.validation; bundle-version="1.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq.fragilities.validation [304]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq [419]
+                Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+                  -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+                     edu.illinois.ncsa.ergo.eq.hazard [322]
+                       Unresolved requirement: Require-Bundle: ncsa.tools.common
+                         -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                            ncsa.tools.common [332]
+                              Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis 2 0 2017-12-03 22:45:02.064
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis [306]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings 2 0 2017-12-03 22:45:02.065
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings [328]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.fireignition 2 0 2017-12-03 22:45:02.065
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.fireignition [414]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositories.sam 2 0 2017-12-03 22:45:02.065
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.repositories.sam [313]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.rcp 2 0 2017-12-03 22:45:02.066
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.rcp [352]
+  Unresolved requirement: Import-Package: edu.illinois.ncsa.ergo.core.analysis
+    -> Export-Package: edu.illinois.ncsa.ergo.core.analysis; bundle-symbolic-name="edu.illinois.ncsa.ergo.core.analysis"; bundle-version="4.0.0.qualifier"; version="0.0.0"
+       edu.illinois.ncsa.ergo.core.analysis [306]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.gis [314]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY com.uwiseismic.gis.location.datastorage 2 0 2017-12-03 22:45:02.066
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.datastorage [398]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.eclipse.swt.nebula.widgets.compositetable 2 0 2017-12-03 22:45:02.067
+!MESSAGE Could not resolve module: org.eclipse.swt.nebula.widgets.compositetable [367]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.analysis.ui 2 0 2017-12-03 22:45:02.067
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.analysis.ui [327]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY com.uwiseismic.gis.location.barbados 2 0 2017-12-03 22:45:02.067
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.barbados [348]
+  Unresolved requirement: Import-Package: com.uwiseismic.gis.location.datastorage
+    -> Export-Package: com.uwiseismic.gis.location.datastorage; bundle-symbolic-name="com.uwiseismic.gis.location.datastorage"; bundle-version="1.0.0.qualifier"; version="0.0.0"
+       com.uwiseismic.gis.location.datastorage [398]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.reports 2 0 2017-12-03 22:45:02.068
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.reports [411]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis [314]
+         Unresolved requirement: Require-Bundle: ncsa.tools.common
+           -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.common [332]
+                Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui 2 0 2017-12-03 22:45:02.068
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui [305]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.hazard 2 0 2017-12-03 22:45:02.069
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.hazard [322]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.reporting.ui 2 0 2017-12-03 22:45:02.069
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.reporting.ui [350]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.repository.demo.x86.win32 2 0 2017-12-03 22:45:02.069
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.repository.demo.x86.win32 [303]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.help.tgic.ui 2 0 2017-12-03 22:45:02.070
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.help.tgic.ui [311]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.reports.ui 2 0 2017-12-03 22:45:02.070
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.reports.ui [407]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.lifeline 2 0 2017-12-03 22:45:02.070
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.lifeline [376]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.eq [419]
+         Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.eq.hazard
+           -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.eq.hazard; bundle-version="4.0.0.qualifier"; singleton:="true"
+              edu.illinois.ncsa.ergo.eq.hazard [322]
+                Unresolved requirement: Require-Bundle: ncsa.tools.common
+                  -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.common [332]
+                       Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.eq.hazard.ui 2 0 2017-12-03 22:45:02.071
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.eq.hazard.ui [365]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.ogrescript 2 0 2017-12-03 22:45:02.071
+!MESSAGE Could not resolve module: ncsa.tools.ogrescript [371]
+  Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+    -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.elf.scripts [421]
+         Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.repositoryconverter 2 0 2017-12-03 22:45:02.072
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.repositoryconverter [360]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.postgis 2 0 2017-12-03 22:45:02.072
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.postgis [382]
+  Unresolved requirement: Require-Bundle: org.apache.log4j
+
+
+!ENTRY ncsa.tools.common 2 0 2017-12-03 22:45:02.073
+!MESSAGE Could not resolve module: ncsa.tools.common [332]
+  Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY edu.illinois.ncsa.ergo.gis.location.turkey 2 0 2017-12-03 22:45:02.073
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.gis.location.turkey [340]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.analysis.ga 2 0 2017-12-03 22:45:02.073
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.analysis.ga [321]
+  Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.ogrescript [371]
+         Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+           -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.elf.scripts [421]
+                Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY com.uwiseismic.modifiedmappane.mapaware 2 0 2017-12-03 22:45:02.074
+!MESSAGE Could not resolve module: com.uwiseismic.modifiedmappane.mapaware [353]
+  Unresolved requirement: Require-Bundle: org.geotools14; bundle-version="14.1.0"
+    -> Bundle-SymbolicName: org.geotools14; bundle-version="14.1.0.qualifier"; singleton:="true"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.eclipse.help 2 0 2017-12-03 22:45:02.074
+!MESSAGE Could not resolve module: org.eclipse.help [401]
+  Unresolved requirement: Import-Package: com.ibm.icu.text; version="3.8.0"
+
+
+!ENTRY com.uwiseismic.ergo.buildingclassificaton 2 0 2017-12-03 22:45:02.075
+!MESSAGE Could not resolve module: com.uwiseismic.ergo.buildingclassificaton [292]
+  Unresolved requirement: Import-Package: edu.illinois.ncsa.ergo.eq.buildings
+    -> Export-Package: edu.illinois.ncsa.ergo.eq.buildings; bundle-symbolic-name="edu.illinois.ncsa.ergo.eq.buildings"; bundle-version="4.0.0.qualifier"; version="0.0.0"
+       edu.illinois.ncsa.ergo.eq.buildings [328]
+         Unresolved requirement: Require-Bundle: ncsa.tools.ogrescript
+           -> Bundle-SymbolicName: ncsa.tools.ogrescript; bundle-version="1.0.0.qualifier"; singleton:="true"
+              ncsa.tools.ogrescript [371]
+                Unresolved requirement: Require-Bundle: ncsa.tools.elf.scripts
+                  -> Bundle-SymbolicName: ncsa.tools.elf.scripts; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     ncsa.tools.elf.scripts [421]
+                       Unresolved requirement: Require-Bundle: org.dom4j
+
+
+!ENTRY edu.illinois.ncsa.ergo.core.reports.ui 2 0 2017-12-03 22:45:02.075
+!MESSAGE Could not resolve module: edu.illinois.ncsa.ergo.core.reports.ui [392]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY visualization.vtk5 2 0 2017-12-03 22:45:02.076
+!MESSAGE Could not resolve module: visualization.vtk5 [356]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY ncsa.tools.common.eclipse 2 0 2017-12-03 22:45:02.076
+!MESSAGE Could not resolve module: ncsa.tools.common.eclipse [380]
+  Unresolved requirement: Require-Bundle: ncsa.tools.common
+    -> Bundle-SymbolicName: ncsa.tools.common; bundle-version="1.0.0.qualifier"; singleton:="true"
+       ncsa.tools.common [332]
+         Unresolved requirement: Require-Bundle: org.apache.commons.jxpath
+
+
+!ENTRY com.uwiseismic.gis.location.trinidad 2 0 2017-12-03 22:45:02.077
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.trinidad [391]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY com.uwiseismic.gis.location.jamaica 2 0 2017-12-03 22:45:02.078
+!MESSAGE Could not resolve module: com.uwiseismic.gis.location.jamaica [399]
+  Unresolved requirement: Import-Package: org.geotools.feature
+    -> Export-Package: org.geotools.feature; bundle-symbolic-name="org.geotools14"; bundle-version="14.1.0.qualifier"; version="0.0.0"
+       org.geotools14 [326]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui
+
+
+!ENTRY org.eclipse.osgi 4 0 2017-12-03 22:45:02.078
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: No application id has been found.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:242)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)

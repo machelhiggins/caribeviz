@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="edu.illinois.ncsa.ergo.gis" modificationStamp="8677" version="1.2">
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.locations"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.datasets.exporthandlers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.tasks"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.datasets.properties"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.types"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.exceptions"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.managers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.defaults"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.serializers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.repositories"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.geometries"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.units"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.listeners"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.jobs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.test"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.datasets"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;com.uwiseismic.gis.map.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.datasets.tablemodels"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.descriptors"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.map"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.ingest"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.registry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.readers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.style"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.metadata"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.illinois.ncsa.ergo.gis/src&lt;edu.illinois.ncsa.ergo.gis.datasets.factories"/>
+    </package>
+</component>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.uwiseismic.modifiedmappane
+Bundle-SymbolicName: com.uwiseismic.modifiedmappane;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.uwiseismic.modifiedmappane.rcp.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.geotools14;bundle-version="14.1.0",
+ edu.illinois.ncsa.ergo.gis;bundle-version="4.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: edu.illinois.ncsa.ergo.gis.geotools.ui.internal,
+ edu.illinois.ncsa.ergo.gis.ui.builders,
+ org.eclipse.draw2d
+Export-Package: com.uwiseismic.modifiedmappane.rcp.map

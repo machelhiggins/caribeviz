@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.uwiseismic.ergo.occupancy.OccupancyType&apos; to &apos;Occupancy&apos;&#x0D;&#x0A;- Original project: &apos;com.uwiseismic.ergo.buildingclassificaton&apos;&#x0D;&#x0A;- Original element: &apos;com.uwiseismic.ergo.occupancy.OccupancyType&apos;&#x0D;&#x0A;- Renamed element: &apos;com.uwiseismic.ergo.occupancy.Occupancy&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;OccupancyType&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.uwiseismic.ergo.occupancy{OccupancyType.java[OccupancyType" matchStrategy="1" name="Occupancy" qualified="false" references="true" similarDeclarations="false" stamp="1457027012881" textual="false" version="1.0"/>
+</session>

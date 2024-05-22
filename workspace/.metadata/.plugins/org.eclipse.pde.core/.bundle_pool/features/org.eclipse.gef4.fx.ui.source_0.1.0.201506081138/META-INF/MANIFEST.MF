@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: hudsonbuild
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_40
+
+Name: META-INF/maven/org.eclipse.gef4.features/org.eclipse.gef4.fx.ui/
+ pom.xml
+SHA-256-Digest: 27Djh9kdPF4XIGUowXgz8DHk/ljwCT9YKVafnP8DLq4=
+
+Name: epl-v10.html
+SHA-256-Digest: mpbQ2vmKpvtKpTDTmcdCxmEhsL2uSh9/+iLSE14d9/0=
+
+Name: feature.xml
+SHA-256-Digest: WfUHSroN8zLbscKKv9nh8wzHNx38jYpmov9Eu91DJ5E=
+
+Name: META-INF/maven/org.eclipse.gef4.features/org.eclipse.gef4.fx.ui/
+ pom.properties
+SHA-256-Digest: Ks5PakyzYfkcFuNgVYq8Ov08KuHBm5jVZLS9X1GKO50=
+
+Name: feature.properties
+SHA-256-Digest: cvyWv769In6bEvxE1QHosVISWJnMM13Ecamjo53ui+E=
+
+Name: license.html
+SHA-256-Digest: X315zLynvdLZ4DaYSopgxruQUUEadA3FOPNviC+YO24=
+

@@ -1,0 +1,244 @@
+package com.uwiseismic.ergo.buildingclassifier;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.Iterator;
+import java.util.Random;
+
+import com.uwiseismic.util.geohash.GeoHash;
+
+public class BCMCMC {
+
+	private BuildingClassification bcs[];
+	private Random rng;
+	private int iters; 
+	
+	public BCMCMC(GeoHash buildingClassifications, int iterations){
+		int n = 0;
+		bcs = new BuildingClassification[buildingClassifications.getHashables().size()];
+		for(Iterator i = buildingClassifications.getHashables().iterator(); i.hasNext();){
+			bcs[n] = (BuildingClassification)i.next();	
+			n++;
+			this.iters = iterations;
+		}
+		rng = new Random(System.currentTimeMillis());
+	}
+	
+	public void performMC() throws StructureNotInEdException, NoProbabilityFunctionException{
+		/*
+		 * Assuming that the BuildingClassification objects have been properly initialized,
+		 * Will wiggle the following metrics by 0.2, 500sqm for area :
+		 * EDStructTypeRankingFunction
+		   Gsqm
+		   IsoperimetricQ
+           MajorRoadIndex
+           NoOfVertices*** not used anymore...should revisit TODO
+		 * 
+		 */
+		double wiggle = 0.3;
+		double areaWiggle = 200;
+		double anneallingWeight;
+		EDStructTypeRankingFunction ed;
+		double val;
+		int valInt;
+//		for(int i = 0; i < iters; i++){
+//			for(int n=0; n < bcs.length; n++){
+//				bcs[n].resetIndices();
+//				ed = bcs[n].getED();
+//				bcs[n].setED(ed);
+//	
+//				val = bcs[n].getGsqm();
+//				val = rng.nextBoolean() ? val+(rng.nextDouble()*areaWiggle) : val - anneallingWeight*(rng.nextDouble()*areaWiggle); 			
+//				bcs[n].setGsqm(val);
+//	
+//				val = bcs[n].getIsoperimetricQ();
+//				val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+//				if(val > 1)
+//					val = 1;
+//				if(val <= 0)
+//					val = Double.MIN_NORMAL;
+//				bcs[n].setIsoperimetricQ(val);
+//	
+//				val = bcs[n].getMajorRoadIndex();
+//				val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+//				if(val > 1)
+//					val = 1;
+//				if(val <= 0)
+//					val = Double.MIN_NORMAL;
+//				bcs[n].setMajorRoadIndex(val);
+//			
+//			// Income zone via mean unimproved land values
+//			val = bcs[n].getMeanUnImpLandValue();
+//			val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+//			if(val > 1)
+//				val = 1;
+//			if(val <= 0)
+//				val = Double.MIN_NORMAL;
+//			bcs[n].setMeanUnImpLandValue(val);;		
+//				valInt = bcs[n].getNoOfVertices();
+//				bcs[n].setNoOfVertices(valInt);
+		
+//				bcs[n].determineStructure();
+//				bcs[n].saveCurrentStructureMemory();
+//			}
+//			System.out.println("ITER: "+i);
+//		}
+		
+		/*
+		 * Randomly select buildings for bcs.length times instead of iters
+		 */
+		for(int i = 0; i < iters; i++){
+			anneallingWeight = (double)(iters -i)/(double)iters;
+			for(int n=0; n < bcs.length; n++){
+			//for(int z=0; z < bcs.length; z++){
+			
+			//int n = rng.nextInt(bcs.length);
+			//for(int n=0; n < bcs.length; n++){
+				bcs[n].resetIndices();
+				ed = bcs[n].getED();
+				bcs[n].setED(ed);
+	
+				// gsqm
+				val = bcs[n].getGsqm();
+				val = rng.nextBoolean() ? val+(rng.nextDouble()*areaWiggle) : val- anneallingWeight*(rng.nextDouble()*areaWiggle); 			
+				bcs[n].setGsqm(val);
+	
+				//isoperimetric Q
+				val = bcs[n].getIsoperimetricQ();
+				val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+				if(val > 1)
+					val = 1;
+				if(val <= 0)
+					val = Double.MIN_NORMAL;
+				bcs[n].setIsoperimetricQ(val);
+	
+				// Major Road index
+				val = bcs[n].getMajorRoadIndex();
+				val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+				if(val > 1)
+					val = 1;
+				if(val <= 0)
+					val = Double.MIN_NORMAL;
+				bcs[n].setMajorRoadIndex(val);
+				
+				// Income zone via mean unimproved land values
+				val = bcs[n].getMeanUnImpLandValue();
+				val = rng.nextBoolean() ? val+(rng.nextDouble()*wiggle) : val - anneallingWeight*(rng.nextDouble()*wiggle);
+				if(val > 1)
+					val = 1;
+				if(val <= 0)
+					val = Double.MIN_NORMAL;
+				bcs[n].setMeanUnImpLandValue(val);;					
+				
+				// Number of vertices (not used)
+				valInt = bcs[n].getNoOfVertices();
+				bcs[n].setNoOfVertices(valInt);
+				try{
+					bcs[n].determineStructure(false);
+				}catch(StructureNotInEdException noED){
+					//noED.printStackTrace();
+				}
+				bcs[n].saveCurrentStructureMemory();
+			}
+			System.out.println("ITER: "+i);
+		}
+		
+		//TODO: DEBUG
+		try{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("debug_bmcmc_output/last_bcmcmc_output.txt"));
+			
+			java.text.DecimalFormat formatter = new java.text.DecimalFormat("0.000#");
+			//double structProbs[]; 
+			int structFreq[];
+			double structProbs[];
+			int total = 0;
+			for(int n=0; n < bcs.length; n++){
+				structProbs = bcs[n].getLikelyStructureProbMemory();
+				structFreq = bcs[n].getLikelyStructureMemory();
+				//** whats the winning structure
+				int winningStruct = -1;
+				total = 0;
+				double maxProb = -Double.MAX_VALUE;
+				for(int i = 0; i < ProbConstants.STRUCT_TYPES.length; i++){
+					total += structFreq[i];
+					if(structFreq[i] > maxProb){
+						maxProb = structFreq[i];
+						winningStruct = i;
+					}				
+				}
+	
+				//TODO: IF MOST LIKELY STRUCTURE IS RM LETS CHOOSE second most likely, RM is for debugging purposes
+				// and may be used if RM1 and RM2 cannot be separated
+				if(winningStruct == ProbConstants.RM){
+					//** search for next best
+					maxProb = -Double.MAX_VALUE;
+					for(int i = 0; i < ProbConstants.STRUCT_TYPES.length; i++){
+						if(i != winningStruct && structFreq[i] > maxProb){
+							maxProb = structFreq[i];
+							winningStruct = i;
+						}
+					}
+				}
+				
+				String likelyStructureStr = ProbConstants.getStructureType(winningStruct);
+				//System.out.print(bcs[n].getBldgID()+"\t"+likelyStructureStr);
+				
+				//** its probability of being correct
+				double structProb =  (double)structFreq[winningStruct]/(double)total;
+				bcs[n].setMostLikelyStructure(winningStruct);
+				bcs[n].setStructuresProbability(winningStruct, structProb);
+				bcs[n].setFeatureStructTypeProb(likelyStructureStr, structProb);
+				if(winningStruct == ProbConstants.RM1)
+					System.err.println("We have an RM1");
+				
+				postMCOps(bcs[n]);
+				likelyStructureStr = bcs[n].getMostLikelyStructureString();				
+				bcs[n].setFeatureStructTypeProb(likelyStructureStr,
+						bcs[n].getStructuresProbability(bcs[n].getMostLikelyStructure()));
+				
+				writer.write(bcs[n].getBldgID()+"\t"+likelyStructureStr);
+				try{
+					//System.out.print("("+formatter.format(+structProb)+")>>\t");
+					writer.write("("+formatter.format(+structProb)+")>>\t");
+					//System.out.println();	
+				}catch(java.lang.IllegalArgumentException iax){
+					System.err.println(structProb);
+					iax.printStackTrace();
+				}
+				
+				for(int i = 0; i < structProbs.length; i++)
+					//System.out.print(structFreq[i]+"\t");
+					writer.write(structFreq[i]+"\t");
+				//System.out.println();
+				writer.write("\n");
+			}
+			writer.flush();
+			writer.close();
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+	}
+	
+	public void postMCOps(BuildingClassification bc){
+		
+		
+		/**
+		 *  Due to error in building footpritns, a higher than normal amount of RM2 are classified as RM1. If the 
+		 *  BuildingClassification object statisically represents a RM1 then it will be come an RM2 if P(RM1) < 0.7 and not P(C1 | C2) > 0.25
+		 * 
+		 */
+		bc.determineIfRM1CouldBeRM2();
+		
+		
+		/**
+		 * 
+	     * This facilitates the selection of W1 after outside processes (like the monte carlo simulation)
+	     *  because the RM2 probability will always be higher than the user specified P(W1).This is simply because 
+	     *  of the dominating prevalence of RM2. 		
+		 * 
+		 */
+		bc.determineIfWinningStructCouldBeW1();
+		
+	}
+	
+}

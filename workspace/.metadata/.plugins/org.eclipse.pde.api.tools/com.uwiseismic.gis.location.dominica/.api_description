@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="com.uwiseismic.gis.location.dominica" modificationStamp="6404152" version="1.2">
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica"/>
+        <type handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{EnumerationDistrict.java[EnumerationDistrict" modificationStamp="6404127" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{DominicaLocationFactory.java[DominicaLocationFactory" modificationStamp="6404146" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{Dominica.java[Dominica" modificationStamp="6404124" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica{City.java[City" modificationStamp="6404123" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=com.uwiseismic.gis.location.dominica/src&lt;com.uwiseismic.gis.location.dominica.utils"/>
+    </package>
+</component>

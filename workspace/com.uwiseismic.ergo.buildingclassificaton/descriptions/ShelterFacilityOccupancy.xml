@@ -1,0 +1,52 @@
+<analysis-description id="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy" help-context="">
+
+	<analysis-type type="shelterFacilitiesOccupancy">
+		<property name="iteratingDatasetKey" value="null"/>
+	</analysis-type>
+	
+	<!-- GROUPS -->
+	<groups>
+		<group-name>Required</group-name>
+		<group-name>Advanced</group-name>
+	</groups>
+	
+	<!-- INPUTS -->
+	<parameter format="resultName" phylum="string" cardinality="single" key="shelterFacilitiesOccupancy.resultName" friendly-name="Result Name"/>
+	
+	<parameter phylum="dataset" cardinality="single" key="popDislocated" friendly-name="Dislocated Population in UWI Building Inventory">
+		<types>
+			<type>uwiPopulationDislocationEKACDM</type>
+		</types>
+	</parameter>	
+	
+	<parameter phylum="dataset" cardinality="single" key="osmRoadNetwork" friendly-name="OSM Road Network">
+		<types>
+			<type>osmRoadNetwork</type>
+		</types>
+	</parameter>
+	
+<!-- 	<parameter phylum="double" key="smallFacilityWeight" friendly-name="Small Healthcare Facility Weight (0 - 1)" default="0.30"/> -->
+
+	
+	<!-- OUTPUTS -->
+ 	<output friendly-name="Shelter Facility Occupancy" key="shelterFacilitiesOccupancy" phylum="dataset" format="shapefile" geom="popDislocated" guids="popDislocated">
+		<property name="popDislocated" type="base-dataset-key" value="popDislocated"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy.v1.0"/>
+	</output> 
+	
+<!-- 	<output friendly-name="Shelter Facility Occupancy" key="shelterFacilitiesOccupancy" phylum="dataset" format="shapefile" geom="buildingPopulationDislocation"  guids="buildingPopulationDislocation"> -->
+<!-- 		<property name="buildingPopulationDislocation" type="base-dataset-key" value="buildingPopulationDislocation"/> -->
+<!-- 		<property name="schema" type="schema" value="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy.v1.0"/> -->
+<!-- 	</output> -->
+
+<!-- 	<output friendly-name="Shelter Facility Occupancy" key="shelterFacilitiesOccupancy" phylum="dataset" format="shapefile" geom="casualties"  guids="casualties">
+		<property name="casualties" type="base-dataset-key" value="casualties"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy.v1.0"/>
+	</output> -->
+	
+	
+	<produced-types>
+		<type>shelterFacilitiesOccupancy</type>
+	</produced-types>
+
+</analysis-description>

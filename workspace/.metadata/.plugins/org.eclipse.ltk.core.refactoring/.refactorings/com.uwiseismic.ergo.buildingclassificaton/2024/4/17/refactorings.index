@@ -1,0 +1,46 @@
+1713740483962	Delete element
+1713741663956	Rename type 'RoadEdge'
+1713749726665	Delete element
+1713751024050	Rename type 'ErgoIntObject'
+1713751540926	Move compilation units
+1713751626908	Delete elements
+1713752363391	Rename type 'ErgoIntObjectHashMap'
+1713752372631	Rename type 'ErgoObjectIntHashMap'
+1713756868083	Rename type 'Simple'
+1713760916718	Rename field 'edgesIDs'
+1713761068750	Rename type 'TestGraphHopper'
+1713824559982	Copy compilation units
+1713826495544	Delete elements
+1713826537630	Delete element
+1713847620423	Delete element
+1713924014864	Rename field 'nodeDistances'
+1713924036395	Rename field 'weight'
+1713924088689	Rename method 'getNodeDistances'
+1713924098443	Rename method 'getWeight'
+1713931208932	Rename type 'Graph'
+1714008454964	Delete element
+1714019962104	Delete elements
+1714019969117	Delete element
+1714072411815	Delete element
+1714073933805	Rename type 'DjisktraEdge'
+1714073952735	Delete element
+1714073976607	Delete elements
+1714074205329	Delete element
+1714074224674	Delete element
+1714074273082	Delete element
+1714074303899	Delete element
+1714074532935	Delete element
+1714077393376	Rename local variable 'roads'
+1714077498252	Rename local variable 'roads'
+1714079961729	Delete element
+1714101724741	Rename local variable 'pm'
+1714101756538	Rename field 'popDislocated'
+1714101803751	Rename method 'findFacilitiesAndPopDislocatedKMeans'
+1714101903206	Rename local variable 'cm'
+1714103276191	Rename field 'casualtiesArray'
+1714106654900	Rename local variable 'popDislocated'
+1714110504806	Rename local variable 'popCasualties'
+1714112586383	Rename local variable 'lastTwoValue'
+1714176052944	Rename field 'popCasualties'
+1714176081880	Rename field 'casualtiesList'
+1714187182791	Rename local variable 'totalR'

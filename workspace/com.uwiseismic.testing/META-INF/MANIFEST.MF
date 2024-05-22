@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Testing
+Bundle-SymbolicName: com.uwiseismic.testing
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.berico.coords,
+ com.uwiseismic.modifiedmappane.mapawareDEFUNCT,
+ com.uwiseismic.modifiedmappane.test,
+ com.uwiseismic.testing,
+ gov.nasa.worldwind.avlist,
+ gov.nasa.worldwind.geom,
+ gov.nasa.worldwind.geom.coords,
+ gov.nasa.worldwind.util
+Bundle-ClassPath: lib/,
+ .

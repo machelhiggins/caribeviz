@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.stlucia.Stlucia"
+            id="ncsa.gis.location.stlucia.Stlucia"
+            name="StLucia"
+            tag="StLucia">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.stlucia.StluciaLocationFactory"
+            id="ncsa.gis.location.stlucia.Stlucia"
+            name="St Lucia Location Factory"
+            tag="St Lucia">
+      </locationFactory>
+   </extension>
+
+</plugin>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="CaribEViz" id="edu.illinois.ncsa.ergo.eq.rcp.product" application="edu.illinois.ncsa.ergo.eq.rcp.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/edu.illinois.ncsa.ergo.eq.rcp/intro/ergoEQLogo.gif"/>
+      <text>
+         %aboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-XX:MaxPermSize=256m -Xmx2048m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="icons/Ergo_Icon_16x16.png" i32="icons/Ergo_Icon_32x32.png" i64="icons/Ergo_Icon_64x64.png" i128="icons/Ergo_Icon_128x128.png"/>
+
+   <splash
+      location="edu.illinois.ncsa.ergo.eq.rcp"
+      startupProgressRect="0,335,700,15"
+      startupMessageRect="10,305,553,30"
+      startupForegroundColor="000000" />
+   <launcher name="CaribEViz">
+      <solaris/>
+      <win useIco="true">
+         <ico path="/edu.illinois.ncsa.ergo.eq.rcp/icons/alt_launcher.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="edu.illinois.ncsa.ergo.core.feature" version="4.0.0.qualifier"/>
+      <feature id="edu.illinois.ncsa.ergo.gis.feature" version="4.0.0.qualifier"/>
+      <feature id="edu.illinois.ncsa.ergo.eq.feature" version="4.0.0.qualifier"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature"/>
+      <feature id="org.eclipse.zest"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+      <feature id="org.eclipse.rcp" version="4.5.2.v20160212-1500"/>
+      <feature id="org.eclipse.gef"/>
+      <feature id="org.eclipse.draw2d"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="com.uwiseismic.buildingclassification.feature" version="1.0.0.qualifier"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="osgi.instance.area.default" value="ergo-settings" />
+   </configurations>
+
+   <repositories>
+      <repository location="http://www2.uwiseismic.com/ergo-updates" enabled="true" />
+   </repositories>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

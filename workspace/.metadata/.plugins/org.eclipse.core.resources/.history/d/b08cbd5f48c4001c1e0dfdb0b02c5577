@@ -1,0 +1,10 @@
+package com.uwiseismic.ergo.buildingclassifier;
+
+public class BuildingClassificationThread extends Thread {
+	
+	private BuildingClassification bc;
+	private boolean isRunning = false;
+	public BuildingClassificationThread(BuildingClassification bc){
+		this.bc = bc;
+	}
+}

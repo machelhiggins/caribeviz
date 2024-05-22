@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Concurrency Plug-in
+Bundle-SymbolicName: edu.emory.backport
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Export-Package: edu.emory.mathcs.backport.java.util,
+ edu.emory.mathcs.backport.java.util.concurrent,
+ edu.emory.mathcs.backport.java.util.concurrent.atomic,
+ edu.emory.mathcs.backport.java.util.concurrent.helpers,
+ edu.emory.mathcs.backport.java.util.concurrent.locks

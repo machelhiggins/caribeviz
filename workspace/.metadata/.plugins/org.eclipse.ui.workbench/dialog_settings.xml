@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="509" key="DIALOG_X_ORIGIN"/>
+		<item value="135" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.pde.ui.NewProductConfigurationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.pde.PDE"/>
+		</list>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\Machel\Desktop\for_chris"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.pde.ui.pluginExportWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.m2e"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+			<item value="org.eclipse.pde.ui.PluginDevelopment"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Projects\ERGO\temp\fastutil-core-8.5.13-sources.jar"/>
+			<item value="C:\Projects\ERGO\temp\fastutil-core-8.5.13.jar"/>
+			<item value="C:\Projects\ERGO\temp\lib\hppc-0.8.1-sources.jar"/>
+			<item value="C:\Projects\ERGO\temp\lib\hppc-0.8.1.jar"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Projects\ERGO\temp\parallel-dijkstra-multithreading-master\src\validation"/>
+			<item value="C:\Projects\ERGO\temp\parallel-dijkstra-multithreading-master\src\util"/>
+			<item value="C:\Projects\ERGO\temp\parallel-dijkstra-multithreading-master\src\parallel"/>
+			<item value="C:\Projects\ERGO\temp\parallel-dijkstra-multithreading-master\src\model"/>
+			<item value="C:\Projects\ERGO\temp\hppc\hppc\src\main\java"/>
+			<item value="C:\Projects\ERGO\temp\lib"/>
+			<item value="C:\Projects\ERGO\temp\hppc\hppc\src\main\templates"/>
+			<item value="C:\Projects\ERGO\temp\hppc\hppc-template-processor\src\main\java"/>
+			<item value="C:\Projects\ERGO\temp\hppc\hppc-template-intrinsics\src\main\java"/>
+			<item value="C:\Projects\ERGO\workspace\backup\com.uwiseismic.gis.location.datastorage\src\com\uwiseismic\gis\location\datastorage"/>
+			<item value="C:\Projects\ERGO\workspace\backup\com.uwiseismic.gis.location.datastorage"/>
+			<item value="C:\Projects\ERGO\workspace\backup\com.uwiseiwmic.gis.location.datastorage\props"/>
+			<item value="C:\Projects\ERGO\workspace\backup\com.uwiseiwmic.gis.location.datastorage\src\com\uwiseismic\gis\location\datastorage"/>
+			<item value="C:\Projects\ERGO\com.uwiseismic.modifiedmappane"/>
+			<item value="C:\Projects\ERGO\com.uwiseismic.modifiedmappane\src"/>
+			<item value="C:\temp\DELETEME"/>
+			<item value="C:\lib\http_client\httpcomponents-client-4.5.2\examples"/>
+			<item value="C:\temp\DELETEME\out"/>
+			<item value="C:\temp\DELETEME\out\org\geotools\map\event"/>
+			<item value="C:\Lib\geotools\geotools14.1\project\modules\library\render\src\main\java\org\geotools\map\event"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.apache.batik" modificationStamp="755220" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.image.resources"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.extension.resolvers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-svggen-1.6.jar&lt;org.apache.batik.svggen.font.table"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.color"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.jdepend"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-xml-1.6.jar&lt;org.apache.batik.xml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.sitraka"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image.rendered"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-dom-1.6.jar&lt;org.apache.batik.dom"/>
+        <fragment handle="=org.apache.batik/batik-svg-dom-1.6.jar&lt;org.apache.batik.dom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.sitraka.bytecode.attributes"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.pvcs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.types.optional.depend"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.email"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.depend.constantpool"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-util-1.6.jar&lt;org.apache.batik.util.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.splash"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-svggen-1.6.jar&lt;org.apache.batik.svggen.font"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.sound"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-svg-dom-1.6.jar&lt;org.apache.batik.dom.svg12"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine.value.css2"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.ide"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.print"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-script-1.6.jar&lt;org.apache.batik.script"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.jlink"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.dotnet"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.metamata"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.extension"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-dom-1.6.jar&lt;org.apache.batik.dom.traversal"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.sitraka.bytecode"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.g2d"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.perforce"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-script-1.6.jar&lt;org.apache.batik.script.rhino"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.i18n"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.depend"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.net"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.util.depend"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/bufr-1.1.00.jar&lt;ucar.bufr"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.sos"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.svg12"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.dom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.keys"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.wmf.tosvg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.starteam"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image.codec"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-ext-1.6.jar&lt;org.w3c.css.sac"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-parser-1.6.jar&lt;org.apache.batik.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.javacc"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-ext-1.6.jar&lt;org.w3c.dom.smil"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.jsp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-svg-dom-1.6.jar&lt;org.apache.batik.dom.svg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image.renderable"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-util-1.6.jar&lt;org.apache.batik.i18n"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.ejb"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-svggen-1.6.jar&lt;org.apache.batik.svggen"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image.spi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-bridge-1.6.jar&lt;org.apache.batik.bridge.svg12"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.listener"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine.value.svg12"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.wmf"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.vss"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-bridge-1.6.jar&lt;org.apache.batik.bridge"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-util-1.6.jar&lt;org.apache.batik.util.resources"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-dom-1.6.jar&lt;org.apache.batik.dom.events"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-ext-1.6.jar&lt;org.w3c.dom.svg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.filter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.clearcase"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-util-1.6.jar&lt;org.apache.batik.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.text"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.jsp.compilers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.flow"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image.codec.tiff"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.renderer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.junit"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.util.optional"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.geom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik.transcoder.svg2svg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-bridge-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-dom-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-parser-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-script-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-svg-dom-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-svggen-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-transcoder-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-util-1.6.jar&lt;org.apache.batik"/>
+        <fragment handle="=org.apache.batik/batik-xml-1.6.jar&lt;org.apache.batik"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.ccm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.util.depend.bcel"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine.value"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-dom-1.6.jar&lt;org.apache.batik.dom.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine.value.svg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.swing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-ext-1.6.jar&lt;org.w3c.css.sac.helpers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-gvt-1.6.jar&lt;org.apache.batik.gvt.font"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.scm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.engine.sac"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.util.regexp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/ant-optional-1.5.1.jar&lt;org.apache.tools.ant.taskdefs.optional.j2ee"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-css-1.6.jar&lt;org.apache.batik.css.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.batik/batik-awt-util-1.6.jar&lt;org.apache.batik.ext.awt.font"/>
+    </package>
+</component>

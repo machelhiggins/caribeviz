@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="">
+	</section>
+	<section name="">
+	</section>
+	<section name="KEY_MAIN_PAGE">
+		<list key="KEY_SCENARIO_NAME">
+			<item value="kgn"/>
+			<item value="BDOS"/>
+			<item value="bridgetown"/>
+		</list>
+		<list key="KEY_OPEN_RENDERER">
+			<item value="true"/>
+		</list>
+		<list key="KEY_DESCRIPTION">
+			<item value=""/>
+		</list>
+	</section>
+</section>

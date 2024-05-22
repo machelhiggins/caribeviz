@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+<attribs>
+	<a>year_built</a>
+</attribs>
+<attribs>
+	<a>no_stories</a>
+</attribs>
+<attribs>
+	<a>occ_type</a>
+</attribs>
+<url>
+ <a>http://127.0.0.1/commitfeat.drrc</a>
+</url>
+</class>

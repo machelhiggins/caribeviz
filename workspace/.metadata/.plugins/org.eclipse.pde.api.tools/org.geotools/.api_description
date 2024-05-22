@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.geotools" modificationStamp="19820" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/imagemosaic\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/brewer\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/cql\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/metadata\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/render\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/resources&lt;"/>
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/brewer\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/imagemosaic\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/image\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/imagepyramid\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/arcgrid\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/cql\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/data\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;"/>
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/gt2-xml-filter-2.4-RS-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;"/>
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/postgis-driver-1.0.jar&lt;"/>
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;"/>
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;"/>
+        <fragment handle="=org.geotools/gt2-epsg-wkt-2.4-RS-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/imageio-ext-arcgrid-1.0-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;"/>
+        <fragment handle="=org.geotools/imageio-ext-ndplugin-1.0-SNAPSHOT.jar&lt;"/>
+        <fragment handle="=org.geotools/vecmath-1.3.1.jar&lt;"/>
+        <fragment handle="=org.geotools/jsr108-0.01.jar&lt;"/>
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.schema.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.geometry.text"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.servlet"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage.processing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.resource.loader"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.texen"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.gml.producer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.citation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.overlay"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.xsi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter.spatial"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.field"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.image.jai"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.data.shapefile"/>
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/cql\/src\/main\/java&lt;org.geotools.text.filter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xlink"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation.builder"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.convert"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.referencing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.algorithm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.coverage.grid.quadrilateral"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.gml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.extent"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/image\/src\/main\/java&lt;org.geotools.gce.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.schema"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.output.spi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index.chain"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.parameter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.structure.basic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.factory"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.factory"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data.postgis.collection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.coverage.grid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data.jdbc.attributeio"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.traverse.standard"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/brewer\/src\/main\/resources&lt;org.geotools.brewer.color"/>
+        <fragment handle="=org.geotools/brewer\/src\/main\/java&lt;org.geotools.brewer.color"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.crs"/>
+        <fragment handle="=org.geotools/gt2-epsg-wkt-2.4-RS-SNAPSHOT.jar&lt;org.geotools.referencing.crs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.io.input.adapter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.America.North_Dakota"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.traverse.basic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.xml"/>
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Pacific"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.base"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature.display.canvas.web"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.eraf"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.canvas"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.util.introspection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.defaults"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature.simple"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter.expression"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter.sort"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter.identity"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.geometry"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.geometry"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.geometry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.coverage.category"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.lineage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;org.geotools.gce.geotiff.IIOMetadataAdpaters.utils.codes"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.filter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.test"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.renderer.shape.shapehandler.simple"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.styling"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.styling"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.function.math"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.parameter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.resources.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.wms.gce"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.referencing.crs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis-driver-1.0.jar&lt;org.postgis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.precision"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/resources&lt;org.geotools.renderer"/>
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.renderer"/>
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imagepyramid\/src\/main\/java&lt;org.geotools.gce.imagepyramid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/cql\/src\/main\/java&lt;org.geotools.filter.function"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.function"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.linearref"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.handlers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.exception"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.catalog.adaptable"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.identity"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-arcgrid-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.plugins.arcgrid.raster"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-arcgrid-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.plugins.arcgrid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.input.spi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.visitor"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.nature"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature.display"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.spatial"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.lineage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.ssl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage.grid.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.traverse"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.filter.expression"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.expression"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.identification"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.jdbc2.optional"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.distance"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;org.geotools.gce.geotiff.IIOMetadataAdpaters"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data.jdbc.datasource"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.event"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.relate"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.anakia"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data.jdbc"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile.prj"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build.opt"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.texen.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.io.input"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.predicate"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.style.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.structure.line"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.sql"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.lite"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.map"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.visitor"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.input.compressed"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.sld"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.geomgraph.index"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.America.Indiana"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/vecmath-1.3.1.jar&lt;javax.vecmath"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree.database"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/data\/src\/main\/java&lt;org.geotools.data.store"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.store"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature.display.canvas"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.handlers.xsi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.measure"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Atlantic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.catalog.defaults"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.data.collection"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.collection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.renderer.shape"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.geom.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xs.facets"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.ds.common"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.primitive"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.America.Argentina"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.wms.response"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.constraint"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.referencing.cs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/cql\/src\/main\/resources&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/cql\/src\/main\/java&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter"/>
+        <fragment handle="=org.geotools/gt2-xml-filter-2.4-RS-SNAPSHOT.jar&lt;org.geotools.filter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data.jdbc.fidmapper"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data.postgis.fidmapper"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.image.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.log"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.geometry.jts"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.geometry.jts"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jsr108-0.01.jar&lt;javax.units"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.test.view"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.input"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/resources&lt;org.geotools.resources"/>
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.resources"/>
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.resources"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.resources"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.context"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.convert"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.citation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Africa"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.quality"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.ds.jdbc23"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.crs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/cql\/src\/main\/resources&lt;org.geotools.filter.text.cql2"/>
+        <fragment handle="=org.geotools/cql\/src\/main\/java&lt;org.geotools.filter.text.cql2"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.resource"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data.postgis.attributeio"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.catalog"/>
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.catalog"/>
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.catalog"/>
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.catalog"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.catalog"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.noding"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-ndplugin-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.ndplugin.registry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.gml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.exception"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.math"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.America.Kentucky"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xml.impl.jxpath"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.texen.defaults"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xml.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.path"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.wms.xml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.translation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.core.types"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.filter.spatial"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.fastpath"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.referencing.operation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.quality"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.geometry.aggregate"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.util.delaunay"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.util.graph"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;org.geotools.gce.geotiff.crs_adapters"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/brewer\/src\/main\/resources&lt;org.geotools.brewer.color.resources"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.coverage.category.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.image"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.geometry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.noding.snapround"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.factory.wms"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.renderer.shape.shapehandler.jts"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.stream.output"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.simplify"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.xml.transform"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.identification"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.maintenance"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/shapefile-renderer\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/data\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.data"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.factory.epsg"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;org.geotools.gce.geotiff.IIOMetadataAdpaters.utils"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/image\/src\/main\/java&lt;it.geosolutions.rendering.jai.pyramid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/arcgrid\/src\/main\/java&lt;org.geotools.gce.arcgrid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.linemerge"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.distribution"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.geometry.complex"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.styling.visitor"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.resources.geometry"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.largeobject"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.catalog.wms"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.geometry.primitive"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.cs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.datum"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.styling"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.valid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index.quadtree"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Etc"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.structure.opt"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.coverage.processing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.referencing.datum"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.structure"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.planargraph"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.constraint"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage.grid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.configuration"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.io.output"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.xa"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geotiff\/src\/main\/java&lt;org.geotools.gce.geotiff"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.catalog.postgis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.data.coverage.grid"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.directive"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-customstreams-1.0-SNAPSHOT.jar&lt;it.geosolutions.io.output.adapter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.geom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage.processing.operation"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-arcgrid-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.plugins.arcgrid.spi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build.basic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build.polygon"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index.sweepline"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Antarctica"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.feature.visitor"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.feature.visitor"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build.feature"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree.fs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.geomgraph"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/resources&lt;org.geotools.renderer.i18n"/>
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.i18n"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.buffer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.lite.gridcoverage2d.rs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index.bintree"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.map.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.core.v2"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.core.v3"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.io.standard"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.coverage.grid.io.imageio"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.distribution"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.polygonize"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.quadtree.fs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.layer"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.filter.capability"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.wkt"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.test.misc"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.spatial"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.test.provider"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/coverage\/src\/main\/java&lt;org.geotools.resources.coverage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.spatial"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.chrono"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.style"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.planargraph.algorithm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.catalog.styling"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-ndplugin-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.ndplugin.metadata"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.util"/>
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.util"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile.shp"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.parser.node"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.maintenance"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.app.tools"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.feature"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.feature"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.feature.type"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.feature.type"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/render\/src\/main\/java&lt;org.geotools.renderer.lite.gridcoverage2d"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build.line"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.metadata.iso.content"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.style"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.app.event"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.quadtree"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.jdbc3"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.overlay.snap"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.geometry.coordinate"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Europe"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile.shp.xml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.extent"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.jdbc2"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.wms"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation.builder.algorithm"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Indian"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/api\/src\/main\/java&lt;org.geotools.feature.collection"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.feature.collection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile.indexed"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xml.test"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/resources&lt;org.geotools.referencing"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing"/>
+        <fragment handle="=org.geotools/gt2-epsg-wkt-2.4-RS-SNAPSHOT.jar&lt;org.geotools.referencing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree.database.mysql"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.memory"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.canvas.web"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata.content"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.wms.request"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/resources&lt;org.geotools.referencing.factory"/>
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.factory"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jdbc\/src\/main\/java&lt;org.geotools.data.jdbc.referencing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.view"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree.memory"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.util.logging"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imageio-ext-ndplugin-1.0-SNAPSHOT.jar&lt;it.geosolutions.imageio.ndplugin"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data.postgis.referencing"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation.projection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Australia"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.core"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.canvas.map2d"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.America"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/resources&lt;org.geotools.resources.i18n"/>
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.resources.i18n"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/imagemosaic\/src\/main\/resources&lt;org.geotools.gce.imagemosaic"/>
+        <fragment handle="=org.geotools/imagemosaic\/src\/main\/java&lt;org.geotools.gce.imagemosaic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.coverage"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.runtime.compiler"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation.matrix"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.index.rtree.cachefs"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.temporal"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgis\/src\/main\/java&lt;org.geotools.data.postgis"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-filter-2.4-RS-SNAPSHOT.jar&lt;org.geotools.filter.v1_0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-filter-2.4-RS-SNAPSHOT.jar&lt;org.geotools.filter.v1_1"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.texen.ant"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.util.geom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.ds"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.geom.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/metadata\/src\/main\/java&lt;org.geotools.io"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.canvas.map2d.web"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/referencing\/src\/main\/java&lt;org.geotools.referencing.operation.transform"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.metadata"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.feature.type"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.tz.data.Asia"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.catalog.shapefile"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.geometry.coordinatesequence"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.layer.source"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/velocity-1.4.jar&lt;org.apache.velocity.app"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/wms\/src\/main\/java&lt;org.geotools.data.ows"/>
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.data.ows"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/xml\/src\/main\/java&lt;org.geotools.xml.xLink"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xlink.bindings"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/main\/src\/main\/java&lt;org.geotools.ows"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/geoapi-nogenerics-2.1-RC1.jar&lt;org.opengis.go.display.primitive.store"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.index.strtree"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/joda-time-1.5.jar&lt;org.joda.time.format"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/graph\/src\/main\/java&lt;org.geotools.graph.build"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/shapefile\/src\/main\/java&lt;org.geotools.data.shapefile.dbf"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/gt2-xml-xsd-2.4-RS-SNAPSHOT.jar&lt;org.geotools.xs.bindings"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/jts-1.8.jar&lt;com.vividsolutions.jts.operation.overlay.validate"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.geotools/postgresql-8.3-603.jdbc3.jar&lt;org.postgresql.geometric"/>
+    </package>
+</component>

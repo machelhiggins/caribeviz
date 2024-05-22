@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>                    
+        <column-metadata column-id="name" friendly-name="Enumeration District Code" is-numeric="false"  field-length="10" />
+        <column-metadata column-id="pop" friendly-name="Total Population" is-numeric="true"  field-length="10" />
+        <column-metadata column-id="male" friendly-name="Male Population" is-numeric="true"  field-length="10" />
+        <column-metadata column-id="female" friendly-name="Female Population" is-numeric="true"  field-length="10" />
+        <column-metadata column-id="male_u16" friendly-name="Male Under 16 YRO Population" is-numeric="true"  field-length="10" />
+        <column-metadata column-id="female_u16" friendly-name="Female Under 16 YRO Population" is-numeric="true"  field-length="10" />
+		<column-metadata column-id="uil" friendly-name="Average Unimproved Land Value" is-numeric="true"  field-length="10" />
+		<column-metadata column-id="std_uil" friendly-name="Standard Deviation Unimproved Land Value" is-numeric="true"  field-length="10" />
+		<column-metadata column-id="area_sqm" friendly-name="Area" is-numeric="true"  field-length="10" />
+	
+</table-metadata>

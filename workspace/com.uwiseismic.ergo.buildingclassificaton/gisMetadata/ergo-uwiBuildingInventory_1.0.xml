@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+	<column-metadata column-id="the_geom" friendly-name="Field containing the GIS location data" is-numeric="false" />
+	<column-metadata column-id="Parid" friendly-name="Parcel Id" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Struct_Typ" friendly-name="Structure Type" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Year_Built" friendly-name="Year the Building was Built" is-numeric="false" />
+	<column-metadata column-id="No_Stories" friendly-name="Number of Stories" is-numeric="true" />
+	<column-metadata column-id="Occ_Type" friendly-name="Occupancy Type" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Appr_Bldg" friendly-name="Appraised Building Value" is-numeric="true" unit="dollar" field-length="10" />
+	<column-metadata column-id="Cont_Val" friendly-name="Estimated Values of Building Contents" is-numeric="true" unit="dollar"  field-length="10" />
+	<column-metadata column-id="EFacility" friendly-name="Whether or not this building is an essential facility" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Dwell_Unit" friendly-name="Dwelling Units" is-numeric="true" />
+	<column-metadata column-id="Sq_Foot" friendly-name="Total Building Area in Square Feet" is-numeric="true" unit="sqft"/>
+	<column-metadata column-id="Str_Typ2" friendly-name="HAZUS Structure Type" is-numeric="false"  field-length="100" />
+</table-metadata>

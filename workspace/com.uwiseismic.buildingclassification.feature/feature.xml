@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.uwiseismic.buildingclassification.feature"
+      label="Feature"
+      version="1.0.0.qualifier"
+      provider-name="UWISEISMIC">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.apache.log4j" version="1.2.15" match="greaterOrEqual"/>
+      <import plugin="ncsa.tools.common.eclipse" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="edu.illinois.ncsa.ergo.core.analysis"/>
+      <import plugin="org.dom4j" version="1.6.1" match="greaterOrEqual"/>
+      <import plugin="ncsa.tools.ogrescript" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.geotools14" version="14.1.0" match="greaterOrEqual"/>
+      <import plugin="ncsa.tools.common" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.core.analysis.gis" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.core.analysis.ui" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.gis" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.eq" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.eq.hazard" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="ncsa.tools.elf.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.gis.ui" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.eq.socialscience" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.lang" version="2.6.0" match="greaterOrEqual"/>
+      <import plugin="ncsa.eclipse.core" version="0.0.9" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.eq.socialscience.ui" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="edu.illinois.ncsa.ergo.eq.buildings" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="jgraph"/>
+      <import plugin="org.apache.commons.logging" version="1.1.1" match="greaterOrEqual"/>
+      <import plugin="com.uwiseismic.modifiedmappane.mapaware" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.uwiseismic.ergo.buildingclassificaton" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.107.0" match="greaterOrEqual"/>
+      <import plugin="org.dom4j" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.log4j" version="1.2.12" match="greaterOrEqual"/>
+      <import plugin="com.uwiseismic.gis.location.datastorage" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.jxpath"/>
+      <import plugin="org.apache.commons.discovery"/>
+      <import plugin="org.apache.commons.collections"/>
+      <import plugin="org.apache.commons.cli"/>
+      <import plugin="org.apache.commons.beanutils"/>
+      <import plugin="org.jfreechart"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.junit"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.equinox.p2.core" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.ui" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.metadata" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.metadata.repository" version="1.2.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.engine" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.director" version="2.3.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.operations" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.p2.repository" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="com.sun.jai" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.uwiseismic.ergo.buildingclassificaton"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.modifiedmappane.v4"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.modifiedmappane.mapaware"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.barbados"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.datastorage"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.grenada"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.jamaica"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.tobago"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.uwiseismic.gis.location.trinidad"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.illinois.ncsa.ergo.gis.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

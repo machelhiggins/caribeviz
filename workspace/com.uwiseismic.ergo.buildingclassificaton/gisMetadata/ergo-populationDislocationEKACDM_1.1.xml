@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+	<column-metadata column-id="the_geom" friendly-name="Field containing the GIS location data" is-numeric="false" />
+	<column-metadata column-id="Parid" friendly-name="Parcel Id" is-numeric="false" />
+	<column-metadata column-id="Struct_Typ" friendly-name="Structure Type" is-numeric="false" importance="summary"/>
+	<column-metadata column-id="Year_Built" friendly-name="Year the Building was Built" is-numeric="false" />
+	<column-metadata column-id="No_Stories" friendly-name="Number of Stories" is-numeric="true" />
+	<column-metadata column-id="Occ_Type" friendly-name="Occupancy Type" is-numeric="false" />
+	<column-metadata column-id="Appr_Bldg" friendly-name="Appraised Building Value" is-numeric="true" unit="dollar"/>
+	<column-metadata column-id="Cont_Val" friendly-name="Estimated Values of Building Contents" is-numeric="true" unit="dollar" />
+	<column-metadata column-id="EFacility" friendly-name="Whether or not this building is an essential facility" is-numeric="false" />
+	<column-metadata column-id="Dwell_Unit" friendly-name="Dwelling Units" is-numeric="true" />
+	<column-metadata column-id="Sq_Foot" friendly-name="Total Building Area in Square Feet" is-numeric="true" unit="sqft"/>
+	<column-metadata column-id="immocc" friendly-name="Probability of exceeding Immediate Occupancy limit state" is-numeric="true" unit="decimal" importance="user" agg-type="mean"/>
+	<column-metadata column-id="lifesfty" friendly-name="Probability of exceeding Life Safety limit state" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="collprev" friendly-name="Probability of exceeding Collapse Prevention limit state" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Insignific" friendly-name="Probability of Insignificant Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Moderate" friendly-name="Probability of Moderate Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Heavy" friendly-name="Probability of Heavy Damage" is-numeric="true" unit="decimal"  importance="user" agg-type="mean"/>
+	<column-metadata column-id="Complete" friendly-name="Probability of Complete Damage" is-numeric="true" unit="decimal" importance="user" agg-type="mean" />
+	<column-metadata column-id="meandamage" friendly-name="Mean Damage" is-numeric="true" unit="decimal" agg-type="mean"/>
+	<column-metadata column-id="mdamagedev" friendly-name="Mean Damage Standard Deviation" is-numeric="true" unit="decimal" importance="user" agg-type="mean"/>	
+	<column-metadata column-id="popdisloc" friendly-name="Population Dislocation" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="popdislo_m" friendly-name="Male Population Dislocation" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="popdislo_f" friendly-name="Female Population Dislocation" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+	<column-metadata column-id="popdislo_c" friendly-name="Child Population Dislocation" is-result="true" is-numeric="true" importance="user" agg-type="sum" field-length="10" />
+</table-metadata>	

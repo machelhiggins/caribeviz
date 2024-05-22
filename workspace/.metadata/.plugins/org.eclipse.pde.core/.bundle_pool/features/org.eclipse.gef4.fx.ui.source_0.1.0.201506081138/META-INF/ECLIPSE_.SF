@@ -1,0 +1,26 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: QS++uju4INqagWy4GuuyvZaKk7dcJ
+ Fv1qbcTELm/1y4=
+SHA-256-Digest-Manifest: Ib4hdOkeb/9bXLfFeuqlPBwhAsYN/u8dJ4kjxZ0EFlk=
+Created-By: 1.8.0_40 (Oracle Corporation)
+
+Name: META-INF/maven/org.eclipse.gef4.features/org.eclipse.gef4.fx.ui/
+ pom.xml
+SHA-256-Digest: R02ZNyf6TFzOBf/KNPG60Cyw4FsPj5n5HAYAVThHuC8=
+
+Name: epl-v10.html
+SHA-256-Digest: 8GSw4aNBim+4CHFc1TYSYQy3Ei4T2BVP57HxmJUvTBs=
+
+Name: feature.xml
+SHA-256-Digest: 3co3S5crYad7TLNHt8UPx74qZ9l5v/i/nWru9f76NhM=
+
+Name: META-INF/maven/org.eclipse.gef4.features/org.eclipse.gef4.fx.ui/
+ pom.properties
+SHA-256-Digest: iBQV7jwy+SlLEi+BEgJtW/qwN3n67s3XsYnUUB9O+eo=
+
+Name: feature.properties
+SHA-256-Digest: H/rC0fpjCXgdTcowS/7Z+Q0voJVbe0pa3u8zvIWXSl0=
+
+Name: license.html
+SHA-256-Digest: gb5ZzrbOyFArzDLUIG4huZV/GHHBYb0EtixuMKXnhqs=
+

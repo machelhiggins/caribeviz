@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.rap.ui.internal.launch.rwt.RWTLaunchConfigType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/com.uwisiesmic.drrcdatawarehouse/src/com/uwisiesmic/drrcdatawarehouse/BasicApplication.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.uwisiesmic.drrcdatawarehouse"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=""/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.applicationConfiguration" value="com.uwisiesmic.drrcdatawarehouse.BasicApplication"/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.browserMode" value="INTERNAL"/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.contextpath" value="/"/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.entryPoint" value=""/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.launchMode" value="APP_CONFIG"/>
+<booleanAttribute key="org.eclipse.rap.launch.rwt.openBrowser" value="true"/>
+<intAttribute key="org.eclipse.rap.launch.rwt.port" value="8080"/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.servletPath" value="/"/>
+<intAttribute key="org.eclipse.rap.launch.rwt.sessionTimeout" value="0"/>
+<booleanAttribute key="org.eclipse.rap.launch.rwt.useManualContextPath" value="false"/>
+<booleanAttribute key="org.eclipse.rap.launch.rwt.useManualPort" value="false"/>
+<booleanAttribute key="org.eclipse.rap.launch.rwt.useSessionTimeout" value="false"/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.webAppLocation" value=""/>
+<stringAttribute key="org.eclipse.rap.launch.rwt.webXmlLocation" value=""/>
+</launchConfiguration>

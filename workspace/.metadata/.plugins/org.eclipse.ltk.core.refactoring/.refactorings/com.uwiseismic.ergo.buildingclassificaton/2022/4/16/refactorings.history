@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;com.uwiseismic.gis.util.geohash.GeoHash.createTessallation()&apos; to &apos;createQuadTree&apos;&#x0D;&#x0A;- Original project: &apos;com.uwiseismic.ergo.buildingclassificaton&apos;&#x0D;&#x0A;- Original element: &apos;com.uwiseismic.gis.util.geohash.GeoHash.createTessallation()&apos;&#x0D;&#x0A;- Renamed element: &apos;com.uwiseismic.gis.util.geohash.GeoHash.createQuadTree()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;createTessallation&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;com.uwiseismic.gis.util.geohash{GeoHash.java[GeoHash~createTessallation" name="createQuadTree" references="true" stamp="1649982164263" version="1.0"/>
+</session>

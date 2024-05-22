@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories lastChange='2014-04-15'>
+<current>
+	<repository name="Ergo-EQ Public Repository" repository-type="SAMRepository" disabled="false">
+	  <connection-parameters>
+		<entry key="location" value="http://rcp.ncsa.uiuc.edu:8080/webdav/ergo-repo"/>
+	  </connection-parameters>
+	</repository>
+	<repository name="UWI-DRRC Public Repository" repository-type="SAMRepository" disabled="false">
+	  <connection-parameters>
+		<entry key="location" value="http://localhost:8080/ergo-repo"/>
+	  </connection-parameters>
+	</repository>
+</current>
+
+<deprecated>
+	<repository name="MAEViz Public Repository" repository-type="SAMRepository" disabled="false">
+	  <connection-parameters>
+		<entry key="location" value="http://rcp.ncsa.uiuc.edu:8080/webdav/maeviz-repo"/>
+	  </connection-parameters>
+	</repository>
+	<repository name="Old Public Repository Server" repository-type="SAMRepository" disabled="false">
+	  <connection-parameters>
+		<entry key="location" value="http://maeviz.cee.uiuc.edu:8081/sam/files/repo"/>
+	  </connection-parameters>
+	</repository>
+	<repository name="Public Repository Server" repository-type="SAMRepository" disabled="false">
+	  <connection-parameters>
+		  <entry key="location" value="http://maeviz.cee.uiuc.edu:8081/sam/files/maeviz-repo"/>
+	  </connection-parameters>
+	</repository>
+</deprecated>
+</repositories>

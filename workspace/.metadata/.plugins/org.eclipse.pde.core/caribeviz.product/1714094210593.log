@@ -1,0 +1,85 @@
+!SESSION 2024-04-25 21:16:49.937 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_391
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product edu.illinois.ncsa.ergo.eq.rcp.product
+Command-line arguments:  -product edu.illinois.ncsa.ergo.eq.rcp.product -data C:\Projects\ERGO\workspace/../runtime-caribeviz.product -dev file:C:/Projects/ERGO/workspace/.metadata/.plugins/org.eclipse.pde.core/caribeviz.product/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY com.uwiseismic.modifiedmappane.v4 4 0 2024-04-25 21:16:51.559
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.modifiedmappane.v4 [582]
+  Unresolved requirement: Require-Bundle: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0.qualifier"; singleton:="true"
+       com.uwiseismic.ergo.buildingclassificaton [1041]
+         Unresolved requirement: Import-Package: org.jgrapht
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.eq.hazard.ui 4 0 2024-04-25 21:16:51.563
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.eq.hazard.ui [607]
+  Unresolved requirement: Require-Bundle: edu.illinois.ncsa.ergo.gis.geotools.ui
+    -> Bundle-SymbolicName: edu.illinois.ncsa.ergo.gis.geotools.ui; bundle-version="4.0.0.qualifier"; singleton:="true"
+       edu.illinois.ncsa.ergo.gis.geotools.ui [632]
+         Unresolved requirement: Require-Bundle: com.uwiseismic.modifiedmappane.v4; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: com.uwiseismic.modifiedmappane.v4; bundle-version="1.0.0.qualifier"; singleton:="true"
+              com.uwiseismic.modifiedmappane.v4 [582]
+                Unresolved requirement: Require-Bundle: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0"
+                  -> Bundle-SymbolicName: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0.qualifier"; singleton:="true"
+                     com.uwiseismic.ergo.buildingclassificaton [1041]
+                       Unresolved requirement: Import-Package: org.jgrapht
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY edu.illinois.ncsa.ergo.gis.geotools.ui 4 0 2024-04-25 21:16:51.570
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: edu.illinois.ncsa.ergo.gis.geotools.ui [632]
+  Unresolved requirement: Require-Bundle: com.uwiseismic.modifiedmappane.v4; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: com.uwiseismic.modifiedmappane.v4; bundle-version="1.0.0.qualifier"; singleton:="true"
+       com.uwiseismic.modifiedmappane.v4 [582]
+         Unresolved requirement: Require-Bundle: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: com.uwiseismic.ergo.buildingclassificaton; bundle-version="1.0.0.qualifier"; singleton:="true"
+              com.uwiseismic.ergo.buildingclassificaton [1041]
+                Unresolved requirement: Import-Package: org.jgrapht
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.uwiseismic.ergo.buildingclassificaton 4 0 2024-04-25 21:16:52.493
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.uwiseismic.ergo.buildingclassificaton [1041]
+  Unresolved requirement: Import-Package: org.jgrapht
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)

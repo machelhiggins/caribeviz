@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="edu.emory.backport" modificationStamp="754277" version="1.2">
+    <package visibility="1">
+        <fragment handle="=edu.emory.backport/&lt;edu.emory.mathcs.backport.java.util.concurrent.helpers"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.emory.backport/&lt;edu.emory.mathcs.backport.java.util.concurrent.locks"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.emory.backport/&lt;edu.emory.mathcs.backport.java.util.concurrent"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.emory.backport/&lt;edu.emory.mathcs.backport.java.util.concurrent.atomic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=edu.emory.backport/&lt;edu.emory.mathcs.backport.java.util"/>
+    </package>
+</component>

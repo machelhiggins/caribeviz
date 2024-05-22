@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.mvc.ui"
+      label="GEF4 MVC.UI"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF"
+      plugin="org.eclipse.gef4.mvc.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gef4.mvc" version="0.1.0" match="equivalent"/>
+      <import plugin="com.google.inject" version="3.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.gef4.mvc.ui"
+         download-size="21"
+         install-size="34"
+         version="0.1.0.201506081138"
+         unpack="false"/>
+
+</feature>

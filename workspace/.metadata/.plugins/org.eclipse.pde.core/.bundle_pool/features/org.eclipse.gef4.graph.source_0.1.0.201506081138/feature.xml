@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.gef4.graph.source" version="0.1.0.201506081138" plugin="org.eclipse.gef4.graph" label="GEF4 Graph Developer Resources" provider-name="Eclipse GEF">
+  <includes id="org.eclipse.gef4.graph" version="0.1.0.201506081138"/>
+  <description>
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.gef4.graph.source" version="0.1.0.201506081138" download-size="0" install-size="0" unpack="false"/>
+</feature>

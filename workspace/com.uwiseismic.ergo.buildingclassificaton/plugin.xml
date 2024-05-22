@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.gisSchemas">
+      <gisSchema
+            category="Buildings"
+            description="UWI Building Classification"
+            file="gisSchemas/ergo-uwiBuildingClassification_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.buildingclassificaton.uwiBuildingClassification.v1.0"
+            mapLayer="1"
+            name="UWI Building Classification"
+            requiredFields="the_geom,guid,parid,bldg_id,struct_typ,year_built,no_stories,occ_type,appr_bldg,cost_sqft,cont_val,efacility,dwell_unit,sq_foot,str_typ2,str_prob,efacil_nam,ef_occ_rat,max_occ,gsq_feet,area_sqm,u_set_occt,occ_nite_m,occ_nite_f,occ_nite_c,occ_day_m,occ_day_f,occ_day_c,occ_avg_m,occ_avg_f,occ_avg_c,u_set_occr"
+            type="uwiBuildingClassification"
+            version="1.0">
+      </gisSchema>
+      <gisSchema
+            category="Socioeconomic"
+            description="Enumeration District"
+            file="gisSchemas/ergo-uwiEnumerationDistricts_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.buildingclassificaton.uwiEnumerationDistricts.v1.0"
+            mapLayer="1"
+            name="UWI Enumeration District"
+            requiredFields="name,pop,male,female,male_u16,female_u16,uil,std_uil,area_sqm"
+            type="uwiEnumerationDistrict"
+            version="1.0">
+      </gisSchema>
+      <gisSchema
+            category="Transportation"
+            description="Open Street Map Road Network"
+            file="gisSchemas/ergo-osmRoadNetwork_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.buildingclassificaton.osmRoadNetwork.v1.0"
+            mapLayer="10"
+            name="Open Street Map Road Network"
+            requiredFields="highway"
+            type="osmRoadNetwork"
+            version="1.0">
+      </gisSchema>
+      <gisSchema
+            category="Anonymous Data"
+            description="Any XML document"
+            file="gisSchemas/gis-anonymousXML_1.0.xsd"
+            format="xml"
+            id="com.uwiseismic.ergo.buildingclassification.gisSchemas.anonymousXML.v1.0"
+            name="Anonymous XML Doucment"
+            type="anonymousXML"
+            version="1.0">
+      </gisSchema>
+  <!--    <gisSchema
+            category="gisSchema.category.0"
+            description="EKACDM methodology for casualties"
+            file="gisSchemas/ergo-buildingIndoorCasualtiesEKACDM_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.buildingclassification.gisSchemas.buildingIndoorCasualtiesEKACDM.v1.0"
+            mapLayer="20"
+            name="UWI Building Indoor Casualties"
+            requiredFields="severity1, severity2, severity3, severity4,m_sever1, m_sever2, m_sever3, m_sever4 , f_sever1, f_sever2, f_sever3, f_sever4 , c_sever1, c_sever2, c_sever3, c_sever4"
+            type="buildingIndoorCasualtiesEKACDM"
+            version="1.0">
+      </gisSchema> -->
+      <gisSchema
+            category="gisSchema.category.0"
+            description="EKACDM methodology for casualties"
+            file="gisSchemas/ergo-buildingIndoorCasualtiesEKACDM_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.buildingclassification.gisSchemas.buildingIndoorCasualtiesEKACDM.v1.0"
+            mapLayer="20"
+            name="UWI Building Indoor Casualties"
+            requiredFields="severity1, severity2, severity3, severity4,m_sever1, m_sever2, m_sever3, m_sever4 , f_sever1, f_sever2, f_sever3, f_sever4 , c_sever1, c_sever2, c_sever3, c_sever4"
+            type="buildingIndoorCasualtiesEKACDM"
+            version="1.0">
+      </gisSchema>       
+      <gisSchema
+            category="Socioeconomic"
+            description="Healthcare facilites occupancy after an earthquake"
+            file="gisSchemas/ergo-healthcareOccupancy_1.1.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.analysis.efacility.healthFacilityOccupancy.v1.0"
+            mapLayer="20"
+            name="Healthcare Facility Post Earthquake Occupancy"
+            requiredFields="the_geom,lat,long,efacil_nam,max_occ,occ,over_cap"
+            type="uwiHealthcareFacilitiesOccupancy"
+            version="1.0">
+      </gisSchema>
+      <gisSchema
+            category="Socioeconomic"
+            description="Population Dilsocation using UWI-EKACDM methodloogy"
+            file="gisSchemas/ergo-populationDislocationEKACDM_1.1.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.population.gisSchemas.populationDislocationEKACDM.v1.0"
+            mapLayer="20"
+            name="UWI Population Dislocation"
+            requiredFields="popdisloc, popdislo_m, popdislo_f, popdislo_c"
+            type="uwiPopulationDislocationEKACDM"
+            version="1.0">
+      </gisSchema>
+      <gisSchema
+            category="Socioeconomic"
+            description="Shelter facilites occupancy after an earthquake"
+            file="gisSchemas/ergo-shelterOccupancy_1.0.xsd"
+            format="shapefile"
+            id="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy.v1.0"
+            mapLayer="20"
+            name="Shelter Post Earthquake Occupancy"
+            requiredFields="the_geom,lat,long,efacil_nam,max_occ,occ,over_cap"
+            type="shelterFacilitiesOccupancy"
+            version="1.0">
+      </gisSchema>
+      </extension>
+  <!-- </egClassificationParameters"> -->
+ 	<extension
+         point="edu.illinois.ncsa.ergo.core.analysis.iterationHandlers">
+      <iterationHandler
+            class="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationIterator"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationIterator"
+            name="UWI Building Classification Iterator"
+            tag="buildingClassification">
+      </iterationHandler>
+      <iterationHandler
+            class="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParameterIterator"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParameterIterator"
+            name="UWI Building Classification Parameter Builder Iterator"
+            tag="buildingClassificationParameters">
+      </iterationHandler>
+      <iterationHandler
+            class="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancyIterator"
+            id="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancy"
+            name="Healthcare Facility Post Earthquake Occupancy"
+            tag="healthcareFacilitiesOccupancy">
+      </iterationHandler>
+      <iterationHandler
+            class="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancyIterator"
+            id="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy"
+            name="Shelter Facility Post Earthquake Occupancy"
+            tag="shelterFacilitiesOccupancy">
+      </iterationHandler>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.core.analysis.newAnalyses">
+      <analysis
+            category="Building"
+            description="Classifies buildings in the British West Indies using UWI methodology"
+            descriptor="descriptions/BuildingClassification.xml"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationTask"
+            name="UWI Building Classification"
+            tag="buildingClassification">
+      </analysis>
+      <analysis
+            category="Building"
+            description="Creates Region Specific Parameters for Building Classification"
+            descriptor="descriptions/BuildingClassificationParameters.xml"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParameters"
+            name="UWI Building Classification Parameters Builder"
+            tag="buildingClassificationParameters">
+      </analysis>
+      <analysis
+            category="Socioeconomic"
+            description="Computes the expected indoor casualties from building structural damage"
+            descriptor="descriptions/BuildingIndoorCasualtiesAnalysisEKACDM.xml"
+            id="com.uwiseismic.ergo.buildingclassificaton.BuildingIndoorCasualtiesAnalysisEKACDM"
+            name="UWI Building Indoor Casualties"
+            tag="buildingIndoorCasualtiesEKACDM">
+      </analysis>
+      <analysis
+            category="Socioeconomic"
+            description="Calculates the resulting occupancies of healthcare facilities after an earthquake"
+            descriptor="descriptions/HealthFacilityOccupancy.xml"
+            id="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancy"
+            name="UWI Healthcare Facilities Post Earthquake Occupancy "
+            tag="healthcareFacilitiesOccupancy">
+      </analysis>
+      <analysis
+            category="Socioeconomic"
+            description="Computes the approximate dislocation for each residential structure based on the structural damage."
+            descriptor="descriptions/DislocationAnalysisEKACDM.xml"
+            id="com.uwiseismic.ergo.populationdislocation.DislocationAnalysisEKACDM"
+            name="UWI-EKACDM Population Dislocation"
+            tag="dislocationAnalysisEKACDM">
+      </analysis>
+      <analysis
+            category="Socioeconomic"
+            description="Calculates the resulting occupancies of emergency shelter facilities after an earthquake"
+            descriptor="descriptions/ShelterFacilityOccupancy.xml"
+            id="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy"
+            name="UWI Emergency Shelter Facilities Post Earthquake Occupancy "
+            tag="shelterFacilitiesOccupancy">
+      </analysis>
+   </extension>
+   <extension
+         point="ncsa.tools.ogrescript.ogreTasks">
+      <ogreTasks
+            class="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationTask"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationTask"
+            name="Building Classification"
+            tag="buildingClassification">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.analysis.casualties.BuildingIndoorCasualtiesTask"
+            id="com.uwiseismic.ergo.analysis.casualies.BuildingIndoorCasualtiesTask"
+            name="Building Indoor Casualties Task EKACDM"
+            tag="buildingIndoorCasualtiesEKACDM">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParametersTask"
+            id="com.uwiseismic.ergo.buildingclassifier.BuildingClassificationParametersTask"
+            name="Building Classification Parameters"
+            tag="buildingClassificationParameters">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.populationdislocation.PopulationDislocationTask"
+            id="com.uwiseismic.ergo.populationdislocation.DislocationAnalysisEKACDM"
+            name="EKACDM Modified HAZUS Population Dislocation"
+            tag="dislocationAnalysisEKACDM">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.buildingclassifier.DefineXMLDataset"
+            id="com.uwiseismic.ergo.buildingclassifier.DefineXMLDataset"
+            name="Define XML Dataset"
+            tag="define-xml">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.buildingclassifier.CreateXMLDatasetResult"
+            id="com.uwiseismic.ergo.buildingclassifier.CreateXMLDatasetResult"
+            name="Create XML Dataset Result"
+            tag="create-xml-dataset-result">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancyTask"
+            id="com.uwiseismic.ergo.analysis.efacility.HealthFacilityOccupancy"
+            name="UWI Healthcare Facilities Post Earthquake Occupancy "
+            tag="healthcareFacilitiesOccupancy">
+      </ogreTasks>
+      <ogreTasks
+            class="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancyTask"
+            id="com.uwiseismic.ergo.analysis.efacility.ShelterFacilityOccupancy"
+            name="UWI Emergency Shelter Facilities Post Earthquake Occupancy "
+            tag="shelterFacilitiesOccupancy">
+      </ogreTasks>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.eq.socialscience.population">
+      <population
+            class="com.uwiseismic.ergo.population.UWIPopulationEstimate"
+            description="Population Estimate using UWI methodology"
+            id="com.uwiseismic.ergo.population.UWIPopulationEstimate"
+            name="UWI Population Estimate"
+            tag="uwiPopulationEstimate">
+      </population>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.ui.dataSourceIngestorPages">
+      <datasetIngestorPage
+            class="com.uwiseismic.ergo.ui.wizards.ingest.XMLDatasetIngestPage"
+            id="com.uwiseismic.ergo.ui.wizards.ingest.XMLDatasetIngestPage"
+            name="XML"
+            tag="xml">
+      </datasetIngestorPage>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.datasetFactories">
+      <DatasetFactory
+            class="com.uwiseismic.ergo.datasets.factories.XMLDatasetFactory"
+            id="com.uwiseismic.ergo.datasets.factories.XMLDatasetFactory"
+            name="XML Dataset Factory"
+            tag="xml">
+      </DatasetFactory>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.gis.metadataTypes">
+      <metadataType
+            class="com.uwiseismic.ergo.metadata.XMLMetadata"
+            id="com.uwiseismic.ergo.metadata.XMLMetadata"
+            name="XML Metadata"
+            tag="xml-metadata">
+      </metadataType>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.core.analysis.resultPreprocessorHandlers">
+      <resultPreprocessorHandler
+            class="com.uwiseismic.ergo.datasets.scripthandlers.XMLDatasetResultPreprocessor"
+            id="com.uwiseismic.ergo.datasets.scripthandlers.XMLDatasetResultPreprocessor"
+            name="XML Dataset Result Preprocessor Handler"
+            tag="xml">
+      </resultPreprocessorHandler>
+   </extension>
+   <extension
+         point="edu.illinois.ncsa.ergo.core.analysis.resultCreationHandlers">
+      <resultCreationHandler
+            class="com.uwiseismic.ergo.datasets.scripthandlers.BCParametersResultCreationHandler"
+            id="com.uwiseismic.ergo.datasets.scripthandlers.BCParametersResultCreationHandler"
+            name="XML Dataset Result Creation Handler"
+            tag="xml">
+      </resultCreationHandler>
+   </extension>
+   <extension
+         point="ncsa.tools.common.elementType">
+      <elementType
+            class="com.uwiseismic.ergo.buildingclassifier.CreateXMLDatasetResult"
+            id="com.uwiseismic.ergo.buildingclassifier.CreateXMLDatasetResult"
+            name="XML Iterator Work Provider"
+            tag="xml">
+      </elementType>
+   </extension>
+
+</plugin>

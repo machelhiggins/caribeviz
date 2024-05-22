@@ -1,0 +1,5 @@
+package com.uwiseismic.ergo.buildingclassifier;
+
+public class BuildingClassificationThread extends Thread {
+
+}

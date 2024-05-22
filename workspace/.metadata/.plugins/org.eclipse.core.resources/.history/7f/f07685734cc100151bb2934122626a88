@@ -1,0 +1,95 @@
+package com.uwiseismic.test;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+
+import com.uwiseismic.ergo.buildingclassifier.BuildingProbParameters;
+import com.uwiseismic.ergo.buildingclassifier.ProbConstants;
+import com.uwiseismic.ergo.buildingclassifier.ProbabilityFunction;
+import com.uwiseismic.ergo.buildingclassifier.logictree.IllegalLogicTreeOperation;
+import com.uwiseismic.ergo.buildingclassifier.logictree.LogicStatement;
+import com.uwiseismic.ergo.buildingclassifier.logictree.LogicTreeBuilder;
+import com.uwiseismic.ergo.buildingclassifier.logictree.Root;
+import com.uwiseismic.ergo.buildingclassifier.logistic.IllegalLogisticFunctionParameter;
+import com.uwiseismic.ergo.buildingclassifier.logistic.LogisticFunctionBuilder;
+
+public class TestXML {
+
+	public static void main(String[] args) {
+		  File xmlFile = new File("src/com/uwiseismic/maeviz/buildingclassifier/probability_thresholds_test.xml");
+      
+	        
+		  
+		  try {
+
+				BuildingProbParameters probParams = new BuildingProbParameters();
+		        SAXReader reader = new SAXReader(); 
+			ProbabilityFunction myTest = null;
+			Document document = reader.read(xmlFile);
+			Element rootNode = document.getRootElement();
+			///List probFuncs = ;
+			for(Iterator <Element>i = rootNode.elementIterator("prob_function");i.hasNext();){
+				Element t = i.next();
+				String metricName = ProbConstants.verifyMetricType(t.attributeValue("name"));
+				if(metricName == null)
+					throw new NullPointerException("Unknown probability function in XML file.");					
+				String funcType = ProbConstants.verifyFunctionType(t.attributeValue("function_type"));
+				if(funcType == null)
+					throw new NullPointerException("Unknown function type in XML file.");
+				System.out.println("Name :: "+metricName+"\tFunc Type :: "+funcType);					
+				if(funcType.equals(ProbConstants.LOGIC_TREE)){										
+					ProbabilityFunction pf = new ProbabilityFunction(metricName, funcType);					
+					if(metricName.equals("bsr")){
+						myTest = pf;
+						System.out.println("Got it");
+					} 
+					Root rootStatement = new Root();
+					pf.setStatement(rootStatement);
+					LogicTreeBuilder.traverseLogicTree(t.element("logic_tree"), rootStatement);
+					
+					//** add to BuildingProbability???
+				}
+				else{
+					// do nothing for now
+					LogisticFunctionBuilder.createLogisticFunctions(t.element("logistic"));
+				}
+				
+			}
+			
+			LogicStatement stmt = myTest.getStatement();
+			ArrayList <String> theirs = stmt.getStatisticOperand();
+			for(Iterator <String>z = theirs.iterator();z.hasNext();)
+				System.out.println(z.next());
+			HashMap <String, Double>  varsValues = new HashMap <String, Double>();
+			varsValues.put(ProbConstants.MEAN, new Double(4));
+			varsValues.put(ProbConstants.MEAN_PLUS_SIGMA, new Double(6));
+			//varsValues.put(ProbConstants.MODE, new Double(0.3));
+			System.out.println(stmt.evaluate(new Double(0.2), varsValues));
+			
+		  } catch (NullPointerException npex){
+			  //*** TODO: Proper error notification !!!!!!!!!!!!!!!!!!!!!!****************
+			  System.err.println("UNKOWN PROBABILITY FUNCTION IN XML: "+npex.getMessage());
+			  npex.printStackTrace();
+		  } catch (IllegalLogicTreeOperation e) {
+			//*** TODO: Proper error notification !!!!!!!!!!!!!!!!!!!!!!****************
+			  e.printStackTrace();
+		  } catch(IllegalLogisticFunctionParameter e){
+			//*** TODO: Proper error notification !!!!!!!!!!!!!!!!!!!!!!****************
+			  e.printStackTrace();
+		  } catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+
+}

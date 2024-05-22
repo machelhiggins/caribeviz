@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Grid2defnode
+Bundle-SymbolicName: edu.psu.ems.gis2defnode;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: edu.psu.ems.gis2defnode.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.uwiseismic.modifiedmappane.v4,
+ org.geotools14;bundle-version="14.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-AutoStart: true

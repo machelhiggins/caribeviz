@@ -1,0 +1,494 @@
+/*******************************************************************************
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ *
+ * Contributors:
+ *     Shawn Hampton, Jong Lee, Chris Navarro, Nathan Tolbert (NCSA) - initial API and implementation and/or initial documentation
+ *******************************************************************************/
+package edu.illinois.ncsa.ergo.core.analysis.ogrescript.tasks.core;
+
+import java.io.File;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+
+import ncsa.tools.common.types.ActualValueAttribute;
+import ncsa.tools.elf.core.exceptions.ScriptExecutionException;
+import ncsa.tools.ogrescript.tasks.OgreScriptTask;
+
+import org.eclipse.core.runtime.IProgressMonitor;
+import org.geotools.data.DataStore;
+import org.geotools.data.shapefile.ShapefileDataStore;
+import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.data.simple.SimpleFeatureStore;
+import org.geotools.feature.AttributeTypeBuilder;
+import org.geotools.feature.DefaultFeatureCollection;
+import org.opengis.feature.simple.SimpleFeatureType;
+import org.opengis.feature.type.AttributeDescriptor;
+import org.opengis.feature.type.GeometryDescriptor;
+
+import edu.illinois.ncsa.ergo.core.analysis.types.OutputDescription;
+import edu.illinois.ncsa.ergo.gis.datasets.FeatureDataset;
+import edu.illinois.ncsa.ergo.gis.datasets.TableDataset;
+import edu.illinois.ncsa.ergo.gis.util.DatasetUtils;
+
+/**
+ * @author
+ *
+ *         TODO add class documentation and license header
+ */
+public class DefineFeatureType extends OgreScriptTask
+{
+	private final static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(DefineFeatureType.class);
+
+	public final static String SCHEMA_FIELD_MAP_KEY = "ergo.schema"; //$NON-NLS-1$
+	public final static String FIELD_MAP_KEY = "ergo.field"; //$NON-NLS-1$
+	public final static String OUTPUT_PROP_TYPE_SCHEMA = "schema"; //$NON-NLS-1$
+	public final static String OUTPUT_PROP_TYPE_DATASET = "dataset"; //$NON-NLS-1$
+	public final static String OUTPUT_PROP_TYPE_FIELD = "field-key"; //$NON-NLS-1$
+	public final static String OUTPUT_PROP_TYPE_GEOM = "base-geom-key"; //$NON-NLS-1$
+
+	// INPUT
+	private String typeName;
+	private String typeKey;
+	private String collectionKey;
+	private String mapKey;
+	private String featureStoreKey = "feature.store";
+	private String geomKey;
+	private List<String> guidKeys;
+
+	// STATE
+	private List<ActualValueAttribute> attributes = new LinkedList<ActualValueAttribute>();
+
+	// OUTPUT
+	private SimpleFeatureType featureType;
+	private Map<String, Map<String, String>> fieldNameMap = new HashMap<String, Map<String, String>>();
+	private DefaultFeatureCollection featureCollection;
+
+	/**
+	 * @param monitor
+	 * @throws ScriptExecutionException
+	 */
+	@SuppressWarnings("unchecked")
+	protected void wrappedExecute(IProgressMonitor monitor) throws ScriptExecutionException
+	{
+		if (attributes.size() == 0)
+			throw new ScriptExecutionException("Must have at least one value"); //$NON-NLS-1$
+
+		ActualValueAttribute first = attributes.get(0);
+		if (!(first.getType().equals(OUTPUT_PROP_TYPE_DATASET) || first.getType().equals(OUTPUT_PROP_TYPE_SCHEMA) || first.getType()
+				.equals(OUTPUT_PROP_TYPE_GEOM))) {
+			throw new ScriptExecutionException("First value must be either 'dataset' or 'schema'"); //$NON-NLS-1$
+		}
+
+		List<ActualValueAttribute> orderedAttributes = new LinkedList<ActualValueAttribute>();
+		ActualValueAttribute schemaProp = null;
+
+		// Sort the order of output properties
+		// if schema holds the geometry
+		// schema - dataset 1..* - field 1..*
+		// if dataset holds the geometry
+		// dataset 1..* - field 1..* - schema
+
+		for (ActualValueAttribute a : attributes) {
+			if (a.getType().equals(OUTPUT_PROP_TYPE_DATASET)) {
+				orderedAttributes.add(a);
+			} else if (a.getType().equals(OUTPUT_PROP_TYPE_SCHEMA)) {
+				schemaProp = a;
+			} else if (a.getType().equals(OUTPUT_PROP_TYPE_GEOM)) {
+				orderedAttributes.add(a);
+			}
+		}
+
+		for (ActualValueAttribute a : attributes) {
+			if (a.getType().equals(OUTPUT_PROP_TYPE_FIELD)) {
+				orderedAttributes.add(a);
+			}
+		}
+
+		if (schemaProp != null) {
+			if (schemaProp.getName().equals(geomKey)) {
+				// the geom of Schema is used to hold geometry, it should be first
+				orderedAttributes.add(0, schemaProp);
+			} else {
+				// the geom of Schema isn't used to hold geometry, it should be at the end
+				orderedAttributes.add(schemaProp);
+			}
+		}
+		System.out.println("size of ordered attributes = "+orderedAttributes.size() );//** MH DEBUG
+		for (ActualValueAttribute a : orderedAttributes)//** MH DEBUG
+			System.out.println("we have "+a.getName()+"\t"+a.getType());//** MH DEBUG
+		
+		
+
+		try {
+			String featureName = null;
+			featureType = null;
+			List<AttributeDescriptor> resultList = new LinkedList<AttributeDescriptor>();
+			Set<String> fieldNameSet = new HashSet<String>();
+
+			for (ActualValueAttribute a : orderedAttributes) {
+				List<AttributeDescriptor> tempList = null;
+				String attName = a.getName();
+				boolean keepTheGeom = false;
+				boolean keepGuid = false;
+				if (geomKey.equals(attName))
+					keepTheGeom = true;
+				if (guidKeys.contains(attName))
+					keepGuid = true;
+
+				if (a.getType().equals(OUTPUT_PROP_TYPE_SCHEMA)) {
+					String schema = (String) a.getActualValue();
+					tempList = DatasetUtils.getFieldsFromSchema(schema, keepTheGeom, keepGuid);
+					fieldNameMap.put(SCHEMA_FIELD_MAP_KEY, addFieldNameToMap(fieldNameSet, tempList));
+				} else if (a.getType().equals(OUTPUT_PROP_TYPE_DATASET)) {
+					if (!(a.getActualValue() instanceof FeatureDataset)) {
+						logger.error("wrong instance");
+					}
+
+					Object actualValue = a.getActualValue();
+
+					// if we get a list of datasets, use the first one, and fall through to the next if statement...
+					if (actualValue instanceof List) {
+						if (((List) actualValue).size() > 0)
+							actualValue = ((List) actualValue).get(0);
+					}
+
+					if (actualValue instanceof FeatureDataset) {
+						FeatureDataset dataset = (FeatureDataset) actualValue;
+						featureName = dataset.getSchema().getTypeName();
+						if (featureName == null)
+							throw new ScriptExecutionException("SimpleFeature name is missing: " + attName); //$NON-NLS-1$
+
+						tempList = DatasetUtils.getFieldsFromDataset(dataset, keepTheGeom, keepGuid);
+					} else if (actualValue instanceof TableDataset) {
+						TableDataset td = (TableDataset) actualValue;
+						featureName = td.getDataId().getLocation();
+						tempList = DatasetUtils.getFieldsFromDataset(td);
+
+					}
+					fieldNameMap.put(featureName, addFieldNameToMap(fieldNameSet, tempList));
+				} else if (a.getType().equals(OUTPUT_PROP_TYPE_FIELD)) {
+					List<Map<String, String>> fields = (List<Map<String, String>>) a.getActualValue();
+					tempList = DatasetUtils.getFieldsFromFieldList(fields);
+					fieldNameMap.put(FIELD_MAP_KEY, addFieldNameToMap(fieldNameSet, tempList));
+				} else if (a.getType().equals(OUTPUT_PROP_TYPE_GEOM)) {
+					FeatureDataset dataset = (FeatureDataset) a.getActualValue();
+					featureName = dataset.getSchema().getTypeName();
+					tempList = DatasetUtils.getGeomFromDataset(dataset);
+					fieldNameMap.put(featureName, addFieldNameToMap(fieldNameSet, tempList));
+
+				}
+
+				resultList.addAll(tempList);
+			}
+
+			featureType = DatasetUtils.createFeatureTypeFromList(resultList, typeName);
+
+			// for ( AttributeType a : featureType.getAttributeTypes() ) {
+			// System.out.println( a.getLocalName() + "(" + a.getBinding().toString() + "): " + a.getRestriction() );
+			// }
+
+			featureCollection = new DefaultFeatureCollection();
+
+			environment.addOrSetEntry(collectionKey, featureCollection, false);
+			environment.addOrSetEntry(typeKey, featureType, false);
+			environment.addOrSetEntry(mapKey, fieldNameMap, false);
+
+			// Create feature store...temp
+			// there was an issue about featureType name that should be temp***
+			// but it was set as schema name like 'buildingDamageV4'
+			// it is to be set as tmpdir/schemaname
+
+			// File tempShapefile = File.createTempFile("temp", ".shp");
+			Path tempDir = Files.createTempDirectory("temp");
+			String tempFileName = tempDir.toString() + "/" + featureType.getTypeName() + ".shp";
+			File tempShapefile = new File(tempFileName);
+			URL shapeURL = tempShapefile.toURI().toURL();
+			DataStore shapefileDatastore = new ShapefileDataStore(shapeURL);
+			shapefileDatastore.createSchema(featureType);
+			SimpleFeatureStore featureStore = (SimpleFeatureStore) shapefileDatastore.getFeatureSource(featureType.getTypeName());
+
+			environment.addOrSetEntry(featureStoreKey, featureStore, false);
+		} catch (Throwable t) {
+			throw new ScriptExecutionException("Failed to create a feature type", t); //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * 
+	 * @param fieldNameLookup
+	 * @param fieldName
+	 * @return
+	 */
+	private String getNextFieldName(Set<String> fieldNameLookup, String fieldName)
+	{
+		String fieldName2 = fieldName.toLowerCase(Locale.ENGLISH);
+		if (fieldNameLookup.contains(fieldName2)) {
+			String newName = ""; //$NON-NLS-1$
+			int tmpNum = 1;
+			if (fieldName2.matches("_[0-9]$")) { //$NON-NLS-1$
+				tmpNum = (int) fieldName2.charAt(fieldName2.length() - 1) + 1;
+			}
+
+			if (fieldName2.length() <= 8) {
+				newName = fieldName2 + "_" + tmpNum; //$NON-NLS-1$
+			} else {
+				newName = fieldName2.substring(0, 8) + "_" + tmpNum; //$NON-NLS-1$
+			}
+			return getNextFieldName(fieldNameLookup, newName);
+		}
+		return fieldName2;
+	}
+
+	/**
+	 * 
+	 * @param fieldNameLookup
+	 * @param fieldList
+	 * @return
+	 */
+	private Map<String, String> addFieldNameToMap(Set<String> fieldNameLookup, List<AttributeDescriptor> fieldList)
+	{
+		// new fieldname, original fieldname
+		Map<String, String> fieldMap = new HashMap<String, String>();
+		for (int i = 0; i < fieldList.size(); i++) {
+			AttributeDescriptor field = fieldList.get(i);
+			String fieldName = field.getLocalName();
+			String newName = fieldName.toLowerCase(Locale.ENGLISH);
+			// "the_geom" or geometry field don't need to check and rename the duplication
+			if (!(field instanceof GeometryDescriptor))
+				newName = getNextFieldName(fieldNameLookup, fieldName);
+			fieldNameLookup.add(newName);
+			if (!newName.equals(fieldName)) {
+				// update the fieldname of the original field
+				AttributeTypeBuilder attBuilder = new AttributeTypeBuilder();
+				attBuilder.init(field);
+				attBuilder.setName(newName);
+				AttributeDescriptor newAttributeType = attBuilder.buildDescriptor(newName);
+				fieldList.set(i, newAttributeType);
+			}
+			fieldMap.put(newName, fieldName);
+		}
+		return fieldMap;
+	}
+
+	/**
+	 * 
+	 * @param actualValue
+	 * @return
+	 */
+	private List<AttributeDescriptor> handleField(String actualValue)
+	{
+		return new LinkedList<AttributeDescriptor>();
+	}
+
+	/**
+	 * 
+	 * @param actualValue
+	 * @return
+	 */
+	private List<AttributeDescriptor> handleSchema(String actualValue)
+	{
+		return new LinkedList<AttributeDescriptor>();
+	}
+
+	/**
+	 * 
+	 * @param actualValue
+	 * @return
+	 */
+	private List<AttributeDescriptor> handleDataset(FeatureDataset actualValue)
+	{
+		return new LinkedList<AttributeDescriptor>();
+	}
+
+	// BEAN METHODS
+
+	/**
+	 * 
+	 * @return
+	 */
+	public SimpleFeatureType getFeatureType()
+	{
+		return featureType;
+	}
+
+	/**
+	 * 
+	 * @param featureType
+	 */
+	public void setFeatureType(SimpleFeatureType featureType)
+	{
+		this.featureType = featureType;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getTypeKey()
+	{
+		return typeKey;
+	}
+
+	/**
+	 * 
+	 * @param typeKey
+	 */
+	public void setTypeKey(String typeKey)
+	{
+		this.typeKey = typeKey;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getCollectionKey()
+	{
+		return collectionKey;
+	}
+
+	/**
+	 * 
+	 * @param collectionKey
+	 */
+	public void setCollectionKey(String collectionKey)
+	{
+		this.collectionKey = collectionKey;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public SimpleFeatureCollection getFeatureCollection()
+	{
+		return featureCollection;
+	}
+
+	/**
+	 * 
+	 * @param featureCollection
+	 */
+	public void setFeatureCollection(DefaultFeatureCollection featureCollection)
+	{
+		this.featureCollection = featureCollection;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public List<ActualValueAttribute> getAttributes()
+	{
+		return attributes;
+	}
+
+	/**
+	 * 
+	 * @param attributes
+	 */
+	public void setAttributes(List<ActualValueAttribute> attributes)
+	{
+		this.attributes = attributes;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getMapKey()
+	{
+		return mapKey;
+	}
+
+	/**
+	 * 
+	 * @param mapKey
+	 */
+	public void setMapKey(String mapKey)
+	{
+		this.mapKey = mapKey;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getGeomKey()
+	{
+		return geomKey;
+	}
+
+	/**
+	 * 
+	 * @param geomKey
+	 */
+	public void setGeomKey(String geomKey)
+	{
+		this.geomKey = geomKey;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public List<String> getGuidKeys()
+	{
+		return guidKeys;
+	}
+
+	/**
+	 * 
+	 * @param guidKeys
+	 */
+	public void setGuidKeys(String guidKeys)
+	{
+		this.guidKeys = OutputDescription.fromString(guidKeys);
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getTypeName()
+	{
+		return typeName;
+	}
+
+	/**
+	 * 
+	 * @param typeName
+	 */
+	public void setTypeName(String typeName)
+	{
+		this.typeName = typeName;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public String getFeatureStoreKey()
+	{
+		return featureStoreKey;
+	}
+
+	/**
+	 * 
+	 * @param featureStoreKey
+	 */
+	public void setFeatureStoreKey(String featureStoreKey)
+	{
+		this.featureStoreKey = featureStoreKey;
+	}
+}

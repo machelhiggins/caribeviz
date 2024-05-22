@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.rap.examples.feature"
+      label="RAP Examples"
+      version="3.0.2.20160120-1649"
+      provider-name="Eclipse.org - RAP">
+
+   <description url="http://www.eclipse.org/rap/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="RAP 3.0 Repository" url="http://download.eclipse.org/rt/rap/3.0/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.rap.feature" version="3.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.rap.demo"
+         download-size="154"
+         install-size="354"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.demo.source"
+         download-size="94"
+         install-size="260"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.demo.databinding"
+         download-size="40"
+         install-size="74"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.demo.databinding.source"
+         download-size="26"
+         install-size="63"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.demo.controls"
+         download-size="653"
+         install-size="1229"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.demo.controls.source"
+         download-size="179"
+         install-size="593"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.design.example"
+         download-size="895"
+         install-size="1136"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.design.example.source"
+         download-size="78"
+         install-size="244"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.examples"
+         download-size="56"
+         install-size="94"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.examples.source"
+         download-size="31"
+         install-size="62"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.examples.pages"
+         download-size="391"
+         install-size="584"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.examples.pages.source"
+         download-size="259"
+         install-size="424"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.nebula.widgets.grid.demo.examples"
+         download-size="17"
+         install-size="26"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.nebula.widgets.grid.demo.examples.source"
+         download-size="12"
+         install-size="20"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.filedialog.demo.examples"
+         download-size="22"
+         install-size="38"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.filedialog.demo.examples.source"
+         download-size="11"
+         install-size="21"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+</feature>

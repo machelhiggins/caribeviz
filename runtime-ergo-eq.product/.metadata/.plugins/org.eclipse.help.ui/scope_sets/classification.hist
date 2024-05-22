@@ -1,0 +1,4 @@
+#Tue Jul 19 15:21:50 GMT-04:00 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=classification

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/edu.psu.ems.gis2defnode/src/edu/psu/ems/test/TestMapPane.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="edu.psu.ems.test.TestMapPane"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="edu.psu.ems.gis2defnode"/>
+</launchConfiguration>

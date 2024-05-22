@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<table-metadata>
+ 	<column-metadata column-id="the_geom" friendly-name="Field containing the GIS location data" is-numeric="false" />
+	<column-metadata column-id="Parid" friendly-name="Parcel Id" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Struct_Typ" friendly-name="Structure Type" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Year_Built" friendly-name="Year the Building was Built" is-numeric="false" />
+	<column-metadata column-id="No_Stories" friendly-name="Number of Stories" is-numeric="true" />
+	<column-metadata column-id="Occ_Type" friendly-name="Occupancy Type" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Appr_Bldg" friendly-name="Appraised Building Value" is-numeric="true" unit="dollar" field-length="10" />
+	<column-metadata column-id="Cost_SQFT" friendly-name="Construction Cost per sqft" is-numeric="true" unit="dollar" field-length="10" />
+	<column-metadata column-id="Cont_Val" friendly-name="Estimated Values of Building Contents" is-numeric="true" unit="dollar"  field-length="10" />
+	<column-metadata column-id="EFacility" friendly-name="Whether or not this building is an essential facility" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Dwell_Unit" friendly-name="Dwelling Units" is-numeric="true" />
+	<column-metadata column-id="Sq_Foot" friendly-name="Total Building Area in Square Feet" is-numeric="true" unit="sqft"/>
+	<column-metadata column-id="Str_Typ2" friendly-name="HAZUS Structure Type" is-numeric="false"  field-length="100" />
+	<column-metadata column-id="Str_prob" friendly-name="Probability of Structure Type" is-numeric="true" importance="user" agg-type="avg" />
+    <column-metadata column-id="efacil_nam" friendly-name="Essential Facility Name" is-numeric="false"  field-length="100" />    
+	<column-metadata column-id="ef_occ_rat" friendly-name="Essential Facility Average Occupancy Rate" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="max_occ" friendly-name="Essential Facility Maximum Occupancy" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="gsq_feet" friendly-name="Ground Floor Square Footage" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="area_sqm" friendly-name="Ground Floor Square Meters" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="u_set_occt" friendly-name="Boolean for user presetting occupancy" is-result="true" is-numeric="false" field-length="10" />
+	<column-metadata column-id="u_set_occr" friendly-name="Boolean for user presetting occupancy rates" is-result="true" is-numeric="false" field-length="10" />	
+	<column-metadata column-id="occ_nite_m" friendly-name="Male Occupancy at Night" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_nite_f" friendly-name="Female Occupancy at Night" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_nite_c" friendly-name="Child Occupancy at Night" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_day_m" friendly-name="Male Occupancy at Day" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_day_f" friendly-name="Female Occupancy at Day" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_day_c" friendly-name="Child Occupancy at Day" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_avg_m" friendly-name="Male Average Occupancy" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_avg_f" friendly-name="Female Average Occupancy" is-result="true" is-numeric="true" field-length="10" />
+	<column-metadata column-id="occ_avg_c" friendly-name="Child Average Occupancy" is-result="true" is-numeric="true" field-length="10" />
+
+</table-metadata>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.nevis.Nevis"
+            id="ncsa.gis.location.nevis.Nevis"
+            name="Nevis"
+            tag="Nevis">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.nevis.NevisLocationFactory"
+            id="ncsa.gis.location.nevis.Nevis"
+            name="Nevis Location Factory"
+            tag="Nevis">
+      </locationFactory>
+   </extension>
+
+</plugin>

@@ -1,0 +1,272 @@
+/*
+ * Copyright (C) 2002-2024 Sebastiano Vigna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+package PACKAGE;
+
+import java.util.AbstractCollection;
+
+#if KEYS_PRIMITIVE
+import java.util.Collection;
+#endif
+
+/** An abstract class providing basic methods for collections implementing a type-specific interface.
+ *
+ * <p>In particular, this class provide {@link #iterator()}, {@code add()}, {@link #remove(Object)} and
+ * {@link #contains(Object)} methods that just call the type-specific counterpart.
+ *
+ * <p><strong>Warning</strong>: Because of a name clash between the list and collection interfaces
+ * the type-specific deletion method of a type-specific abstract
+ * collection is {@code rem()}, rather then {@code remove()}. A
+ * subclass must thus override {@code rem()}, rather than
+ * {@code remove()}, to make all inherited methods work properly.
+ */
+
+public abstract class ABSTRACT_COLLECTION KEY_GENERIC extends AbstractCollection<KEY_GENERIC_CLASS> implements COLLECTION KEY_GENERIC {
+
+	protected ABSTRACT_COLLECTION() {}
+
+	@Override
+	public abstract KEY_ITERATOR KEY_GENERIC iterator();
+
+#if KEYS_PRIMITIVE
+
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation always throws an {@link UnsupportedOperationException}.
+	 */
+	@Override
+	public boolean add(final KEY_TYPE k) {
+		throw new UnsupportedOperationException();
+	}
+
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation iterates over the elements in the collection,
+	 * looking for the specified element.
+	 */
+	@Override
+	public boolean contains(final KEY_TYPE k) {
+		final KEY_ITERATOR iterator = iterator();
+		while (iterator.hasNext()) if (k == iterator.NEXT_KEY()) return true;
+		return false;
+	}
+
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation iterates over the elements in the collection,
+	 * looking for the specified element and tries to remove it.
+	 */
+	@Override
+	public boolean rem(final KEY_TYPE k) {
+		final KEY_ITERATOR KEY_GENERIC iterator = iterator();
+		while (iterator.hasNext())
+			if (k == iterator.NEXT_KEY()) {
+				iterator.remove();
+				return true;
+			}
+		return false;
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	public boolean add(final KEY_GENERIC_CLASS key) {
+		return COLLECTION.super.add(key);
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	public boolean contains(final Object key) {
+		return COLLECTION.super.contains(key);
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use the corresponding type-specific method instead.
+	 */
+	@Deprecated
+	@Override
+	public boolean remove(final Object key) {
+		return COLLECTION.super.remove(key);
+	}
+
+	@Override
+	public KEY_TYPE[] toArray(KEY_TYPE[] a) {
+		final int size = size();
+		if (a == null) {
+			a = new KEY_TYPE[size];
+		} else if (a.length < size) {
+			a = java.util.Arrays.copyOf(a, size);
+		}
+		ITERATORS.unwrap(iterator(), a);
+		return a;
+	}
+
+	@Override
+	public KEY_TYPE[] TO_KEY_ARRAY() {
+		final int size = size();
+		if (size == 0) return ARRAYS.EMPTY_ARRAY;
+		final KEY_TYPE a[] = new KEY_TYPE[size];
+		ITERATORS.unwrap(iterator(), a);
+		return a;
+	}
+
+	/** {@inheritDoc}
+	 * @deprecated Please use {@code toArray()} instead&mdash;this method is redundant and will be removed in the future.
+	 */
+	@Deprecated
+	@Override
+	public KEY_TYPE[] TO_KEY_ARRAY(final KEY_TYPE[] a) {
+		return toArray(a);
+	}
+
+#if KEYS_INT_LONG_DOUBLE
+	/** {@inheritDoc}
+	 *
+	 * @apiNote This method exists to make final what should have been final in the interface.
+	 */
+	@Override
+	public final void forEach(final KEY_CONSUMER action) {
+		COLLECTION.super.forEach(action);
+	}
+
+	/** {@inheritDoc}
+	 *
+	 * @apiNote This method exists to make final what should have been final in the interface.
+	 */
+	@Override
+	public final boolean removeIf(final KEY_PREDICATE filter) {
+		return COLLECTION.super.removeIf(filter);
+	}
+#endif
+
+	@Override
+	public boolean addAll(final COLLECTION c) {
+		boolean retVal = false;
+
+		for(final KEY_ITERATOR i = c.iterator(); i.hasNext();)
+			if (add(i.NEXT_KEY())) retVal = true;
+		return retVal;
+	}
+	
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation delegates to the type-specific version if given a type-specific
+	 * collection, otherwise is uses the implementation from {@link AbstractCollection}.
+	 */
+	@Override
+	public boolean addAll(final Collection<? extends KEY_CLASS> c) {
+		if (c instanceof COLLECTION) {
+			return addAll((COLLECTION) c);
+		}
+		return super.addAll(c);
+	}
+
+	@Override
+	public boolean containsAll(final COLLECTION c) {
+		for(final KEY_ITERATOR i = c.iterator(); i.hasNext();)
+			if (! contains(i.NEXT_KEY())) return false;
+		return true;
+	}
+	
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation delegates to the type-specific version if given a type-specific
+	 * collection, otherwise is uses the implementation from {@link AbstractCollection}.
+	 */
+	@Override
+	public boolean containsAll(final Collection<?> c) {
+		if (c instanceof COLLECTION) {
+			return containsAll((COLLECTION) c);
+		}
+		return super.containsAll(c);
+	}
+
+	@Override
+	public boolean removeAll(final COLLECTION c) {
+		boolean retVal = false;
+		for(final KEY_ITERATOR i = c.iterator(); i.hasNext();)
+			if (rem(i.NEXT_KEY())) retVal = true;
+		return retVal;
+	}
+
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation delegates to the type-specific version if given a type-specific
+	 * collection, otherwise is uses the implementation from {@link AbstractCollection}.
+	 */
+	@Override
+	public boolean removeAll(final Collection<?> c) {
+		if (c instanceof COLLECTION) {
+			return removeAll((COLLECTION) c);
+		}
+		return super.removeAll(c);
+	}
+
+	@Override
+	public boolean retainAll(final COLLECTION c) {
+		boolean retVal = false;
+		for(final KEY_ITERATOR i = iterator(); i.hasNext();)
+			if (! c.contains(i.NEXT_KEY())) {
+				i.remove();
+				retVal = true;
+			}
+		return retVal;
+	}
+
+	/** {@inheritDoc}
+	 *
+	 * @implSpec This implementation delegates to the type-specific version if given a type-specific
+	 * collection, otherwise is uses the implementation from {@link AbstractCollection}.
+	 */
+	@Override
+	public boolean retainAll(final Collection<?> c) {
+		if (c instanceof COLLECTION) {
+			return retainAll((COLLECTION) c);
+		}
+		return super.retainAll(c);
+	}
+#endif
+
+	@Override
+	public String toString() {
+		final StringBuilder s = new StringBuilder();
+		final KEY_ITERATOR KEY_GENERIC i = iterator();
+		int n = size();
+		KEY_TYPE k;
+		boolean first = true;
+
+		s.append("{");
+
+		while(n-- != 0) {
+			if (first) first = false;
+			else s.append(", ");
+			k = i.NEXT_KEY();
+#if KEYS_REFERENCE
+			if (this == k) s.append("(this collection)"); else
+#endif
+				s.append(String.valueOf(k));
+		}
+
+		s.append("}");
+		return s.toString();
+	}
+}

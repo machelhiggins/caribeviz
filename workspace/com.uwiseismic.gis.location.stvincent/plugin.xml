@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.stvincent.StVincent"
+            id="ncsa.gis.location.stvincent.StVincent"
+            name="St Vincent"
+            tag="St Vincent">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.stvincent.StVincentLocationFactory"
+            id="ncsa.gis.location.stvincent.StVincent"
+            name="St Vincent Location Factory"
+            tag="St Vincent">
+      </locationFactory>
+   </extension>
+
+</plugin>

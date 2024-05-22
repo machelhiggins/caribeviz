@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.rap.sdk.feature"
+      label="RAP SDK"
+      version="3.0.2.20160201-1220"
+      provider-name="Eclipse.org - RAP">
+
+   <description url="http://www.eclipse.org/rap/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="RAP 3.0 Repository" url="http://download.eclipse.org/rt/rap/3.0/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.rap.feature"
+         version="3.0.2.20160201-1220"/>
+
+   <plugin
+         id="org.eclipse.rap.rwt.source"
+         download-size="2569"
+         install-size="8883"
+         version="3.0.2.20160201-1220"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.rwt.osgi.source"
+         download-size="24"
+         install-size="60"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.jface.source"
+         download-size="977"
+         install-size="3372"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.jface.databinding.source"
+         download-size="203"
+         install-size="497"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.ui.source"
+         download-size="163"
+         install-size="693"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.ui.forms.source"
+         download-size="242"
+         install-size="760"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.ui.views.source"
+         download-size="73"
+         install-size="211"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.ui.workbench.source"
+         download-size="3020"
+         install-size="10374"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.ui.cheatsheets.source"
+         download-size="247"
+         install-size="753"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.rwt.testfixture"
+         download-size="80"
+         install-size="158"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.rwt.testfixture.source"
+         download-size="50"
+         install-size="122"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.nebula.jface.gridviewer.source"
+         download-size="25"
+         install-size="63"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.nebula.widgets.grid.source"
+         download-size="67"
+         install-size="311"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.filedialog.source"
+         download-size="20"
+         install-size="46"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rap.fileupload.source"
+         download-size="21"
+         install-size="43"
+         version="3.0.2.20160120-1649"
+         unpack="false"/>
+
+</feature>

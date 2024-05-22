@@ -1,0 +1,144 @@
+<contexts>
+	<context id="select_analysis_wizard" title="Select Analysis Wizard">
+		<description>From the list at the top of the dialog, expand a category and select an analysis to run on your data.</description>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/bridge_damage.html" label="Bridge Damage Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/building_damage.html" label="Building Damage Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/buildingEconLoss.html" label="Building Economic Loss Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/building_retrofit_cost.html" label="Building Retrofit Cost Estimation Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/BridgeFunctionality/BridgeFunctionalityReference.html" label="Bridge Functionality Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/BridgeRepairCost/background.html" label="Bridge Repair Cost Analysis"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/bridgeCostBenefit.html" label="Bridge Retrofit Cost-Benefit Ratio Analysis"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/bridgeCostEstimation.html" label="Bridge Retrofit Cost Estimation Analysis"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/buriedPipe.html" label="Buried Pipe Damage Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/gasNetwork.html" label="Gas Network Damage Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/nonstructuralContentDmg.html" label="Nonstructural Content Damage Analysis Reference"/>
+		<topic href="../edu.illinois.ncsa.ergo.eq.ui/help/analyses/waterTankDmg.html" label="Water Tank Damage Analysis Reference"/>
+	</context>
+	<context id="no_help" title="No Help File">
+		<description>No help file has been created yet for this item.</description>
+	</context>
+	<context id="bridge_benefit" title="Bridge Retrofit Cost-Benefit Ratio">
+		<description>This analysis computes the cost/benefit ratio between the amount spent retrofitting bridges and the difference in repair costs.</description>
+		<topic href="help/analyses/bridgeCostBenefit.html" label="Bridge Retrofit Cost-Benefit Analysis Reference"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+	<context id="bridge_cost_estimation" title="Bridge Retrofit Cost Estimation Analysis">
+		<description>This analysis computes the estimated cost of performing retrofits on a Bridge Dataset.  It is used primarily as an input to a Bridge Damage Analysis when retrofits are used.</description>
+		<topic href="help/analyses/bridgeCostEstimation.html" label="Bridge Retrofit Estimation Analysis"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+	<context id="bridge_damage" title="Bridge Damage Analysis">
+		<description>This analysis computes the damage to bridges based on a particular hazard.</description>
+		<topic href="help/analyses/bridge_damage.html" label="Bridge Damage Analysis Reference and Background"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+ <context id="building_classification" title="Building Classification">
+    <description>This analysis estimates the structural classification of buildings based on the UWI, Seismic Research Centre and EKACDM Intitiative&apos;s methodology.</description>
+    <topic href="help/analyses/building_classification.html" label="Building Classification Analysis"/>
+ </context>
+	<context id="bridge_damage_all_table" title="Fragility Key Selection Page">
+		<description>This page allows users to select fragility keys for each individual bridge.</description>
+		<topic href="help/analyses/bridge_damage_all_table.html" label="Fragility Key Selection Page Reference"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+	<context id="bridge_func" title="Bridge Functionality Analysis">
+		<description>This analysis computes the damage to bridges based on a particular hazard.</description>
+		<topic href="help/analyses/BridgeFunctionality/BridgeFunctionalityReference.html" label="Bridge Functionality Analysis Reference"/>
+		<topic href="help/analyses/BridgeFunctionality/TheoryandBackground.html" label="Bridge Functionality Analysis Theory and Background"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+	<context id="bridge_repair" title="Bridge Repair Cost Analysis">
+		<description>This analysis computes the repair costs of bridges based on a particular hazard.</description>
+		<topic href="help/analyses/BridgeRepairCost/reference.html" label="Bridge Repair Cost Analysis Reference"/>
+		<topic href="help/analyses/BridgeRepairCost/background.html" label="Bridge Repair Cost Analysis Theory and Background"/>
+		<topic href="help/workflowDiagrams/Bridge_Workflow_Diagram.html" label="Bridge-related workflow overview diagram"/>
+	</context>
+	<context id="building_damage" title="Building Damage Analysis">
+		<description>This analysis computes the damage to buildings based on a particular hazard.</description>
+		<topic href="help/analyses/building_damage.html" label="Building Damage Analysis Reference and Background"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_damage_all_table" title="Fragility Key Selection Page">
+		<description>This page allows users to select fragility keys for each individual building.</description>
+		<topic href="help/analyses/building_damage_all_table.html" label="Fragility Key Selection Page Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_damage_field" title="Building Damage by Field Analysis">
+		<description>This analysis computes the damage to buildings based on a particular hazard.</description>
+		<topic href="help/analyses/building_damage_field.html" label="Building Damage by Field Analysis Reference and Background"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_damage_field_table" title="Fragility Key Selection Page">
+		<description>This page allows users to select fragility keys by field instead of by individual building.</description>
+		<topic href="help/analyses/building_damage_field_table.html" label="Fragility Key Selection Page Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_econ_loss" title="Building Economic Loss Analysis">
+		<description>This analysis computes the Economic Loss to buildings based on a particular hazard.</description>
+		<topic href="help/analyses/buildingEconLoss.html" label="Building Economic Loss Analysis Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="buried_pipe" title="Buried Pipeline Damage Analysis">
+		<description>This analysis computes the damage to buried pipeline based on a particular hazard.</description>
+		<topic href="help/analyses/buriedPipe.html" label="Buried Pipe Damage Analysis Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="gas_network" title="Gas Network Damage Analysis">
+		<description>This analysis computes the damage to gas networks based on a particular hazard.</description>
+		<topic href="help/analyses/gasNetwork.html" label="Gas Network Damage Analysis Reference"/>
+	</context>
+	<context id="ns_content" title="Nonstructural Content Damage Analysis">
+		<description>This analysis computes the non-structural damage to buildings based on a particular hazard.</description>
+		<topic href="help/analyses/nonstructuralContentDmg.html" label="Nonstructural Content Damage Analysis Reference"/>
+		<topic href="help/workflowDiagrams/building.png" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="water_tank" title="Water Tank Damage Analysis">
+		<description>This analysis computes the damage to water tanks based on a particular hazard.</description>
+		<topic href="help/analyses/waterTankDmg.html" label="Water Tank Damage Analysis Reference"/>
+	</context>
+	<context id="view_scenario" title="Scenarios View">
+		<description>This view lists the scenario or scenarios that you are working with</description>
+		<topic href="help/views/scenariosView.html" label="Scenarios view help"/>
+	</context>
+	
+	<context id="lpi_analysis_overview" title="Liquefaction Potential Index Analysis">
+		<description>This analysis computes the liquefaction potential index values based on a scenario earthquake</description>
+		<topic href="help/analyses/liquefaction_analysis/lpi_overview.html" label="Liquefaction Potential Index Reference"/>
+	</context>
+	<context id="fiscal_impact" title="Fiscal Impact Analysis">
+		<description>This analysis computes the fiscal impact from the direct economic damage</description>
+		<topic href="help/analyses/fiscal_impact.html" label="Fiscal Impact Analysis Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="license" title="MAEviz License">
+    	<description>MAEviz Software License.  MAEviz is licensed under the University of Illinois/NCSA Open Source License</description>
+    	<topic href="help/misc/license.html" label="MAEviz License"/>
+	</context>
+	<context id="building_retrofit_cost_estimate" title="Building Retrofit Cost Estimation">
+		<description>This analysis computes the cost to retrofit buildings. </description>
+		<topic href="help/analyses/building_retrofit_cost.html" label="Building Retrofit Cost Estimation Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="rix_building_liquefaction_analysis" title="Building Liquefaction Analysis (Memphis, TN)">
+		<description>This analysis computes the damage from ground failure using the site specific Rix liquefaction analysis. </description>
+		<topic href="help/analyses/rix_building_liquefaction.html" label="Building Liquefaction Analysis (Memphis, TN) Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="hazus_building_liquefaction_analysis" title="Building Liquefaction Analysis (HAZUS)">
+		<description>This analysis computes the damage from ground failure using the HAZUS Methodology. </description>
+		<topic href="help/analyses/hazus_building_liquefaction.html" label="Building Liquefaction Analysis (HAZUS) Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_repair_cost" title="Building Repair Cost">
+		<description>This analysis computes the cost to repair damaged buildings. </description>
+		<topic href="help/analyses/building_repair_cost.html" label="Building Repair Cost Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+	<context id="building_cost_benefit" title="Building Cost Benefit">
+		<description>This analysis computes the cost benefit of retrofitting a building.</description>
+		<topic href="help/analyses/building_cost_benefit.html" label="Building Cost Benefit Analysis Reference"/>
+		<topic href="help/workflowDiagrams/Building_Workflow_Diagram.html" label="Building-related workflow overview diagram"/>
+	</context>
+</contexts>
+
+

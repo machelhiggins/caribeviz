@@ -1,0 +1,682 @@
+/*
+ * Copyright (C) 2002-2024 Sebastiano Vigna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+package PACKAGE;
+
+#if ! KEYS_REFERENCE
+import it.unimi.dsi.fastutil.objects.ObjectIterator;
+import it.unimi.dsi.fastutil.objects.ObjectIterable;
+import it.unimi.dsi.fastutil.objects.ObjectSpliterator;
+import it.unimi.dsi.fastutil.objects.ObjectSet;
+import it.unimi.dsi.fastutil.objects.ObjectSets;
+#endif
+
+#if KEY_INDEX != VALUE_INDEX && !(KEYS_REFERENCE && VALUES_REFERENCE)
+import VALUE_PACKAGE.VALUE_COLLECTION;
+import VALUE_PACKAGE.VALUE_COLLECTIONS;
+#if ! VALUE_CLASS_Object
+import VALUE_PACKAGE.VALUE_SETS;
+#endif
+#endif
+
+import java.util.Map;
+import java.util.function.Consumer;
+import PACKAGE.MAP.FastEntrySet;
+
+/** A class providing static methods and objects that do useful things with type-specific maps.
+ *
+ * @see java.util.Collections
+ */
+
+public final class MAPS {
+
+	private MAPS() {}
+
+	/** Returns an iterator that will be {@linkplain FastEntrySet fast}, if possible, on the {@linkplain Map#entrySet() entry set} of the provided {@code map}.
+	 * @param map a map from which we will try to extract a (fast) iterator on the entry set.
+	 * @return an iterator on the entry set of the given map that will be fast, if possible.
+	 * @since 8.0.0
+	 */
+	SUPPRESS_WARNINGS_KEY_VALUE_UNCHECKED
+	public static KEY_VALUE_GENERIC ObjectIterator<MAP.Entry KEY_VALUE_GENERIC> fastIterator(MAP KEY_VALUE_GENERIC map) {
+		final ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries = map.ENTRYSET();
+		return entries instanceof MAP.FastEntrySet ? ((MAP.FastEntrySet KEY_VALUE_GENERIC) entries).fastIterator() : entries.iterator();
+	}
+
+	/** Iterates {@linkplain FastEntrySet#fastForEach(Consumer) quickly}, if possible, on the {@linkplain Map#entrySet() entry set} of the provided {@code map}.
+	 * @param map a map on which we will try to iterate {@linkplain FastEntrySet#fastForEach(Consumer) quickly}.
+	 * @param consumer the consumer that will be passed to  {@link FastEntrySet#fastForEach(Consumer)}, if possible, or to {@link Iterable#forEach(Consumer)}.
+	 * @since 8.1.0
+	 */
+	SUPPRESS_WARNINGS_KEY_VALUE_UNCHECKED
+	public static KEY_VALUE_GENERIC void fastForEach(MAP KEY_VALUE_GENERIC map, final Consumer<? super MAP.Entry KEY_VALUE_GENERIC> consumer) {
+		final ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries = map.ENTRYSET();
+		if (entries instanceof MAP.FastEntrySet) ((MAP.FastEntrySet KEY_VALUE_GENERIC) entries).fastForEach(consumer);
+		else entries.forEach(consumer);
+	}
+
+	/** Returns an iterable yielding an iterator that will be {@linkplain FastEntrySet fast}, if possible, on the {@linkplain Map#entrySet() entry set} of the provided {@code map}.
+	 * @param map a map from which we will try to extract an iterable yielding a (fast) iterator on the entry set.
+	 * @return an iterable  yielding an iterator on the entry set of the given map that will be
+	 * fast, if possible.
+	 * @since 8.0.0
+	 */
+	SUPPRESS_WARNINGS_KEY_VALUE_UNCHECKED
+	public static KEY_VALUE_GENERIC ObjectIterable<MAP.Entry KEY_VALUE_GENERIC> fastIterable(MAP KEY_VALUE_GENERIC map) {
+		final ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries = map.ENTRYSET();
+		return entries instanceof MAP.FastEntrySet ? new ObjectIterable<MAP.Entry KEY_VALUE_GENERIC>() {
+			@Override
+			public ObjectIterator<MAP.Entry KEY_VALUE_GENERIC> iterator() { return ((MAP.FastEntrySet KEY_VALUE_GENERIC)entries).fastIterator(); }
+			@Override
+			public ObjectSpliterator<MAP.Entry KEY_VALUE_GENERIC> spliterator() { return entries.spliterator(); } 
+			@Override
+			public void forEach(final Consumer<? super MAP.Entry KEY_VALUE_GENERIC> consumer) { ((MAP.FastEntrySet KEY_VALUE_GENERIC)entries).fastForEach(consumer); }
+		} : entries;
+	}
+
+	/** An immutable class representing an empty type-specific map.
+	 *
+	 * <p>This class may be useful to implement your own in case you subclass
+	 * a type-specific map.
+	 */
+
+	public static class EmptyMap KEY_VALUE_GENERIC extends FUNCTIONS.EmptyFunction KEY_VALUE_GENERIC implements MAP KEY_VALUE_GENERIC, java.io.Serializable, Cloneable {
+
+		private static final long serialVersionUID = -7046029254386353129L;
+
+		protected EmptyMap() {}
+
+		@Override
+		public boolean containsValue(final VALUE_TYPE v) { return false; }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS getOrDefault(final Object key, final VALUE_GENERIC_CLASS defaultValue) { return defaultValue; }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		@Override
+		public VALUE_GENERIC_TYPE getOrDefault(final KEY_TYPE key, final VALUE_GENERIC_TYPE defaultValue) { return defaultValue; }
+#endif
+
+#if VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean containsValue(final Object ov) { return false; }
+#endif
+
+		@Override
+		public void putAll(final Map<? extends KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> m) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public ObjectSet<MAP.Entry KEY_VALUE_GENERIC> ENTRYSET() { return ObjectSets.EMPTY_SET; }
+
+		SUPPRESS_WARNINGS_KEY_UNCHECKED
+		@Override
+		public SET KEY_GENERIC keySet() { return SETS.EMPTY_SET; }
+
+		SUPPRESS_WARNINGS_VALUE_UNCHECKED
+		@Override
+		public VALUE_COLLECTION VALUE_GENERIC values() { return VALUE_SETS.EMPTY_SET; }
+
+		@Override
+		public void forEach(final java.util.function.BiConsumer<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS> consumer) { }
+
+		@Override
+		public Object clone() { return EMPTY_MAP; }
+
+		@Override
+		public boolean isEmpty() { return true; }
+
+		@Override
+		public int hashCode() { return 0; }
+
+		@Override
+		public boolean equals(final Object o) {
+			if (! (o instanceof Map)) return false;
+			return ((Map<?,?>)o).isEmpty();
+		}
+
+		@Override
+		public String toString() { return "{}"; }
+	}
+
+
+	/** An empty type-specific map (immutable). It is serializable and cloneable.
+	 */
+	SUPPRESS_WARNINGS_KEY_VALUE_RAWTYPES
+	public static final EmptyMap EMPTY_MAP = new EmptyMap();
+
+#if KEYS_REFERENCE || VALUES_REFERENCE
+	/** Returns an empty map (immutable). It is serializable and cloneable.
+	 *
+	 * <p>This method provides a typesafe access to {@link #EMPTY_MAP}.
+	 * @return an empty map (immutable).
+	 */
+	@SuppressWarnings("unchecked")
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC emptyMap() {
+		return EMPTY_MAP;
+	}
+#endif
+
+	/** An immutable class representing a type-specific singleton map.
+	 *
+	 * <p>This class may be useful to implement your own in case you subclass
+	 * a type-specific map.
+	 */
+
+	public static class Singleton KEY_VALUE_GENERIC extends FUNCTIONS.Singleton KEY_VALUE_GENERIC implements MAP KEY_VALUE_GENERIC, java.io.Serializable, Cloneable {
+
+		private static final long serialVersionUID = -7046029254386353129L;
+
+		protected transient ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries;
+		protected transient SET KEY_GENERIC keys;
+		protected transient VALUE_COLLECTION VALUE_GENERIC values;
+
+		protected Singleton(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value) {
+			super(key, value);
+		}
+
+		@Override
+		public boolean containsValue(final VALUE_TYPE v) { return VALUE_EQUALS(value, v); }
+#if VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean containsValue(final Object ov) { return VALUE_EQUALS(VALUE_OBJ2TYPE(ov), value); }
+#endif
+
+		@Override
+		public void putAll(final Map<? extends KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> m) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public ObjectSet<MAP.Entry KEY_VALUE_GENERIC> ENTRYSET() { if (entries == null) entries = ObjectSets.singleton(new ABSTRACT_MAP.BasicEntry KEY_VALUE_GENERIC_DIAMOND(key, value)); return entries; }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#else
+		/** {@inheritDoc} */
+#endif
+		@Override
+		@SuppressWarnings({ "rawtypes", "unchecked" })
+		public ObjectSet<Map.Entry<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS>> entrySet() { return (ObjectSet)ENTRYSET(); }
+
+		@Override
+		public SET KEY_GENERIC keySet() { if (keys == null) keys = SETS.singleton(key); return keys; }
+
+		@Override
+		public VALUE_COLLECTION VALUE_GENERIC values() { if (values == null) values = VALUE_SETS.singleton(value); return values; }
+
+		@Override
+		public boolean isEmpty() { return false; }
+
+		@Override
+		public int hashCode() { return KEY2JAVAHASH(key) ^ VALUE2JAVAHASH(value); }
+
+		@Override
+		public boolean equals(final Object o) {
+			if (o == this) return true;
+			if (! (o instanceof Map)) return false;
+
+			Map<?,?> m = (Map<?,?>)o;
+			if (m.size() != 1) return false;
+			return m.entrySet().iterator().next().equals(entrySet().iterator().next());
+		}
+
+		@Override
+		public String toString() { return "{" + key + "=>" + value + "}"; }
+	}
+
+	/** Returns a type-specific immutable map containing only the specified pair. The returned map is serializable and cloneable.
+	 *
+	 * <p>Note that albeit the returned map is immutable, its default return value may be changed.
+	 *
+	 * @param key the only key of the returned map.
+	 * @param value the only value of the returned map.
+	 * @return a type-specific immutable map containing just the pair {@code &lt;key,value&gt;}.
+	 */
+
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC singleton(final KEY_GENERIC_TYPE key, VALUE_GENERIC_TYPE value) { return new Singleton KEY_VALUE_GENERIC_DIAMOND(key, value); }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+
+	/** Returns a type-specific immutable map containing only the specified pair. The returned map is serializable and cloneable.
+	 *
+	 * <p>Note that albeit the returned map is immutable, its default return value may be changed.
+	 *
+	 * @param key the only key of the returned map.
+	 * @param value the only value of the returned map.
+	 * @return a type-specific immutable map containing just the pair {@code &lt;key,value&gt;}.
+	 */
+
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC singleton(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value) { return new Singleton KEY_VALUE_GENERIC_DIAMOND(KEY_CLASS2TYPE(key), VALUE_CLASS2TYPE(value)); }
+
+#endif
+
+
+	/** A synchronized wrapper class for maps. */
+
+	public static class SynchronizedMap KEY_VALUE_GENERIC extends FUNCTIONS.SynchronizedFunction KEY_VALUE_GENERIC implements MAP KEY_VALUE_GENERIC, java.io.Serializable {
+
+		private static final long serialVersionUID = -7046029254386353129L;
+
+		protected final MAP KEY_VALUE_GENERIC map;
+
+		protected transient ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries;
+		protected transient SET KEY_GENERIC keys;
+		protected transient VALUE_COLLECTION VALUE_GENERIC values;
+
+		protected SynchronizedMap(final MAP KEY_VALUE_GENERIC m, final Object sync) {
+			super(m, sync);
+			this.map = m;
+		}
+
+		protected SynchronizedMap(final MAP KEY_VALUE_GENERIC m) {
+			super(m);
+			this.map = m;
+		}
+
+		@Override
+		public boolean containsValue(final VALUE_TYPE v) { synchronized(sync) { return map.containsValue(v); } }
+
+#if VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean containsValue(final Object ov) { synchronized(sync) { return map.containsValue(ov); } }
+#endif
+
+		@Override
+		public void putAll(final Map<? extends KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> m) { synchronized(sync) { map.putAll(m); } }
+
+		@Override
+		public ObjectSet<MAP.Entry KEY_VALUE_GENERIC> ENTRYSET() { synchronized(sync) { if (entries == null) entries = ObjectSets.synchronize(map.ENTRYSET(), sync); return entries; } }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#else
+		/** {@inheritDoc} */
+#endif
+		@Override
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		public ObjectSet<Map.Entry<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS>> entrySet() { return (ObjectSet)ENTRYSET(); }
+
+		@Override
+		public SET KEY_GENERIC keySet() {
+			synchronized(sync) { if (keys == null) keys = SETS.synchronize(map.keySet(), sync); return keys; }
+		}
+
+		@Override
+		public VALUE_COLLECTION VALUE_GENERIC values() {
+			synchronized(sync) { if (values == null) values = VALUE_COLLECTIONS.synchronize(map.values(), sync); return values; }
+		}
+
+		@Override
+		public boolean isEmpty() { synchronized(sync) { return map.isEmpty(); } }
+
+		@Override
+		public int hashCode() { synchronized(sync) { return map.hashCode(); } }
+
+		@Override
+		public boolean equals(final Object o) {
+			if (o == this) return true;
+			synchronized(sync) { return map.equals(o); }
+		}
+
+		private void writeObject(java.io.ObjectOutputStream s) throws java.io.IOException {
+			synchronized(sync) { s.defaultWriteObject(); }
+		}
+
+		// Defaultable methods
+
+		@Override
+		public VALUE_GENERIC_TYPE getOrDefault(final KEY_TYPE key, final VALUE_GENERIC_TYPE defaultValue) { synchronized(sync) { return map.getOrDefault(key, defaultValue); } }
+
+		@Override
+		public void forEach(final java.util.function.BiConsumer<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS> action) { synchronized (sync) { map.forEach(action); } }
+
+		@Override
+		public void replaceAll(final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> function) { synchronized (sync) { map.replaceAll(function); } }
+
+		@Override
+		public VALUE_GENERIC_TYPE putIfAbsent(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value) { synchronized(sync) { return map.putIfAbsent(key, value); } }
+
+		@Override
+		public boolean remove(final KEY_TYPE key, final VALUE_TYPE value) { synchronized(sync) { return map.remove(key, value); } }
+
+		@Override
+		public VALUE_GENERIC_TYPE replace(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value) { synchronized(sync) { return map.replace(key, value); } }
+
+		@Override
+		public boolean replace(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE oldValue, final VALUE_GENERIC_TYPE newValue) { synchronized(sync) { return map.replace(key, oldValue, newValue); } }
+
+#ifdef JDK_PRIMITIVE_FUNCTION
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsent(final KEY_GENERIC_TYPE key, final JDK_PRIMITIVE_FUNCTION KEY_SUPER_GENERIC VALUE_EXTENDS_GENERIC mappingFunction) { synchronized(sync) { return map.computeIfAbsent(key, mappingFunction); } }
+#endif
+
+#if KEYS_PRIMITIVE && VALUES_PRIMITIVE
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsentNullable(final KEY_GENERIC_TYPE key, final JDK_KEY_TO_GENERIC_FUNCTION<? extends VALUE_GENERIC_CLASS> mappingFunction) { synchronized(sync) { return map.computeIfAbsentNullable(key, mappingFunction); } }
+#endif
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsent(final KEY_GENERIC_TYPE key, final FUNCTION KEY_SUPER_GENERIC VALUE_EXTENDS_GENERIC mappingFunction) { synchronized(sync) { return map.computeIfAbsent(key, mappingFunction); } }
+#endif
+
+		@Override
+		public VALUE_GENERIC_TYPE COMPUTE_IF_PRESENT(final KEY_GENERIC_TYPE key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) {
+			synchronized (sync) { return map.COMPUTE_IF_PRESENT(key, remappingFunction); }
+		}
+
+		@Override
+		public VALUE_GENERIC_TYPE COMPUTE(final KEY_GENERIC_TYPE key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) {
+			synchronized (sync) { return map.COMPUTE(key, remappingFunction); }
+		}
+
+		@Override
+		public VALUE_GENERIC_TYPE merge(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value, final java.util.function.BiFunction<? super VALUE_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) {
+			synchronized (sync) { return map.merge(key, value, remappingFunction); }
+		}
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS getOrDefault(final Object key, final VALUE_GENERIC_CLASS defaultValue) { synchronized (sync) { return map.getOrDefault(key, defaultValue); } }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean remove(final Object key, final Object value) { synchronized (sync) { return map.remove(key, value); } }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS replace(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value) { synchronized (sync) { return map.replace(key, value); } }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean replace(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS oldValue, final VALUE_GENERIC_CLASS newValue) { synchronized (sync) { return map.replace(key, oldValue, newValue); } }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS putIfAbsent(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value) { synchronized (sync) { return map.putIfAbsent(key, value); } }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS computeIfAbsent(final KEY_GENERIC_CLASS key, final java.util.function.Function<? super KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> mappingFunction) { synchronized (sync) { return map.computeIfAbsent(key, mappingFunction); } }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS computeIfPresent(final KEY_GENERIC_CLASS key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { synchronized (sync) { return map.computeIfPresent(key, remappingFunction); } }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS compute(final KEY_GENERIC_CLASS key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { synchronized (sync) { return map.compute(key, remappingFunction); } }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS merge(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value, final java.util.function.BiFunction<? super VALUE_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { synchronized (sync) { return map.merge(key, value, remappingFunction); } }
+#endif
+
+	}
+
+	/** Returns a synchronized type-specific map backed by the given type-specific map.
+	 *
+	 * @param m the map to be wrapped in a synchronized map.
+	 * @return a synchronized view of the specified map.
+	 * @see java.util.Collections#synchronizedMap(Map)
+	 */
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC synchronize(final MAP KEY_VALUE_GENERIC m) { return new SynchronizedMap KEY_VALUE_GENERIC_DIAMOND(m); }
+
+	/** Returns a synchronized type-specific map backed by the given type-specific map, using an assigned object to synchronize.
+	 *
+	 * @param m the map to be wrapped in a synchronized map.
+	 * @param sync an object that will be used to synchronize the access to the map.
+	 * @return a synchronized view of the specified map.
+	 * @see java.util.Collections#synchronizedMap(Map)
+	 */
+
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC synchronize(final MAP KEY_VALUE_GENERIC m, final Object sync) { return new SynchronizedMap KEY_VALUE_GENERIC_DIAMOND(m, sync); }
+
+
+
+	/** An unmodifiable wrapper class for maps. */
+
+	public static class UnmodifiableMap KEY_VALUE_GENERIC extends FUNCTIONS.UnmodifiableFunction KEY_VALUE_GENERIC implements MAP KEY_VALUE_GENERIC, java.io.Serializable {
+
+		private static final long serialVersionUID = -7046029254386353129L;
+
+		protected final MAP KEY_VALUE_EXTENDS_GENERIC map;
+
+		protected transient ObjectSet<MAP.Entry KEY_VALUE_GENERIC> entries;
+		protected transient SET KEY_GENERIC keys;
+		protected transient VALUE_COLLECTION VALUE_GENERIC values;
+
+		protected UnmodifiableMap(final MAP KEY_VALUE_EXTENDS_GENERIC m) {
+			super(m);
+			this.map = m;
+		}
+
+		@Override
+		public boolean containsValue(final VALUE_TYPE v) { return map.containsValue(v); }
+#if VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean containsValue(final Object ov) { return map.containsValue(ov); }
+#endif
+
+		@Override
+		public void putAll(final Map<? extends KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> m) { throw new UnsupportedOperationException(); }
+
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		public ObjectSet<MAP.Entry KEY_VALUE_GENERIC> ENTRYSET() { if (entries == null) entries = ObjectSets.unmodifiable((ObjectSet)map.ENTRYSET()); return entries; }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#else
+		/** {@inheritDoc} */
+#endif
+		@SuppressWarnings({ "unchecked", "rawtypes" })
+		@Override
+		public ObjectSet<Map.Entry<KEY_GENERIC_CLASS, VALUE_GENERIC_CLASS>> entrySet() { return (ObjectSet)ENTRYSET(); }
+
+		@Override
+		public SET KEY_GENERIC keySet() { if (keys == null) keys = SETS.unmodifiable(map.keySet()); return keys; }
+
+		@Override
+		public VALUE_COLLECTION VALUE_GENERIC values() { if (values == null) values = VALUE_COLLECTIONS.unmodifiable(map.values()); return values; }
+
+		@Override
+		public boolean isEmpty() { return map.isEmpty(); }
+
+		@Override
+		public int hashCode() { return map.hashCode(); }
+
+		@Override
+		public boolean equals(final Object o) {
+			if (o == this) return true;
+			return map.equals(o);
+		}
+
+		// Defaultable methods
+
+		@Override
+#if KEYS_REFERENCE || VALUES_REFERENCE
+		@SuppressWarnings("unchecked")
+		public VALUE_GENERIC_TYPE getOrDefault(final KEY_TYPE key, final VALUE_GENERIC_TYPE defaultValue) { return ((MAP KEY_VALUE_GENERIC)map).getOrDefault(key, defaultValue); }
+#else
+		public VALUE_GENERIC_TYPE getOrDefault(final KEY_TYPE key, final VALUE_GENERIC_TYPE defaultValue) { return map.getOrDefault(key, defaultValue); }
+#endif
+
+		@Override
+		public void forEach(final java.util.function.BiConsumer<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS> action) { map.forEach(action); }
+
+		@Override
+		public void replaceAll(final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> function) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public VALUE_GENERIC_TYPE putIfAbsent(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public boolean remove(final KEY_TYPE key, final VALUE_TYPE value) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public VALUE_GENERIC_TYPE replace(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public boolean replace(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE oldValue, final VALUE_GENERIC_TYPE newValue) { throw new UnsupportedOperationException(); }
+
+#ifdef JDK_PRIMITIVE_FUNCTION
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsent(final KEY_GENERIC_TYPE key, final JDK_PRIMITIVE_FUNCTION KEY_SUPER_GENERIC VALUE_EXTENDS_GENERIC mappingFunction) { throw new UnsupportedOperationException(); }
+#endif
+
+#if KEYS_PRIMITIVE && VALUES_PRIMITIVE
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsentNullable(final KEY_GENERIC_TYPE key, final JDK_KEY_TO_GENERIC_FUNCTION<? extends VALUE_GENERIC_CLASS> mappingFunction) { throw new UnsupportedOperationException(); }
+#endif
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		@Override
+		public VALUE_GENERIC_TYPE computeIfAbsent(final KEY_GENERIC_TYPE key, final FUNCTION KEY_SUPER_GENERIC VALUE_EXTENDS_GENERIC mappingFunction) { throw new UnsupportedOperationException(); }
+#endif
+
+		@Override
+		public VALUE_GENERIC_TYPE COMPUTE_IF_PRESENT(final KEY_GENERIC_TYPE key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public VALUE_GENERIC_TYPE COMPUTE(final KEY_GENERIC_TYPE key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+
+		@Override
+		public VALUE_GENERIC_TYPE merge(final KEY_GENERIC_TYPE key, final VALUE_GENERIC_TYPE value, final java.util.function.BiFunction<? super VALUE_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+
+#if KEYS_PRIMITIVE || VALUES_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+#if KEYS_REFERENCE || VALUES_REFERENCE
+		@SuppressWarnings("unchecked")
+		public VALUE_GENERIC_CLASS getOrDefault(final Object key, final VALUE_GENERIC_CLASS defaultValue) { return ((MAP KEY_VALUE_GENERIC)map).getOrDefault(key, defaultValue); }
+#else
+		public VALUE_GENERIC_CLASS getOrDefault(final Object key, final VALUE_GENERIC_CLASS defaultValue) { return map.getOrDefault(key, defaultValue); }
+#endif
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean remove(final Object key, final Object value) { throw new UnsupportedOperationException(); }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS replace(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value) { throw new UnsupportedOperationException(); }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public boolean replace(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS oldValue, final VALUE_GENERIC_CLASS newValue) { throw new UnsupportedOperationException(); }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS putIfAbsent(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value) { throw new UnsupportedOperationException(); }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS computeIfAbsent(final KEY_GENERIC_CLASS key, final java.util.function.Function<? super KEY_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> mappingFunction) { throw new UnsupportedOperationException(); }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS computeIfPresent(final KEY_GENERIC_CLASS key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+
+#if KEYS_PRIMITIVE
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+#endif
+		@Override
+		public VALUE_GENERIC_CLASS compute(final KEY_GENERIC_CLASS key, final java.util.function.BiFunction<? super KEY_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+
+		/** {@inheritDoc}
+		 * @deprecated Please use the corresponding type-specific method instead. */
+		@Deprecated
+		@Override
+		public VALUE_GENERIC_CLASS merge(final KEY_GENERIC_CLASS key, final VALUE_GENERIC_CLASS value, final java.util.function.BiFunction<? super VALUE_GENERIC_CLASS, ? super VALUE_GENERIC_CLASS, ? extends VALUE_GENERIC_CLASS> remappingFunction) { throw new UnsupportedOperationException(); }
+#endif
+
+	}
+
+	/** Returns an unmodifiable type-specific map backed by the given type-specific map.
+	 *
+	 * @param m the map to be wrapped in an unmodifiable map.
+	 * @return an unmodifiable view of the specified map.
+	 * @see java.util.Collections#unmodifiableMap(Map)
+	 */
+	public static KEY_VALUE_GENERIC MAP KEY_VALUE_GENERIC unmodifiable(final MAP KEY_VALUE_EXTENDS_GENERIC m) { return new UnmodifiableMap KEY_VALUE_GENERIC_DIAMOND(m); }
+
+}

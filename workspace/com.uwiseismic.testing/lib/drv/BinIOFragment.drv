@@ -1,0 +1,1593 @@
+/*
+ * Copyright (C) 2004-2024 Sebastiano Vigna
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+
+#if KEY_CLASS_Byte
+
+// HORRIBLE kluges to work around bug #6478546
+
+private static final int MAX_IO_LENGTH = 1024 * 1024;
+
+private static int read(final InputStream is, final byte a[], final int offset, final int length) throws IOException {
+	if (length == 0) return 0;
+
+	int read = 0, result;
+	do {
+		result = is.read(a, offset + read, Math.min(length - read, MAX_IO_LENGTH));
+		if (result < 0) return read;
+		read += result;
+	} while(read < length);
+
+	return read;
+}
+
+private static void write(final OutputStream outputStream, final byte a[], final int offset, final int length) throws IOException {
+	int written = 0;
+	while(written < length) {
+		outputStream.write(a, offset + written, Math.min(length - written, MAX_IO_LENGTH));
+		written += Math.min(length - written, MAX_IO_LENGTH);
+	}
+}
+
+private static void write(final DataOutput dataOutput, final byte a[], final int offset, final int length) throws IOException {
+	int written = 0;
+	while(written < length) {
+		dataOutput.write(a, offset + written, Math.min(length - written, MAX_IO_LENGTH));
+		written += Math.min(length - written, MAX_IO_LENGTH);
+	}
+}
+
+// Additional read/write methods to work around the DataInput/DataOutput schizophrenia.
+
+/** Loads bytes from a given input stream, storing them in a given array fragment.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link InputStream}'s bulk-read methods.
+ *
+ * @param inputStream an input stream.
+ * @param array an array which will be filled with data from {@code inputStream}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code inputStream} (it might be less than {@code length} if {@code inputStream} ends).
+ */
+public static int loadBytes(final InputStream inputStream, final byte[] array, final int offset, final int length) throws IOException {
+	return read(inputStream, array, offset, length);
+}
+
+/** Loads bytes from a given input stream, storing them in a given array.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[])}
+ * as it uses {@link InputStream}'s bulk-read methods.
+ *
+ * @param inputStream an input stream.
+ * @param array an array which will be filled with data from {@code inputStream}.
+ * @return the number of elements actually read from {@code inputStream} (it might be less than the array length if {@code inputStream} ends).
+ */
+public static int loadBytes(final InputStream inputStream, final byte[] array) throws IOException {
+	return read(inputStream, array, 0, array.length);
+}
+
+/** Stores an array fragment to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #storeBytes(byte[],int,int,DataOutput)}
+ * as it uses {@link OutputStream}'s bulk-write methods.
+ *
+ * @param array an array whose elements will be written to {@code outputStream}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param outputStream an output stream.
+ */
+public static void storeBytes(final byte array[], final int offset, final int length, final OutputStream outputStream) throws IOException {
+	write(outputStream, array, offset, length);
+}
+
+/** Stores an array to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #storeBytes(byte[],DataOutput)}
+ * as it uses {@link OutputStream}'s bulk-write methods.
+ *
+ * @param array an array whose elements will be written to {@code outputStream}.
+ * @param outputStream an output stream.
+ */
+public static void storeBytes(final byte array[], final OutputStream outputStream) throws IOException {
+	write(outputStream, array, 0, array.length);
+}
+
+
+private static long read(final InputStream is, final byte a[][], final long offset, final long length) throws IOException {
+	if (length == 0) return 0;
+
+	long read = 0;
+	int segment = segment(offset);
+	int displacement = displacement(offset);
+	int result;
+	do {
+		result = is.read(a[segment], displacement, (int)Math.min(a[segment].length - displacement, Math.min(length - read, MAX_IO_LENGTH)));
+		if (result < 0) return read;
+		read += result;
+		displacement += result;
+		if (displacement == a[segment].length) {
+			segment++;
+			displacement = 0;
+		}
+	} while(read < length);
+
+	return read;
+}
+
+private static void write(final OutputStream outputStream, final byte a[][], final long offset, final long length) throws IOException {
+	if (length == 0) return;
+	long written = 0;
+	int toWrite;
+	int segment = segment(offset);
+	int displacement = displacement(offset);
+	do {
+		toWrite = (int)Math.min(a[segment].length - displacement, Math.min(length - written, MAX_IO_LENGTH));
+		outputStream.write(a[segment], displacement, toWrite);
+		written += toWrite;
+		displacement += toWrite;
+		if (displacement == a[segment].length) {
+			segment++;
+			displacement = 0;
+		}
+	} while(written < length);
+}
+
+private static void write(final DataOutput dataOutput, final byte a[][], final long offset, final long length) throws IOException {
+	if (length == 0) return;
+	long written = 0;
+	int toWrite;
+	int segment = segment(offset);
+	int displacement = displacement(offset);
+	do {
+		toWrite = (int)Math.min(a[segment].length - displacement, Math.min(length - written, MAX_IO_LENGTH));
+		dataOutput.write(a[segment], displacement, toWrite);
+		written += toWrite;
+		displacement += toWrite;
+		if (displacement == a[segment].length) {
+			segment++;
+			displacement = 0;
+		}
+	} while(written < length);
+}
+
+// Additional read/write methods to work around the DataInput/DataOutput schizophrenia.
+
+
+/** Loads bytes from a given readable channel, storing them in a given big-array fragment.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[][],long,long)}
+ * as it uses {@link InputStream}'s bulk-read methods.
+ *
+ * @param inputStream an input stream.
+ * @param array a big array which will be filled with data from {@code inputStream}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code inputStream} (it might be less than {@code length} if {@code inputStream} ends).
+ */
+public static long loadBytes(final InputStream inputStream, final byte[][] array, final long offset, final long length) throws IOException {
+	return read(inputStream, array, offset, length);
+}
+
+/** Loads bytes from a given readable channel, storing them in a given big array.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[][])}
+ * as it uses {@link InputStream}'s bulk-read methods.
+ *
+ * @param inputStream an input stream.
+ * @param array a big array which will be filled with data from {@code inputStream}.
+ * @return the number of elements actually read from {@code inputStream} (it might be less than the array length if {@code inputStream} ends).
+ */
+public static long loadBytes(final InputStream inputStream, final byte[][] array) throws IOException {
+	return read(inputStream, array, 0, length(array));
+}
+
+/** Stores a big-array fragment to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #storeBytes(byte[][],long,long,DataOutput)}
+ * as it uses {@link OutputStream}'s bulk-write methods.
+ *
+ * @param array a big array whose elements will be written to {@code outputStream}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param outputStream an output stream.
+ */
+public static void storeBytes(final byte array[][], final long offset, final long length, final OutputStream outputStream) throws IOException {
+	write(outputStream, array, offset, length);
+}
+
+/** Stores a big array to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #storeBytes(byte[][],DataOutput)}
+ * as it uses {@link OutputStream}'s bulk-write methods.
+ *
+ * @param array a big array whose elements will be written to {@code outputStream}.
+ * @param outputStream an output stream.
+ */
+public static void storeBytes(final byte array[][], final OutputStream outputStream) throws IOException {
+	write(outputStream, array, 0, length(array));
+}
+
+
+// Methods working with channels.
+
+/** Loads bytes from a given readable channel, storing them in a given array fragment.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link ReadableByteChannel}'s bulk-read methods.
+ *
+ * @param channel a readable channel.
+ * @param array an array which will be filled with data from {@code channel}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code channel} (it might be less than {@code length} if {@code channel} ends).
+ */
+public static int loadBytes(final ReadableByteChannel channel, final byte[] array, int offset, int length) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+	ByteBuffer buffer = ByteBuffer.allocateDirect(BUFFER_SIZE);
+	int read = 0;
+	for (;;) {
+		buffer.clear();
+		buffer.limit(Math.min(buffer.capacity(), length));
+		int r = channel.read(buffer);
+		if (r <= 0) return read;
+		read += r;
+		buffer.flip();
+		buffer.get(array, offset, r);
+		offset += r;
+		length -= r;
+	}
+}
+
+/** Loads bytes from a given readable channel, storing them in a given array.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link ReadableByteChannel}'s bulk-read methods.
+ *
+ * @param channel a readable channel.
+ * @param array an array which will be filled with data from {@code channel}.
+ * @return the number of elements actually read from {@code channel} (it might be less than the array length if {@code channel} ends).
+ */
+public static int loadBytes(final ReadableByteChannel channel, final byte[] array) throws IOException {
+	return loadBytes(channel, array, 0, array.length);
+}
+
+/** Stores an array fragment to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link WritableByteChannel}'s bulk-write methods.
+ *
+ * @param array an array whose elements will be written to {@code channel}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param channel a writable channel.
+ */
+public static void storeBytes(final byte array[], int offset, int length, final WritableByteChannel channel) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+	ByteBuffer buffer = ByteBuffer.allocateDirect(BUFFER_SIZE);
+
+	while(length != 0) {
+		final int l = Math.min(length, buffer.capacity());
+		buffer.clear();
+		buffer.put(array, offset, l);
+		buffer.flip();
+		channel.write(buffer);
+
+		offset += l;
+		length -= l;
+	}
+}
+
+/** Stores an array to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link WritableByteChannel}'s bulk-write methods.
+ *
+ * @param array an array whose elements will be written to {@code channel}.
+ * @param channel a writable channel.
+ */
+public static void storeBytes(final byte array[], final WritableByteChannel channel) throws IOException {
+	storeBytes(array, 0, array.length, channel);
+}
+
+/** Loads bytes from a given readable channel, storing them in a given big-array fragment.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link ReadableByteChannel}'s bulk-read methods.
+ *
+ * @param channel a readable channel.
+ * @param array a big array which will be filled with data from {@code channel}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code channel} (it might be less than {@code length} if {@code channel} ends).
+ */
+public static long loadBytes(final ReadableByteChannel channel, final byte[][] array, final long offset, final long length) throws IOException {
+	ensureOffsetLength(array, offset, length);
+	long read = 0;
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final byte[] t = array[i];
+		final int s = (int)Math.max(0, offset - start(i));
+		final int e = (int)Math.min(t.length, offset + length - start(i));
+		final int r = loadBytes(channel, t, s, e - s);
+		read += r;
+		if (r < e -s) break;
+	}
+	return read;
+}
+
+/** Loads bytes from a given readable channel, storing them in a given big array.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link ReadableByteChannel}'s bulk-read methods.
+ *
+ * @param channel a readable channel.
+ * @param array a big array which will be filled with data from {@code channel}.
+ * @return the number of elements actually read from {@code channel} (it might be less than the array length if {@code channel} ends).
+ */
+public static long loadBytes(final ReadableByteChannel channel, final byte[][] array) throws IOException {
+	return loadBytes(channel, array, 0, length(array));
+}
+
+/** Stores a big-array fragment to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link WritableByteChannel}'s bulk-write methods.
+ *
+ * @param array a big array whose elements will be written to {@code channel}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param channel a writable channel.
+ */
+public static void storeBytes(final byte array[][], final long offset, final long length, final WritableByteChannel channel) throws IOException {
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final int s = (int)Math.max(0, offset - start(i));
+		final int l = (int)Math.min(array[i].length, offset + length - start(i));
+		storeBytes(array[i], s, l - s, channel);
+	}
+}
+
+/** Stores a big array to a given writable channel.
+ *
+ * <p>Note that this method is going to be significantly faster than {@link #loadBytes(DataInput,byte[],int,int)}
+ * as it uses {@link WritableByteChannel}'s bulk-write methods.
+ *
+ * @param array a big array whose elements will be written to {@code channel}.
+ * @param channel a writable channel.
+ */
+public static void storeBytes(final byte array[][], final WritableByteChannel channel) throws IOException {
+	for(byte[] t: array) storeBytes(t, channel);
+}
+
+#elif ! KEY_CLASS_Boolean
+
+/** Loads elements from a given readable channel, using the given byte order, storing them in a given array fragment.
+ *
+ * @param channel a readable channel.
+ * @param byteOrder the byte order of the data from {@code channel}.
+ * @param array an array which will be filled with data from {@code channel}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code channel} (it might be less than {@code length} if {@code channel} ends).
+ */
+public static int LOAD_KEYS(final ReadableByteChannel channel, final ByteOrder byteOrder, final KEY_TYPE[] array, int offset, int length) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+	ByteBuffer byteBuffer = ByteBuffer.allocateDirect(BUFFER_SIZE).order(byteOrder);
+	final KEY_BUFFER buffer = byteBuffer.AS_KEY_BUFFER();
+	int read = 0;
+	for (;;) {
+		byteBuffer.clear();
+		byteBuffer.limit((int)Math.min(buffer.capacity(), (long)length << MAPPED_BIG_LIST.LOG2_BYTES));
+		int r = channel.read(byteBuffer);
+		if (r <= 0) return read;
+		r >>>= MAPPED_BIG_LIST.LOG2_BYTES;
+		read += r;
+		// TODO: use the indexed get() method when switching to Java 13+
+		buffer.clear();
+		buffer.limit(r);
+		buffer.get(array, offset, r);
+		offset += r;
+		length -= r;
+	}
+}
+
+/** Loads elements from a given readable channel, using the given byte order, storing them in a given array.
+ *
+ * @param channel a readable channel.
+ * @param byteOrder the byte order of the data from {@code channel}.
+ * @param array an array which will be filled with data from {@code channel}.
+ * @return the number of elements actually read from {@code channel} (it might be less than the array length if {@code channel} ends).
+ */
+public static int LOAD_KEYS(final ReadableByteChannel channel, final ByteOrder byteOrder, final KEY_TYPE[] array) throws IOException {
+	return LOAD_KEYS(channel, byteOrder, array, 0, array.length);
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a given array fragment.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static int LOAD_KEYS(final File file, final ByteOrder byteOrder, final KEY_TYPE[] array, final int offset, final int length) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final int read = LOAD_KEYS(channel, byteOrder, array, offset, length);
+	channel.close();
+	return read;
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a given array fragment.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static int LOAD_KEYS(final CharSequence filename, final ByteOrder byteOrder, final KEY_TYPE[] array, final int offset, final int length) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), byteOrder, array, offset, length);
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a given array.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @param array an array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static int LOAD_KEYS(final File file, final ByteOrder byteOrder, final KEY_TYPE[] array) throws IOException {
+	return LOAD_KEYS(file, byteOrder, array, 0, array.length);
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a given array.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ * @param array an array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static int LOAD_KEYS(final CharSequence filename, final ByteOrder byteOrder, final KEY_TYPE[] array) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), byteOrder, array);
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a new array.
+ *
+ * <p>Note that the length of the returned array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @return an array filled with the content of the specified file.
+ */
+public static KEY_TYPE[] LOAD_KEYS(final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long length = channel.size() / KEY_CLASS.BYTES;
+
+	if (length > Integer.MAX_VALUE) {
+		channel.close();
+		throw new IllegalArgumentException("File too long: " + channel.size()+ " bytes (" + length + " elements)");
+	}
+
+	final KEY_TYPE[] array = new KEY_TYPE[(int)length];
+	if (LOAD_KEYS(channel, byteOrder, array) < length) throw new EOFException();
+	channel.close();
+	return array;
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a new array.
+ *
+ * <p>Note that the length of the returned array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param filename a filename.
+ * @return an array filled with the content of the specified file.
+ */
+public static KEY_TYPE[] LOAD_KEYS(final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), byteOrder);
+}
+
+/** Stores an array fragment to a given writable channel, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code channel}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param channel a writable channel.
+ * @param byteOrder the byte order to be used to store data in {@code channel}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], int offset, int length, final WritableByteChannel channel, final ByteOrder byteOrder) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+
+	ByteBuffer byteBuffer = ByteBuffer.allocateDirect(BUFFER_SIZE).order(byteOrder);
+	final KEY_BUFFER buffer = byteBuffer.AS_KEY_BUFFER();
+	
+	while(length != 0) {
+		final int l = Math.min(length, buffer.capacity());
+		buffer.clear();
+		buffer.put(array, offset, l);
+		buffer.flip();
+
+		byteBuffer.clear();
+		byteBuffer.limit(buffer.limit() << MAPPED_BIG_LIST.LOG2_BYTES);
+		channel.write(byteBuffer);
+
+		offset += l;
+		length -= l;
+	}
+}
+
+/** Stores an array to a given writable channel, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code channel}.
+ * @param channel a writable channel.
+ * @param byteOrder the byte order to be used to store data in {@code channel}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final WritableByteChannel channel, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, 0, array.length, channel, byteOrder);
+}
+
+/** Stores an array fragment to a file given by a {@link File} object, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param file a file.
+ * @param byteOrder the byte order to be used to store data in {@code file}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final int offset, final int length, final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	STORE_KEYS(array, offset, length, channel, byteOrder);
+	channel.close();
+}
+
+/** Stores an array fragment to a file given by a filename, using the given byte order.
+ *
+ * @param array an array whose elements will be written to the file {@code filename}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param filename a filename.
+ * @param byteOrder the byte order to be used to store data in the file {@code filename}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final int offset, final int length, final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, offset, length, new File(filename.toString()), byteOrder);
+}
+
+/** Stores an array to a file given by a {@link File} object, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param file a file.
+ * @param byteOrder the byte order to be used to store data in {@code file}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final File file, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, 0, array.length, file, byteOrder);
+}
+
+/** Stores an array to a file given by a filename, using the given byte order.
+ *
+ * @param array an array whose elements will be written to the file {@code filename}.
+ * @param filename a filename.
+ * @param byteOrder the byte order to be used to store data in the file {@code filename}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, new File(filename.toString()), byteOrder);
+}
+
+
+
+/** Loads elements from a given readable channel, using the given byte order, storing them in a given big-array fragment.
+ *
+ * @param channel a readable channel.
+ * @param byteOrder the byte order of the data from {@code channel}.
+ * @param array a big array which will be filled with data from {@code channel}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code channel} (it might be less than {@code length} if {@code channel} ends).
+ */
+public static long LOAD_KEYS(final ReadableByteChannel channel, final ByteOrder byteOrder, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+	ensureOffsetLength(array, offset, length);
+	long read = 0;
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final KEY_TYPE[] t = array[i];
+		final int s = (int)Math.max(0, offset - start(i));
+		final int e = (int)Math.min(t.length, offset + length - start(i));
+		final int r = LOAD_KEYS(channel, byteOrder, t, s, e - s);
+		read += r;
+		if (r < e -s) break;
+	}
+	return read;
+}
+
+/** Loads elements from a given readable channel, using the given byte order, storing them in a given big array.
+ *
+ * @param channel a readable channel.
+ * @param byteOrder the byte order of the data from {@code channel}.
+ * @param array a big array which will be filled with data from {@code channel}.
+ * @return the number of elements actually read from {@code channel} (it might be less than the array length if {@code channel} ends).
+ */
+public static long LOAD_KEYS(final ReadableByteChannel channel, final ByteOrder byteOrder, final KEY_TYPE[][] array) throws IOException {
+	return LOAD_KEYS(channel, byteOrder, array, 0, length(array));
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a given big-array fragment.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @param array a big array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static long LOAD_KEYS(final File file, final ByteOrder byteOrder, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long read = LOAD_KEYS(channel, byteOrder, array, offset, length);
+	channel.close();
+	return read;
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a given big-array fragment.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static long LOAD_KEYS(final CharSequence filename, final ByteOrder byteOrder, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), byteOrder, array, offset, length);
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a given big array.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @param array a big array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static long LOAD_KEYS(final File file, final ByteOrder byteOrder, final KEY_TYPE[][] array) throws IOException {
+	return LOAD_KEYS(file, byteOrder, array, 0, length(array));
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a given big array.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ * @param array a big array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static long LOAD_KEYS(final CharSequence filename, final ByteOrder byteOrder, final KEY_TYPE[][] array) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), byteOrder, array);
+}
+
+/** Loads elements from a file given by a {@link File} object, using the given byte order, storing them in a new big array.
+ *
+ * <p>Note that the length of the returned big array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ * @return a big array filled with the content of the specified file.
+ */
+public static KEY_TYPE[][] LOAD_KEYS_BIG(final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long length = channel.size() / KEY_CLASS.BYTES;
+	final KEY_TYPE[][] array = BIG_ARRAYS.newBigArray(length);
+	for(final KEY_TYPE[] t: array) LOAD_KEYS(channel, byteOrder, t);
+	channel.close();
+	return array;
+}
+
+/** Loads elements from a file given by a filename, using the given byte order, storing them in a new big array.
+ *
+ * <p>Note that the length of the returned big array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ * @return a big array filled with the content of the specified file.
+ */
+public static KEY_TYPE[][] LOAD_KEYS_BIG(final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	return LOAD_KEYS_BIG(new File(filename.toString()), byteOrder);
+}
+
+/** Stores an array fragment to a given writable channel, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code channel}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param channel a writable channel.
+ * @param byteOrder the byte order to be used to store data in {@code channel}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final WritableByteChannel channel, final ByteOrder byteOrder) throws IOException {
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final int s = (int)Math.max(0, offset - start(i));
+		final int l = (int)Math.min(array[i].length, offset + length - start(i));
+		STORE_KEYS(array[i], s, l - s, channel, byteOrder);
+	}
+}
+
+/** Stores a big array to a given writable channel, using the given byte order.
+ *
+ * @param array a big array whose elements will be written to {@code channel}.
+ * @param channel a writable channel.
+ * @param byteOrder the byte order to be used to store data in {@code channel}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final WritableByteChannel channel, final ByteOrder byteOrder) throws IOException {
+	for(KEY_TYPE[] t: array) STORE_KEYS(t, channel, byteOrder);
+}
+
+/** Stores a big-array fragment to a file given by a {@link File} object, using the given byte order.
+ *
+ * @param array a big array whose elements will be written to {@code file}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param file a file.
+ * @param byteOrder the byte order to be used to store data in {@code file}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	STORE_KEYS(array, offset, length, channel, byteOrder);
+	channel.close();
+}
+
+/** Stores a big-array fragment to a file given by a filename, using the given byte order.
+ *
+ * @param array a big array whose elements will be written to the file {@code filename}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param filename a filename.
+ * @param byteOrder the byte order to be used to store data in the file {@code filename}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, offset, length, new File(filename.toString()), byteOrder);
+}
+
+/** Stores an array to a file given by a {@link File} object, using the given byte order.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param file a file.
+ * @param byteOrder the byte order to be used to store data in {@code file}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	STORE_KEYS(array, channel, byteOrder);
+	channel.close();
+}
+
+/** Stores a big array to a file given by a filename, using the given byte order.
+ *
+ * @param array a big array whose elements will be written to the file {@code filename}.
+ * @param filename a filename.
+ * @param byteOrder the byte order to be used to store data in the file {@code filename}.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(array, new File(filename.toString()), byteOrder);
+}
+
+/** Stores the element returned by an iterator to a given writable channel, using the given byte order.
+ *
+ * @param i an iterator whose output will be written to {@code channel}.
+ * @param channel a writable channel.
+ * @param byteOrder the byte order to be used to store data in {@code channel}.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final WritableByteChannel channel, final ByteOrder byteOrder) throws IOException {
+	ByteBuffer byteBuffer = ByteBuffer.allocateDirect(BUFFER_SIZE).order(byteOrder);
+	final KEY_BUFFER buffer = byteBuffer.AS_KEY_BUFFER();
+	while(i.hasNext()) {
+		if (! buffer.hasRemaining()) {
+			buffer.flip();
+			byteBuffer.clear();
+			byteBuffer.limit(buffer.limit() << MAPPED_BIG_LIST.LOG2_BYTES);
+			channel.write(byteBuffer);
+
+			buffer.clear();
+		}
+		buffer.put(i.NEXT_KEY());
+	}
+
+	buffer.flip();
+	byteBuffer.clear();
+	byteBuffer.limit(buffer.limit() << MAPPED_BIG_LIST.LOG2_BYTES);
+	channel.write(byteBuffer);
+}
+
+/** Stores the element returned by an iterator to a file given by a {@link File} object, using the given byte order.
+ *
+ * @param i an iterator whose output will be written to {@code file}.
+ * @param file a file.
+ * @param byteOrder the byte order to be used to store data in {@code file}.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	STORE_KEYS(i, channel, byteOrder);
+	channel.close();
+}
+
+/** Stores the element returned by an iterator to a file given by a filename, using the given byte order.
+ *
+ * @param i an iterator whose output will be written to the file {@code filename}.
+ * @param filename a filename.
+ * @param byteOrder the byte order to be used to store data in the file {@code filename}.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	STORE_KEYS(i, new File(filename.toString()), byteOrder);
+}
+
+/** A wrapper that exhibits the content of a readable channel as a type-specific iterator. */
+
+private static final class KEY_DATA_NIO_INPUT_WRAPPER implements KEY_ITERATOR {
+	private final ReadableByteChannel channel;
+	private final ByteBuffer byteBuffer;
+	private final KEY_BUFFER buffer;
+
+	public KEY_DATA_NIO_INPUT_WRAPPER(final ReadableByteChannel channel, final ByteOrder byteOrder) {
+		this.channel = channel;
+		byteBuffer = ByteBuffer.allocateDirect(BUFFER_SIZE).order(byteOrder);
+		buffer = byteBuffer.AS_KEY_BUFFER();
+		buffer.clear().flip();
+	}
+
+	@Override
+	public boolean hasNext() {
+		if (! buffer.hasRemaining()) {
+			byteBuffer.clear();
+			try {
+				channel.read(byteBuffer);
+			} catch(IOException e) {
+				throw new RuntimeException(e);
+			}
+			byteBuffer.flip();
+
+			buffer.clear();
+			buffer.limit(byteBuffer.limit() >>> MAPPED_BIG_LIST.LOG2_BYTES);
+		}
+		return buffer.hasRemaining();
+	}
+
+	@Override
+	public KEY_TYPE NEXT_KEY() {
+		if (! hasNext()) throw new NoSuchElementException();
+		return buffer.get();
+	}
+}
+
+/** Wraps the given readable channel, using the given byte order, into an iterator.
+ *
+ * @param channel a readable channel.
+ * @param byteOrder the byte order of the data from {@code channel}.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final ReadableByteChannel channel, final ByteOrder byteOrder) {
+	return new KEY_DATA_NIO_INPUT_WRAPPER(channel, byteOrder);
+}
+
+/** Wraps a file given by a {@link File} object, using the given byte order, into an iterator.
+ *
+ * @implNote This method opens a {@link FileChannel} that will not be closed until
+ * it is garbage collected.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final File file, final ByteOrder byteOrder) throws IOException {
+	final FileChannel channel = FileChannel.open(file.toPath());
+	return new KEY_DATA_NIO_INPUT_WRAPPER(channel, byteOrder);
+}
+
+/** Wraps a file given by a filename, using the given byte order, into an iterator.
+ *
+ * @implNote This method opens a {@link FileChannel} that will not be closed until
+ * it is garbage collected.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final CharSequence filename, final ByteOrder byteOrder) throws IOException {
+	return AS_KEY_ITERATOR(new File(filename.toString()), byteOrder);
+}
+
+/** Wraps a file given by a {@link File} object, using the given byte order, into an iterable object.
+ *
+ * @implNote Each iterator returned by this class opens a {@link FileChannel}
+ * that will not be closed until it is garbage collected.
+ *
+ * @param file a file.
+ * @param byteOrder the byte order of the data stored in {@code file}.
+ */
+public static KEY_ITERABLE AS_KEY_ITERABLE(final File file, final ByteOrder byteOrder) {
+	return () -> {
+		try { return AS_KEY_ITERATOR(file, byteOrder); }
+		catch(IOException e) { throw new RuntimeException(e); }
+	};
+}
+
+/** Wraps a file given by a filename, using the given byte order, into an iterable object.
+ *
+ * @implNote Each iterator returned by this class opens a {@link FileChannel}
+ * that will not be closed until it is garbage collected.
+ *
+ * @param filename a filename.
+ * @param byteOrder the byte order of the data stored in the file {@code filename}.
+ */
+public static KEY_ITERABLE AS_KEY_ITERABLE(final CharSequence filename, final ByteOrder byteOrder) {
+	return () -> {
+		try { return AS_KEY_ITERATOR(filename, byteOrder); }
+		catch(IOException e) { throw new RuntimeException(e); }
+	};
+}
+
+#endif
+
+
+/** Loads elements from a given data input, storing them in a given array fragment.
+ *
+ * @param dataInput a data input.
+ * @param array an array which will be filled with data from {@code dataInput}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code dataInput} (it might be less than {@code length} if {@code dataInput} ends).
+ */
+public static int LOAD_KEYS(final DataInput dataInput, final KEY_TYPE[] array, final int offset, final int length) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+	int i = 0;
+	try {
+		for(i = 0; i < length; i++) array[i + offset] = dataInput.READ_KEY();
+	}
+	catch(EOFException itsOk) {}
+	return i;
+}
+
+/** Loads elements from a given data input, storing them in a given array.
+ *
+ * @param dataInput a data input.
+ * @param array an array which will be filled with data from {@code dataInput}.
+ * @return the number of elements actually read from {@code dataInput} (it might be less than the array length if {@code dataInput} ends).
+ */
+public static int LOAD_KEYS(final DataInput dataInput, final KEY_TYPE[] array) throws IOException {
+	int i = 0;
+	try {
+		final int length = array.length;
+		for(i = 0; i < length; i++) array[i] = dataInput.READ_KEY();
+	}
+	catch(EOFException itsOk) {}
+	return i;
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a given array fragment.
+ *
+ * @param file a file.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static int LOAD_KEYS(final File file, final KEY_TYPE[] array, final int offset, final int length) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final int result = loadBytes(channel, array, offset, length);
+	channel.close();
+	return result;
+#elif KEY_CLASS_Boolean
+	ensureOffsetLength(array.length, offset, length);
+	final DataInputStream dis = new DataInputStream(new FastBufferedInputStream(new FileInputStream(file)));
+
+	int i = 0;
+	try {
+		for(i = 0; i < length; i++) array[i + offset] = dis.READ_KEY();
+	}
+	catch(EOFException itsOk) {}
+
+	dis.close();
+	return i;
+#else
+	return LOAD_KEYS(file, ByteOrder.BIG_ENDIAN, array, offset, length);
+#endif
+}
+
+/** Loads elements from a file given by a filename, storing them in a given array fragment.
+ *
+ * @param filename a filename.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static int LOAD_KEYS(final CharSequence filename, final KEY_TYPE[] array, final int offset, final int length) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), array, offset, length);
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a given array.
+ *
+ * @param file a file.
+ * @param array an array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static int LOAD_KEYS(final File file, final KEY_TYPE[] array) throws IOException {
+	return LOAD_KEYS(file, array, 0, array.length);
+}
+
+/** Loads elements from a file given by a filename, storing them in a given array.
+ *
+ * @param filename a filename.
+ * @param array an array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static int LOAD_KEYS(final CharSequence filename, final KEY_TYPE[] array) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), array);
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a new array.
+ *
+ * <p>Note that the length of the returned array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param file a file.
+ * @return an array filled with the content of the specified file.
+ */
+public static KEY_TYPE[] LOAD_KEYS(final File file) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long length = channel.size();
+	if (length > Integer.MAX_VALUE) {
+		channel.close();
+		throw new IllegalArgumentException("File too long: " + channel.size()+ " bytes (" + length + " elements)");
+	}
+
+	final byte[] array = new byte[(int)length];
+	if (loadBytes(channel, array) < length) throw new EOFException();
+	return array;
+#elif KEY_CLASS_Boolean
+	final FileInputStream fis = new FileInputStream(file);
+	final long length = fis.getChannel().size();
+
+	if (length > Integer.MAX_VALUE) {
+		fis.close();
+		throw new IllegalArgumentException("File too long: " + fis.getChannel().size()+ " bytes (" + length + " elements)");
+	}
+
+	final boolean[] array = new boolean[(int)length];
+	final DataInputStream dis = new DataInputStream(new FastBufferedInputStream(fis));
+	for(int i = 0; i < length; i++) array[i] = dis.READ_KEY();
+	dis.close();
+	return array;
+#else
+	return LOAD_KEYS(file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Loads elements from a file given by a filename, storing them in a new array.
+ *
+ * <p>Note that the length of the returned array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param filename a filename.
+ * @return an array filled with the content of the specified file.
+ */
+public static KEY_TYPE[] LOAD_KEYS(final CharSequence filename) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()));
+}
+
+/** Stores an array fragment to a given data output.
+ *
+ * @param array an array whose elements will be written to {@code dataOutput}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param dataOutput a data output.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final int offset, final int length, final DataOutput dataOutput) throws IOException {
+	ensureOffsetLength(array.length, offset, length);
+#if KEY_CLASS_Byte
+	write(dataOutput, array, offset, length);
+#else
+	for(int i = 0; i < length; i++) dataOutput.WRITE_KEY(array[offset + i]);
+#endif
+}
+
+/** Stores an array to a given data output.
+ *
+ * @param array an array whose elements will be written to {@code dataOutput}.
+ * @param dataOutput a data output.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final DataOutput dataOutput) throws IOException {
+#if KEY_CLASS_Byte
+	write(dataOutput, array, 0, array.length);
+#else
+	final int length = array.length;
+	for(int i = 0; i < length; i++) dataOutput.WRITE_KEY(array[i]);
+#endif
+}
+
+/** Stores an array fragment to a file given by a {@link File} object.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param file a file.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final int offset, final int length, final File file) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	storeBytes(array, offset, length, channel);
+	channel.close();
+#elif KEY_CLASS_Boolean
+	ensureOffsetLength(array.length, offset, length);
+	final DataOutputStream dos = new DataOutputStream(new FastBufferedOutputStream(new FileOutputStream(file)));
+	for(int i = 0; i < length; i++) dos.writeBoolean(array[offset + i]);
+	dos.close();
+#else
+	STORE_KEYS(array, offset, length, file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Stores an array fragment to a file given by a filename.
+ *
+ * @param array an array whose elements will be written to the file {@code filename}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param filename a filename.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final int offset, final int length, final CharSequence filename) throws IOException {
+	STORE_KEYS(array, offset, length, new File(filename.toString()));
+}
+
+/** Stores an array to a file given by a {@link File} object.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param file a file.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final File file) throws IOException {
+	STORE_KEYS(array, 0, array.length, file);
+}
+
+/** Stores an array to a file given by a filename.
+ *
+ * @param array an array whose elements will be written to the file {@code filename}.
+ * @param filename a filename.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[], final CharSequence filename) throws IOException {
+	STORE_KEYS(array, new File(filename.toString()));
+}
+
+
+/** Loads elements from a given data input, storing them in a given big-array fragment.
+ *
+ * @param dataInput a data input.
+ * @param array a big array which will be filled with data from {@code dataInput}.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from {@code dataInput} (it might be less than {@code length} if {@code dataInput} ends).
+ */
+public static long LOAD_KEYS(final DataInput dataInput, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+	ensureOffsetLength(array, offset, length);
+	long c = 0;
+	try {
+		for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+			final KEY_TYPE[] t = array[i];
+			final int l = (int)Math.min(t.length, offset + length - start(i));
+			for(int d = (int)Math.max(0, offset - start(i)); d < l; d++) {
+				t[d] = dataInput.READ_KEY();
+				c++;
+			}
+		}
+	}
+	catch(EOFException itsOk) {}
+	return c;
+}
+
+/** Loads elements from a given data input, storing them in a given big array.
+ *
+ * @param dataInput a data input.
+ * @param array a big array which will be filled with data from {@code dataInput}.
+ * @return the number of elements actually read from {@code dataInput} (it might be less than the array length if {@code dataInput} ends).
+ */
+public static long LOAD_KEYS(final DataInput dataInput, final KEY_TYPE[][] array) throws IOException {
+	long c = 0;
+	try {
+		for(int i = 0; i < array.length; i++) {
+			final KEY_TYPE[] t = array[i];
+			final int l = t.length;
+			for(int d = 0; d < l; d++) {
+				t[d] = dataInput.READ_KEY();
+				c++;
+			}
+		}
+	}
+	catch(EOFException itsOk) {}
+	return c;
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a given big-array fragment.
+ *
+ * @param file a file.
+ * @param array a big array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static long LOAD_KEYS(final File file, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long read = LOAD_KEYS(channel, array, offset, length);
+	return read;
+#elif KEY_CLASS_Boolean
+	ensureOffsetLength(array, offset, length);
+	final FileInputStream fis = new FileInputStream(file);
+	final DataInputStream dis = new DataInputStream(new FastBufferedInputStream(fis));
+
+	long c = 0;
+	try {
+		for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+			final KEY_TYPE[] t = array[i];
+			final int l = (int)Math.min(t.length, offset + length - start(i));
+			for(int d = (int)Math.max(0, offset - start(i)); d < l; d++) {
+				t[d] = dis.readBoolean();
+				c++;
+			}
+		}
+	}
+	catch(EOFException itsOk) {}
+	dis.close();
+	return c;
+#else
+	return LOAD_KEYS(file, ByteOrder.BIG_ENDIAN, array, offset, length);
+#endif
+}
+
+/** Loads elements from a file given by a filename, storing them in a given big-array fragment.
+ *
+ * @param filename a filename.
+ * @param array an array which will be filled with data from the specified file.
+ * @param offset the index of the first element of {@code array} to be filled.
+ * @param length the number of elements of {@code array} to be filled.
+ * @return the number of elements actually read from the given file (it might be less than {@code length} if the file is too short).
+ */
+public static long LOAD_KEYS(final CharSequence filename, final KEY_TYPE[][] array, final long offset, final long length) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), array, offset, length);
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a given big array.
+ *
+ * @param file a file.
+ * @param array a big array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static long LOAD_KEYS(final File file, final KEY_TYPE[][] array) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long read = LOAD_KEYS(channel, array);
+	return read;
+#elif KEY_CLASS_Boolean
+	final FileInputStream fis = new FileInputStream(file);
+	final DataInputStream dis = new DataInputStream(new FastBufferedInputStream(fis));
+
+	long c = 0;
+	try {
+		for(int i = 0; i < array.length; i++) {
+			final KEY_TYPE[] t = array[i];
+			final int l = t.length;
+			for(int d = 0; d < l; d++) {
+				t[d] = dis.readBoolean();
+				c++;
+			}
+		}
+	}
+	catch(EOFException itsOk) {}
+	dis.close();
+
+	return c;
+#else
+	return LOAD_KEYS(file, ByteOrder.BIG_ENDIAN, array);
+#endif
+}
+
+/** Loads elements from a file given by a filename, storing them in a given big array.
+ *
+ * @param filename a filename.
+ * @param array a big array which will be filled with data from the specified file.
+ * @return the number of elements actually read from the given file (it might be less than the array length if the file is too short).
+ */
+public static long LOAD_KEYS(final CharSequence filename, final KEY_TYPE[][] array) throws IOException {
+	return LOAD_KEYS(new File(filename.toString()), array);
+}
+
+/** Loads elements from a file given by a {@link File} object, storing them in a new big array.
+ *
+ * <p>Note that the length of the returned big array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param file a file.
+ * @return a big array filled with the content of the specified file.
+ */
+public static KEY_TYPE[][] LOAD_KEYS_BIG(final File file) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath());
+	final long length = channel.size();
+	final byte[][] array = ByteBigArrays.newBigArray(length);
+	loadBytes(channel, array);
+	channel.close();
+	return array;
+#elif KEY_CLASS_Boolean
+	final FileInputStream fis = new FileInputStream(file);
+	final long length = fis.getChannel().size();
+	final KEY_TYPE[][] array = BooleanBigArrays.newBigArray(length);
+	final DataInputStream dis = new DataInputStream(new FastBufferedInputStream(fis));
+
+	for(int i = 0; i < array.length; i++) {
+		final boolean[] t = array[i];
+		final int l = t.length;
+		for(int d = 0; d < l; d++) t[d] = dis.readBoolean();
+	}
+	dis.close();
+	return array;
+#else
+	return LOAD_KEYS_BIG(file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Loads elements from a file given by a filename, storing them in a new big array.
+ *
+ * <p>Note that the length of the returned big array will be computed
+ * dividing the specified file size by the number of bytes used to
+ * represent each element.
+ *
+ * @param filename a filename.
+ * @return a big array filled with the content of the specified file.
+ */
+public static KEY_TYPE[][] LOAD_KEYS_BIG(final CharSequence filename) throws IOException {
+	return LOAD_KEYS_BIG(new File(filename.toString()));
+}
+
+/** Stores an array fragment to a given data output.
+ *
+ * @param array an array whose elements will be written to {@code dataOutput}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param dataOutput a data output.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final DataOutput dataOutput) throws IOException {
+	ensureOffsetLength(array, offset, length);
+#if KEY_CLASS_Byte
+	write(dataOutput, array, offset, length);
+#else
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final KEY_TYPE[] t = array[i];
+		final int l = (int)Math.min(t.length, offset + length - start(i));
+		for(int d = (int)Math.max(0, offset - start(i)); d < l; d++) dataOutput.WRITE_KEY(t[d]);
+	}
+#endif
+}
+
+/** Stores a big array to a given data output.
+ *
+ * @param array a big array whose elements will be written to {@code dataOutput}.
+ * @param dataOutput a data output.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final DataOutput dataOutput) throws IOException {
+#if KEY_CLASS_Byte
+	write(dataOutput, array, 0, length(array));
+#else
+	for(int i = 0; i < array.length; i++) {
+		final KEY_TYPE[] t = array[i];
+		final int l = t.length;
+		for(int d = 0; d < l; d++) dataOutput.WRITE_KEY(t[d]);
+	}
+#endif
+}
+
+/** Stores a big-array fragment to a file given by a {@link File} object.
+ *
+ * @param array a big array whose elements will be written to {@code file}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param file a file.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final File file) throws IOException {
+ #if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	storeBytes(array, offset, length, channel);
+	channel.close();
+#elif KEY_CLASS_Boolean
+	final DataOutputStream dos = new DataOutputStream(new FastBufferedOutputStream(new FileOutputStream(file)));
+	for(int i = segment(offset); i < segment(offset + length + SEGMENT_MASK); i++) {
+		final KEY_TYPE[] t = array[i];
+		final int l = (int)Math.min(t.length, offset + length - start(i));
+		for(int d = (int)Math.max(0, offset - start(i)); d < l; d++) dos.WRITE_KEY(t[d]);
+	}
+	dos.close();
+#else
+	STORE_KEYS(array, offset, length, file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Stores a big-array fragment to a file given by a filename.
+ *
+ * @param array a big array whose elements will be written to the file {@code filename}.
+ * @param offset the index of the first element of {@code array} to be written.
+ * @param length the number of elements of {@code array} to be written.
+ * @param filename a filename.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final long offset, final long length, final CharSequence filename) throws IOException {
+	STORE_KEYS(array, offset, length, new File(filename.toString()));
+}
+
+/** Stores an array to a file given by a {@link File} object.
+ *
+ * @param array an array whose elements will be written to {@code file}.
+ * @param file a file.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final File file) throws IOException {
+#if KEY_CLASS_Byte
+	final FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+	storeBytes(array, channel);
+	channel.close();
+#elif KEY_CLASS_Boolean
+	final DataOutputStream dos = new DataOutputStream(new FastBufferedOutputStream(new FileOutputStream(file)));
+	for(int i = 0; i < array.length; i++) {
+		final KEY_TYPE[] t = array[i];
+		final int l = t.length;
+		for(int d = 0; d < l; d++) dos.WRITE_KEY(t[d]);
+	}
+	dos.close();
+#else
+	STORE_KEYS(array, file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Stores a big array to a file given by a filename.
+ *
+ * @param array a big array whose elements will be written to the file {@code filename}.
+ * @param filename a filename.
+ */
+public static void STORE_KEYS(final KEY_TYPE array[][], final CharSequence filename) throws IOException {
+	STORE_KEYS(array, new File(filename.toString()));
+}
+
+/** Stores the element returned by an iterator to a given data output.
+ *
+ * @param i an iterator whose output will be written to {@code dataOutput}.
+ * @param dataOutput a filename.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final DataOutput dataOutput) throws IOException {
+	while(i.hasNext()) dataOutput.WRITE_KEY(i.NEXT_KEY());
+}
+
+/** Stores the element returned by an iterator to a file given by a {@link File} object.
+ *
+ * @param i an iterator whose output will be written to {@code file}.
+ * @param file a file.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final File file) throws IOException {
+#if KEY_CLASS_Boolean || KEY_CLASS_Byte
+	final DataOutputStream dos = new DataOutputStream(new FastBufferedOutputStream(new FileOutputStream(file)));
+	while(i.hasNext()) dos.WRITE_KEY(i.NEXT_KEY());
+	dos.close();
+#else
+	STORE_KEYS(i, file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Stores the element returned by an iterator to a file given by a filename.
+ *
+ * @param i an iterator whose output will be written to the file {@code filename}.
+ * @param filename a filename.
+ */
+public static void STORE_KEYS(final KEY_ITERATOR i, final CharSequence filename) throws IOException {
+	STORE_KEYS(i, new File(filename.toString()));
+}
+
+/** A wrapper that exhibits the content of a data input stream as a type-specific iterator. */
+
+private static final class KEY_DATA_INPUT_WRAPPER implements KEY_ITERATOR {
+	private final DataInput dataInput;
+	private boolean toAdvance = true;
+	private boolean endOfProcess = false;
+	private KEY_TYPE next;
+
+	public KEY_DATA_INPUT_WRAPPER(final DataInput dataInput) {
+		this.dataInput = dataInput;
+	}
+
+	@Override
+	public boolean hasNext() {
+		if (! toAdvance) return ! endOfProcess;
+
+		toAdvance = false;
+
+		try { next = dataInput.READ_KEY(); }
+		catch(EOFException eof) { endOfProcess = true; }
+		catch(IOException rethrow) { throw new RuntimeException(rethrow); }
+
+		return ! endOfProcess;
+	}
+
+	@Override
+	public KEY_TYPE NEXT_KEY() {
+		if (! hasNext()) throw new NoSuchElementException();
+		toAdvance = true;
+		return next;
+	}
+}
+
+/** Wraps the given data input stream into an iterator.
+ *
+ * @param dataInput a data input.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final DataInput dataInput) {
+	return new KEY_DATA_INPUT_WRAPPER(dataInput);
+}
+
+/** Wraps a file given by a {@link File} object into an iterator.
+ *
+ * @implNote This method opens a {@link FileChannel} that will not be closed until
+ * it is garbage collected.
+ *
+ * @param file a file.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final File file) throws IOException {
+#if KEY_CLASS_Boolean || KEY_CLASS_Byte
+	return new KEY_DATA_INPUT_WRAPPER(new DataInputStream(new FastBufferedInputStream(new FileInputStream(file))));
+#else
+	return AS_KEY_ITERATOR(file, ByteOrder.BIG_ENDIAN);
+#endif
+}
+
+/** Wraps a file given by a filename into an iterator.
+ *
+ * @implNote This method opens a {@link FileChannel} that will not be closed until
+ * it is garbage collected.
+ *
+ * @param filename a filename.
+ */
+public static KEY_ITERATOR AS_KEY_ITERATOR(final CharSequence filename) throws IOException {
+	return AS_KEY_ITERATOR(new File(filename.toString()));
+}
+
+/** Wraps a file given by a {@link File} object into an iterable object.
+ *
+ * @implNote Each iterator returned by this class opens a {@link FileChannel}
+ * that will not be closed until it is garbage collected.
+ *
+ * @param file a file.
+ */
+public static KEY_ITERABLE AS_KEY_ITERABLE(final File file) {
+	return () -> {
+		try { return AS_KEY_ITERATOR(file); }
+		catch(IOException e) { throw new RuntimeException(e); }
+	};
+}
+
+/** Wraps a file given by a filename into an iterable object.
+ *
+ * @implNote Each iterator returned by this class opens a {@link FileChannel}
+ * that will not be closed until it is garbage collected.
+ *
+ * @param filename a filename.
+ */
+public static KEY_ITERABLE AS_KEY_ITERABLE(final CharSequence filename) {
+	return () -> {
+		try { return AS_KEY_ITERATOR(filename); }
+		catch(IOException e) { throw new RuntimeException(e); }
+	};
+}

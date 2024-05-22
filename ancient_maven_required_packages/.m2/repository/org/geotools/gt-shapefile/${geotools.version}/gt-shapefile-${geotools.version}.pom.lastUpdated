@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 19 13:48:10 PYT 2015
+@default-http\://download.java.net/maven/2/.lastUpdated=1440006490925
+@default-http\://download.osgeo.org/webdav/geotools/.lastUpdated=1440006490934
+http\://download.osgeo.org/webdav/geotools/.error=Could not transfer artifact org.geotools\:gt-shapefile\:pom\:${geotools.version} from/to osgeo (http\://download.osgeo.org/webdav/geotools/)\: Illegal character in path at index 69\: http\://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/${geotools.version}/gt-shapefile-${geotools.version}.pom
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.geotools\:gt-shapefile\:pom\:${geotools.version} from/to central (http\://repo.maven.apache.org/maven2)\: Illegal character in path at index 63\: http\://repo.maven.apache.org/maven2/org/geotools/gt-shapefile/${geotools.version}/gt-shapefile-${geotools.version}.pom
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1440006470075
+http\://download.java.net/maven/2/.error=Could not transfer artifact org.geotools\:gt-shapefile\:pom\:${geotools.version} from/to maven2-repository.dev.java.net (http\://download.java.net/maven/2)\: Illegal character in path at index 60\: http\://download.java.net/maven/2/org/geotools/gt-shapefile/${geotools.version}/gt-shapefile-${geotools.version}.pom

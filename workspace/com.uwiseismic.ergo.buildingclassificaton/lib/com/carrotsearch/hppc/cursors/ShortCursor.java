@@ -1,0 +1,26 @@
+package com.carrotsearch.hppc.cursors;
+
+/**
+ * A cursor over a collection of <code>shorts</code>.
+ */
+ @com.carrotsearch.hppc.Generated(
+    date = "2018-05-21T12:24:04+0200",
+    value = "KTypeCursor.java") 
+public final class ShortCursor {
+  /**
+   * The current value's index in the container this cursor belongs to. The
+   * meaning of this index is defined by the container (usually it will be an
+   * index in the underlying storage buffer).
+   */
+  public int index;
+
+  /**
+   * The current value.
+   */
+  public short value;
+
+  @Override
+  public String toString() {
+    return "[cursor, index: " + index + ", value: " + value + "]";
+  }
+}

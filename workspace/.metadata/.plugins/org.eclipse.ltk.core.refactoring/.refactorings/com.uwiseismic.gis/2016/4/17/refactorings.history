@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.uwiseismic.modifiedmappane.test&apos; to &apos;com.uwiseismic.modifiedmappane.mapaware/src&apos;&#x0D;&#x0A;- Original project: &apos;com.uwiseismic.gis&apos;&#x0D;&#x0A;- Destination element: &apos;com.uwiseismic.modifiedmappane.mapaware/src&apos;&#x0D;&#x0A;- Original element: &apos;com.uwiseismic.gis/src/com.uwiseismic.modifiedmappane.test&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=com.uwiseismic.modifiedmappane.mapaware/src" element1="/src&lt;com.uwiseismic.modifiedmappane.test" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1461016715285" version="1.0"/>
+</session>

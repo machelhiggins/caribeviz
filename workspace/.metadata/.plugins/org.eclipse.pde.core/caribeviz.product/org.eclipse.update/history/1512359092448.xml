@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1512359092448" transient="true" version="3.0">
+<site enabled="true" list="ergo/ncsa.tools.common.resolvable/,ergo/ncsa.tools.common/,ergo/edu.illinois.ncsa.ergo.gis.postgis/,ergo/edu.illinois.ncsa.ergo.eq.ui/,ergo/edu.illinois.ncsa.ergo.gis/,ergo/ncsa.eclipse.core/,ergo/edu.illinois.ncsa.ergo.gis.repositoryconverter/,ergo/org.eclipse.swt.nebula.widgets.compositetable/,ergo/edu.illinois.ncsa.ergo.eq.socialscience/,ergo/org.matheclipse/,ergo/ncsa.tools.common.eclipse/,ergo/com.sun.jai/,ergo/edu.illinois.ncsa.ergo.eq.fragilities.mapping/,ergo/ncsa.logging.log4j/,ergo/org.bouncycastle/,ergo/edu.illinois.ncsa.ergo.eq.dtavista/,ergo/com.sun.pdfview/,ergo/edu.illinois.ncsa.ergo.gis.vtk/,ergo/edu.illinois.ncsa.ergo.eq.lifeline.hazus/,ergo/de.kupzog.KTable/,ergo/edu.illinois.ncsa.ergo.gis.repositories.sam.ui/,ergo/edu.illinois.ncsa.ergo.eq.reports.ui/,ergo/ncsa.tools.security/,ergo/edu.illinois.ncsa.ergo.eq.buildings.fireignition/,ergo/ncsa.tools.elf.logging/,ergo/edu.illinois.ncsa.ergo.eq.networkloss/,ergo/edu.illinois.ncsa.ergo.eq.nbsr/,ergo/ncsa.tools.elf.scripts/,ergo/edu.illinois.ncsa.ergo.gis.location.discovery/,ergo/edu.illinois.ncsa.ergo.gis.chart/,ergo/edu.illinois.ncsa.ergo.eq.help.tgic.ui/,ergo/edu.illinois.ncsa.ergo.eq.lifeline/,ergo/edu.illinois.ncsa.ergo.eq.reports/,ergo/ncsa.ca.certs/,ergo/org.scidac.cmcs/,ergo/ncsa.tools.common.eclipse.descriptors/,ergo/edu.illinois.ncsa.ergo.core.reports/,ergo/ncsa.tools.elf.embedded/,ergo/edu.illinois.ncsa.ergo.eq.lifeline.ui/,ergo/org.geotools14/,ergo/edu.illinois.ncsa.ergo.eq.netinterdep/,ergo/ncsa.tools.jms/,ergo/edu.illinois.ncsa.ergo.eq.fragilities.validation/,ergo/edu.illinois.ncsa.ergo.eq.buildings.decisionsupport.ui/,ergo/ncsa.tools.trebuchet.core/,ergo/edu.illinois.ncsa.ergo.eq.nbsr.ui/,ergo/edu.illinois.ncsa.ergo.eq.duejava/,ergo/org.apache.commons.dbpool/,ergo/edu.illinois.ncsa.ergo.eq.hazard/,ergo/edu.illinois.ncsa.ergo.eq.socialscience.temphousing.x86.win32/,ergo/edu.illinois.ncsa.ergo.gis.analysis/,ergo/edu.illinois.ncsa.ergo.core.analysis.ga/,ergo/edu.illinois.ncsa.ergo.gis.geotools.ui/,ergo/edu.illinois.ncsa.ergo.gis.chart.ui/,ergo/edu.illinois.ncsa.ergo.eq.repository.demo/,ergo/edu.illinois.ncsa.ergo.eq.buildings.decisionsupport/,ergo/edu.illinois.ncsa.ergo.eq.socialscience.ui/,ergo/edu.illinois.ncsa.ergo.gis.analysis.ui/,ergo/edu.illinois.ncsa.ergo.core.reports.editor.ui/,ergo/edu.illinois.ncsa.ergo.gis.reporting.ui/,ergo/edu.illinois.ncsa.ergo.gis.style.ui/,ergo/ncsa.tools.elf.runtime/,ergo/edu.illinois.ncsa.ergo.gis.postgis.ui/,ergo/edu.illinois.ncsa.ergo.gis.tableview.ui/,ergo/edu.illinois.ncsa.ergo.core.reports.ui/,ergo/edu.illinois.ncsa.ergo.eq.repository.demo.x86.win32/,ergo/edu.illinois.ncsa.ergo.core.analysis.validation.ui/,ergo/visualization.vtk5/,ergo/ncsa.tools.events/,ergo/edu.illinois.ncsa.ergo.core.analysis/,ergo/ncsa.tools.elf.core/,ergo/edu.illinois.ncsa.ergo.gis.collectiondataset.ui/,ergo/edu.illinois.ncsa.ergo.gis.repositories.sam/,ergo/activeMQ.client/,ergo/edu.illinois.ncsa.ergo.eq.rcp/,ergo/edu.illinois.ncsa.ergo.eq.networkloss.ui/,ergo/edu.illinois.ncsa.ergo.gis.location.turkey/,ergo/org.jfreechart/,ergo/edu.illinois.ncsa.ergo.core.analysis.validation/,ergo/edu.illinois.ncsa.ergo.eq.hazard.ui/,ergo/ncsa.tools.ogrescript/,ergo/edu.illinois.ncsa.ergo.gis.location.us/,ergo/edu.illinois.ncsa.ergo.core.analysis.ui/,ergo/edu.illinois.ncsa.ergo.eq.buildings/,ergo/net.sf.jasperreports/,ergo/edu.illinois.ncsa.ergo.eq.analysis.ui/,ergo/edu.illinois.ncsa.ergo.gis.network/,ergo/edu.illinois.ncsa.ergo.eq.bridges/,ergo/edu.illinois.ncsa.ergo.gis.ui/,ergo/edu.illinois.ncsa.ergo.eq/,ergo/edu.illinois.ncsa.ergo.core.analysis.gis/,ergo/edu.illinois.ncsa.ergo.eq.dtavista.ui/,ergo/com.itext/,ergo/edu.illinois.ncsa.ergo.gis.network.ui/" policy="USER-INCLUDE" updateable="true" url="file:/C:/Projects/ERGO/git/">
+</site>
+<site enabled="true" list="plugins/org.eclipse.core.expressions_3.5.0.v20150421-2214.jar,plugins/org.eclipse.help_3.6.0.v20130326-1254.jar,plugins/org.eclipse.equinox.http.jetty_3.1.2.v20160115-1350.jar,plugins/org.eclipse.core.databinding.beans_1.3.0.v20150422-0725.jar,plugins/org.eclipse.equinox.event_1.3.100.v20140115-1647.jar,plugins/org.apache.felix.gogo.shell_0.10.0.v201212101605.jar,plugins/org.eclipse.jetty.server_9.2.13.v20150730.jar,plugins/org.eclipse.equinox.http.registry_1.1.300.v20130402-1529.jar,plugins/org.eclipse.equinox.util_1.0.500.v20130404-1337.jar,plugins/javax.xml_1.3.4.v201005080400.jar,plugins/org.eclipse.equinox.app_1.3.300.v20150423-1356.jar,plugins/org.eclipse.jetty.http_9.2.13.v20150730.jar,plugins/org.apache.commons.io_2.2.0.v201405211200.jar,plugins/org.eclipse.osgi.services_3.5.0.v20150519-2006.jar,plugins/org.eclipse.core.commands_3.7.0.v20150422-0725.jar,plugins/org.apache.felix.gogo.runtime_0.10.0.v201209301036.jar,plugins/org.eclipse.core.databinding_1.5.0.v20150422-0725.jar,plugins/javax.servlet_3.1.0.v201410161800.jar,plugins/org.eclipse.core.runtime_3.11.1.v20150903-1804.jar,plugins/org.junit_4.12.0.v201504281640.jar,plugins/org.eclipse.osgi_3.10.102.v20160118-1700.jar,plugins/org.eclipse.equinox.http.servlet_1.2.2.v20160202-2102.jar,plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar,plugins/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar,plugins/org.eclipse.jetty.security_9.2.13.v20150730.jar,plugins/org.eclipse.jetty.io_9.2.13.v20150730.jar,plugins/org.eclipse.jetty.servlet_9.2.13.v20150730.jar,plugins/org.eclipse.equinox.ds_1.4.300.v20150423-1356.jar,plugins/org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar,plugins/org.eclipse.jetty.util_9.2.13.v20150730.jar,plugins/org.eclipse.core.databinding.property_1.5.0.v20150422-0725.jar,plugins/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar,plugins/org.apache.felix.gogo.command_0.10.0.v201209301215.jar,plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar,plugins/org.eclipse.jetty.continuation_9.2.13.v20150730.jar,plugins/org.hamcrest.core_1.3.0.v201303031735.jar,plugins/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar,plugins/org.eclipse.equinox.console_1.1.100.v20141023-1406.jar" policy="USER-INCLUDE" updateable="true" url="file:/C:/Projects/ERGO/workspace/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/">
+<feature id="org.eclipse.emf.mapping.ecore" url="features/org.eclipse.emf.mapping.ecore_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.mvc.doc" url="features/org.eclipse.gef4.mvc.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.databinding.edit.source" url="features/org.eclipse.emf.databinding.edit.source_1.4.0.v20150806-0404/" version="1.4.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.fx.doc" url="features/org.eclipse.gef4.fx.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.codegen.ui.source" url="features/org.eclipse.emf.codegen.ui.source_2.8.0.v20150806-0404/" version="2.8.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.mvc.sdk" url="features/org.eclipse.gef4.mvc.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.zest.fx.ui" url="features/org.eclipse.gef4.zest.fx.ui_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.fx.sdk" url="features/org.eclipse.gef4.fx.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.geometry.convert.fx.source" plugin-identifier="org.eclipse.gef4.geometry.convert.fx" url="features/org.eclipse.gef4.geometry.convert.fx.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.zest" plugin-identifier="org.eclipse.zest.core" url="features/org.eclipse.zest_1.6.1.201508170204/" version="1.6.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.databinding.source" url="features/org.eclipse.emf.databinding.source_1.4.0.v20150806-0404/" version="1.4.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.geometry.source" plugin-identifier="org.eclipse.gef4.geometry" url="features/org.eclipse.gef4.geometry.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.graph" url="features/org.eclipse.gef4.graph_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.codegen" url="features/org.eclipse.emf.codegen_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf" url="features/org.eclipse.emf_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.common.doc" url="features/org.eclipse.gef4.common.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.layout.source" plugin-identifier="org.eclipse.gef4.layout" url="features/org.eclipse.gef4.layout.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.editor.source" url="features/org.eclipse.emf.mapping.ecore.editor.source_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef" url="features/org.eclipse.gef_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.gef4.fx.source" plugin-identifier="org.eclipse.gef4.fx" url="features/org.eclipse.gef4.fx.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.draw2d" url="features/org.eclipse.draw2d_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.gef4.layout.doc" url="features/org.eclipse.gef4.layout.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.zest.fx" url="features/org.eclipse.gef4.zest.fx_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.edit" url="features/org.eclipse.emf.edit_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.common.sdk" url="features/org.eclipse.gef4.common.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.layout.sdk" url="features/org.eclipse.gef4.layout.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.codegen.ui" url="features/org.eclipse.emf.codegen.ui_2.8.0.v20150806-0404/" version="2.8.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.graph.sdk" url="features/org.eclipse.gef4.graph.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.ecore.editor.source" url="features/org.eclipse.emf.ecore.editor.source_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.databinding.edit" url="features/org.eclipse.emf.databinding.edit_1.4.0.v20150806-0404/" version="1.4.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.zest.sdk" plugin-identifier="org.eclipse.zest.source" url="features/org.eclipse.zest.sdk_1.6.1.201508170204/" version="1.6.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.edit.source" url="features/org.eclipse.emf.edit.source_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.mvc.ui.source" plugin-identifier="org.eclipse.gef4.mvc.ui" url="features/org.eclipse.gef4.mvc.ui.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore" url="features/org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.converter" url="features/org.eclipse.emf.converter_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.source" url="features/org.eclipse.emf.mapping.ecore.source_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.edit.ui" url="features/org.eclipse.emf.edit.ui_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.rap.examples.feature" url="features/org.eclipse.rap.examples.feature_3.0.2.20160120-1649/" version="3.0.2.20160120-1649">
+</feature>
+<feature id="org.eclipse.gef4.graph.doc" url="features/org.eclipse.gef4.graph.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.mvc.ui" url="features/org.eclipse.gef4.mvc.ui_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.codegen.source" url="features/org.eclipse.emf.codegen.source_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.mapping.source" url="features/org.eclipse.emf.mapping.source_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.sdk" url="features/org.eclipse.emf.sdk_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef.source" url="features/org.eclipse.gef.source_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.ui.source" url="features/org.eclipse.emf.codegen.ecore.ui.source_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.rap.feature" url="features/org.eclipse.rap.feature_3.0.2.20160201-1220/" version="3.0.2.20160201-1220">
+</feature>
+<feature id="org.eclipse.draw2d.source" url="features/org.eclipse.draw2d.source_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.doc" url="features/org.eclipse.emf.doc_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.geometry.convert.swt.source" plugin-identifier="org.eclipse.gef4.geometry.convert.swt" url="features/org.eclipse.gef4.geometry.convert.swt.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.graph.source" plugin-identifier="org.eclipse.gef4.graph" url="features/org.eclipse.gef4.graph.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.zest.fx.source" plugin-identifier="org.eclipse.gef4.zest.fx" url="features/org.eclipse.gef4.zest.fx.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.edit.ui.source" url="features/org.eclipse.emf.edit.ui.source_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.common.ui" url="features/org.eclipse.emf.common.ui_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.draw2d.sdk" plugin-identifier="org.eclipse.draw2d" url="features/org.eclipse.draw2d.sdk_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.converter.source" url="features/org.eclipse.emf.converter.source_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.mvc" url="features/org.eclipse.gef4.mvc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.common" url="features/org.eclipse.emf.common_2.11.0.v20150805-0538/" version="2.11.0.v20150805-0538">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.source" url="features/org.eclipse.emf.codegen.ecore.source_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.mapping.ui" url="features/org.eclipse.emf.mapping.ui_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.common" url="features/org.eclipse.gef4.common_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.geometry.convert.fx" url="features/org.eclipse.gef4.geometry.convert.fx_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.mapping" url="features/org.eclipse.emf.mapping_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.mapping.ui.source" url="features/org.eclipse.emf.mapping.ui.source_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.ecore" url="features/org.eclipse.emf.ecore_2.11.1.v20150805-0538/" version="2.11.1.v20150805-0538">
+</feature>
+<feature id="org.eclipse.gef4.zest.doc" url="features/org.eclipse.gef4.zest.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.ecore.edit.source" url="features/org.eclipse.emf.ecore.edit.source_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.common.source" plugin-identifier="org.eclipse.gef4.common" url="features/org.eclipse.gef4.common.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.mvc.fx" url="features/org.eclipse.gef4.mvc.fx_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.mvc.source" plugin-identifier="org.eclipse.gef4.mvc" url="features/org.eclipse.gef4.mvc.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.fx.ui.source" plugin-identifier="org.eclipse.gef4.fx.ui" url="features/org.eclipse.gef4.fx.ui.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.geometry.convert.swt" url="features/org.eclipse.gef4.geometry.convert.swt_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.geometry.sdk" url="features/org.eclipse.gef4.geometry.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.geometry.doc" url="features/org.eclipse.gef4.geometry.doc_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.fx.runtime.min.feature" url="features/org.eclipse.fx.runtime.min.feature_2.1.0.201508240501/" version="2.1.0.201508240501">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.ui" url="features/org.eclipse.emf.codegen.ecore.ui_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.doc.source" url="features/org.eclipse.emf.doc.source_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef.sdk" plugin-identifier="org.eclipse.gef" url="features/org.eclipse.gef.sdk_3.10.1.201508170204/" version="3.10.1.201508170204">
+</feature>
+<feature id="org.eclipse.gef4.mvc.fx.ui.source" plugin-identifier="org.eclipse.gef4.mvc.fx.ui" url="features/org.eclipse.gef4.mvc.fx.ui.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.zest.fx.ui.source" plugin-identifier="org.eclipse.gef4.zest.fx.ui" url="features/org.eclipse.gef4.zest.fx.ui.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.ecore.editor" url="features/org.eclipse.emf.ecore.editor_2.11.0.v20150806-0404/" version="2.11.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.source" url="features/org.eclipse.emf.source_2.11.1.v20150806-0404/" version="2.11.1.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.zest.sdk" url="features/org.eclipse.gef4.zest.sdk_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.editor" url="features/org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.geometry" url="features/org.eclipse.gef4.geometry_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.mvc.fx.ui" url="features/org.eclipse.gef4.mvc.fx.ui_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.gef4.fx" url="features/org.eclipse.gef4.fx_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.rap.equinox.target.feature" url="features/org.eclipse.rap.equinox.target.feature_3.0.3.20160209-0600/" version="3.0.3.20160209-0600">
+</feature>
+<feature id="org.eclipse.gef4.fx.ui" url="features/org.eclipse.gef4.fx.ui_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.emf.databinding" url="features/org.eclipse.emf.databinding_1.4.0.v20150806-0404/" version="1.4.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.mvc.fx.source" plugin-identifier="org.eclipse.gef4.mvc.fx" url="features/org.eclipse.gef4.mvc.fx.source_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+<feature id="org.eclipse.rap.sdk.feature" url="features/org.eclipse.rap.sdk.feature_3.0.2.20160201-1220/" version="3.0.2.20160201-1220">
+</feature>
+<feature id="org.eclipse.zest.source" url="features/org.eclipse.zest.source_1.6.1.201508170204/" version="1.6.1.201508170204">
+</feature>
+<feature id="org.eclipse.emf.ecore.edit" url="features/org.eclipse.emf.ecore.edit_2.9.0.v20150806-0404/" version="2.9.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.emf.common.ui.source" url="features/org.eclipse.emf.common.ui.source_2.10.0.v20150806-0404/" version="2.10.0.v20150806-0404">
+</feature>
+<feature id="org.eclipse.gef4.layout" url="features/org.eclipse.gef4.layout_0.1.0.201506081138/" version="0.1.0.201506081138">
+</feature>
+</site>
+<site enabled="true" list="workspace/com.uwiseismic.gis.location.datastorage/,workspace/com.uwiseismic.modifiedmappane.mapaware/,workspace/com.uwiseismic.gis.location.barbados/,workspace/com.uwiseismic.modifiedmappane.v4/,workspace/com.uwiseismic.ergo.buildingclassificaton/,workspace/com.uwiseismic.gis.location.grenada/,workspace/com.uwiseismic.gis.location.trinidad/,workspace/com.uwiseismic.gis.location.jamaica/,workspace/com.uwiseismic.gis.location.tobago/" policy="USER-INCLUDE" updateable="true" url="file:/C:/Projects/ERGO/">
+</site>
+</config>

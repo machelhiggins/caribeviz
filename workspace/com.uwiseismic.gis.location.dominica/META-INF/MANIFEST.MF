@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Dominica Plugin
+Bundle-SymbolicName: com.uwiseismic.gis.location.dominica;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Activator: com.uwiseismic.gis.location.dominica.osgi.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.dom4j;bundle-version="1.0.0",
+ ncsa.tools.common;bundle-version="1.0.0",
+ org.apache.log4j;bundle-version="1.2.12",
+ edu.illinois.ncsa.ergo.gis;bundle-version="4.0.0",
+ org.geotools14;bundle-version="14.1.0",
+ com.uwiseismic.gis.location.datastorage;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.geotools.feature
+Export-Package: com.uwiseismic.gis.location.dominica;
+  uses:="edu.illinois.ncsa.ergo.gis.locations,
+   org.dom4j,
+   ncsa.tools.common.types,
+   edu.illinois.ncsa.ergo.gis.datasets",
+ com.uwiseismic.gis.location.dominica.osgi;uses:="org.osgi.framework,org.eclipse.core.runtime",
+ com.uwiseismic.gis.location.dominica.utils;
+  uses:="com.uwiseismic.gis.location.dominica,
+   edu.illinois.ncsa.ergo.gis.locations,
+   edu.illinois.ncsa.ergo.gis.datasets.properties,
+   ncsa.tools.common.types"

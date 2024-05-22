@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="ncsa.tools.common.eclipse" modificationStamp="5440" version="1.2">
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common.eclipse/src&lt;ncsa.tools.common.eclipse.descriptors.types"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common.eclipse/src&lt;ncsa.tools.common.osgi"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common.eclipse/src&lt;ncsa.tools.common.eclipse.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=ncsa.tools.common.eclipse/src&lt;ncsa.tools.common.eclipse.descriptors.exceptions"/>
+    </package>
+</component>

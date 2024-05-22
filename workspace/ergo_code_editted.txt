@@ -1,0 +1,151 @@
+
+---
+edu.illinois.ncsa.ergo.core.analysis\src\edu\illinois\ncsa\ergo\core\analysis\ogrescript\tasks\core\DefineFeatureType.java -
+
+
+in getNextFieldName(...)
+Commented out line 230 to 243 - creating new attributes for ones that already existed in schema.
+Readson: causes stack overflow. This attempts to create a new unique id for a schema if it already exists. 
+building classification uses the same schema for input and output which breaks this.
+
+---
+edu.illinois.ncsa.ergo.eq.buildings\descriptions\BuildingDamageAnalysis.xml
+Added type "uwiBuildingClassification" to key="buildings" 
+---
+edu.illinois.ncsa.ergo.eq.buildings\src\edu\illinois\ncsa\ergo\eq\buildings\BuildingDamage.java
+at line 124
+replaced
+	Point location = (Point) feature.getAttribute(0);
+with
+	Point location;
+	if(feature.getAttribute(0) instanceof Point)
+		location = (Point) feature.getAttribute(0);
+	else
+		location = ((Geometry) feature.getAttribute(0)).getCentroid();
+	double num_stories = getNumberOfStories(feature);
+---		
+
+
+---
+
+
+Buttons or actions? set in 
+C:\Projects\ERGO\git\ergo\edu.illinois.ncsa.ergo.gis.ui\plugin.xml
+Under extension org.eclipse.ui.popupMenus
+
+GONNA MESS WITH RIGHT HERE!!!! 
+C:\Projects\ERGO\git\ergo\edu.illinois.ncsa.ergo.gis\src\edu\illinois\ncsa\ergo\gis\types\RendererContext.java
+line 202
+When we're adding dataset we need a class DatasetWatcher that tracks the dataset added and where its stored
+The following Code is from ShapefileDatasetFactory line 123 and can be used to figure out where this dataset is being stored
+---
+		FeatureDataset d = (FeatureDataset) dataset;
+
+		try {
+			String fileName = d.getDataStore().getTypeNames()[0];
+			if (properties instanceof GISDatasetProperties) {
+				GISDatasetProperties props = (GISDatasetProperties) properties;
+				String featureTypeName = props.getFeatureTypeName();
+				if (featureTypeName != null)
+					fileName = featureTypeName;
+			}
+
+			ingestDataset(properties, dataset, monitor, fileName);
+		} catch (IOException e) {
+			throw new DataIngestException("IO Exception reading datastore", e); //$NON-NLS-1$
+		}
+---
+PLUGIN: edu.illinois.ncsa.ergo.gis.ui
+Edited C:\Projects\ERGO\git\ergo\edu.illinois.ncsa.ergo.gis.ui\plugin.xml to add edit action and icon under edu.illinois.ncsa.gis.types.DatasetLayer
+
+Action : edu.illinois.ncsa.ergo.gis.ui.actions.EditLayer
+Added class edu.illinois.ncsa.ergo.gis.ui.actions.EditLayer
+---
+PLUGIN: edu.illinois.ncsa.ergo.gis
+Editted C:\Projects\ERGO\git\ergo\edu.illinois.ncsa.ergo.gis\plugin.xml
+Added plugin dependent com.uwiseismic.modifiedmappane.mapaware plugin
+
+Editted : /edu.illinois.ncsa.ergo.gis/src/edu/illinois/ncsa/ergo/gis/types/Scenario.java and added at line 
+
+	private DatasetSave datasetSave;
+	private LocalRepository repository;
+	private EditLayerAdapter editLayerAdapter;
+	
+	/**
+	 * Added MH 20160425
+	 * 
+	 * @param layer
+	 */
+		public void setEditting(DatasetLayer layer){	
+			if(layer.getDataset() instanceof FeatureDataset){
+				//** find DBF file to update
+				FeatureDataset dataset = (FeatureDataset)layer.getDataset();
+				repository = (LocalRepository)RepositoryManager.getInstance().findDataset(dataset.getDataId());
+				String absPath = repository.getDatasetFiles(dataset.getDataId())[0].getAbsolutePath(); 			
+				String dbfFilePath = absPath.substring(0,absPath.length()-4)+".dbf";
+						
+				logger.info("Editting layer \""+dataset.getFriendlyName()+"\" stored at "+dbfFilePath);
+							
+				if(datasetSave == null)
+					datasetSave = new DatasetSave();
+				else
+					datasetSave.dispose();
+				datasetSave.setDBFPath(dbfFilePath);
+				if(!datasetSave.isAlive())
+					datasetSave.start();		
+				
+				
+				//** set the layer in the EditLayerAdapter to fire for listeners
+				editLayerAdapter.setLayerToEdited((Layer)layer);
+	
+			}
+		}
+		
+		public void setEdittedFeatureAttributes(ArrayList<SimpleFeature> featuresChanged){
+			if(datasetSave != null)
+				datasetSave.setFeaturesToSave(featuresChanged);
+		}
+		
+		public void setEditLayerAdapter(EditLayerAdapter editLayerAdapter){
+			this.editLayerAdapter = editLayerAdapter;
+		}
+	
+		public void disposeOfFeatureSaves(){
+			datasetSave.dispose();
+	}
+
+	
+		
+
+Had to bring in com.uwiseismic.modifiedmappane.mapaware package to prevent circular referencing. DatasetAware requieres Dataset (from edu.illinois.ncsa.ergo.gis)
+whilst class Scenario requires DatasetSave and DatasetAware.
+---
+PLUGIN: edu.illinois.ncsa.ergo.gis.geotools.ui
+
+Editted: edu.illinois.ncsa.ergo.gis.geotools.ui\plugin.xml
+Added plugin dependency com.uwiseismic.modifiedmappane.mapaware plugin
+Added plugin dependency 
+
+Editting: edu.illinois.ncsa.ergo.gis.geotools.ui\src\edu\illinois\ncsa\ergo\gis\geotools\ui\builders\JMapPaneBuilder.java
+Overloaded RenderBuilder.setScenario(Scenario s) with:
+	public void setScenario(Scenario s){
+		super.setScenario(s);
+		//** add EditLayerAdapter 
+		EditLayerAdapter editLayerAdapter = new EditLayerAdapter();
+		s.setEditLayerAdapter(editLayerAdapter);
+		editLayerAdapter.addListener(renderer);
+		
+		//** add featureChangeListner
+		ScenarioFeatureAtrributeListener featAttrListener = new ScenarioFeatureAtrributeListener(s);
+		renderer.addFeatuerAttributeListener(featAttrListener);
+	}
+
+
+FOR TESTING PURPOSES EDitted:  edu.illinois.ncsa.ergo.gis.geotools.ui\plugin.xml
+Added com.uwiseismic.modifiedmappane.v3 dependency for test JMapPaneRenderer
+
+---
+PLUGIN edu.illinois.ncsa.ergo.eq.hazard.ui
+
+Edited \edu.illinois.ncsa.ergo.eq.hazard.ui\plugin.xml 
+Added dependency 

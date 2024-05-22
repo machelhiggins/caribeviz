@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+<!--  desc attributes SHOULD NEVER HAVE THE CHARACTERS '(' NOR ')' -->
+<attribs name="year_built" desc="Year of Construction" type="Integer">
+</attribs>
+<attribs name="no_stories" desc="Number of Stories" type="Integer">
+</attribs>
+<attribs name="occ_type" desc="Occupancy Type" type="String">
+</attribs>
+<attribs name="struct_typ" desc = "Structure Type" type="String">
+	<select_type>RM</select_type>
+	<select_type>RM1</select_type>
+	<select_type>RM2</select_type>
+	<select_type>C1</select_type>
+	<select_type>C2</select_type>
+	<select_type>W1</select_type>
+	<select_type>S1</select_type>
+	<select_type>PC1</select_type>		
+	<select_type>PC2</select_type>
+	<select_type>URM</select_type>
+</attribs>
+<attribs name="str_prob" desc="Probability of Structure Type [0-1]" type="Double">
+</attribs>
+<url val="http://127.0.0.1:8080/commitfeat.drrc"></url>
+</class>

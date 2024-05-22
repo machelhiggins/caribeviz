@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="initLaunch"/>
+	<item value="false" key="generateActivator"/>
+	<item value="3.1" key="targetName"/>
+	<item value="true" key="uiPlugin"/>
+	<item value="false" key="apiAnalysis"/>
+	<item value="false" key="rcpPlugin"/>
+	<item value="false" key="osgiProject"/>
+	<list key="providers">
+		<item value="CARROTSEARCH"/>
+		<item value="UWISEISMIC"/>
+		<item value="UWISEIWMIC"/>
+		<item value="UWI-SEISMIC"/>
+	</list>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
+	<section name="dependenciesView">
+	</section>
+	<section name="PDEFormActionManager">
+		<list key="RecentLaunches">
+			<item value="org.eclipse.pde.ui.runtimeWorkbenchShortcut"/>
+		</list>
+	</section>
+	<section name="JavaAttributeWizard">
+		<section name="NewClassWizardPage">
+			<item value="true" key="create_constructor"/>
+			<item value="true" key="create_unimplemented"/>
+		</section>
+	</section>
+	<section name="org.eclipse.pde.ui.PLUGIN_STATUS_DIALOG">
+		<item value="625" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="390" key="DIALOG_HEIGHT"/>
+		<item value="123" key="DIALOG_X_ORIGIN"/>
+		<item value="307" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="668" key="DIALOG_X_ORIGIN"/>
+			<item value="200" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="targetStateView">
+	</section>
+	<section name="UpdateBuildpathWizard">
+	</section>
+	<section name="pluginsView">
+	</section>
+	<section name="RefactoringWizard.Organize Manifests">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="ConvertedProjectWizard">
+		<item value="false" key="apiAnalysis"/>
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.FeatureSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="668" key="DIALOG_X_ORIGIN"/>
+			<item value="200" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="pde-form-editor">
+		<item value="overview" key="org.eclipse.pde.ui.manifestEditor"/>
+	</section>
+	<section name="ProductExportWizard">
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_20240513" key="destination0"/>
+		<item value="true" key="syncProduct"/>
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220606\caribeviz" key="destination1"/>
+		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ" key="destination4"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="C:\Users\machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ_v20220426\caribeviz" key="destination2"/>
+		<item value="caribeviz" key="productRoot"/>
+		<item value="C:\Users\Machel\Desktop\install\Ergo-EQ\caribeviz" key="destination3"/>
+		<item value="/edu.illinois.ncsa.ergo.eq.rcp/caribeviz.product" key="productConfig0"/>
+		<item value="false" key="exportSource"/>
+		<item value="true" key="exportDirectory"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="/edu.illinois.ncsa.ergo.eq.rcp/ergo-eq.product" key="productConfig2"/>
+		<item value="/edu.illinois.ncsa.ergo.eq.rcp/caribeviz.product" key="productConfig1"/>
+		<item value="true" key="p2metadata"/>
+	</section>
+	<section name="PluginExportWizard">
+		<item value="C:\Users\Machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ\caribeviz" key="destination0"/>
+		<item value="C:\Users\Machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ\caribeviz" key="destination1"/>
+		<item value="" key="keypass"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="signJAR"/>
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="false" key="exportSource"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="" key="password"/>
+		<item value="201712040104" key="qualifierName"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="1" key="exportType"/>
+		<item value="false" key="qualifier"/>
+		<item value="" key="alias"/>
+		<item value="" key="keystore"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="FeatureExportWizard">
+		<item value="C:\Users\Machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ\caribeviz" key="destination0"/>
+		<item value="C:\Users\Machel\Desktop\CARIBEVIZ_RELEASE\install\Ergo-EQ\caribeviz" key="destination1"/>
+		<item value="" key="keypass"/>
+		<item value="" key="siteURL"/>
+		<item value="true" key="create_categories"/>
+		<item value="Generate source bundles" key="exportSourceFormat"/>
+		<item value="false" key="signJAR"/>
+		<item value="true" key="exportUpdate"/>
+		<item value="false" key="saveAsAnt"/>
+		<item value="false" key="exportSource"/>
+		<item value="" key="category_file"/>
+		<item value="true" key="allowBinaryCycles"/>
+		<item value="" key="password"/>
+		<item value="201712041111" key="qualifierName"/>
+		<item value="false" key="useWorkspaceCompiledClasses"/>
+		<item value="1" key="exportType"/>
+		<item value="false" key="qualifier"/>
+		<item value="" key="alias"/>
+		<item value="false" key="jnlp"/>
+		<item value="" key="keystore"/>
+		<item value="" key="jre"/>
+		<item value="true" key="p2metadata"/>
+	</section>
+</section>

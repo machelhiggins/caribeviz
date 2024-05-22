@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.apache.commons.jxpath" modificationStamp="63121" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.axes"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.dynamic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.xml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.functions"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.compiler"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.servlet"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.container"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.jdom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.dom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.dynabeans"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.apache.commons.jxpath/&lt;org.apache.commons.jxpath.ri.model.beans"/>
+    </package>
+</component>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.matheclipse" modificationStamp="62676" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.eval.exception"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.parser.ast"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.generic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.combinatoric"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.form.mathml"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.parser.operator"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.eval"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.reflection.system"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.generic.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.form.mathml.reflection"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.list.algorithms"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.system"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.parser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.patternmatching"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.expression"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.parser.interfaces"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.form.output"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.generic"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.parser.newparser"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.eval.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.matheclipse/matheclipse-1.0.jar&lt;org.matheclipse.core.eval.interfaces"/>
+    </package>
+</component>

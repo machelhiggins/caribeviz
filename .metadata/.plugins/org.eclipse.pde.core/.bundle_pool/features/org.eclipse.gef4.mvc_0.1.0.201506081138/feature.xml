@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gef4.mvc"
+      label="GEF4 MVC"
+      version="0.1.0.201506081138"
+      provider-name="Eclipse GEF"
+      plugin="org.eclipse.gef4.mvc">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.gef4.common" version="0.1.0" match="equivalent"/>
+      <import feature="org.eclipse.gef4.geometry" version="0.1.0" match="equivalent"/>
+      <import plugin="com.google.guava" version="12.0.0" match="greaterOrEqual"/>
+      <import plugin="com.google.inject" version="3.0.0" match="compatible"/>
+      <import plugin="com.google.inject.multibindings" version="3.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.gef4.mvc"
+         download-size="91"
+         install-size="199"
+         version="0.1.0.201506081138"
+         unpack="false"/>
+
+</feature>

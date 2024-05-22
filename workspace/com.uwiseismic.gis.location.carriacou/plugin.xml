@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ncsa.gis.locationCountries">
+      <locationCountry
+            class="ncsa.gis.location.carriacou.Carriacou"
+            id="ncsa.gis.location.carriacou.Carriacou"
+            name="Carriacou"
+            tag="Carriacou">
+      </locationCountry>
+   </extension>
+   <extension
+         point="ncsa.gis.locationFactories">
+      <locationFactory
+            class="ncsa.gis.location.carriacou.CarriacouLocationFactory"
+            id="ncsa.gis.location.carriacou.Carriacou"
+            name="Carriacou Location Factory"
+            tag="Carriacou">
+      </locationFactory>
+   </extension>
+
+</plugin>

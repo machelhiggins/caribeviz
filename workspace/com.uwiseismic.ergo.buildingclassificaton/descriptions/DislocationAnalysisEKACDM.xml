@@ -1,0 +1,24 @@
+<analysis-description id="com.uwiseismic.ergo.populationdislocation.DislocationAnalysisEKACDM"  help-context="">
+
+	<analysis-type type="simpleIteration">
+		<property name="iteratingDatasetKey" value="buildingEconomicLossV4"/>
+	</analysis-type>
+	
+	<parameter format="resultName" phylum="string" cardinality="single" key="uwiPopulationDislocationEKACDM.resultName" friendly-name="Result Name"/>
+	
+	<parameter phylum="dataset" cardinality="single" key="buildingEconomicLossV4" friendly-name="Building Direct Economic Damage">
+		<types>
+			<type>buildingEconomicLossV4</type>
+		</types>
+	</parameter>
+		
+	
+	<output friendly-name="Populate Dislocation" key="uwiPopulationDislocationEKACDM" phylum="dataset" format="shapefile" geom="buildingEconomicLossV4" guids="buildingEconomicLossV4">
+		<property name="buildingEconomicLossV4" type="base-dataset-key" value="buildingEconomicLossV4"/>
+		<property name="schema" type="schema" value="com.uwiseismic.ergo.population.gisSchemas.populationDislocationEKACDM.v1.0"/>
+	</output>
+	
+	<produced-types>
+		<type>uwiPopulationDislocationEKACDM</type>
+	</produced-types>
+</analysis-description>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="com.uwiseiwmic.gis.location.datastorage" modificationStamp="1533523" version="1.2">
+    <package visibility="1">
+        <fragment handle="=com.uwiseiwmic.gis.location.datastorage/src&lt;com.uwiseismic.gis.location.datastorage"/>
+        <type handle="=com.uwiseiwmic.gis.location.datastorage/src&lt;com.uwiseismic.gis.location.datastorage{Activator.java[Activator" modificationStamp="1533535" restrictions="0" visibility="0"/>
+        <type handle="=com.uwiseiwmic.gis.location.datastorage/src&lt;com.uwiseismic.gis.location.datastorage{RuntimeStorageMethod.java[RuntimeStorageMethod" modificationStamp="1533533" restrictions="0" visibility="0"/>
+    </package>
+</component>
